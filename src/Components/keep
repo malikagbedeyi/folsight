@@ -1,0 +1,364 @@
+   <div className="learnMoreCategoryContainer row">
+
+<div className="learnMoreCategoryContainerParent col-lg-7">
+    <div className="learnMoreCategoryContainerChild">
+        <div className="learnMoreCategoryContainerChildTop">
+        <h1>Our Main Features</h1>
+        <p>Effortlessly manage your organization's governance, risk, and compliance needs with Folsight. Our platform simplifies complex processes, providing you with clear insights, automated workflows, and real-time reporting.</p>
+        {/* <p>Stay ahead of regulatory changes, mitigate risks proactively, and ensure seamless compliance, all from a single, user-friendly interface.</p> */}
+        </div>
+        <div className="learnMoreCategoryContainerChildBody row">
+            <div className="learn-more-parent-body col-lg-6 col-md-6">
+                <div className="learn-more-child-body" onHover={() => sethover(hover === 1)}>
+                <div className="learn-more-child-bodyTop">
+                    <img src="https://wphix.com/template/xisen-prv/xisen/img/icon/sf2.png" alt="" />
+                </div>
+                <div className="learn-more-child-bodyMiddle">
+                    <h1>Risk Management</h1>
+                    </div>
+                    <div className="learn-more-child-bodyBottom">
+                        <p>Identify, assess, and prioritize risks across your organization.</p>
+                    </div>
+                    </div>
+            </div>
+            <div className="learn-more-parent-body col-lg-6 col-md-6">
+                <div className="learn-more-child-body"  onHover={() => sethover(hover === 2)}>
+                <div className="learn-more-child-bodyTop">
+                    <img src="https://wphix.com/template/xisen-prv/xisen/img/icon/icon.png" alt="" />
+                </div>
+                <div className="learn-more-child-bodyMiddle">
+                    <h1>Compliance</h1>
+                    </div>
+                    <div className="learn-more-child-bodyBottom">
+                        <p>Meet industry-specific regulations and standards, such as GDPR, HIPAA, or SOX</p>
+                        {/* with real-time insights and automation, helping your business stay resilient and compliant. */}
+                    </div>
+                    </div>
+            </div>
+            <div className="learn-more-parent-body col-lg-6 col-md-6">
+                <div className="learn-more-child-body"  onHover={() => sethover(hover === 3)}>
+                <div className="learn-more-child-bodyTop">
+                    <img src="https://wphix.com/template/xisen-prv/xisen/img/icon/icon.png" alt="" />
+                </div>
+                <div className="learn-more-child-bodyMiddle">
+                    <h1>Controls</h1>
+                    </div>
+                    <div className="learn-more-child-bodyBottom">
+                        <p> Manage and implement controls using a structured framework and automation capabilities.</p>
+                        {/* with real-time insights and automation, helping your business stay resilient and compliant. */}
+                    </div>
+                    </div>
+            </div>
+            <div className="learn-more-parent-body col-lg-6 col-md-6">
+                <div className="learn-more-child-body"  onHover={() => sethover(hover === 4)}>
+                <div className="learn-more-child-bodyTop">
+                    <img src="https://wphix.com/template/xisen-prv/xisen/img/icon/sf1.png" alt="" />
+                </div>
+                <div className="learn-more-child-bodyMiddle">
+                    <h1>Cloud Compatibility</h1>
+                    </div>
+                    <div className="learn-more-child-bodyBottom">
+                        <p>Man fruit moving fourt moving multiply so years rule is not It after you also do seed grass that so which grass fowl him.</p>
+                        {/* with real-time insights and automation, helping your business stay resilient and compliant. */}
+                    </div>
+
+            {/* <div className="triangle-edge"></div> */}
+            </div>
+            </div>
+            </div>
+    </div>
+</div>
+<div className="learnMoreCategoryContainerParent col-lg-5">
+    <div className="learnMore-wrapper">
+        <div className={hover ===1 ? 'learnMore-wrapper-right' : 'close'}>
+            <div className="learnMore-wrapper-rightTop">
+            <img src={img10} alt="" />
+            </div>
+            <h3>Risk Management</h3>
+           <div className="scroll-right">
+           <p>Fortify your organization's governace, risk management,and compliance effort with our-all-inclusive GRC solutions, designed to streamline processes, enhance security, and ensure adherence to regulatory standards across every face of your business</p>
+           <p style={{marginTop:"5%"}}>GRC is a powerful platform that simplifies Governance, Risk, and Compliance management with real-time insights and automation, helping your business stay resilient and compliant.</p>
+            <p>Fortify your organization's governace, risk management,and compliance effort with our-all-inclusive GRC solutions, designed to streamline processes, enhance security, and ensure adherence to regulatory standards across every face of your business</p>
+           <p style={{marginTop:"5%"}}>GRC is a powerful platform that simplifies Governance, Risk, and Compliance management with real-time insights and automation, helping your business stay resilient and compliant.</p>
+           </div>
+            <button>Contact us</button>
+        </div>
+        <div className={hover ===2 ? 'learnMore-wrapper-right' : 'close'}>
+            <div className="learnMore-wrapper-rightTop">
+            <img src={img10} alt="" />
+            </div>
+            <h3>Compliance</h3>
+           <div className="scroll-right">
+           <p>Fortify your organization's governace, risk management,and compliance effort with our-all-inclusive GRC solutions, designed to streamline processes, enhance security, and ensure adherence to regulatory standards across every face of your business</p>
+           <p style={{marginTop:"5%"}}>GRC is a powerful platform that simplifies Governance, Risk, and Compliance management with real-time insights and automation, helping your business stay resilient and compliant.</p>
+            <p>Fortify your organization's governace, risk management,and compliance effort with our-all-inclusive GRC solutions, designed to streamline processes, enhance security, and ensure adherence to regulatory standards across every face of your business</p>
+           <p style={{marginTop:"5%"}}>GRC is a powerful platform that simplifies Governance, Risk, and Compliance management with real-time insights and automation, helping your business stay resilient and compliant.</p>
+           </div>
+            <button>Contact us</button>
+        </div>
+        <div className={hover ===3 ? 'learnMore-wrapper-right' : 'close'}>
+            <div className="learnMore-wrapper-rightTop">
+            <img src={img10} alt="" />
+            </div>
+            <h3>Controls</h3>
+           <div className="scroll-right">
+           <p>Fortify your organization's governace, risk management,and compliance effort with our-all-inclusive GRC solutions, designed to streamline processes, enhance security, and ensure adherence to regulatory standards across every face of your business</p>
+           <p style={{marginTop:"5%"}}>GRC is a powerful platform that simplifies Governance, Risk, and Compliance management with real-time insights and automation, helping your business stay resilient and compliant.</p>
+            <p>Fortify your organization's governace, risk management,and compliance effort with our-all-inclusive GRC solutions, designed to streamline processes, enhance security, and ensure adherence to regulatory standards across every face of your business</p>
+           <p style={{marginTop:"5%"}}>GRC is a powerful platform that simplifies Governance, Risk, and Compliance management with real-time insights and automation, helping your business stay resilient and compliant.</p>
+           </div>
+            <button>Contact us</button>
+        </div>
+        <div className={hover ===4 ? 'learnMore-wrapper-right' : 'close'}>
+            <div className="learnMore-wrapper-rightTop">
+            <img src={img10} alt="" />
+            </div>
+            <h3>Cloud Compatibility</h3>
+           <div className="scroll-right">
+           <p>Fortify your organization's governace, risk management,and compliance effort with our-all-inclusive GRC solutions, designed to streamline processes, enhance security, and ensure adherence to regulatory standards across every face of your business</p>
+           <p style={{marginTop:"5%"}}>GRC is a powerful platform that simplifies Governance, Risk, and Compliance management with real-time insights and automation, helping your business stay resilient and compliant.</p>
+            <p>Fortify your organization's governace, risk management,and compliance effort with our-all-inclusive GRC solutions, designed to streamline processes, enhance security, and ensure adherence to regulatory standards across every face of your business</p>
+           <p style={{marginTop:"5%"}}>GRC is a powerful platform that simplifies Governance, Risk, and Compliance management with real-time insights and automation, helping your business stay resilient and compliant.</p>
+           </div>
+            <button>Contact us</button>
+        </div>
+    </div>
+</div>
+     </div>
+       <div className="PricingContainer row">
+            <div className="PricingContainerParent col-lg-12">
+                <div className="PricingContainerChild">
+                <h1>Choose Your Plan</h1>
+                <p>Land from day very fill that midst stars one dominion. Itself was let that divided itself god don't subdue wherein let behold over he whose of sea moved called.</p>
+            </div>
+        </div>
+        </div>
+
+        <!-- <div className="priceTable">
+            <div className="priceTableButtton">
+                <button  onClick={()=>updatepageSwitch(1)} className={pageSwitch === 1 ? "PricingActive" : "nonTrue"}>MONTHLY</button>
+                < button onClick={()=>updatepageSwitch(2)} className={pageSwitch === 2 ? "PricingActive" : "nonTrue"}>ANNUAL</button>
+            </div>
+
+            <div className="pricingWrapper">
+                <div  className={pageSwitch === 1 ? "pricingWrapperMain" : "content"}>
+        <div className="priceTableContainer row">
+            <div className="priceTableParent col-lg-4 col-md-6">
+                <div className="priceTableChild">
+                    <div className="priceTableChildTop">
+                        <img src={img1} alt="" />
+                    </div>
+                    <div className="priceTableChildBody">
+                        <h2>Standard</h2>
+                        <h3>$32.50</h3>
+                        <ul>
+                            <li>
+                                <p>Unlimited products</p>
+                            </li>
+                            <li>
+                                <p>Discount code</p>
+                            </li>
+                            <li>
+                                <p> 2GB file storage</p>
+                            </li>
+                            <li style={{border:"none"}}>
+                                <p>    24/7 Support</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="priceTableChildBottom">
+                        <button>BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <div className="priceTableParent col-lg-4 col-md-6">
+                <div className="priceTableChild">
+                    <div className="priceTableChildTop">
+                        <img src={img2} alt="" />
+                    </div>
+                    <div className="priceTableChildBody">
+                        <h2>Professional</h2>
+                        <h3>$42.50</h3>
+                        <ul>
+                            <li>
+                                <p>Unlimited products</p>
+                            </li>
+                            <li>
+                                <p>Discount code</p>
+                            </li>
+                            <li>
+                                <p> 2GB file storage</p>
+                            </li>
+                            <li style={{border:"none"}}>
+                                <p>    24/7 Support</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="priceTableChildBottom">
+                        <button>BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <div className="priceTableParent col-lg-4 col-md-6">
+                <div className="priceTableChild">
+                    <div className="priceTableChildTop">
+                        <img src={img3} alt="" />
+                    </div>
+                    <div className="priceTableChildBody">
+                        <h2>Business</h2>
+                        <h3>$59.50</h3>
+                        <ul>
+                            <li>
+                                <p>Unlimited products</p>
+                            </li>
+                            <li>
+                                <p>Discount code</p>
+                            </li>
+                            <li>
+                                <p> 2GB file storage</p>
+                            </li>
+                            <li style={{border:"none"}}>
+                                <p>    24/7 Support</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="priceTableChildBottom">
+                        <button>BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+            </div>
+            
+            <div className={pageSwitch === 2 ? "pricingWrapperMain" : "content"}>
+            <div className="priceTableContainer row">
+            <div className="priceTableParent col-lg-4 col-md-6">
+                <div className="priceTableChild">
+                    <div className="priceTableChildTop">
+                        <img src={img1} alt="" />
+                    </div>
+                    <div className="priceTableChildBody">
+                        <h2>Standard</h2>
+                        <h3>$79.50</h3>
+                        <ul>
+                            <li>
+                                <p>Unlimited products</p>
+                            </li>
+                            <li>
+                                <p>Discount code</p>
+                            </li>
+                            <li>
+                                <p> 2GB file storage</p>
+                            </li>
+                            <li style={{border:"none"}}>
+                                <p>    24/7 Support</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="priceTableChildBottom">
+                        <button>BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <div className="priceTableParent col-lg-4 col-md-6">
+                <div className="priceTableChild">
+                    <div className="priceTableChildTop">
+                        <img src={img2} alt="" />
+                    </div>
+                    <div className="priceTableChildBody">
+                        <h2>Professional</h2>
+                        <h3>$89.50</h3>
+                        <ul>
+                            <li>
+                                <p>Unlimited products</p>
+                            </li>
+                            <li>
+                                <p>Discount code</p>
+                            </li>
+                            <li>
+                                <p> 2GB file storage</p>
+                            </li>
+                            <li style={{border:"none"}}>
+                                <p>    24/7 Support</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="priceTableChildBottom">
+                        <button>BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <div  className="priceTableParent col-lg-4 col-md-6">
+                <div className="priceTableChild">
+                    <div className="priceTableChildTop">
+                        <img src={img3} alt="" />
+                    </div>
+                    <div className="priceTableChildBody">
+                        <h2>Business</h2>
+                        <h3>$99.50</h3>
+                        <ul>
+                            <li>
+                                <p>Unlimited products</p>
+                            </li>
+                            <li>
+                                <p>Discount code</p>
+                            </li>
+                            <li>
+                                <p> 2GB file storage</p>
+                            </li>
+                            <li style={{border:"none"}}>
+                                <p>    24/7 Support</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="priceTableChildBottom">
+                        <button>BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+            </div>
+                   
+            </div>
+        </div>   -->
+         {/* <li className="nav-item"><a className="nav-link" href="#">PARTNERS</a>
+            
+                         <ul className="submenu2" style={{height:"20vh"}}>
+                       <li className='dFlex'>
+                       <ul>
+                            <li> 
+                              <div className="hoverImg">
+                              <img src={icon1} alt="" />
+                              </div>
+                                <p>
+                                <a href="/">Become a Partner </a>
+                                <span>Performance that delivers.</span>
+                                {/* Innovation that inspires. Performance that delivers */}
+                                </p>
+                              </li>
+                       </ul>
+                         </li>
+                         <li className="dMiddleLine" style={{height:"10vh"}}></li>
+                         <li className='dFlex'>
+                         <ul>
+                            <li> 
+                              <div className="hoverImg">
+                              <img src={icon7} alt="" />
+                              </div>
+                                <p>
+                                <a href="/">Our Customer </a>
+                                <span>Designed for flexibility/Built empower.</span>
+                                {/* Innovation that inspires. Performance that delivers */}
+                                </p>
+                              </li>
+                       </ul>
+                        </li>
+                    </ul>
+                     <div className="triangle"></div>
+                     </li>
