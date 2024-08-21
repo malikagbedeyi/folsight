@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/folsight/static/css/main.92e48b3d.css",
+    "main.js": "/folsight/static/js/main.efa9db24.js",
+    "static/media/grc-02.png": "/folsight/static/media/grc-02.6cfbe35f345d8631bb09.png",
+    "static/media/coverBlog_02.jpg": "/folsight/static/media/coverBlog_02.0e07b3bbb580498e2349.jpg",
+    "static/media/feature.png": "/folsight/static/media/feature.476b42ab7ff198b288be.png",
+    "static/media/01.jpg": "/folsight/static/media/01.8f529a9fe65368ae2ccb.jpg",
+    "static/media/03.jpg": "/folsight/static/media/03.b891c617323ccb8b7e96.jpg",
+    "static/media/p-mockup.png": "/folsight/static/media/p-mockup.761337f7ac0d838f5b22.png",
+    "static/media/04.jpg": "/folsight/static/media/04.9cbf51425882d1ead206.jpg",
+    "static/media/fea-4.png": "/folsight/static/media/fea-4.cf04cdd8de224e6f9a46.png",
+    "static/media/brand-bg.png": "/folsight/static/media/brand-bg.ecc1af3d924fb5d46dda.png",
+    "static/media/people.png": "/folsight/static/media/people.b7611b0c5ade8ec1b200.png",
+    "static/media/grc-01.png": "/folsight/static/media/grc-01.ec1cc2b489bcd0b72b32.png",
+    "static/media/burnning.png": "/folsight/static/media/burnning.6980647a49fd782ff33b.png",
+    "static/media/pi3.png": "/folsight/static/media/pi3.22542596a54a2ed7b348.png",
+    "index.html": "/folsight/index.html",
+    "main.92e48b3d.css.map": "/folsight/static/css/main.92e48b3d.css.map",
+    "main.efa9db24.js.map": "/folsight/static/js/main.efa9db24.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92e48b3d.css",
+    "static/js/main.efa9db24.js"
+  ]
+}
