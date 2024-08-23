@@ -210,7 +210,6 @@
             justify-content: center;
             margin: 10% auto;
             .container{
-                margin: auto;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
@@ -231,23 +230,21 @@
                 }
                     }
                 }
-                
-
                 .brand-pattern{
-                    background-image: url(../Images/brand-bg.png);
-                    padding: 50px 10px;
+                    background: #efe5fa;
+                    box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
+                    padding:  10px;
                     display: flex;
                     align-items: center;
-                    justify-content: center;
+                    justify-content: flex-start; 
                     width: 100%;
-                    scrollbar-color: transparent transparent;
-                    gap: 200px;
+                    gap: 100px;
                     overflow-x: auto;
-
-                    @include tablet{
-                        gap:100px;
-                        padding: 20px 5px;
-                }
+                    scrollbar-width: none;
+                    white-space: nowrap;
+                    img{
+                        width: 10%;
+            }
                     .brand-pattern::-webkit-scrollbar{
                         height: 1px;
                         background-color: transparent;
@@ -509,10 +506,15 @@
                         .learnMoreCategoryContainerChildBody{
                             margin: 2% 0 ;
                             padding: 0;
+                            @include laptop{
+                                margin: 5% 0;
+                            }
                             .learn-more-parent-body{
                                 padding: 0 5% 0 0;
                                 margin-top:5%;
                                 position: relative;
+                                @include laptop{
+                                }
                             .learn-more-child-body{
                                 align-items: center;
                                 text-align: center;
@@ -567,7 +569,18 @@
                                     position: relative;
                                 }
                             }
+                            .learnMore-active{
+                                background-color: #835fb2;
+                                box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
+                                transition: .3s;
+                                .learn-more-child-bodyTop,
+                                .learn-more-child-bodyMiddle h1,
+                                .learn-more-child-bodyBottom p{
+                                color: #fff;
+                                }
+                            }
                         }
+                      
                             ul{
                                 margin-top: 5%;
                                 margin-left: -30px;
@@ -631,18 +644,19 @@
                         padding:0 8%;
                         margin: 0;
                         position: relative;
+                        @include laptop{
+                            margin-top: 5%;
+                            padding: 0 5%;
+                        }
                         .learnMore-wrapper-right{
                             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                             border: 2px solid #8231EB;
                             background-color: #fff;
                             padding: 6% 6% 0;
-                            position: absolute;
-                            top: 0;
                             display: block;
                             transition: .3s;
                             height: 610px;
                             opacity: 1;
-                            transform: translateX(0px);
                             transition: opacity 0.5s ease, transform 0.5s ease;
                             .learnMore-wrapper-rightTop{
                                 margin-top: 4%;
@@ -699,10 +713,6 @@
                             display: none;
                         }
                     }
-                    // &:hover.learnMoreCategoryContainerChild .learnMoreCategoryContainerChildBody
-                    // .learn-more-parent-body .learn-more-child-body + .learnMore-wrapper{
-                    //     display: block;
-                    // }
                 }
                 }
             }
@@ -710,18 +720,18 @@
             .middleCover{
                 width: 100%;
                 background-image: url(../Images/people.png);
-                 background-position:top;
-                 background-position-x: center;
-                 background-position-y: top;
-                padding-top: 310px;
-                background-repeat: no-repeat;
+                  background-position:top;
+                  background-position-x: center;
+                  background-position-y: top;
+                 padding-top: 310px;
+                 background-repeat: no-repeat;
 
-                @include mobile{
-background-image: none;
-    padding: 120px 0;
-    background: #3F00D3;
-    background-image: none;
-    margin-top: 90px;
+                @include laptop{
+       background-image: none;
+        padding: 120px 0;
+         background: #3F00D3;
+         background-image: none;
+            margin: 90px 0;
                 }
                 .container{
                     .middleCoverContainer{
@@ -838,94 +848,183 @@ background-image: none;
                 }
             }
         }
-        .Pricing{
-            width: 100%;
-            margin: 10% 0;
+    //     .Pricing{
+    //         width: 100%;
+    //         margin: 10% 0;
 
-            .container{
-                align-items: center;
-                text-align: center;
-          .PricingSearch{
-            margin: 0 auto;
-            .PricingSearchTittle{
+    //         .container{
+    //             align-items: center;
+    //             text-align: center;
+    //       .PricingSearch{
+    //         margin: 0 auto;
+    //         .PricingSearchTittle{
             
-                .PricingSearchTittleParent{
+    //             .PricingSearchTittleParent{
 
-                    .PricingSearchTittleParent{
-                        padding: 2px 50px;
-                        h2{
-                            font-size: 2.5rem;
-                            font-weight: 600;
-                            transition: .3s;
-                            font-family: 'Poppins', sans-serif;
-                          color: #233d63;
+    //                 .PricingSearchTittleParent{
+    //                     padding: 2px 50px;
+                        // h2{
+                        //     font-size: 2.5rem;
+                        //     font-weight: 600;
+                        //     transition: .3s;
+                        //     font-family: 'Poppins', sans-serif;
+                        //   color: #233d63;
 
-                           @include mobile{
-                                    font-size: 1.6rem;
-                                }
-                        }
+                        //    @include mobile{
+                        //             font-size: 1.6rem;
+                        //         }
+                        // }
+    //                 }
+    //             }
+    //         }
+
+    //         .PricingSearchInput{
+    //                    @include mobile{
+    //                                 margin-bottom: 30%;
+    //                             }
+    //             .PricingSearchInputParent{
+    //                 .PricingSearchInputChild{
+    //                     position: relative;
+    //                     margin-left: 15%;
+    //                     form{
+    //                         flex-wrap: wrap;
+    //                          margin: 10% 0 0 5%;
+    //                         display: flex;
+    //                         justify-content: space-between;
+    //                         width: 90%;
+    //                         .form-input{
+    //                         input{
+    //                           height: 70px;
+    //                           border: 1px solid #ddd;
+    //                           padding: 0 20px;
+    //                           text-transform: uppercase;
+    //                             float: left;
+    //                             border-radius: 5px;
+    //                             margin-bottom: 20px;
+    //                             outline-style: none;
+    //                             outline: none;
+    //                             @include mobile{
+    //                                 width: 100%;
+    //                             }
+
+    //                         }
+    //                     }
+                            // button{
+                            //     background-image: -webkit-linear-gradient( 0deg, rgb(0,0,184) 0%, rgb(115,0,233) 100%);
+                            //     height: 70px;
+                            //     border-radius: 5px;
+                            //     padding: 0 50px;
+                            //     color: #fff;
+                            //     text-transform: uppercase;
+                            //     border: 0;
+                            //     float: right;
+                            //     font-weight: 500;
+                            //     font-size: 13px;
+                            //     letter-spacing: 1px;
+
+                            //      @include mobile{
+                            //         float: left;
+                            //     }
+                            // }
+    //                     }
+    //                 }
+    //             }
+    //             .burnnig{
+    //                 img{
+    //                     width: 50%;
+    //                 }
+    //             }
+    //         }
+
+    //       }  
+    //     }
+    // }
+    .searchBurnning{
+        margin: 5% 0;
+        .search-container{
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+            @include mobile{
+                margin: 15% 0;
+                gap: 40px;
+            }
+            .search-container-top{
+                margin: 0 auto;
+                max-width: 60%;
+                text-align: center;
+                @include laptop{
+                    max-width: 80%;
+                }
+                h1{
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    transition: .3s;
+                    font-family: 'Poppins', sans-serif;
+                  color: #233d63;
+                   @include laptop{
+                    font-size: 2rem;
+                    }
+                    @include mobile{
+                        font-size: 1.5rem;
                     }
                 }
             }
-
-            .PricingSearchInput{
-                       @include mobile{
-                                    margin-bottom: 30%;
-                                }
-                .PricingSearchInputParent{
-                    .PricingSearchInputChild{
-                        position: relative;
-                        margin-left: 15%;
-                        form{
-                            flex-wrap: wrap;
-                             margin: 10% 0 0 5%;
-                            display: flex;
-                            justify-content: space-between;
-                            width: 90%;
-                            .form-input{
-                            input{
-                              height: 70px;
-                              border: 1px solid #ddd;
-                              padding: 0 20px;
-                              text-transform: uppercase;
-                                float: left;
-                                border-radius: 5px;
-                                margin-bottom: 20px;
-                                outline-style: none;
-                                outline: none;
-                                @include mobile{
-                                    width: 100%;
-                                }
-
-                            }
-                        }
-                            button{
-                                background-image: -webkit-linear-gradient( 0deg, rgb(0,0,184) 0%, rgb(115,0,233) 100%);
-                                height: 70px;
-                                border-radius: 5px;
-                                padding: 0 50px;
-                                color: #fff;
-                                text-transform: uppercase;
-                                border: 0;
-                                float: right;
-                                font-weight: 500;
-                                font-size: 13px;
-                                letter-spacing: 1px;
-
-                                 @include mobile{
-                                    float: left;
-                                }
-                            }
-                        }
+            .search-container-body{
+                .search-box{
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                   .search-input{
+                    width: 100%; 
+                    height: 80px;
+                    display: flex;
+                    gap: 30px;
+                    justify-content: flex-end;
+                    padding-right: 50px;
+                    @include laptop{
+                        padding-right: 0;
+                        height: 70px;
                     }
-                }
-                .burnnig{
-                    img{
+                    @include mobile(){
+                        height: 50px;
+                        padding-right: 0;
+                    }
+                    input{
                         width: 50%;
+                        outline-style: none;
+                        border: 2px solid #f9f5fe;
+                        padding-left: 10px;
+                    }
+                    button{
+                        width: 20%;
+                        background-image: -webkit-linear-gradient( 0deg, rgb(0,0,184) 0%, rgb(115,0,233) 100%);
+                        border-radius: 5px;
+                        color: #fff;
+                        text-transform: uppercase;
+                        border: 0;
+                        font-weight: 500;
+                        font-size: 13px;
+                        letter-spacing: 1px;
+                    }
+                    @include laptop{
+                        justify-content: center;
                     }
                 }
-            }
+                .burnning{
+                    max-width: 20%;
+                    margin-top: -7%;
+                    img{
+                        width: 70%;
+                    }
+                    @include laptop{
+                        display: none;
+                    }
+                }
 
-          }  
+                }
+            }
         }
     }

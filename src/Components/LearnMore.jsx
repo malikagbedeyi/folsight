@@ -12,9 +12,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 const LearnMore = () => {
     const [hover,sethover]=useState(1);
+    const [active, setActive] = useState(null);
     const [animate, setAnimate] = useState(false);
 
     const handleHover = (id) => {
+        setActive(id);
         sethover(id)
     }
     // useEffect(() => {
@@ -110,7 +112,7 @@ const LearnMore = () => {
         </div>
         <div className="learnMoreCategoryContainerChildBody row">
             <div className="learn-more-parent-body col-lg-6 col-md-6">
-                <div onClick={()=>handleHover(1)} className={ hover === 1 ? "learn-more-child-body" : "learn-more-child-body"}>
+                <div onClick={()=>handleHover(1)} className={ hover === 1 ? "learn-more-child-body learnMore-active" : "learn-more-child-body"}>
                 <div className="learn-more-child-bodyTop">
                     <img src="https://wphix.com/template/xisen-prv/xisen/img/icon/sf2.png" alt="" />
                 </div>
@@ -123,7 +125,7 @@ const LearnMore = () => {
                     </div>
             </div>
             <div className="learn-more-parent-body col-lg-6 col-md-6">
-                <div onClick={()=>handleHover(2)} className={ hover === 2 ? "learn-more-child-body" : "learn-more-child-body"}>
+                <div onClick={()=>handleHover(2)} className={ hover === 2 ? "learn-more-child-body learnMore-active" : "learn-more-child-body"}>
                 <div className="learn-more-child-bodyTop">
                     <img src="https://wphix.com/template/xisen-prv/xisen/img/icon/icon.png" alt="" />
                 </div>
@@ -136,8 +138,8 @@ const LearnMore = () => {
                     </div>
                     </div>
             </div>
-            <div className="learn-more-parent-body col-6 col-md-6">
-                <div onClick={()=>handleHover(3)} className={hover  === 3 ? "learn-more-child-body" : "learn-more-child-body"}>
+            <div className="learn-more-parent-body col-lg-6 col-md-6">
+                <div onClick={()=>handleHover(3)} className={hover  === 3 ? "learn-more-child-body learnMore-active" : "learn-more-child-body"}>
                 <div className="learn-more-child-bodyTop">
                     <img src="https://wphix.com/template/xisen-prv/xisen/img/icon/icon.png" alt="" />
                 </div>
@@ -150,8 +152,8 @@ const LearnMore = () => {
                     </div>
                     </div>
             </div>
-            <div className="learn-more-parent-body col-6 col-md-6">
-                <div  onClick={()=>handleHover(4)} className={hover  === 4 ? "learn-more-child-body" : "learn-more-child-body"}>
+            <div className="learn-more-parent-body col-lg-6 col-md-6">
+                <div  onClick={()=>handleHover(4)} className={hover  === 4 ? "learn-more-child-body learnMore-active" : "learn-more-child-body"}>
                 <div className="learn-more-child-bodyTop">
                     <img src="https://wphix.com/template/xisen-prv/xisen/img/icon/sf1.png" alt="" />
                 </div>

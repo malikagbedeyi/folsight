@@ -18,7 +18,7 @@ import icon9 from '../assets/Images/rd-03.png'
 // import icon1 from '../assets/Images/p1.png'
 // import icon1 from '../assets/Images/p1.png'
 
-const Navbar = () => {
+const TOpbar = () => {
         const [scroll,setScroll] = useState(false)
         const [input,setInput] = useState("")
         const [toggle, setToggle] = useState(false);
@@ -266,89 +266,135 @@ const Navbar = () => {
                  </button>
                 </div>
             </div>
-            {/* <ul>
-                    <li className=''><a className="nav-link" href="#">PRODUCTS</a>
+    
+            <div className='mobileResponsive' id={toggle ? "open" : "close"}>
+                <ul>
+                    <li className=''><a className="nav-link" href="#">HOME</a>
                        <ul className="submenu" id={openMenu ? "open" : "close"}>
-                            <li> <a href="/">Product 01 </a> <span className="i"></span> </li>
-                             <li> <a href="#">Product 02</a> <span className="i"></span> </li>
-                             <li> <a href="#">Product 03</a> <span className="i"></span>  </li>
-                             <li> <a href="#">Product 04</a> <span className="i"></span> </li>
+                            <li> <a href="/">Home Version 01 </a> <span className="i"></span> </li>
+                             <li> <a href="#">Home Version 02</a> <span className="i"></span> </li>
+                             <li> <a href="#">Home Version 03</a> <span className="i"></span>  </li>
+                             <li> <a href="#">Home Version 04</a> <span className="i"></span> </li>
+                             <li>  <a href="#">Home Version 05</a> <span className="i"></span>  </li> 
+                             <li>  <a href="#">Home Version 06</a> <span className="i"></span>  </li>
+                             <li> <a href="#">Home Version 07</a> <span className="i"></span> </li>
                         </ul>
                         <i className="fa-solid fa-plus" onClick={() => setOpenMeu(!openMenu)}></i>
                     </li>
     
-                    <li className=''><a className="nav-link" href="#">PLATFORMS</a>
-                    <ul className="submenu" id={openMenu ? "open" : "close"}>
-                            <li> <a href="/">Platform 01 </a> <span className="i"></span> </li>
-                             <li> <a href="#">Platform 02</a> <span className="i"></span> </li>
-                             <li> <a href="#">Platform 03</a> <span className="i"></span>  </li>
-                             <li> <a href="#">Platform 04</a> <span className="i"></span> </li>
-                        </ul>
+                    <li className=''><a className="nav-link" href="#">PAGES</a>
+                    <ul className="submenu"id={openMenu2 ? "open" : "close"}>
+                          <li><a href="/about">About</a> <span className="i"></span> </li>
+                           <li> <a href="/services">Serivces</a> <span className="i"></span> </li>
+                           <li> <a href="/pricing">Pricing</a> <span className="i"></span> </li>
+                           <li><a href="/">Faq</a> <span className="i"></span></li>
+                           <li> <a href="/contact">Contact Us</a> <span className="i"></span> </li>
+                           <li> <a href="/">Process</a> <span className="i"></span> </li>
+                           <li>  <a href="/team">Team</a> <span className="i"></span> </li>
+                           <li> <a href="/login">Login</a> <span className="i"></span> </li>
+                           <li><a href="/login">Register</a> <span className="i"></span> </li>
+                           <li> <a href="/comingSoon">Comming Soon</a> <span className="i"></span> </li>
+                           <li>  <a href="/error">404 Error</a>  <span className="i"></span></li>
+                    </ul>
                     <i className="fa-solid fa-plus" onClick={() => setOpenMeu2(!openMenu2)}></i>
                     </li>
     
-                    <li className='nav-item'> <a className="nav-link" href="#">FRAMEWORKS</a>
-                    <ul className="submenu" id={openMenu ? "open" : "close"}>
-                            <li> <a href="/">IS027001</a> <span className="i"></span> </li>
-                             <li> <a href="#">HIPAA</a> <span className="i"></span> </li>
-                             <li> <a href="#">SOC2</a> <span className="i"></span>  </li>
-                             <li> <a href="#">GDPR</a> <span className="i"></span> </li>
-                             <li> <a href="#">NIST</a> <span className="i"></span> </li>
-                        </ul>
+                    <li className='nav-item'> <a className="nav-link" href="#">PORTFOLIO</a>
+                       <ul className="submenu" id={openMenu3 ? "open" : "close"}>
+                          <li> <a href="/portfolio_01">Portfolio Grid 01</a> <span className="i"></span> </li>
+                          <li> <a href="/portfolio_02">Portfolio Grid 02</a> <span className="i"></span> </li>
+                          <li> <a href="/portfolio_03">Portfolio Grid 03</a>  <span className="i"></span></li>
+                          <li> <a href="/portfolio_full">Portfolio Grid Full</a> <span className="i"></span></li>
+                          <li> <a href="/portfolio_masonry">Portfolio Masonry </a> <span className="i"></span> </li> 
+                          <li> <a href="/portfolio_masonry_02">Portfolio Masonry 02</a> <span className="i"></span></li>
+                          <li> <a href="/portfolio_masonry_slide">Portfolio Slider Full</a> <span className="i"></span></li>
+                          <li> <a href="/portfolio_masonry_slide_Box">Portfolio Slider Box</a> <span className="i"></span> </li>
+                          <li> <a href="/portfolio_masonry_single_01">Portfolio Single 01</a>  <span className="i"></span></li>
+                          <li> <a href="/portfolio_masonry_single_02">Portfolio Single 02</a>  <span className="i"></span> </li>
+                          <li> <a href="/portfolio_masonry_single_03">Portfolio Single 03</a> <span className="i"></span> </li>
+                          <li> <a href="/portfolio_masonry_single_04">Portfolio Single 04</a> <span className="i"></span></li>
+                       </ul>
                         <i className="fa-solid fa-plus" onClick={() => setOpenMeu3(!openMenu3)}></i>
                     </li>
-                    <li className='nav-item'> <a className="nav-link"  href="#">PLANS</a> 
-                    </li>
-                    <li className='nav-item'> <a className="nav-link" href="#">COMPANY</a>
-                    <ul className="submenu" id={openMenu ? "open" : "close"}>
-                            <li> <a href="/">About Us</a> <span className="i"></span> </li>
-                             <li> <a href="#">Team</a> <span className="i"></span> </li>
-                             <li> <a href="#">Contact us</a> <span className="i"></span>  </li>
-                        </ul>
-                          <i className="fa-solid fa-plus" onClick={() => setOpenMeu6(!openMenu6)}></i>
-                    </li>
-                </ul> */}
-            <div className='mobileResponsive' id={toggle ? "open" : "close"}>
-                <ul>
-                    <li className=''><a className="nav-link" href="#">PRODUCT</a>
-                       <ul className="submenu" id={openMenu ? "open" : "close"}>
-                            <li> <a href="/">Product 01 </a> <span className="i"></span> </li>
-                             <li> <a href="#">Product 02</a> <span className="i"></span> </li>
-                             <li> <a href="#">Product 03</a> <span className="i"></span>  </li>
-                             <li> <a href="#">Product 04</a> <span className="i"></span> </li>
-                        </ul>
-                        <i className={openMenu ? "fa-solid fa-minus": "fa-solid fa-plus"} onClick={() => setOpenMeu(!openMenu)}></i>
-                    </li>
+                    <li className='nav-item'><a className="nav-link" href="#">ELEMENTS</a>
+                       {/* <ul className="submenu2" id='submenu'>
+                             <li className='dFlex'>
+                                <h1>ELEMENT 1</h1>
+                                     <ul>
+                                            <li> <a href="#">According</a> </li>
+                                           <li>  <a href="#">Alerts</a> </li>
+                                           <li>  <a href="#">Badges</a> </li>
+                                           <li>  <a href="#">Brand Logo</a> </li>
+                                           <li> <a href="#">Breadcrumbs</a>  </li> 
+                                           <li> <a href="#">Buttons</a>  </li>
+                                     </ul>
+                                      <i className="fa-solid fa-plus" onClick={() => setOpenMeu(!openMenu)}></i>
+                                        </li>
     
-                    <li className=''><a className="nav-link" href="#">PLATFORM</a>
-                    <ul className="submenu" id={openMenu2 ? "open" : "close"}>
-                            <li> <a href="/">Platform 01 </a> <span className="i"></span> </li>
-                             <li> <a href="#">Platform 02</a> <span className="i"></span> </li>
-                             <li> <a href="#">Platform 03</a> <span className="i"></span>  </li>
-                             <li> <a href="#">Platform 04</a> <span className="i"></span> </li>
-                        </ul>
-                        <i className={openMenu3 ? "fa-solid fa-minus": "fa-solid fa-plus"} onClick={() => setOpenMeu2(!openMenu2)}></i>
+                             <li className='dFlex'>
+                                 <h1>ELEMENT 2</h1>
+                                     <ul>
+                                         <li> <a href="#">Columns</a> </li>
+                                        <li> <a href="#">Counter</a> </li>
+                                        <li>  <a href="#">Contact form</a> </li>
+                                        <li> <a href="#">Call to action</a> </li>
+                                        <li> <a href="#">Dropdown</a> </li> 
+                                        <li> <a href="#">Fancy text</a> </li>
+                                     </ul>
+                             </li>
+    
+                             <li className='dFlex'>
+                                  <h1>ELEMENT 3</h1>
+                                      <ul>
+                                         <li> <a href="#">Footer</a> </li>
+                                        <li> <a href="#">Gallery</a>  </li>
+                                        <li> <a href="#">Lightbox</a> </li>
+                                        <li>  <a href="#"> Page tittles</a> </li>
+                                        <li> <a href="#">Lastest Post</a> </li> 
+                                        <li> <a href="#">Progressbar</a> </li>
+                                     </ul>
+                             </li>
+    
+                             <li className='dFlex'>
+                                  <h1>ELEMENT 4</h1>
+                                     <ul>
+                                         <li> <a href="#">Subscribe</a> </li>
+                                        <li> <a href="#">Tab</a> </li>
+                                        <li>  <a href="#">Team</a> </li>
+                                        <li> <a href="#">Testimonials</a> </li>
+                                        <li> <a href="#">tooltips</a> </li> 
+                                        <li> <a href="#">Typography</a> </li>
+                                            </ul>
+                             </li>
+                                    </ul> */}
+                                     <i className="fa-solid fa-plus" onClick={() => setOpenMeu4(!openMenu4)}></i>
+                     </li>
+                    <li className='nav-item'> <a className="nav-link"  href="#">BLOG</a> 
+                            <ul className="submenu" id={openMenu5 ? "open" : "close"}> 
+                                         <li> <a href="#">Blog Right Siderbar</a>  <span className="i"></span></li>
+                                        <li> <a href="#">Blog Left Siderbar</a>  <span className="i"></span></li>
+                                        <li> <a href="#">Blog No Siderbar</a>  <span className="i"></span></li>
+                                        <li> <a href="#">Blog Two Column 01</a> <span className="i"></span> </li>
+                                        <li> <a href="#">Blog Two Column 02 </a> <span className="i"></span> </li> 
+                                        <li> <a href="#">Blog Two Col Masonry</a>  <span className="i"></span></li>
+                                        <li> <a href="#">Blog Three Column</a> <span className="i"></span> </li>
+                                        <li> <a href="#">Blog Three Col Masonry</a> <span className="i"></span></li>
+                                        <li> <a href="#">Blog Image Details</a>  <span className="i"></span></li>
+                                        <li> <a href="#">Blog Audio Details</a> <span className="i"></span> </li>
+                                        <li> <a href="#">Blog Video Details</a>  <span className="i"></span></li>
+                                        <li> <a href="#">Blog Gallary Details</a> <span className="i"></span></li>
+                                    </ul>
+                                     <i className="fa-solid fa-plus" onClick={() => setOpenMeu5(!openMenu5)}></i>
                     </li>
-                    <li className=''><a className="nav-link" href="#">FRAMEWORKS</a>
-                    <ul className="submenu" id={openMenu3 ? "open" : "close"}>
-                    <li> <a href="/">IS027001</a> <span className="i"></span> </li>
-                             <li> <a href="#">HIPAA</a> <span className="i"></span> </li>
-                             <li> <a href="#">SOC2</a> <span className="i"></span>  </li>
-                             <li> <a href="#">GDPR</a> <span className="i"></span> </li>
-                             <li> <a href="#">NIST</a> <span className="i"></span> </li>
-                        </ul>
-                        <i className={openMenu3 ? "fa-solid fa-minus": "fa-solid fa-plus"} onClick={() => setOpenMeu3(!openMenu3)}></i>
-                    </li>
-                    <li className='nav-item'> <a className="nav-link"  href="#">PLANS</a> 
-                    <i className="fa-solid fa-minus" onClick={() => setOpenMeu5(!openMenu4)}></i>
-                    </li>
-                    <li className='nav-item'> <a className="nav-link" href="#">COMPANY</a>
-                    <ul className="submenu" id={openMenu5 ? "open" : "close"}>
-                             <li> <a href="/">About Us</a> <span className="i"></span> </li>
-                             <li> <a href="#">Team</a> <span className="i"></span> </li>
-                             <li> <a href="#">Contact us</a> <span className="i"></span> </li>
-                        </ul>
-                        <i className={openMenu5 ? "fa-solid fa-minus": "fa-solid fa-plus"} onClick={() => setOpenMeu5(!openMenu5)}></i>
+                    <li className='nav-item'> <a className="nav-link" href="#">SHOP</a>
+                         <ul className="submenu" id={openMenu6 ? "open" : "close"}>
+                                        <li> <a href="/shop_default">Shop Default</a> <span className="i"></span></li><li> <a href="/shop_list">Shop List</a>          <span className="i"></span> </li>
+                                        <li> <a href="/shop_product">Product Details</a>  <span className="i"></span></li>
+                                        <li> <a href="/shop_cart">Shopping Cart</a> <span className="i"></span> </li>
+                                        <li> <a href="/checkout">Checkout</a>    <span className="i"></span></li> 
+                                        <li> <a href="/wishlist">Wishlist</a>   <span className="i"></span> </li>
+                                    </ul>
+                                     <i className="fa-solid fa-plus" onClick={() => setOpenMeu6(!openMenu6)}></i>
                     </li>
                 </ul>
                 </div>
@@ -360,4 +406,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default TOpbar
