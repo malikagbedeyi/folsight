@@ -55,7 +55,7 @@ const Navbar = () => {
         <div className="Container">
 
             <div className="logo">
-            <a  href="/">  <img src={logo} alt="" /></a>
+            <a onClick={() => navigate('/')}>  <img src={logo} alt="" /></a>
             </div>
             <div className='topbarMenu'>
                 <ul className='topbarMenu-ul'>

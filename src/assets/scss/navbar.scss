@@ -43,6 +43,9 @@
             text-decoration: none;
             margin: auto;
             position: relative;
+            a{
+                cursor: pointer;
+            }
         }
         .scrollChange{
             transition: all 0.4s ease-in-out;

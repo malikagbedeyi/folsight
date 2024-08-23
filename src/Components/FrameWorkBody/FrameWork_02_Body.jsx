@@ -58,8 +58,8 @@ const FrameWork_02_Body = () => {
 
                 <div className="learnMoreCategoryContainerParent col-lg-6">
                     <div className="learnMoreCategoryContainerChild">
-                        <div className="learnMoreProductContainerChildTop">
-                        <h1 style={{fontSize:"1.9rem",marginBottom:"10px"}}>Ensure Compliance with Industry Standards</h1>
+                        <div className="learnMoreCategoryContainerChildTop">
+                        <h1 >Ensure Compliance with Industry Standards</h1>
                         <p>Folsight distributes data security policies to third-party providers, tracks their acknowledgment, and automates compliance checks to ensure adherence to required data management procedures. </p>
                          </div>
                         <div className="learnMoreCategoryContainerChildBody">

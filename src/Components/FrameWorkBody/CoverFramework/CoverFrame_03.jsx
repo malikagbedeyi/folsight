@@ -23,7 +23,7 @@ const CoverFrame_03 = () => {
             </div>
             <div className="coverTopbarParentLeft">
                 <div className="coverTopbarChildLeft">
-                    <p>Home - <span>HIPAA</span> </p>
+                    <p>Home - <span>SOC2</span> </p>
                 </div>
             </div>
         </div>

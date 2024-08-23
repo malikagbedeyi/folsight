@@ -46,6 +46,9 @@
             text-decoration: none;
             margin: auto;
             position: relative;
+            a{
+                cursor: pointer;
+            }
         }
         .scrollChange{
             transition: all 0.4s ease-in-out;
@@ -256,6 +259,7 @@
                             text-align: left;
                             margin-top: 20px;
                             a{
+                                cursor: pointer;
                                 text-decoration: none;
                                 font-size: 15px;
                                 font-weight: 500;
@@ -283,8 +287,7 @@
                     border-right: 2px solid #f9f5fe;
     
                    }
-                }
-                           
+                }       
                 &:hover .submenu{
                    visibility: visible;
                    transition: all 0.5s ease-out;
@@ -314,6 +317,7 @@
           align-items: center;
           gap: 10px;
           a{
+            cursor: pointer;
              text-decoration: none;
              color:#8231EB;
              font-size: 13px;
