@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../assets/scss/navbar.scss'
+import '../assets/scss/topbar.scss'
 import logo from '../assets/Images/folsight.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';

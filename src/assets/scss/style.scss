@@ -208,7 +208,7 @@
      .mainBody{
             align-items: center;
             justify-content: center;
-            margin: 10% auto;
+            margin: 5% auto;
             .container{
                 align-items: center;
                 justify-content: center;
@@ -220,7 +220,7 @@
                     text-align: center;
                     justify-content: center;
                     h1{
-                        font-size: 2.5rem;
+                        font-size: 2rem;
                         font-weight: 500;
                         transition: .3s;
                         font-family: 'Poppins', sans-serif;
@@ -231,9 +231,8 @@
                     }
                 }
                 .brand-pattern{
-                    background: #efe5fa;
-                    box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
-                    padding:  10px;
+                    // background: #ddd;
+                    padding:30px 10px;
                     display: flex;
                     align-items: center;
                     justify-content: flex-start; 
@@ -243,7 +242,7 @@
                     scrollbar-width: none;
                     white-space: nowrap;
                     img{
-                        width: 10%;
+                        width: 15%;
             }
                     .brand-pattern::-webkit-scrollbar{
                         height: 1px;
@@ -255,7 +254,7 @@
         }
 
             .learnMore{
-                margin: 8% 0;
+                margin: 7% 0;
                 align-items: center;
                 text-align: center;
                 @include mobile{

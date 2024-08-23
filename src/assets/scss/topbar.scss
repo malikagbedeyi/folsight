@@ -51,19 +51,18 @@
             transition: all 0.4s ease-in-out;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Offset-X | Offset-Y | Blur-Radius | Shadow Color */
-        
-            @include Destop{
-                padding-bottom: 0;
-                margin-bottom: 0;
-               }
+                @include Destop{
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                   }
         }
           header{
             background:transparent;
             position:fixed;
             width: 100%;
             // height: 12vh;
-            top: 0;
             z-index: 999;
+            top: 0;
             font-family: 'Poppins', sans-serif;
             transition: .4s ease-in-out;
             flex-wrap: wrap;

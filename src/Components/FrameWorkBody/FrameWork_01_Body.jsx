@@ -21,6 +21,7 @@ const FrameWork_01_Body = () => {
     <h1>Making Great Things Possible</h1>
     <p>Land from day very fill that midst stars one dominion. Itself was let that divided itself god don't subdue wherein let behold over he whose of sea moved called.</p>
     </div>
+
             </div>  
              <div className="learnMoreProductContainer row">
                 <div className="learnMoreProductContainerParent col-lg-6">
@@ -32,22 +33,23 @@ const FrameWork_01_Body = () => {
                 <div className="learnMoreProductContainerParent col-lg-6">
                     <div className="learnMoreProductContainerChild">
                         <div className="learnMoreProductContainerChildTop">
-                        <h1>Powered by Intellect Driven by Values</h1>
-                        <p>Kind waters day he green form you're had is first dry a place very second creepeth so place beginning whose replenish cattle him said created, unto seas moving them.</p>
+                        <h1>Establish and Implement Policies</h1>
+                        <p>Folsight offers templates for creating ISMS policies and procedures that align with industry standards like ISO/IEC 27001. It allows customization of these templates to suit the organization’s specific needs and risk profile, ensuring policies are relevant and effective. Additionally, Folsight stores all ISMS policies in a centralized repository, making them easily accessible to employees across the organization.
+                        </p>
                         </div>
                         <div className="learnMoreProductContainerChildBody">
                             <ul>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p> Together blessed own them to beginning own forth create</p>
+                                <p> Policy Creation and Management</p>
                                 </li>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p> Together blessed own them to beginning own forth create</p>
+                                <p> Integration with Other Systems</p>
                                 </li>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p> Together blessed own them to beginning own forth create</p>
+                                <p> Task Management</p>
                                 </li>
                             </ul>
                         </div>
@@ -62,22 +64,22 @@ const FrameWork_01_Body = () => {
                 <div className="learnMoreCategoryContainerParent col-lg-6">
                     <div className="learnMoreCategoryContainerChild">
                         <div className="learnMoreCategoryContainerChildTop">
-                        <h1>Business Mechanisms to Accelerate Change</h1>
-                        <p>Kind waters day he green form you're had is first dry a place very second creepeth so place beginning whose replenish cattle him said created, unto seas moving them.</p>
+                        <h1>Compliance Audits and review</h1>
+                        <p>Folsight schedules regular internal audits of the ISMS to ensure all policies and procedures are being followed and remain effective. It also runs automated compliance checks against regulatory requirements and industry standards, identifying areas where the ISMS may need adjustments.</p>
                         </div>
                         <div className="learnMoreCategoryContainerChildBody">
                             <ul>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p> Together blessed own them to beginning own forth create</p>
+                                <p> Scheduled Audits</p>
                                 </li>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p> Together blessed own them to beginning own forth create</p>
+                                <p>Compliance Checks</p>
                                 </li>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p> Together blessed own them to beginning own forth create</p>
+                                <p>Compliance Audits</p>
                                 </li>
                             </ul>
                         </div>
@@ -103,22 +105,18 @@ const FrameWork_01_Body = () => {
                 <div className="learnMoreProductContainerParent col-lg-6">
                     <div className="learnMoreProductContainerChild">
                         <div className="learnMoreProductContainerChildTop">
-                        <h1>Powered by Intellect Driven by Values</h1>
-                        <p>Kind waters day he green form you're had is first dry a place very second creepeth so place beginning whose replenish cattle him said created, unto seas moving them.</p>
+                        <h1>Continuous Improvements</h1>
+                        <p>Folsight produces detailed reports on ISMS effectiveness, covering vulnerabilities, incident response times, and compliance status, while gathering feedback from monitoring activities and audits to support continuous improvement and policy updates.</p>
                         </div>
                         <div className="learnMoreProductContainerChildBody">
                             <ul>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p> Together blessed own them to beginning own forth create</p>
+                                <p>Feedback Mechanism</p>
                                 </li>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p> Together blessed own them to beginning own forth create</p>
-                                </li>
-                                <li>
-                                <i className="fa-solid fa-square-check"></i>
-                                <p> Together blessed own them to beginning own forth create</p>
+                                <p>Policy Updates</p>
                                 </li>
                             </ul>
                         </div>
