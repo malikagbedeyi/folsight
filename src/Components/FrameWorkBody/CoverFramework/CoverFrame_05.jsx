@@ -6,7 +6,7 @@ import img4 from "../../../assets/Images/shape-c-2.png"
 import '../../../assets/scss/FrameWork/CoverFrameWork/coverPages.scss'
 const CoverFrame_05 = () => {
   return (
-    <div className="coverPage">
+    <div className="coverPage"  style={{ backgroundImage: `url(${require('../../../assets/Images/ImageBlog/01.jpg')})` }}>
         <div className="coverIndex"></div>
     <div class="shape-slider">
                 <img class="shape shape-2  " src={img1} alt="" />

@@ -24,8 +24,7 @@
     text-decoration: none;
 }
 
-
-.Login{
+.demo{
     width: 100%;
     overflow-x: hidden;
     @include laptop{
@@ -34,11 +33,11 @@
     @include mobile{
         margin: 25% 0;
     }
-       .loginBody{
-        margin: 10% 0;
+       .signBody{
+        margin: 10%;
         .container{
             .row{
-                .basic-login{
+                .basic-sign-in{
                     padding: 90px;
                     border: 20px solid #fff;
                     box-shadow: 0px 50px 100px 0px rgba(12, 0, 46, 0.05);
@@ -87,6 +86,85 @@
                     form{
                         margin-bottom: 30px;
                         .input-action{
+                            .register-wrapper{
+                                display: flex;
+                                gap: 20px;
+                                .leftwrapper{
+                                    flex: 1;
+                                    label{
+                                        color: #222;
+                                        display: block;
+                                        cursor: pointer;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        @include mobile{
+                                            font-size: 12px;
+                                            margin-bottom: 10px;
+                                      }
+            
+                                        span{
+                                            color: #fe4536;
+                                        }
+                                    }
+                                    select{
+                                        height: 60px;
+                                        border: 2px solid #eaedff;
+                                        color: #6f7172;
+                                        padding: 0 80px 0 20px;
+                                        margin-bottom: 20px;
+                                        outline-style: none;
+                                        position: relative;
+                                    }
+                                    input{
+                                        height: 60px;
+                                        border: 2px solid #eaedff;
+                                        color: #6f7172;
+                                        padding: 0 20px;
+                                        margin-bottom: 20px;
+                                        outline-style: none;
+                                        @include mobile{
+                                            font-size: 13px;
+                                            height: 50px;
+                                      }
+                                        &::placeholder{
+                                            font-weight: 500;
+                                        }
+                                      }
+                                }
+                                .rightwrapper{
+                                    flex: 1;
+                                    label{
+                                        color: #222;
+                                        display: block;
+                                        cursor: pointer;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        @include mobile{
+                                            font-size: 12px;
+                                            margin-bottom: 10px;
+                                      }
+            
+                                        span{
+                                            color: #fe4536;
+                                        }
+                                    }
+                                    input{
+                                        height: 60px;
+                                        border: 2px solid #eaedff;
+                                        color: #6f7172;
+                                        padding: 0 20px;
+                                        margin-bottom: 20px;
+                                        outline-style: none;
+                                        @include mobile{
+                                            font-size: 13px;
+                                            height: 50px;
+                                      }
+                                        &::placeholder{
+                                            font-weight: 500;
+                                        }
+                                      }
+                                }
+                            }
                         label{
                             color: #222;
                             display: block;
@@ -118,6 +196,17 @@
                                 font-weight: 500;
                             }
                           }
+                          textarea{
+                            height: 150px;
+                            margin-bottom: 25px;
+                            padding: 20px;
+                            width: 100%;
+                            border: 2px solid #eaedff;
+                            color: #6f7172;
+                            font-size: 14px;
+                            transition: .3s;
+                            outline-style: none;
+                          }
                         }
                         .login-action{
                             overflow: hidden;
@@ -135,7 +224,6 @@
                                 border: 2px solid #eaedff;
                                 color: #6f7172;
                                 padding: 0;
-                                outline-style: none;
                                 float: left;
                                 @include mobile{
                                     width: 15%;

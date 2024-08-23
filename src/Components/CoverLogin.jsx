@@ -1,12 +1,12 @@
 import React from 'react'
-import img1 from "../../../assets/Images/shape2.png"
-import img2 from "../../../assets/Images/shape3.png" 
-import img3 from "../../../assets/Images/shape-sq.png"
-import img4 from "../../../assets/Images/shape-c-2.png"
-import '../../../assets/scss/FrameWork/CoverFrameWork/coverPages.scss'
-const CoverFrame_02 = () => {
+import img1 from "../assets/Images/shape2.png"
+import img2 from "../assets/Images/shape3.png" 
+import img3 from "../assets/Images/shape-sq.png"
+import img4 from "../assets/Images/shape-c-2.png"
+import '../assets/scss/coverLogin.scss';
+const CoverLogin = () => {
   return (
-    <div className="coverPage"  style={{ backgroundImage: `url(${require('../../../assets/Images/ImageBlog/02.jpg')})` }}>
+    <div className="coverLogin">
         <div className="coverIndex"></div>
     <div class="shape-slider">
                 <img class="shape shape-2  " src={img1} alt="" />
@@ -17,13 +17,13 @@ const CoverFrame_02 = () => {
         <div className="coverTopbarContainer container">
             <div className="coverTopbarParent">
                 <div className="coverTopbarChild">
-                    <h1>FrameWork</h1>
+                    <h1>Login</h1>
                     <p>Go fifth signs dry sea created greater</p>
                 </div>
             </div>
             <div className="coverTopbarParentLeft">
                 <div className="coverTopbarChildLeft">
-                    <p>Home - <span>SOC2</span> </p>
+                    <p>Home - <span>Login</span> </p>
                 </div>
             </div>
         </div>
@@ -31,4 +31,4 @@ const CoverFrame_02 = () => {
   )
 }
 
-export default CoverFrame_02
+export default CoverLogin

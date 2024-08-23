@@ -39,7 +39,6 @@
         }
 
             .container{
-
                 .learnMoreTittle{
                     padding: 0 20%;
                     @include tablet{
@@ -47,7 +46,7 @@
                 }
 
                     h1{
-                        font-size: 2.5rem;
+                        font-size: 2.3rem;
                         font-weight: 500;
                         transition: .3s;
                         font-family: 'Poppins', sans-serif;
@@ -66,78 +65,8 @@
                     }
                 }
 
-                .learnMoreContainer{
-                    margin: 5%;
-                    @include tablet{
-                        margin: 1% 0;
-                        padding: 0;
-                }
-                    .col-lg-4{
-                        padding: 3px 20px;
-                        @include tablet{
-                            padding: 15px;
-                    }
-                    .learnMoreContainerChild{
-                        text-align: left;
-                        padding: 50px 40px;
-                        transition: all .3s ease-in;
-
-                        &:hover{
-                            box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
-                            background: #fff;
-                            transition: all .3s ease-out;
-                        }
-                        .topImg{
-                            margin: 2% 0 20% 0;
-                        }
-                        .bodyText{
-                            h3{
-                                font-size: 20px;
-                                font-weight: 600;
-                                margin-bottom: 20px;
-                                font-family: 'Poppins', sans-serif;
-                                 color: #233d63; 
-                            }
-                            p{
-                                font-size: 15px;
-                                line-height: 28px;
-                                color: #7b8491;
-                                margin-bottom: 15px;
-                                transition: .3s;
-                                font-weight: 500;
-                            }
-                        }
-                        .buttonText{
-
-                            a{
-                                color: #1c3354;
-                                text-transform: uppercase;
-                                font-size: 13px;
-                                letter-spacing: .6px;
-                                font-weight: 500;
-                                text-decoration: none;
-
-                            &:hover{
-                                color: #1400c0;
-                            }
-                        }
-                        }
-
-                        @include tablet{
-                            margin-top: 15%;
-                            box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
-                            background: #fff;
-                        }
-                    }
-                }
-                .learnmoreActive{
-                    box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
-                    background: #fff;
-                }
-            }
-
             .learnMoreProductContainer{
-                margin:10% 0;
+                margin:7% 0;
                 padding: 0 3%;
                 @include tablet{
                     padding: 0;
@@ -160,10 +89,11 @@
                             margin-top: 10%;
                         }
                         h1{
-                            font-size: 2.5rem;
+                            font-size: 2rem;
                          font-weight: 700;
                         transition: .3s;
                     font-family: 'Poppins', sans-serif;
+                    margin-bottom: 10px;
                   color: #233d63;
                   @include tablet{
                     font-size: 1.6rem;
@@ -264,10 +194,11 @@
                 }
                 .learnMoreCategoryContainerChildTop{
                     h1{
-                        font-size: 2.5rem;
+                    font-size: 2rem;
                      font-weight: 700;
                     transition: .3s;
                 font-family: 'Poppins', sans-serif;
+                margin-bottom: 10px;
               color: #233d63;
               @include tablet{
                 font-size: 1.6rem;
