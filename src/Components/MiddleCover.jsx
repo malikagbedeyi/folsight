@@ -18,8 +18,7 @@ const MiddleCover = () => {
             <div className=" middleCoverContainerParent col-xl-8 col-lg-10">
                 <div className='middleCoverContainerChild'>
                     <h2>Building Networks for People</h2>
-                    <p>Land from day very fill that midst stars one dominion. Itself was let that divided itself god don't subdue wherein let
-                    behold over he whose of sea moved called.</p>
+                    <p>Uphold ethical standards, ensure transparency, and foster accountability. Folsight safeguards your organization's reputation by embedding integrity in decision-making, monitoring compliance, and swiftly addressing potential breaches.</p>
                 </div>
             </div>
         </div>

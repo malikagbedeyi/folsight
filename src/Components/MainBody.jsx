@@ -100,13 +100,13 @@ const MainBody = () => {
             onMouseDown={handleMouseDown}
             onMouseUp={handleMouseUp}
             >
-                 <img src={img1}alt="" />
+                 <img src={img1}alt="" style={{width:"10%"}} />
                  <img src={img2} alt="" />
                     <img src={img3} alt="" />
                     <img src={img6} alt="" />
                     <img src={img7} alt="" />
                     <img src={img8} alt="" />
-                    <img src={img1}alt="" />
+                    <img src={img1}alt="" style={{width:"10%"}}/>
                  <img src={img2} alt="" />
                     <img src={img3} alt="" />
                     <img src={img6} alt="" />

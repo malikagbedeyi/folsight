@@ -157,7 +157,7 @@ const TOpbar = () => {
                               <img src={icon1} alt="" />
                               </div>
                                 <p>
-                                <a href="/#framework_01">IS027001</a>
+                                <a href="/framework_01">IS027001</a>
                                 <span>Designed for flexibility/Built empower.</span>
                                 {/* Innovation that inspires. Performance that delivers */}
                                 </p>
@@ -167,7 +167,7 @@ const TOpbar = () => {
                               <img src={icon2} alt="" />
                               </div>
                                 <p>
-                                <a href="/#framework_02">HIPAA </a>
+                                <a href="/framework_02">HIPAA </a>
                                 <span>Designed for flexibility/Built empower.</span>
                                 </p>
                                  </li>
@@ -176,7 +176,7 @@ const TOpbar = () => {
                               <img src={icon3} alt="" />
                               </div>
                                 <p>
-                                <a href="/#framework_03">SOC2 </a>
+                                <a href="/framework_03">SOC2 </a>
                                 <span>Designed for flexibility/Built empower.</span>
                                 {/* Innovation that inspires. Performance that delivers */}
                                 </p>
@@ -191,7 +191,7 @@ const TOpbar = () => {
                               <img src={icon8} alt="" />
                               </div>
                                 <p>
-                                <a href="/#framework_04">GDPR </a>
+                                <a href="/framework_04">GDPR </a>
                                 <span>Designed for flexibility/Built empower.</span>
                                 </p>
                                  </li>
@@ -200,7 +200,7 @@ const TOpbar = () => {
                               <img src={icon7} alt="" />
                               </div>
                                 <p>
-                                <a href="/#framework_05">NIST </a>
+                                <a href="/framework_05">NIST </a>
                                 <span>Designed for flexibility/Built empower.</span>
                                 {/* Innovation that inspires. Performance that delivers */}
                                 </p>
