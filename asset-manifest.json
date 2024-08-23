@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/folsight/static/css/main.db93f15c.css",
-    "main.js": "/folsight/static/js/main.ff48d239.js",
+    "main.css": "/folsight/static/css/main.f9d83689.css",
+    "main.js": "/folsight/static/js/main.2504743e.js",
     "static/media/grc-02.png": "/folsight/static/media/grc-02.6cfbe35f345d8631bb09.png",
-    "static/media/coverBlog_02.jpg": "/folsight/static/media/coverBlog_02.0e07b3bbb580498e2349.jpg",
     "static/media/feature.png": "/folsight/static/media/feature.476b42ab7ff198b288be.png",
+    "static/media/swiftprofile.png": "/folsight/static/media/swiftprofile.e9b3defd4e41f90f8381.png",
     "static/media/01.jpg": "/folsight/static/media/01.8f529a9fe65368ae2ccb.jpg",
     "static/media/03.jpg": "/folsight/static/media/03.b891c617323ccb8b7e96.jpg",
+    "static/media/02.jpg": "/folsight/static/media/02.00efdfaad41f1e1c04a5.jpg",
     "static/media/p-mockup.png": "/folsight/static/media/p-mockup.761337f7ac0d838f5b22.png",
     "static/media/04.jpg": "/folsight/static/media/04.9cbf51425882d1ead206.jpg",
+    "static/media/05.jpg": "/folsight/static/media/05.9f946bc85c36b770cb81.jpg",
     "static/media/fea-4.png": "/folsight/static/media/fea-4.cf04cdd8de224e6f9a46.png",
     "static/media/fea-41.png": "/folsight/static/media/fea-41.7d41dcaead3198a4bde8.png",
     "static/media/Zahtech.png": "/folsight/static/media/Zahtech.af60716dbab4c26c8343.png",
@@ -18,16 +20,15 @@
     "static/media/people.png": "/folsight/static/media/people.b7611b0c5ade8ec1b200.png",
     "static/media/grc-01.png": "/folsight/static/media/grc-01.ec1cc2b489bcd0b72b32.png",
     "static/media/isleridge.png": "/folsight/static/media/isleridge.f50949c4b234f6a3c590.png",
-    "static/media/swiftprofile.png": "/folsight/static/media/swiftprofile.b6598cbd6a632370f5a8.png",
     "static/media/burnning.png": "/folsight/static/media/burnning.6980647a49fd782ff33b.png",
     "static/media/starcircle.png": "/folsight/static/media/starcircle.d7ae916f20b5dd98ebbd.png",
     "static/media/Safepro.png": "/folsight/static/media/Safepro.7b5bc06a2a0ea0a4fd04.png",
     "index.html": "/folsight/index.html",
-    "main.db93f15c.css.map": "/folsight/static/css/main.db93f15c.css.map",
-    "main.ff48d239.js.map": "/folsight/static/js/main.ff48d239.js.map"
+    "main.f9d83689.css.map": "/folsight/static/css/main.f9d83689.css.map",
+    "main.2504743e.js.map": "/folsight/static/js/main.2504743e.js.map"
   },
   "entrypoints": [
-    "static/css/main.db93f15c.css",
-    "static/js/main.ff48d239.js"
+    "static/css/main.f9d83689.css",
+    "static/js/main.2504743e.js"
   ]
 }
