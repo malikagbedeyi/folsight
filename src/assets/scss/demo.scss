@@ -23,7 +23,10 @@
     list-style: none;
     text-decoration: none;
 }
-
+@keyframes movingIcon {
+    from  {transform: translateY(100px);}
+    to  {transform: translateY(0px);}
+}
 .demo{
     width: 100%;
     overflow-x: hidden;
@@ -76,7 +79,7 @@
                         font-size: 15px;
                         font-weight: 600;
                         line-height: 28px;
-                        color: #fe4536;
+                        color: #8231EB;
                         margin-bottom: 5%;
                         transition: .3s;
                         @include mobile{
@@ -103,7 +106,7 @@
                                       }
             
                                         span{
-                                            color: #fe4536;
+                                            color: #8231EB;
                                         }
                                     }
                                     select{
@@ -145,7 +148,7 @@
                                       }
             
                                         span{
-                                            color: #fe4536;
+                                            color: #8231EB;
                                         }
                                     }
                                     input{
@@ -177,7 +180,7 @@
                           }
 
                             span{
-                                color: #fe4536;
+                                color: #8231EB;
                             }
                         }
                         input{
@@ -196,6 +199,139 @@
                                 font-weight: 500;
                             }
                           }
+                          .react-tel-input {
+                            width: 100%; /* Make it full-width */
+                            margin-bottom: 5px; /* Add some space below */
+                            height: 60px;
+                            border: none;
+                            color: #6f7172;
+                            margin-bottom: 20px;
+                            outline-style: none;
+                            outline:none;
+                          }
+                          .react-tel-input .form-control {
+                            border: 2px solid #eaedff;
+                            outline-style: none; 
+                            padding-left: 60px; 
+                            font-size: 16px; /* Adjust font size */
+                          }
+                          
+                          /* Style the flag dropdown */
+                          .react-tel-input .flag-dropdown {
+                            border: none; /* Remove the border */
+                            background-color: #eaedff; /* Light background color */
+                            padding: 0 5px;
+                            border-radius: 5px 0;
+                            &:hover{
+                                background: #eaedff;
+                            }
+                          }
+                          .selectOption {
+                            position: relative;
+                            height: 50vh;
+                            .inputContainer{
+                                display: flex;
+                                justify-content: space-between;
+                                height:60px;
+                                width: 100%;
+                                border: 2px solid #eaedff;
+                                color: #6f7172;
+                                padding: 0 20px 0 0;
+                                margin-bottom: 10px;
+                                background: #fff;
+                                @include mobile{
+                                    font-size: 13px;
+                                    height: 50px;
+                                  }
+                            .dropdown {
+                                background: none;
+                                border: none;
+                               width: 100%;
+                              outline-style: none;
+                            }
+                              i {
+                                // position: absolute;
+                                // right: 10px;
+                                cursor: pointer;
+                                font-size: 16px;
+                                color: #6f7172;
+                                transition: 0.3s;
+                                margin-top: 20px;
+                            }
+                          
+                            //   &::-webkit-scrollbar {
+                            //     width: 8px;
+                            //   }
+                          
+                            //   &::-webkit-scrollbar-thumb {
+                            //     background-color: #888;
+                            //     border-radius: 4px;
+                            //   }
+                          
+                            //   &::-webkit-scrollbar-thumb:hover {
+                            //     background-color: #555;
+                            //   }
+                            }
+                            .option{
+                                background: #fff;
+                                width: 100%;
+                                height: 30vh;
+                                border: 2px solid #eaedff;
+                                color: #6f7172;
+                                padding: 0 20px;
+                                outline-style: none;
+                                position: absolute;
+                                z-index: 10;
+                                padding: 5px 20px;
+                                overflow-y: auto;
+                                display: block;
+                                animation: movingIcon .4s;
+                                p{
+                                }
+                              }
+                              .colseOption{
+                                display: none;
+                                transition: .3s;
+                              }
+                          }
+                          .nonselectOption {
+                            .inputContainer{
+                                display: flex;
+                                justify-content: space-between;
+                                height:60px;
+                                width: 100%;
+                                border: 2px solid #eaedff;
+                                color: #6f7172;
+                                padding: 0 20px 0 0;
+                                margin-bottom: 10px;
+                                background: #fff;
+                                @include mobile{
+                                    font-size: 13px;
+                                    height: 50px;
+                                  }
+                            .dropdown {
+                                background: none;
+                                border: none;
+                               width: 100%;
+                              outline-style: none;
+                            }
+                              i {
+                                // position: absolute;
+                                // right: 10px;
+                                cursor: pointer;
+                                font-size: 16px;
+                                color: #6f7172;
+                                transition: 0.3s;
+                                margin-top: 20px;
+                            }
+                          
+                            }
+                            //   .colseOption{
+                            //     display: none;
+                            //     p{
+                            //     }
+                            //   }
+                          }
                           textarea{
                             height: 150px;
                             margin-bottom: 25px;
@@ -208,76 +344,80 @@
                             outline-style: none;
                           }
                         }
-                        .login-action{
-                            overflow: hidden;
-                            .logrem{
-                                display: flex;
-                                flex-wrap: wrap;
-                                justify-content: space-between;
-                                padding: 0;
-                                margin: 0;
-                                .log-rem{
-                            display: flex;  
-                            gap: 15px;
-                            .input{
-                                width: 20%;
-                                border: 2px solid #eaedff;
-                                color: #6f7172;
-                                padding: 0;
-                                float: left;
-                                @include mobile{
-                                    width: 15%;
-                              }
-                            }
-                            .label{
-                           color: #222;
-                            display: block;
-                            cursor: pointer;
-                            font-size: 14px;
-                            font-weight: 500;
-                            float: right;
-                            margin-left: -10%;
-                            margin-top: 5px;
-                            @include mobile{
-                                font-size: 13px;
-                          }
-                            }
-                        }
-                        .forgetlogin{
-                            flex: 1;
+                    //     .login-action{
+                    //         overflow: hidden;
+                    //         .logrem{
+                    //             display: flex;
+                    //             flex-wrap: wrap;
+                    //             justify-content: space-between;
+                    //             padding: 0;
+                    //             margin: 0;
+                    //             .log-rem{
+                    //         display: flex;  
+                    //         gap: 15px;
+                    //         .input{
+                    //             width: 20%;
+                    //             border: 2px solid #eaedff;
+                    //             color: #6f7172;
+                    //             padding: 0;
+                    //             float: left;
+                    //             @include mobile{
+                    //                 width: 15%;
+                    //           }
+                    //         }
+                    //         .label{
+                    //        color: #222;
+                    //         display: block;
+                    //         cursor: pointer;
+                    //         font-size: 14px;
+                    //         font-weight: 500;
+                    //         float: right;
+                    //         margin-left: -10%;
+                    //         margin-top: 5px;
+                    //         @include mobile{
+                    //             font-size: 13px;
+                    //       }
+                    //         }
+                    //     }
+                    //     .forgetlogin{
+                    //         flex: 1;
                           
-                    }
-                    }
+                    // }
+                    // }
 
-                        }
+                    //     }
                         button{
-                            background: #ff4646;
+                            width: 100%;
+                            background: #8231EB;
                             color: #fff;
                             border: 0;
-                            padding: 17px 40px;
-                            border-radius: 3px;
+                            padding: 12px 5px;
                             transition: .3s;
                             font-weight: 600;
-                            display: inline-block;
-                            line-height: 1;
                             text-transform: uppercase;
-                            margin-top: 5%;
                             border-radius: 0 10px;  
+                            margin-bottom: 20px;
                             @include mobile{
-                                margin: 15% 0 2%;
-                                padding: 13px 30px;
+                                padding: 10px;
+                                font-size: 13px;
                                 border-radius: 0 10px;
                             }
                         }
                           .signUp{
                             font-weight: 500;
+                            display: flex;
+                            gap: 20px;
+                            justify-content: center;
+                            span{
+                                margin-top: 3px;
+                            }
                             @include mobile{
                                 margin: 10% 0 0;
                             }
                             .login-text-btn{
                                 border: 0;
                                 background: none;
-                                color: #ff5b5b;
+                                color: #8231EB;
                                 outline: medium none;
                                 @include mobile{
                                     margin: 5px 0 0;

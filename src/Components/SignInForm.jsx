@@ -65,8 +65,8 @@ const SignInForm = () => {
                                 </div>
                                 <button className="login-btn w-100">Login Now</button>
                                 <div className="signUp text-center mt-30">
-                                    <span>New User?</span>
-                                    <button className="login-text-btn">Register Now</button>
+                                <span>Already have an Account?</span>
+                                <button className="login-text-btn">Login</button>
                                 </div>
                             </form>
                         </div>

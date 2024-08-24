@@ -678,6 +678,12 @@
                             .scroll-right{
                              height: 40vh;
                              overflow-y: scroll;
+                             -ms-overflow-style: none;
+                             scrollbar-width: none;
+                             white-space: nowrap;
+                             &::-webkit-scrollbar {
+                                 display: none;
+                             }
                             p{
                                 font-size: 15px;
                                 line-height: 25px;

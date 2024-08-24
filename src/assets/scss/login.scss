@@ -77,7 +77,7 @@
                         font-size: 15px;
                         font-weight: 600;
                         line-height: 28px;
-                        color: #fe4536;
+                        color: #8231EB;
                         margin-bottom: 5%;
                         transition: .3s;
                         @include mobile{
@@ -99,7 +99,7 @@
                           }
 
                             span{
-                                color: #fe4536;
+                                color: #8231EB;
                             }
                         }
                         input{
@@ -163,7 +163,7 @@
 
                         }
                         button{
-                            background: #ff4646;
+                            background: #8231EB;
                             color: #fff;
                             border: 0;
                             padding: 17px 40px;
@@ -189,7 +189,7 @@
                             .login-text-btn{
                                 border: 0;
                                 background: none;
-                                color: #ff5b5b;
+                                color: #8231EB;
                                 outline: medium none;
                                 @include mobile{
                                     margin: 5px 0 0;
