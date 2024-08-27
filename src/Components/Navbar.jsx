@@ -221,7 +221,7 @@ const Navbar = () => {
                               <img src={icon1} alt="" />
                               </div>
                                 <p>
-                                <a href="/">About US</a>
+                                <a href="#/about_us">About US</a>
                                 <span>Performance that delivers.</span>
                                 {/* Innovation that inspires. Performance that delivers */}
                                 </p>

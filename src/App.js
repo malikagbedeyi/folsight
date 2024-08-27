@@ -25,7 +25,7 @@ function App() {
       <Route path='/framework_03' element={<FrameWork03 />} />
       <Route path='/framework_04' element={<FrameWork04 />} />
       <Route path='/framework_05' element={<FrameWork05 />} />
-      <Route path='/about-us' element={<AboutUs />} />
+      <Route path='/about_us' element={<AboutUs />} />
       </Routes>
       </HashRouter>
     </div>

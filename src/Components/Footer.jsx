@@ -76,7 +76,7 @@ const Footer = () => {
               <div className='footerRightChildTittle'>
               <h3>Pages</h3>
                       <ul>
-                                  <li><a href="#">About Us</a></li>
+                                  <li><a href="#/about_us">About Us</a></li>
                                   <li><a href="#">Contact Us</a></li>
                                   <li><a href="#">Team</a></li>
                                   <li><a href="#">Our Client</a></li>
