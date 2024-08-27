@@ -1,0 +1,351 @@
+@mixin mobile {
+    @media screen and (max-width:580px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width:980px) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media screen and (max-width:1190px) {
+        @content;
+    }
+}
+@mixin Destop {
+    @media screen and (max-width:1240px) {
+        @content;
+    }
+}
+@keyframes moving {
+    0% {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes movingDown {
+    0% {
+      transform: translateY(70%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes movingBottom {
+    0% {
+        transform: translateY(-60%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+  }
+  *{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+  }
+  .about-us{
+    .about-usBody{
+        margin: 5% 0;
+        .about-us-topContainer{
+            background: #000;
+            padding: 7% 0   ;
+            .container{
+               .aboutUs-bodyContainer{
+                .aboutUs-bodyParent{
+                    .aboutUs-bodyChild{
+                        padding: 0;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .bodyChildright{
+                        color: #fff;
+                        padding:0 7%;
+                        h5{
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            color: #59259c;
+                        }
+                        h1{
+                            max-width: 450px;
+                            span{
+                                color: #8231EB;
+                                font-family:'Times New Roman', Times, serif;
+                                font-weight: 500;
+                                font-style: italic;
+                            }
+                        }
+                        p{
+                            color: gray;
+                            margin-top: 2%;
+                        }
+                        button{
+                            margin-top: 2%;
+                            background: #8231EB;
+                            padding: 10px 30px;
+                            border: none;
+                            color: #fff;
+                        }
+                    }
+                }
+               } 
+            }
+        }
+        .about-us-middleContainer{
+            padding: 3% 0;
+            background: #353333;
+            .container{
+                .aboutUs-middleTIttle{
+                    max-width: 380px;
+                    margin: auto;
+                    h2{
+                        text-align: center;
+                        color: #fff;
+                        span{
+                            color: #8231EB;
+                            font-family:'Times New Roman', Times, serif;
+                            font-weight: 500;
+                            font-style: italic;
+                        }
+                    }
+                }
+                .aboutUs-middleBody{
+                    margin: 4% 0;
+                    .aboutUs-middleParent{
+                        padding:0 20px;
+                        @include laptop{
+                            margin-top: 5%;
+                        }
+                        .aboutUs-middleChild{
+                            background: #635f5f;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            text-align: center;
+                            gap: 8px;
+                            color: #ddd;
+                            padding: 30px 45px;
+                            transition: .3s;
+                            .icons{
+                               height: 50px;
+                                width: 50px;
+                                border-radius: 50%;
+                                line-height: 50px;
+                                background: #8231EB;
+                                color: #fff;
+                                text-align: center;
+                                margin: auto;
+                                i{
+                                    font-size: 20px;
+                                }
+                            }
+                            h4{
+                                color: #fff;
+                                margin-top: 4%;
+                            }
+                            p{
+    
+                            }
+                            &:hover{
+                                background: #8231EB;
+                                color: #ddd;
+                                transition: .3s;
+                                .icons{
+                                    background: #fff;
+                                    color: #8231EB;
+                                }
+                            }
+                        }
+                        .activeChild{
+                            background: #8231EB;
+                            color: #ddd;
+                            .icons{
+                                background: #fff;
+                                color: #8231EB;
+                            }
+                        }
+                    }
+                }
+                button{
+                  padding: 10px;
+                  background: inherit;
+                  color: #ddd;
+                  border: 1px solid #8231EB;
+                  display: flex;
+                  margin:3% auto;
+                  transition: .3s;
+                  &:hover{
+                    transition: .3s;
+                    background: #8231EB;
+                    color: #fff;
+                  }
+            }
+        }
+        }
+        .about-usBottom{
+            background-image: url('https://www.kissdental.co.uk/wp-content/uploads/2022/09/back-header-768x1405.jpg');
+
+            padding: 30px 0;
+            margin: 10px 0;
+            .container{
+                .aboutUs-bottomContainer{
+                    padding: 0 7%;
+                    .aboutUs-bottomParent{
+                        padding: 10px;
+                        .bottomTittle{
+                            h1{
+                                font-weight: 600;
+                                color: #fff;
+                                max-width: 500px;
+                                margin-left: 15px;
+                                font-size: 2.8rem;
+                                letter-spacing: 1px;
+                            }
+                        }
+                        .aboutUs-bottomChildbox{
+                            padding: 20px 20% 20px 0;
+                            .bottomChildbox{
+                            justify-content: center;
+                            align-items: center;
+                            display: flex;
+                            gap: 20px;
+                            padding: 10px 20px;
+                            border: 1px solid #353333;
+                            border-radius: 30px;
+                            .number-box{
+                                width: 100px;
+                                height: 50px;
+                                line-height: 50px;
+                                border-radius: 50%;
+                                background: #8231EB;
+                                color: #fff;
+                                font-weight: 600;
+                                text-align: center;
+                                font-size: 15px;
+                            }
+                               .textbox{
+                                margin-top: 10px;
+                                h3{
+                                    font-size: 15px;
+                                    color: #fff;
+                                }
+                                p{
+                                    color: #ddd;
+                                    font-size: 13px;
+                                }
+
+                            }
+                        }
+                    }
+
+                }
+                .aboutUs-bottomParentright{
+                    .aboutUs-bottomChildright{
+                        padding: 5px 30px 5px 50px;
+                    p{
+                        color: gray;
+                        max-width: 300px;
+                        margin-left: auto;
+                        margin-right: 30px;
+                        font-style: italic;
+                        margin-top: 10px;
+                    }
+                    .bottomImg{
+                        background-image: url(../Images/ImageBlog/05.jpg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        border-radius: 20px;
+                        width: 100%;
+                        height: 35vh;
+                        margin-top: 10%;
+                    }
+                    .bottomImgbox{
+                        .boxImgWrapper{
+                            margin-top: 10%;
+                            display: flex;
+                            border: 10x solid #8231EB;
+                        .leftbox{
+                            color: #fff;
+                            text-align: center;
+                            background: #8231EB;
+                            height: 25vh;
+                            border-radius: 20px 0 0 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            padding: 0 25px;
+                            h1{
+                                font-weight: 700;
+                            }
+                            span{
+                                color: #fff;
+                            }
+                        }
+                        .rightbox{
+                            background-image: url(../Images/ImageBlog/03.jpg);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            border-radius: 0 20px 20px 0;
+                            width: 80%;
+                            height: 25vh;
+                        }
+                    }
+                }
+                }
+                }
+            }
+            }
+        }
+        .aboutUs-footer{
+            .aboutUs-footerContainer{
+                background: #e45959;
+                padding: 0 15%;
+                .aboutUs-footerParent{
+                    padding: 0;
+                    .aboutUs-footerChild{
+                        background: #e12323;
+                        height: 30vh;
+                        color: #fff;
+                        padding: 10px 50px;
+                        display: flex;
+                        gap: 20px;
+                        justify-content: center;
+                        .footerChildicon{
+                            margin: auto 0;
+                            i{
+                                font-size: 30px;
+                                color: #fff;
+                            }
+                        }
+                        .footerCildText{
+                            margin: auto 0;
+                            display: flex;
+                            flex-direction: column;
+                            h4{
+                                font-size: 1.3rem;
+                                font-weight: 600;
+                                font-family: serif;
+                            }
+                            p{
+                                font-size: 14px;
+                                color: #ddd;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
