@@ -3,10 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import img1 from   '../assets/Images/sisterPartner/swiftprofile.png'
 import img2 from   '../assets/Images/sisterPartner/Zahtech.png'
 import img3 from   '../assets/Images/sisterPartner/sprintcue.png'
-import img4 from '../assets/Images/sisterPartner/starcircle.png'
-import img5 from   '../assets/Images/sisterPartner/Safepro.png'
 import img6 from     '../assets/Images/sisterPartner/lentsource.png'
-import img7 from    '../assets/Images/sisterPartner/isleridge.png'
 import img8 from   '../assets/Images/sisterPartner/cansulting.png'
 // import LearnMore from './LearnMore';
 // import MiddleCover from './MiddleCover';
@@ -100,17 +97,15 @@ const MainBody = () => {
             onMouseDown={handleMouseDown}
             onMouseUp={handleMouseUp}
             >
-                 <img src={img1}alt="" style={{width:"10%"}} />
+                 <img src={img1}alt=""  className='swift' />
                  <img src={img2} alt="" />
                     <img src={img3} alt="" />
                     <img src={img6} alt="" />
-                    <img src={img7} alt="" />
                     <img src={img8} alt="" />
-                    <img src={img1}alt="" style={{width:"10%"}}/>
+                    <img src={img1}alt="" className='swift'/>
                  <img src={img2} alt="" />
                     <img src={img3} alt="" />
                     <img src={img6} alt="" />
-                    <img src={img7} alt="" />
                     <img src={img8} alt="" />
                     </div>
             </div>

@@ -48,6 +48,11 @@
         opacity: 1;
       }
   }
+  *{
+    list-style: none;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
 .menuSection{
     padding:0;
     margin: 0;
@@ -219,6 +224,9 @@
                     margin: 2% auto;
                     text-align: center;
                     justify-content: center;
+                    @include mobile{
+                        margin-top: 5%;
+                    }
                     h1{
                         font-size: 2.1rem;
                         font-weight: 500;
@@ -247,7 +255,22 @@
                     }
                     img{
                         width: 15%;
-            }
+                        @include laptop{
+                            width: 25%;
+                        }
+                        @include mobile{
+                            width: 30%;
+                        }
+                     }
+                     .swift{
+                        width: 10%;
+                        @include laptop{
+                            width: 15%;
+                        }
+                        @include mobile{
+                            width: 30%;
+                        }
+                    }
                     .brand-pattern::-webkit-scrollbar{
                         height:none;
                         background-color: transparent;
@@ -484,30 +507,30 @@
                             display: flex;
                             flex-direction: column;
                             h1{
-                                margin-bottom: -20px;
                              font-size: 2rem;
-                             font-weight: 600;
+                             font-weight: 700;
                             transition: .3s;
                         font-family: 'Rubik',sans-serif;
-                      color: #233d63;
+                        color: #233d63;
                       @include tablet{
                         font-size: 1.6rem;
                     }
                             }
                             p{
-                                margin: 5% 0;
-                                font-size: 15px;
-                                line-height: 28px;
-                                color: #000;
-                                margin-bottom: -15px;
-                                transition: .3s; 
+                                font-size: 13px;
                                 font-weight: 500;
+                                line-height: 28px;
+                                color: #7b8491;
+
+                                transition: .3s;
                             }
                         }
     
                         .learnMoreCategoryContainerChildBody{
-                            margin: 2% 0 ;
+                            margin: -5% 0  2%;
                             padding: 0;
+                            display: flex;
+                                flex-wrap: wrap;
                             @include laptop{
                                 margin: 5% 0;
                             }
@@ -529,25 +552,28 @@
                                 transition: .3s;
                                 cursor: pointer;
                                 .learn-more-child-bodyTop{
+                                    margin: 3%;
                                     img{
-                                        width: 20%;
+                                        width: 15%;
                                     }
                                 }
                                 .learn-more-child-bodyMiddle{
                                     h1{
-                                        font-size: 1.1rem;
+                                        font-size: 20px;
                                         font-weight: 600;
-                                       transition: .3s;
-                                   font-family: 'Poppins',sans;
-                                 color: #000;
+                                        transition: .3s;
+                                        font-family: 'Poppins', sans-serif;
+                                      color: #233d63; 
                                     }
                                 }
                                 .learn-more-child-bodyBottom{
                                     p{
-                                        font-size: 12px;
-                                        color: #000;
-                                        transition: .3s;
+                                        font-size: 13px;
                                         font-weight: 500;
+                                        line-height: 28px;
+                                        color: #7b8491;
+                                        margin-bottom: 15px;
+                                        transition: .3s;
                                     }
                                 }
                                 &:hover{
@@ -657,6 +683,7 @@
                             padding: 6% 6% 0;
                             display: block;
                             transition: .3s;
+                            width: 100%;
                             height: 610px;
                             opacity: 1;
                             transition: opacity 0.5s ease, transform 0.5s ease;
@@ -680,8 +707,10 @@
                             margin-top: 4%;
                             }
                             .scroll-right{
+                                cursor: grab;
                                 margin-top: 20px;
-                             height: 40vh;
+                                width: 100%;
+                             height: 36vh;
                              overflow-y: scroll;
                              -ms-overflow-style: none;
                              scrollbar-width: none;
@@ -689,7 +718,7 @@
                                  display: none;
                              }
                             p{
-                                font-size: 15px;
+                                font-size: 14px;
                                 line-height: 25px;
                                 text-align: left;
                                 color: #000;

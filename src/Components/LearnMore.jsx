@@ -3,6 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import img6 from "../assets/Images/gea-01.png"
 import img7 from "../assets/Images/gea-02.png"
 import img8 from "../assets/Images/gea-03.png"
+import img14 from "../assets/Images/Icons1/icon_01.png"
+import img15 from "../assets/Images/Icons1/icon_02.png"
+import img16 from "../assets/Images/Icons1/icon_03.png"
+import img17 from "../assets/Images/Icons1/icon_04.png"
 import img9 from "../assets/Images/fea-4.png"
 import img10 from "../assets/Images/feature.png"
 import img11 from "../assets/Images/ImageBlog/01.jpg"
@@ -114,7 +118,7 @@ const LearnMore = () => {
             <div className="learn-more-parent-body col-lg-6 col-md-6">
                 <div onClick={()=>handleHover(1)} className={ hover === 1 ? "learn-more-child-body learnMore-active" : "learn-more-child-body"}>
                 <div className="learn-more-child-bodyTop">
-                    <img src="https://wphix.com/template/xisen-prv/xisen/img/icon/sf2.png" alt="" />
+                    <img src={img15} alt="" />
                 </div>
                 <div className="learn-more-child-bodyMiddle">
                     <h1>Risk Management</h1>
@@ -127,7 +131,7 @@ const LearnMore = () => {
             <div className="learn-more-parent-body col-lg-6 col-md-6">
                 <div onClick={()=>handleHover(2)} className={ hover === 2 ? "learn-more-child-body learnMore-active" : "learn-more-child-body"}>
                 <div className="learn-more-child-bodyTop">
-                    <img src="https://wphix.com/template/xisen-prv/xisen/img/icon/icon.png" alt="" />
+                <img src={img16} alt="" />
                 </div>
                 <div className="learn-more-child-bodyMiddle">
                     <h1>Compliance</h1>
@@ -141,7 +145,7 @@ const LearnMore = () => {
             <div className="learn-more-parent-body col-lg-6 col-md-6">
                 <div onClick={()=>handleHover(3)} className={hover  === 3 ? "learn-more-child-body learnMore-active" : "learn-more-child-body"}>
                 <div className="learn-more-child-bodyTop">
-                    <img src="https://wphix.com/template/xisen-prv/xisen/img/icon/icon.png" alt="" />
+                <img src={img17} alt="" />
                 </div>
                 <div className="learn-more-child-bodyMiddle">
                     <h1>Controls</h1>
@@ -155,7 +159,7 @@ const LearnMore = () => {
             <div className="learn-more-parent-body col-lg-6 col-md-6">
                 <div  onClick={()=>handleHover(4)} className={hover  === 4 ? "learn-more-child-body learnMore-active" : "learn-more-child-body"}>
                 <div className="learn-more-child-bodyTop">
-                    <img src="https://wphix.com/template/xisen-prv/xisen/img/icon/sf1.png" alt="" />
+                  <img src={img14} alt="" />
                 </div>
                 <div className="learn-more-child-bodyMiddle">
                     <h1>Cloud Compatibility</h1>

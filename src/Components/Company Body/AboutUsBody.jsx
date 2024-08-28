@@ -121,39 +121,7 @@ const AboutUsBody = () => {
           <div className="about-usBottom">
             <div className="container">
               <div className="row aboutUs-bottomContainer">
-                <div className="col-lg-6 aboutUs-bottomParent">
-                  <div className="bottomTittle">
-                    <h1>Sustainable and Responsible computing</h1>
-                  </div>
-                  <div className="aboutUs-bottomChildbox">
-                    <div className="bottomChildbox">
-                    <div className="number-box">01</div>
-                    <div className="textbox">
-                      <h3>Assets requirement precisely</h3>
-                      <p>Begin by comprehensive and understanding your business need to ensure a perfect fit for tech solution</p>
-                    </div>
-                  </div>
-                  </div>
-                  <div className="aboutUs-bottomChildbox">
-                    <div className="bottomChildbox">
-                    <div className="number-box">02</div>
-                    <div className="textbox">
-                      <h3>Assets requirement precisely</h3>
-                      <p>Begin by comprehensive and understanding your business need to ensure a perfect fit for tech solution</p>
-                    </div>
-                  </div>
-                  </div>
-                  <div className="aboutUs-bottomChildbox">
-                    <div className="bottomChildbox">
-                    <div className="number-box">03</div>
-                    <div className="textbox">
-                      <h3>Assets requirement precisely</h3>
-                      <p>Begin by comprehensive and understanding your business need to ensure a perfect fit for tech solution</p>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-                <div className="col-lg-6 aboutUs-bottomParentright">
+              <div className="col-lg-6 aboutUs-bottomParentright">
                   <div className="aboutUs-bottomChildright">
                     <p>Begin by comprehensive and understanding your business need to ensure a perfect fit for tech solution</p>
                     <div className="bottomImg">
@@ -167,6 +135,38 @@ const AboutUsBody = () => {
                       <div className="rightbox"></div>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div className="col-lg-6 aboutUs-bottomParent">
+                  <div className="bottomTittle">
+                    <h1 style={{textAlign:"right"}}>Sustainable and Responsible computing</h1>
+                  </div>
+                  <div className="aboutUs-bottomChildbox bottomboxchildright">
+                    <div className="bottomChildbox">
+                    <div className="number-box">01</div>
+                    <div className="textbox">
+                      <h3>Assets requirement precisely</h3>
+                      <p>Begin by comprehensive and understanding your business need to ensure a perfect fit for tech solution</p>
+                    </div>
+                  </div>
+                  </div>
+                  <div className="aboutUs-bottomChildbox bottomboxchildright">
+                    <div className="bottomChildbox">
+                    <div className="number-box">02</div>
+                    <div className="textbox">
+                      <h3>Assets requirement precisely</h3>
+                      <p>Begin by comprehensive and understanding your business need to ensure a perfect fit for tech solution</p>
+                    </div>
+                  </div>
+                  </div>
+                  <div className="aboutUs-bottomChildbox bottomboxchildright">
+                    <div className="bottomChildbox">
+                    <div className="number-box">03</div>
+                    <div className="textbox">
+                      <h3>Assets requirement precisely</h3>
+                      <p>Begin by comprehensive and understanding your business need to ensure a perfect fit for tech solution</p>
+                    </div>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -186,7 +186,7 @@ const AboutUsBody = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 aboutUs-footerParent">
-                <div className="aboutUs-footerChild" style={{ background: 'linear-gradient(to right, #e12323, #e45959)' }}>
+                <div className="aboutUs-footerChild active-aboutUsFooter">
                   <div className="footerChildicon">
                   <i class="fa-duotone fa-solid fa-sack-dollar"></i>
                   </div>
