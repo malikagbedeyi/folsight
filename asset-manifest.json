@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/folsight/static/css/main.9bc19ec6.css",
-    "main.js": "/folsight/static/js/main.742c97d1.js",
+    "main.css": "/folsight/static/css/main.f3fd724f.css",
+    "main.js": "/folsight/static/js/main.c424ffd3.js",
     "static/media/grc-02.png": "/folsight/static/media/grc-02.6cfbe35f345d8631bb09.png",
     "static/media/feature.png": "/folsight/static/media/feature.476b42ab7ff198b288be.png",
     "static/media/swiftprofile.png": "/folsight/static/media/swiftprofile.e9b3defd4e41f90f8381.png",
@@ -19,16 +19,17 @@
     "static/media/sprintcue.png": "/folsight/static/media/sprintcue.b16a7a6ea026725331d2.png",
     "static/media/people.png": "/folsight/static/media/people.b7611b0c5ade8ec1b200.png",
     "static/media/grc-01.png": "/folsight/static/media/grc-01.ec1cc2b489bcd0b72b32.png",
-    "static/media/isleridge.png": "/folsight/static/media/isleridge.f50949c4b234f6a3c590.png",
+    "static/media/icon_02.png": "/folsight/static/media/icon_02.d75bde083e3fafcda52d.png",
+    "static/media/icon_03.png": "/folsight/static/media/icon_03.5865a00de79823c6f620.png",
     "static/media/burnning.png": "/folsight/static/media/burnning.6980647a49fd782ff33b.png",
-    "static/media/starcircle.png": "/folsight/static/media/starcircle.d7ae916f20b5dd98ebbd.png",
-    "static/media/Safepro.png": "/folsight/static/media/Safepro.7b5bc06a2a0ea0a4fd04.png",
+    "static/media/icon_04.png": "/folsight/static/media/icon_04.d39ce3e4ad7d74afedf9.png",
+    "static/media/icon_01.png": "/folsight/static/media/icon_01.fb73af149f76b6d1cc83.png",
     "index.html": "/folsight/index.html",
-    "main.9bc19ec6.css.map": "/folsight/static/css/main.9bc19ec6.css.map",
-    "main.742c97d1.js.map": "/folsight/static/js/main.742c97d1.js.map"
+    "main.f3fd724f.css.map": "/folsight/static/css/main.f3fd724f.css.map",
+    "main.c424ffd3.js.map": "/folsight/static/js/main.c424ffd3.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bc19ec6.css",
-    "static/js/main.742c97d1.js"
+    "static/css/main.f3fd724f.css",
+    "static/js/main.c424ffd3.js"
   ]
 }
