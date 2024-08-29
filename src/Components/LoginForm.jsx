@@ -97,7 +97,7 @@ const LoginForm = () => {
                                 <a href='#/' className="login-btn w-100">Login Now</a>
                                 <div className="signUp text-center mt-30">
                                     <span>New User?</span>
-                                    <a href='#/'   className="login-text-btn">Register Now</a>
+                                    <a href='#/register'   className="login-text-btn">Register Now</a>
                                 </div>
                             </form>
                         </div>
