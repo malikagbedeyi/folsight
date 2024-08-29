@@ -86,7 +86,7 @@ const MainBody = () => {
 
   return (
     <div className='mainBody'>
-          <div className="container">
+          <div className="Container">
             <div className="row">
                 <div className="mainTittle col-lg-12">
                 <h1>Our worldwide clients</h1>

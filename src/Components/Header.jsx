@@ -53,20 +53,13 @@ const Header = () => {
             <div className="row">
                 <div className="leftWrapper col-xl-6 col-lg-6 col-md-10">
                 <div className="container">
-                <div>
+                <div className='leftWrapperText'>
                 <h1  data-aos="fade-in-up" data-aos-delay="400">GRC solutions for Your Organization</h1>
                 <p data-aos="fade-in-up" data-aos-delay="900">Fortify your organization's governace, risk management,and compliance
                     effort with our-all-inclusive <strong>GRC</strong> solutions, designed to streamline processes,  enhance security, 
                     and ensure adherence to regulatory standards across every face of your business
                 </p>
                 </div>
-                {/* <form className='' data-aos="fade-in-up" data-aos-delay="200">
-                      <input type='email' 
-                      name='email'
-                      onChange={(e)=>setInput(e.target.value)}
-                       placeholder='ENTER YOUR EMAIL' />
-                      <button className='btn'>GET STARTED</button>
-                      </form> */}
                          <button onClick={() => navigate('/request-demo')} className='btn submit'>REQUEST A DEMO </button>
                 </div>
                 </div>

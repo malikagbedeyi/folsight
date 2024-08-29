@@ -13,7 +13,7 @@ import AboutUs from './Components/page/AboutUs';
 import { useEffect, useState } from 'react';
 import ScrollToTop from './ScrollToTop';
 import LoadingSpinner from './LoadingSpinner';
-
+import ContactUs from './Components/page/ContactUs';
 function AppContent() {
   const [loading, setLoading] = useState(false);
   const location = useLocation();
@@ -61,6 +61,7 @@ function AppContent() {
         <Route path='/framework_04' element={<FrameWork04 />} />
         <Route path='/framework_05' element={<FrameWork05 />} />
         <Route path='/about_us' element={<AboutUs />} />
+        <Route path='/contact_us' element={<ContactUs />} />
       </Routes>
     </>
   );

@@ -1,18 +1,20 @@
 import React, { useEffect, useReducer, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AOS from 'aos';
 import img6 from "../assets/Images/gea-01.png"
 import img7 from "../assets/Images/gea-02.png"
 import img8 from "../assets/Images/gea-03.png"
-import img14 from "../assets/Images/Icons1/icon_01.png"
-import img15 from "../assets/Images/Icons1/icon_02.png"
-import img16 from "../assets/Images/Icons1/icon_03.png"
-import img17 from "../assets/Images/Icons1/icon_04.png"
-import img9 from "../assets/Images/fea-4.png"
-import img10 from "../assets/Images/feature.png"
-import img11 from "../assets/Images/ImageBlog/01.jpg"
-import img12 from "../assets/Images/ImageBlog/03.jpg"
-import img13 from "../assets/Images/ImageBlog/04.jpg"
-import AOS from 'aos';
+import img9 from "../assets/Images/ImageBlog/01.jpg"
+import img10 from "../assets/Images/ImageBlog/03.jpg"
+import img11 from "../assets/Images/ImageBlog/04.jpg"
+import img12 from "../assets/Images/Icons1/1.png"
+import img13 from "../assets/Images/Icons1/2.png"
+import img14 from "../assets/Images/Icons1/3.png"
+import img15 from "../assets/Images/Icons1/4.png"
+import img16 from "../assets/Images/IconsCover1/icon_01.png"
+import img17 from "../assets/Images/IconsCover1/icon_02.png"
+import img18 from "../assets/Images/IconsCover1/icon_03.png"
+import img19 from "../assets/Images/IconsCover1/icon_04.png"
 import 'aos/dist/aos.css';
 const LearnMore = () => {
     const [hover,sethover]=useState(1);
@@ -41,7 +43,7 @@ const LearnMore = () => {
     },[])
   return (
     <div className="learnMore">
-    <div className="container">
+    <div className="Container">
      <div className="learnMoreTittle row">
      <div className="col-lg-12">
     <h1>Making Great Things Possible</h1>
@@ -105,7 +107,7 @@ const LearnMore = () => {
         </div>
         </div>
     </div>
-    <div className="container">
+    <div className="Container">
     <div className="learnMoreCategoryContainer row">
 <div className="learnMoreCategoryContainerParent col-lg-7">
     <div className="learnMoreCategoryContainerChild">
@@ -114,11 +116,20 @@ const LearnMore = () => {
         <p>Effortlessly manage your organization's governance, risk, and compliance needs with Folsight. Our platform simplifies complex processes, providing you with clear insights, automated workflows, and real-time reporting.</p>
         {/* <p>Stay ahead of regulatory changes, mitigate risks proactively, and ensure seamless compliance, all from a single, user-friendly interface.</p> */}
         </div>
-        <div className="learnMoreCategoryContainerChildBody row">
-            <div className="learn-more-parent-body col-lg-6 col-md-6">
+        <div className="learnMoreCategoryContainerChildBody">
+            <div className="CategoryContainerChildBodyWrapper">
+                <div className="CategoryContainerChildBodytop">
+                <div className="learn-more-parent-body">
                 <div onClick={()=>handleHover(1)} className={ hover === 1 ? "learn-more-child-body learnMore-active" : "learn-more-child-body"}>
                 <div className="learn-more-child-bodyTop">
-                    <img src={img15} alt="" />
+                    <div className="learn-more-child-bodyTopWrapper">
+                        <div className="learn-more-child-bodyLeftWrapper">
+                            <img src={img13} alt="" />
+                        </div>
+                        <div className="learn-more-child-bodyrightWrapper">
+                          <img src={img17} alt="" />  
+                        </div>
+                    </div>
                 </div>
                 <div className="learn-more-child-bodyMiddle">
                     <h1>Risk Management</h1>
@@ -128,11 +139,18 @@ const LearnMore = () => {
                     </div>
                     </div>
             </div>
-            <div className="learn-more-parent-body col-lg-6 col-md-6">
+            <div className="learn-more-parent-body">
                 <div onClick={()=>handleHover(2)} className={ hover === 2 ? "learn-more-child-body learnMore-active" : "learn-more-child-body"}>
                 <div className="learn-more-child-bodyTop">
-                <img src={img16} alt="" />
-                </div>
+                    <div className="learn-more-child-bodyTopWrapper">
+                        <div className="learn-more-child-bodyLeftWrapper">
+                            <img  src={img14} alt="" />
+                        </div>
+                        <div className="learn-more-child-bodyrightWrapper">
+                        <img src={img18} alt="" />
+                        </div>        
+                         </div>
+                         </div>
                 <div className="learn-more-child-bodyMiddle">
                     <h1>Compliance</h1>
                     </div>
@@ -142,11 +160,20 @@ const LearnMore = () => {
                     </div>
                     </div>
             </div>
-            <div className="learn-more-parent-body col-lg-6 col-md-6">
+                </div>
+                <div className="CategoryContainerChildBodybottom">
+                <div className="learn-more-parent-body">
                 <div onClick={()=>handleHover(3)} className={hover  === 3 ? "learn-more-child-body learnMore-active" : "learn-more-child-body"}>
                 <div className="learn-more-child-bodyTop">
-                <img src={img17} alt="" />
-                </div>
+                    <div className="learn-more-child-bodyTopWrapper">
+                        <div className="learn-more-child-bodyLeftWrapper">
+                             <img src={img12} alt="" />
+                        </div>
+                        <div className="learn-more-child-bodyrightWrapper">
+                        <img src={img19} alt="" />
+                        </div>         
+                         </div>
+                         </div>
                 <div className="learn-more-child-bodyMiddle">
                     <h1>Controls</h1>
                     </div>
@@ -156,11 +183,18 @@ const LearnMore = () => {
                     </div>
                     </div>
             </div>
-            <div className="learn-more-parent-body col-lg-6 col-md-6">
+            <div className="learn-more-parent-body">
                 <div  onClick={()=>handleHover(4)} className={hover  === 4 ? "learn-more-child-body learnMore-active" : "learn-more-child-body"}>
                 <div className="learn-more-child-bodyTop">
-                  <img src={img14} alt="" />
-                </div>
+                    <div className="learn-more-child-bodyTopWrapper">
+                        <div className="learn-more-child-bodyLeftWrapper">
+                            <img src={img15} alt="" />
+                        </div>
+                        <div className="learn-more-child-bodyrightWrapper">
+                        <img src={img16} alt="" />
+                        </div>          
+                             </div>
+                             </div>
                 <div className="learn-more-child-bodyMiddle">
                     <h1>Cloud Compatibility</h1>
                     </div>
@@ -172,6 +206,8 @@ const LearnMore = () => {
             {/* <div className="triangle-edge"></div> */}
             </div>
             </div>
+                </div>
+            </div>
             </div>
     </div>
 </div>
@@ -180,7 +216,7 @@ const LearnMore = () => {
     <div className="learnMore-wrapper">
     <div className={`learnMore-wrapper-right ${hover === 1 ? (animate ? "fadeIn" : "") : "close"}`}>
             <div className="learnMore-wrapper-rightTop">
-            <img src={img13} alt="" />
+            <img src={img10} alt="" />
             </div>
             <h3>Risk Management</h3>
            <div className="scroll-right">
@@ -190,7 +226,7 @@ const LearnMore = () => {
         </div>
         <div className={`learnMore-wrapper-right ${hover === 2 ? (animate ? "fadeIn" : "") : "close"}`}>
             <div className="learnMore-wrapper-rightTop">
-            <img src={img11} alt="" />
+            <img src={img9} alt="" />
             </div>
             <h3>Compliance</h3>
            <div className="scroll-right">
@@ -200,23 +236,21 @@ const LearnMore = () => {
         </div>
         <div className={`learnMore-wrapper-right ${hover === 3 ? (animate ? "fadeIn" : "") : "close"}`}>
             <div className="learnMore-wrapper-rightTop">
-            <img src={img12} alt="" />
+            <img src={img10} alt="" />
             </div>
             <h3>Controls</h3>
            <div className="scroll-right">
            <p>Folsight assigns specific controls to responsible individuals or teams, ensuring clear ownership. It automates workflows to guide users through the implementation and execution of these controls. The tool also automates control testing, scheduling periodic checks like security assessments or audits, and continuously monitors control effectiveness, providing real-time alerts for any deviations or failures.</p>
            </div>
-            <button>Contact us</button>
         </div>
         <div className={`learnMore-wrapper-right ${hover === 4 ? (animate ? "fadeIn" : "") : "close"}`}>
             <div className="learnMore-wrapper-rightTop">
-            <img src={img13} alt="" />
+            <img src={img11} alt="" />
             </div>
             <h3>Cloud Compatibility</h3>
            <div className="scroll-right">
             <p>Folsight enhances efficiency by automating repetitive tasks related to governance, risk, and compliance, reducing manual effort and errors. It integrates seamlessly with enterprise systems such as ERP, HR, and finance, streamlining workflows and ensuring consistent data flow across the organization. Additionally, the tool facilitates collaboration among departments and teams involved in GRC activities, promoting better communication, coordination, and alignment of goals. </p>
            </div>
-            <button>Contact us</button>
         </div>
     </div>
 </div>

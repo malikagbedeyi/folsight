@@ -13,7 +13,7 @@ const MiddleCover = () => {
     },[])
   return (
     <div className="middleCover">
-    <div className="container">
+    <div className="Container">
         <div className="middleCoverContainer row">
             <div className=" middleCoverContainerParent col-xl-8 col-lg-10">
                 <div className='middleCoverContainerChild'>

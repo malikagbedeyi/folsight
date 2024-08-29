@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import FrameWork_01_Body from '../../FrameWorkBody/FrameWork_01_Body'
 import TOpbar from '../../Topbar';
 import CoverFrame_01 from '../../FrameWorkBody/CoverFramework/CoverFrame_01';
+import FrameWorkForm from './FrameWorkForm';
 
 const FrameWork01 = () => {
   return (
@@ -12,6 +13,7 @@ const FrameWork01 = () => {
       {/* <Navbar /> */}
       <TOpbar />
       <CoverFrame_01 />
+      <FrameWorkForm />
       <FrameWork_01_Body />
       <Footer />
     </div>

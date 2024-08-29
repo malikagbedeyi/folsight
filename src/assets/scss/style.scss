@@ -14,7 +14,12 @@
     }
 }
 @mixin Destop {
-    @media screen and (max-width:1240px) {
+    @media screen and (max-width:1440px) {
+        @content;
+    }
+}
+@mixin FullHd {
+    @media screen and (max-width:2784px) {
         @content;
     }
 }
@@ -48,6 +53,14 @@
         opacity: 1;
       }
   }
+  @keyframes movingforwards {
+    0% {
+        opacity: 0.2;
+      }
+      100% {
+        opacity: 1;
+      }
+  }
   *{
     list-style: none;
     margin: 0;
@@ -62,6 +75,7 @@
         background-color: #f9f5fe;
       position: relative;
       margin: 3% 0 0;
+
     @include tablet{
         margin: 10% 0 0;
         padding: 7% 0;
@@ -72,6 +86,9 @@
      .row{
         margin: 0;
         padding: 7% 3% 7% 7%;
+        @include FullHd{
+        padding: 5% 3% 5% 7%;
+        }
         @include laptop{
             margin-top: 10%;
         }
@@ -88,26 +105,39 @@
                     @include tablet{
                         margin:0 auto 7% auto;
                     }
-                div{
-
+                .leftWrapperText{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
                     h1{
                         color: #233d63;
-                        font-size: 45px;
+                        font-size: 3vw;
                         font-weight: 600;
-                        margin-bottom: 25px;
                         line-height: 1.4;
+                         margin: 0;
+                           @include Destop{
+                             font-size: 2rem;
+                         }
                         @include mobile{
                             font-size: 35px;
                         }
                     }
                     p{
                         color: #444;
-                        font-size: 1rem;
+                        font-size: 1vw;
                         font-weight: 500;
                         letter-spacing: .3px;
                         line-height: 1.9;
-                      padding-right: 40px;
-                    }
+                        padding-right: 50px;
+                         margin: 0;
+                           @include Destop{
+                         font-size: 14px;
+                         }
+                           @include mobile{
+                         font-size: 16px;
+                         padding-right: 10px;
+                         }
+                        }
                 }
                 // form{
                 //     display: flex;
@@ -154,7 +184,7 @@
                 .submit{
                     background-color: #8231EB;
                     color: #fff;
-                    font-size: 1rem;
+                    font-size: 0.9vw;
                     padding: 15px 30px;
                     border: none;
                     display: block;
@@ -164,18 +194,16 @@
                     transition: 0.5s ease;
                     text-transform: uppercase;
                     font-weight: 600;
-                    font-size: 13px;
-                    margin: 5% 0 0 0;
+                    margin-top:10%;
                     animation: movingDown .5s;
+                    @include Destop{
+                         font-size: 14px;
+                        }
                     &:hover{
                         background-color:#a96ef7;
                         color: #fff;
                         border: none;
                         transition: 0.5s ease;
-                    }
-        
-                    @include laptop{
-                        display: none;
                     }
                 }
             }
@@ -211,14 +239,19 @@
 }
     }
      .mainBody{
-            align-items: center;
-            justify-content: center;
-            margin: 5% auto;
-            .container{
+            margin: 5% 0;
+            padding: 0;
+            @include FullHd {
+                width: 100%;
+                padding: 0;
+            }
+            .Container{
+                padding: 0 20px;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
-
+                box-sizing: border-box;
+                width: 100%;
                 .mainTittle{
                     align-items: center;
                     margin: 2% auto;
@@ -228,7 +261,7 @@
                         margin-top: 5%;
                     }
                     h1{
-                        font-size: 2.1rem;
+                        font-size: 2.5vw;
                         font-weight: 500;
                         transition: .3s;
                         font-family: 'Poppins', sans-serif;
@@ -236,6 +269,12 @@
                       @include mobile{
                         font-size: 1.6rem;
                 }
+                // @include Destop{
+                //     font-size: 2.2rem;
+                // }
+                //  @include FullHd {
+                //     font-size: 5rem;
+                // }
                     }
                 }
                 .brand-pattern{
@@ -288,7 +327,8 @@
                     margin-top: 15%;
             }
 
-                .container{
+                .Container{
+                    padding:0 7%;
                     .learnMoreTittle{
                         padding: 0 20%;
                         @include tablet{
@@ -296,7 +336,7 @@
                     }
 
                         h1{
-                            font-size: 2.5rem;
+                            font-size: 2.5vw;
                             font-weight: 500;
                             transition: .3s;
                             font-family: 'Poppins', sans-serif;
@@ -306,15 +346,17 @@
                     }
                         }
                         p{
-                            font-size: 15px;
+                            font-size: 1vw;
                             font-weight: 500;
-                            line-height: 28px;
                             color: #7b8491;
                             margin-bottom: 15px;
                             transition: .3s;
+                              @include Destop{
+                                        font-size: 13px;
+                                        line-height: 25px;
+                                     }
                         }
                     }
-
                     .learnMoreContainer{
                         margin: 5%;
                         @include tablet{
@@ -330,41 +372,60 @@
                             text-align: left;
                             padding: 50px 40px;
                             transition: all .3s ease-in;
-
                             &:hover{
                                 box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
                                 background: #fff;
                                 transition: all .3s ease-out;
                             }
+                            @include FullHd{
+                                padding: 3vw 2.5vw;
+                            }
                             .topImg{
                                 margin: 2% 0 20% 0;
+                                img{
+                                    width: 30%;
+                                }
                             }
                             .bodyText{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 20px;
                                 h3{
-                                    font-size: 20px;
+                                    font-size: 1.4vw;
                                     font-weight: 600;
-                                    margin-bottom: 20px;
                                     font-family: 'Poppins', sans-serif;
                                      color: #233d63; 
+                                     @include Destop{
+                                        font-size: 1.3rem;
+                                     }
+                                     @include mobile{
+                                        font-size: 1.3rem;
+                                     }
                                 }
                                 p{
-                                    font-size: 15px;
-                                    line-height: 28px;
+                                    font-size: 1vw;
+                                    line-height: 2vw;
                                     color: #7b8491;
-                                    margin-bottom: 15px;
                                     transition: .3s;
                                     font-weight: 500;
+                                      @include Destop{
+                                        font-size: 13px;
+                                        line-height: 25px;
+                                     }
                                 }
                             }
                             .buttonText{
-
+                                margin-top: 20px;
                                 a{
                                     color: #1c3354;
                                     text-transform: uppercase;
-                                    font-size: 13px;
+                                    font-size: 1vw;
                                     letter-spacing: .6px;
                                     font-weight: 500;
                                     text-decoration: none;
+                                    @include Destop{
+                                        font-size: 15px;
+                                    }
 
                                 &:hover{
                                     color: #1400c0;
@@ -384,253 +445,182 @@
                         background: #fff;
                     }
                 }
-                .learnMoreProductContainer{
-                    margin:10% 0;
-                    padding: 0 3%;
-                    @include tablet{
-                        padding: 0;
-                }
-                    .learnMoreProductContainerParent{
-                        .learnMoreProductContainerFristChild{
-                            float: left;
-                        }
-                    .learnMoreProductContainerChild{
-                        text-align: left;
-                        float: right;
-                        padding:0 0 0 5%;
-                        margin-left: 10%;
-                        @include tablet{
-                            margin-left: 0;
-                            padding-left: 0;
-                    }
-                        .learnMoreProductContainerChildTop{
-                            @include tablet{
-                                margin-top: 10%;
-                            }
-                            h1{
-                                font-size: 2.5rem;
-                             font-weight: 700;
-                            transition: .3s;
-                        font-family: 'Poppins', sans-serif;
-                      color: #233d63;
-                      @include tablet{
-                        font-size: 1.6rem;
-                    }
-                            }
-                            p{
-                                margin: 5% 0;
-                                font-size: 15px;
-                                line-height: 28px;
-                                color: #7b8491;
-                                margin-bottom: 15px;
-                                transition: .3s;
-                                font-weight: 500;
-                            }
-                        }
-
-                        .learnMoreProductContainerChildBody{
-
-                            ul{
-                                margin-top: 5%;
-                                margin-left: -30px;
-                                li{
-                                    display: flex;
-                                    color: #7b8491;
-                                    font-size: 15px;
-                                    transition: .3s;
-                                    font-weight: 500;
-                                    margin-bottom: -3px;
-
-                                    i{
-                                        margin-right: 10px;
-                                        line-height: 28px;
-                                    }
-
-                                    p{
-                                        line-height: 28px;
-                                    }
-                                }
-                            }
-                        }
-
-                        .learnMoreProductContainerChildButtom{
-                            margin-top:15%;
-                            @include tablet{
-                                margin-bottom: 15%;
-                        }
-                            button{
-                                border-radius: 2px;
-                                background:linear-gradient( 120deg, rgb(0,0,184) 0%, rgb(115,0,233) 100%);
-                                color: #fff;
-                                cursor: pointer;
-                                font-size: 13px;
-                                font-weight: 500;
-                                letter-spacing: 1px;
-                                line-height: 1;
-                                padding: 17px 35px;
-                                text-align: center;
-                                text-transform: uppercase;
-                                transition: all 0.3s ease 0s;
-                                vertical-align: middle;
-                                white-space: nowrap;
-                                border: 1px solid transparent;
-                                position: relative;
-                                transition: all 0.3s ease-in;
-                                &:hover{
-                                    background: linear-gradient( 120deg, rgb(115,0,233) 0%, rgb(0,0,184) 100%);
-                                    text-decoration: none;
-                                    transition: all 0.3s ease-out;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
                 }
                 .learnMoreCategoryContainer{
                     margin: 10% 0;
                     padding:  3% 0;
                     width: 100%;
+                    height: 100%;
                     .learnMoreCategoryContainerParent{
                         padding: 0 3%;
                         position: relative;
                     .learnMoreCategoryContainerChild{
                         width: 100%;
+                        height: 100%;
                         text-align: left;
-                        padding:0 0 0 0;
+                        padding: 0;
                         margin-left: 5%;
                         @include tablet{
                          margin-left: 0;
                          padding-right: 0;
                         }
                         .learnMoreCategoryContainerChildTop{
-                            display: flex;
-                            flex-direction: column;
                             h1{
-                             font-size: 2rem;
+                             font-size: 2vw;
                              font-weight: 700;
                             transition: .3s;
-                        font-family: 'Rubik',sans-serif;
-                        color: #233d63;
-                      @include tablet{
-                        font-size: 1.6rem;
-                    }
+                             font-family: 'Rubik',sans-serif;
+                             color: #233d63;
+                               @include tablet{
+                                font-size: 2rem;
+                            }
                             }
                             p{
-                                font-size: 13px;
+                                font-size: 1vw;
                                 font-weight: 500;
-                                line-height: 28px;
+                                line-height: 2vw;
                                 color: #7b8491;
-
                                 transition: .3s;
+                                @include Destop{
+                                    font-size: 14px;
+                                    line-height: 23px;
+                                }
+                                @include tablet{
+                                    font-size: 15px;
+                                }
+
                             }
                         }
     
                         .learnMoreCategoryContainerChildBody{
-                            margin: -5% 0  2%;
+                            width: 100%;
+                            margin: 0;
                             padding: 0;
                             display: flex;
+                            flex-wrap: wrap;
+                            .CategoryContainerChildBodyWrapper{
+                                display: flex;
+                                flex-direction: column;
                                 flex-wrap: wrap;
-                            @include laptop{
-                                margin: 5% 0;
-                            }
-                            .learn-more-parent-body{
-                                padding: 0 5% 0 0;
-                                margin-top:5%;
-                                position: relative;
-                                @include laptop{
-                                }
-                            .learn-more-child-body{
-                                align-items: center;
-                                text-align: center;
-                                background: #f9f5fe;
-                                border-radius:20px 0 0 20px;
-                                box-shadow: 0 4px 8px rgba(128, 85, 165, 0.2);
-                                padding: 7% 5%;
-                                height: 100%;
-                                width: 100%;
-                                transition: .3s;
-                                cursor: pointer;
-                                .learn-more-child-bodyTop{
-                                    margin: 3%;
-                                    img{
-                                        width: 15%;
-                                    }
-                                }
-                                .learn-more-child-bodyMiddle{
-                                    h1{
-                                        font-size: 20px;
-                                        font-weight: 600;
-                                        transition: .3s;
-                                        font-family: 'Poppins', sans-serif;
-                                      color: #233d63; 
-                                    }
-                                }
-                                .learn-more-child-bodyBottom{
-                                    p{
-                                        font-size: 13px;
-                                        font-weight: 500;
-                                        line-height: 28px;
-                                        color: #7b8491;
-                                        margin-bottom: 15px;
-                                        transition: .3s;
-                                    }
-                                }
-                                &:hover{
-                                    background-color: #835fb2;
-                                    box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
-                                    transition: .3s;
-                                    .learn-more-child-bodyTop,
-                                    .learn-more-child-bodyMiddle h1,
-                                    .learn-more-child-bodyBottom p{
-                                    color: #fff;
-                                    }
-                                }
-                            }
-                            .learn-more-active{
-                                background-color: #835fb2;
-                                box-shadow: none;
-                                .learn-more-child-bodyTop,
-                                .learn-more-child-bodyMiddle h1,
-                                .learn-more-child-bodyBottom p{
-                                    color: #fff;
-                                    position: relative;
-                                }
-                            }
-                            .learnMore-active{
-                                background-color: #835fb2;
-                                box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
-                                transition: .3s;
-                                .learn-more-child-bodyTop,
-                                .learn-more-child-bodyMiddle h1,
-                                .learn-more-child-bodyBottom p{
-                                color: #fff;
-                                }
-                            }
-                        }
-                      
-                            ul{
-                                margin-top: 5%;
-                                margin-left: -30px;
-                                @include tablet{
-                                    margin-left: -30px;
-                                }
-                                li{
+                                gap: 30px;
+                                 .CategoryContainerChildBodytop,
+                                .CategoryContainerChildBodybottom{
                                     display: flex;
-                                    color: #7b8491;
-                                    font-size: 15px;
-                                    transition: .3s;
-                                    font-weight: 500;
-                                    margin-bottom: -3px;
-    
-                                    i{
-                                        margin-right: 10px;
-                                        line-height: 28px;
+                                    gap: 30px;
+                                    @media screen and (max-width: 980px) {
+                                        flex-direction: column;
+                                        margin: 4% 0;
                                     }
-    
-                                    p{
-                                        line-height: 28px;
+                                    .learn-more-parent-body{
+                                        flex: 1;
+                                        position: relative;
+                                        box-sizing: border-box;
+                                        @media screen and (max-width: 980px) {
+                                            margin: 4% 0;
+                                        }
+                                    .learn-more-child-body{
+                                        align-items: center;
+                                        text-align: center;
+                                        background: #f9f5fe;
+                                        border-radius:20px 0 0 20px;
+                                        box-shadow: 0 4px 8px rgba(128, 85, 165, 0.2);
+                                        padding: 10% 5%;
+                                        height: 100%;
+                                        width: 100%;
+                                        transition: .3s;
+                                        box-sizing: border-box;
+                                        cursor: pointer;
+                                        .learn-more-child-bodyTop{
+                                            position: relative;
+                                            padding: 0;
+                                            .learn-more-child-bodyTopWrapper{
+                                                margin: 0;
+                                                .learn-more-child-bodyLeftWrapper{
+                                                    position: absolute;
+                                                    top: 0;
+                                                    display: block;
+                                                img{
+                                                   width: 15%;
+                                            }
+                                                }
+                                                .learn-more-child-bodyrightWrapper{
+                                                    position: absolute;
+                                                    top: 0;
+                                                    display: none;
+                                                img{
+                                                  width: 15%;
+                                            }
+                                                }
+                                            }
+                                        }
+                                        .learn-more-child-bodyMiddle{
+                                            margin-top: 20%;
+                                            h1{
+                                                font-size: 1.3vw;
+                                                font-weight: 600;
+                                                transition: .3s;
+                                                font-family: 'Poppins', sans-serif;
+                                              color: #233d63; 
+                                              @include laptop{
+                                                font-size: 1.3rem;
+                                            } 
+                                            }
+                                        }
+                                        .learn-more-child-bodyBottom{
+                                            p{
+                                                font-size: 1vw;
+                                                font-weight: 500;
+                                                line-height: 2vw;
+                                                color: #7b8491;
+                                                margin-bottom: 15px;
+                                                transition: .3s;
+                                                @include Destop{
+                                                    font-size: 14px;
+                                                    line-height: 23px;
+                                                }
+                                                @include tablet{
+                                                    font-size: 15px;
+                                                }
+                                            }
+                                        }
+                                        &:hover{
+                                            background-color: #835fb2;
+                                            box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
+                                            transition: .3s;
+                                            .learn-more-child-bodyTop,
+                                            .learn-more-child-bodyMiddle h1,
+                                            .learn-more-child-bodyBottom p{
+                                            color: #fff;
+                                            }
+                                            .learn-more-child-bodyTopWrapper{
+                                                .learn-more-child-bodyLeftWrapper{
+                                                    display: none;
+                                                }
+                                                .learn-more-child-bodyrightWrapper{
+                                                    display: block;
+                                                }
+                                            }
+                                        }
                                     }
+                                    .learnMore-active{
+                                        background-color: #835fb2;
+                                        box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
+                                        transition: .3s;
+                                        .learn-more-child-bodyTop,
+                                        .learn-more-child-bodyMiddle h1,
+                                        .learn-more-child-bodyBottom p{
+                                        color: #fff;
+                                        }
+                                        .learn-more-child-bodyTopWrapper{
+                                            .learn-more-child-bodyLeftWrapper{
+                                                display: none!important;
+                                            }
+                                            .learn-more-child-bodyrightWrapper{
+                                                display: block!important;
+                                            }
+                                        }
+                                    }
+                                }
                                 }
                             }
                         }
@@ -669,27 +659,34 @@
                     }
                     .learnMore-wrapper{
                         width: 100%;
-                        padding:0 8%;
+                        height: 100%;
+                        padding: 0;
                         margin: 0;
                         position: relative;
+                        box-sizing: border-box;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        border: 2px solid #8231EB;
+                        background-color: #fff;
+                        @media screen and (max-width: 980px) {
+                            margin: 4% 0;
+                        }
                         @include laptop{
-                            margin-top: 5%;
                             padding: 0 5%;
                         }
                         .learnMore-wrapper-right{
-                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                            border: 2px solid #8231EB;
-                            background-color: #fff;
-                            padding: 6% 6% 0;
+                            box-sizing: border-box;
+                            overflow-y: hidden;
                             display: block;
                             transition: .3s;
+                            padding: 5%;
+                             height: 100%;
                             width: 100%;
-                            height: 610px;
                             opacity: 1;
                             transition: opacity 0.5s ease, transform 0.5s ease;
                             .learnMore-wrapper-rightTop{
                                 margin-top: 4%;
                                 width: 100%;
+                                animation: movingforwards 1s;
                                 img{
                                     width: 100%;
                                 }
@@ -699,51 +696,50 @@
                                 }
                             }
                             h3{
-                               font-size: 1.2rem;
+                               font-size: 1.3vw;
                               font-weight: 600;
                               transition: .3s;
                               font-family: 'Rubik',sans-serif;
                             color: #233d63;
                             margin-top: 4%;
+                            animation: movingforwards 3s;
+                            @include laptop{
+                                font-size: 1.6rem;
+                            } 
                             }
                             .scroll-right{
                                 cursor: grab;
                                 margin-top: 20px;
+                                padding: 0;
+                                background: #fff;
                                 width: 100%;
-                             height: 36vh;
+                                height: 50vh;
                              overflow-y: scroll;
                              -ms-overflow-style: none;
                              scrollbar-width: none;
+                             animation: movingforwards .5s;
+                             @include tablet{
+                                height: 100%;
+                             }
                              &::-webkit-scrollbar {
                                  display: none;
                              }
                             p{
-                                font-size: 14px;
-                                line-height: 25px;
+                                font-size: 1vw;
                                 text-align: left;
-                                color: #000;
+                                line-height: 2vw;
+                                color: #7b8491;
                                 transition: .3s;
                                 font-weight: 500;
-                            }
-                        }
-                            button{
-                                display: none;
-                                margin-top: 4%;
-                                width: 35%;
-                                padding: 7px 5px;
-                                border: none;
-                                background-color:#8231EB;
-                                border-radius: 20px 0 20px 20px;
-                                color: #fff;
-                                font-weight: 500;
-                                transition: .3s;
-                                &:hover{
-                                    background: #fff;
-                                    color: #8231EB;
-                                    border: 1px solid #8231EB;
-                                    transition: .3s;
+                                @include Destop{
+                                    font-size: 14px;
+                                    line-height: 25px;
+                                }  
+                                @include mobile{
+                                    font-size: 13px;
                                 }
                             }
+                        }
                         }
                         .learnMore-wrapper-right.fadeIn {
                             opacity: 0;
@@ -761,11 +757,14 @@
             .middleCover{
                 width: 100%;
                 background-image: url(../Images/people.png);
-                  background-position:top;
+                background-position:top;
                   background-position-x: center;
                   background-position-y: top;
                  padding-top: 310px;
                  background-repeat: no-repeat;
+                 position: relative;
+                 box-sizing: border-box;
+                 overflow-x: hidden;
 
                 @include laptop{
        background-image: none;
@@ -774,62 +773,71 @@
          background-image: none;
             margin: 90px 0;
                 }
-                .container{
+                .Container{
                     .middleCoverContainer{
                         .middleCoverContainerParent{
                             text-align: center;
                             margin-bottom: 70px;
                             margin: auto;
                         .middleCoverContainerChild{
+                            padding: 0 5%;
                           h2{
                             color: #fff;
                             line-height: 1.3;
                             font-weight: 600;
-                            font-size: 36px;
+                            font-size: 2vw;
                             margin-bottom: 20px;
                           }
                           p{
                             color: #fff;
-                            font-size: 15px;
+                            font-size: 1vw;
                             font-weight: 500;
-                            line-height: 28px;
+                            line-height: 2vw;
                             margin-bottom: 15px;
                             transition: .3s;
                           }
                     }
                     }
                       }
-
                       .middleContainerBody{
-                        margin-top: 5%;
+                        margin: auto;
+                        margin-top: 1%;
                         padding: 0 6%;
                         text-align: center;
                         align-items: center;
-                        justify-content: center;
+                        @include FullHd{
+                            max-width: 69%;
+                        }
+                        @include Destop{
+                            max-width: 100%;
+                        }
                         .middleContainerBodyParent{
                             padding: 0 30px;
                             .middleContainerBodyChild{
                                 text-align: left;
                                 margin-bottom: 20px;
-
                                 .middleContainerBodyImg{
                                     margin-bottom: 40px;
                                     vertical-align: middle;
                                 }
                                 h3{
                                     color: #fff;
-                                    font-size: 20px;
+                                    font-size: 1.1vw;
                                     font-weight: 500;
                                     margin-bottom: 16px;
                                 }
                                 p{
-                                    font-size: 15px;
+                                    font-size: 0.9vw;
                                     font-weight: 500;
-                                    line-height: 28px;
+                                    line-height: 1.2vw;
                                     color: #fff;
                                     opacity: 0.7;
                                     margin-bottom: 15px;
                                     transition: .3s;
+                                    @include Destop{
+                                        font-size: 14px;
+                                        line-height: 25px;
+                                    }
                                 }
                             }
                         }
@@ -999,7 +1007,7 @@
                     max-width: 80%;
                 }
                 h1{
-                    font-size: 2.5rem;
+                    font-size: 2.5vw;
                     font-weight: 600;
                     transition: .3s;
                     font-family: 'Poppins', sans-serif;
@@ -1047,7 +1055,7 @@
                         text-transform: uppercase;
                         border: 0;
                         font-weight: 500;
-                        font-size: 13px;
+                        font-size: 1vw;
                         letter-spacing: 1px;
                     }
                     @include laptop{
@@ -1064,7 +1072,6 @@
                         display: none;
                     }
                 }
-
                 }
             }
         }

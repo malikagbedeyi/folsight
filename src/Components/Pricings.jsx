@@ -53,7 +53,7 @@ const Pricing = () => {
     //     </div>
     // </div>
     <div className="searchBurnning">
-        <div className="container">
+        <div className="Container">
         <div className="search-container">
             <div className="search-container-top">
                 <h1>Experience the most simple way to manage business

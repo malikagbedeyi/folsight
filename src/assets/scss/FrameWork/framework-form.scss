@@ -1,0 +1,431 @@
+@mixin mobile {
+    @media screen and (max-width:580px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width:980px) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media screen and (max-width:1190px) {
+        @content;
+    }
+}
+@mixin Destop {
+    @media screen and (max-width:1240px) {
+        @content;
+    }
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+       .frameForm{
+        margin: 10%;
+        .container{
+            .row{
+                .basic-sign-in{
+                    padding: 50px 90px;
+                    border: 20px solid #fff;
+                    box-shadow: 0px 50px 100px 0px rgba(12, 0, 46, 0.05);
+                    background: #FBFBFB;
+                    @include laptop{
+                        padding: 60px;
+                    }
+                    @include mobile{
+                        padding: 50px 20px;
+                    }
+                    h3{
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        transition: .3s;
+                        font-family: 'Poppins', sans-serif;
+                      color: #233d63; 
+                      margin-bottom: 10px;
+                      transition: .3s;
+                      @include mobile{
+                      font-size: 1.3rem;
+                }
+                    }
+                    p{
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        color: #7b8491;
+                        margin-bottom: 20px;
+                        transition: .3s;
+                        @include mobile{
+                            font-size: 13px;
+                      }
+                    }
+                    a{
+                        text-decoration: none;
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        color: #8231EB;
+                        margin-bottom: 20px;
+                        transition: .3s;
+                        @include mobile{
+                            font-size: 13px;
+                      }
+                    }
+                    form{
+                        .input-action{
+                            .register-wrapper{
+                                display: flex;
+                                gap: 20px;
+                                .leftwrapper{
+                                    flex: 1;
+                                    label{
+                                        color: #222;
+                                        display: block;
+                                        cursor: pointer;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        @include mobile{
+                                            font-size: 12px;
+                                            margin-bottom: 10px;
+                                      }
+            
+                                        span{
+                                            color: #8231EB;
+                                        }
+                                    }
+                                    select{
+                                        height: 60px;
+                                        border: 2px solid #eaedff;
+                                        color: #6f7172;
+                                        padding: 0 80px 0 20px;
+                                        margin-bottom: 20px;
+                                        outline-style: none;
+                                        position: relative;
+                                    }
+                                    input{
+                                        height: 50px;
+                                        border: 2px solid #eaedff;
+                                        color: #6f7172;
+                                        padding: 0 20px;
+                                        margin-bottom: 10px;
+                                        outline-style: none;
+                                        @include mobile{
+                                            font-size: 13px;
+                                            height: 50px;
+                                      }
+                                        &::placeholder{
+                                            font-weight: 500;
+                                        }
+                                      }
+                                      .selectOption {
+                                        position: relative;
+                                        height: 50vh;
+                                        .inputContainer{
+                                            display: flex;
+                                            justify-content: space-between;
+                                            height:50px;
+                                            border: 2px solid #eaedff;
+                                            color: #6f7172;
+                                            padding: 0 20px 0 0;
+                                            margin-bottom: 10px;
+                                            background: #fff;
+                                            @include mobile{
+                                                font-size: 13px;
+                                                height: 50px;
+                                              }
+                                        .dropdown {
+                                            background: none;
+                                            border: none;
+                                           width: 100%;
+                                          outline-style: none;
+                                        }
+                                          i {
+                                            // position: absolute;
+                                            // right: 10px;
+                                            cursor: pointer;
+                                            font-size: 16px;
+                                            color: #6f7172;
+                                            transition: 0.3s;
+                                            margin-top: 20px;
+                                        }
+                                        }
+                                        .option{
+                                            background: #fff;
+                                            height: 30vh;
+                                            border: 2px solid #eaedff;
+                                            color: #6f7172;
+                                            padding: 0 20px;
+                                            outline-style: none;
+                                            position: absolute;
+                                            z-index: 10;
+                                            padding: 5px 20px;
+                                            overflow-y: auto;
+                                            display: block;
+                                            animation: movingIcon .4s;
+                                            p{
+                                            }
+                                          }
+                                          .colseOption{
+                                            display: none;
+                                            transition: .3s;
+                                          }
+                                      }
+                                      .nonselectOption {
+                                        .inputContainer{
+                                            display: flex;
+                                            justify-content: space-between;
+                                            height:50px;
+                                            border: 2px solid #eaedff;
+                                            color: #6f7172;
+                                            padding: 0 20px 0 0;
+                                            margin-bottom: 10px;
+                                            background: #fff;
+                                            @include mobile{
+                                                font-size: 13px;
+                                                height: 50px;
+                                              }
+                                        .dropdown {
+                                            background: none;
+                                            border: none;
+                                           width: 100%;
+                                          outline-style: none;
+                                        }
+                                          i {
+                                            cursor: pointer;
+                                            font-size: 16px;
+                                            color: #6f7172;
+                                            transition: 0.3s;
+                                            margin-top: 20px;
+                                        }
+                                      
+                                        }
+                                      }
+                                }
+                                .rightwrapper{
+                                    flex: 1;
+                                    label{
+                                        color: #222;
+                                        display: block;
+                                        cursor: pointer;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        @include mobile{
+                                            font-size: 12px;
+                                            margin-bottom: 10px;
+                                      }
+            
+                                        span{
+                                            color: #8231EB;
+                                        }
+                                    }
+                                    input{
+                                        height: 50px;
+                                        border: 2px solid #eaedff;
+                                        color: #6f7172;
+                                        padding: 0 20px;
+                                        margin-bottom: 10px;
+                                        outline-style: none;
+                                        @include mobile{
+                                            font-size: 13px;
+                                            height: 50px;
+                                      }
+                                        &::placeholder{
+                                            font-weight: 500;
+                                        }
+                                      }
+                                }
+                            }
+                        label{
+                            color: #222;
+                            display: block;
+                            cursor: pointer;
+                            font-size: 14px;
+                            font-weight: 500;
+                            @include mobile{
+                                font-size: 12px;
+                                margin-bottom: 10px;
+                          }
+
+                            span{
+                                color: #8231EB;
+                            }
+                        }
+                        input{
+                            width: 100%;
+                            height: 50px;
+                            border: 2px solid #eaedff;
+                            color: #6f7172;
+                            padding: 0 10px;
+                            margin-bottom: 20px;
+                            outline-style: none;
+                            @include mobile{
+                                font-size: 13px;
+                                height: 50px;
+                          }
+                            &::placeholder{
+                                font-weight: 500;
+                            }
+                          }
+                          .react-tel-input {
+                            width: 100%; /* Make it full-width */
+                            margin-bottom: 5px; /* Add some space below */
+                            height: 50px;
+                            border: none;
+                            color: #6f7172;
+                            margin-bottom: 20px;
+                            outline-style: none;
+                            outline:none;
+                          }
+                          .react-tel-input .form-control {
+                            border: 2px solid #eaedff;
+                            outline-style: none; 
+                            padding-left: 60px; 
+                            font-size: 16px; /* Adjust font size */
+                          }
+                          
+                          /* Style the flag dropdown */
+                          .react-tel-input .flag-dropdown {
+                            border: none; /* Remove the border */
+                            background-color: #eaedff; /* Light background color */
+                            padding: 0 5px;
+                            border-radius: 5px 0;
+                            &:hover{
+                                background: #eaedff;
+                            }
+                          }
+                          .selectOption {
+                            position: relative;
+                            height: 50vh;
+                            .inputContainer{
+                                display: flex;
+                                justify-content: space-between;
+                                height:60px;
+                                width: 100%;
+                                border: 2px solid #eaedff;
+                                color: #6f7172;
+                                padding: 0 20px 0 0;
+                                margin-bottom: 10px;
+                                background: #fff;
+                                @include mobile{
+                                    font-size: 13px;
+                                    height: 50px;
+                                  }
+                            .dropdown {
+                                background: none;
+                                border: none;
+                               width: 100%;
+                              outline-style: none;
+                            }
+                              i {
+                                // position: absolute;
+                                // right: 10px;
+                                cursor: pointer;
+                                font-size: 16px;
+                                color: #6f7172;
+                                transition: 0.3s;
+                                margin-top: 20px;
+                            }
+                          
+                            //   &::-webkit-scrollbar {
+                            //     width: 8px;
+                            //   }
+                          
+                            //   &::-webkit-scrollbar-thumb {
+                            //     background-color: #888;
+                            //     border-radius: 4px;
+                            //   }
+                          
+                            //   &::-webkit-scrollbar-thumb:hover {
+                            //     background-color: #555;
+                            //   }
+                            }
+                            .option{
+                                background: #fff;
+                                width: 100%;
+                                height: 30vh;
+                                border: 2px solid #eaedff;
+                                color: #6f7172;
+                                padding: 0 20px;
+                                outline-style: none;
+                                position: absolute;
+                                z-index: 10;
+                                padding: 5px 20px;
+                                overflow-y: auto;
+                                display: block;
+                                animation: movingIcon .4s;
+                                p{
+                                }
+                              }
+                              .colseOption{
+                                display: none;
+                                transition: .3s;
+                              }
+                          }
+                          .nonselectOption {
+                            .inputContainer{
+                                display: flex;
+                                justify-content: space-between;
+                                height:60px;
+                                width: 100%;
+                                border: 2px solid #eaedff;
+                                color: #6f7172;
+                                padding: 0 20px 0 0;
+                                margin-bottom: 10px;
+                                background: #fff;
+                                @include mobile{
+                                    font-size: 13px;
+                                    height: 50px;
+                                  }
+                            .dropdown {
+                                background: none;
+                                border: none;
+                               width: 100%;
+                              outline-style: none;
+                            }
+                              i {
+                                cursor: pointer;
+                                font-size: 16px;
+                                color: #6f7172;
+                                transition: 0.3s;
+                                margin-top: 20px;
+                            }
+                          
+                            }
+                          }
+                          textarea{
+                            height: 150px;
+                            margin-bottom: 25px;
+                            padding: 20px;
+                            width: 100%;
+                            border: 2px solid #eaedff;
+                            color: #6f7172;
+                            font-size: 14px;
+                            transition: .3s;
+                            outline-style: none;
+                          }
+                        }
+                        button{
+                            width: 100%;
+                            background: #8231EB;
+                            color: #fff;
+                            border: 0;
+                            padding: 12px 5px;
+                            transition: .3s;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            border-radius: 0 10px;  
+                            margin-bottom: 20px;
+                            @include mobile{
+                                padding: 10px;
+                                font-size: 13px;
+                                border-radius: 0 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+       }
