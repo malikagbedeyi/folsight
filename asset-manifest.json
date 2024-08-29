@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/folsight/static/css/main.80cdbf21.css",
-    "main.js": "/folsight/static/js/main.3fadb864.js",
+    "main.css": "/folsight/static/css/main.130391da.css",
+    "main.js": "/folsight/static/js/main.9517bd4b.js",
     "static/media/grc-02.png": "/folsight/static/media/grc-02.6cfbe35f345d8631bb09.png",
     "static/media/swiftprofile.png": "/folsight/static/media/swiftprofile.e9b3defd4e41f90f8381.png",
     "static/media/01.jpg": "/folsight/static/media/01.8f529a9fe65368ae2ccb.jpg",
@@ -14,13 +14,21 @@
     "static/media/7.png": "/folsight/static/media/7.291566b27f24a8f5ee86.png",
     "static/media/fea-41.png": "/folsight/static/media/fea-41.7d41dcaead3198a4bde8.png",
     "static/media/Zahtech.png": "/folsight/static/media/Zahtech.af60716dbab4c26c8343.png",
+    "static/media/Team.png": "/folsight/static/media/Team.9026c50eab1c75b16fcc.png",
     "static/media/5.png": "/folsight/static/media/5.8a39a6d4cb3dbe748820.png",
     "static/media/6.png": "/folsight/static/media/6.18a73e8626fcaa1b5ecd.png",
+    "static/media/Compl.ai.png": "/folsight/static/media/Compl.ai.ec01e416cb0e1297db33.png",
+    "static/media/ContactUs.png": "/folsight/static/media/ContactUs.be709031bd795e3d0f67.png",
+    "static/media/Integration.png": "/folsight/static/media/Integration.64e00accdc714723853f.png",
     "static/media/cansulting.png": "/folsight/static/media/cansulting.81db9e5174e04f21b32e.png",
     "static/media/lentsource.png": "/folsight/static/media/lentsource.0e071ea1b7858464b596.png",
+    "static/media/AuditRoom.png": "/folsight/static/media/AuditRoom.4246b18868022271217d.png",
     "static/media/9.png": "/folsight/static/media/9.389bf52dab9974c2b42f.png",
+    "static/media/AboutUs.png": "/folsight/static/media/AboutUs.7e74a0363a6af26457a2.png",
+    "static/media/AI.png": "/folsight/static/media/AI.3cb785eba63092641423.png",
     "static/media/sprintcue.png": "/folsight/static/media/sprintcue.b16a7a6ea026725331d2.png",
     "static/media/people.png": "/folsight/static/media/people.b7611b0c5ade8ec1b200.png",
+    "static/media/RiskCore.png": "/folsight/static/media/RiskCore.a3078555c239eefa731d.png",
     "static/media/8.png": "/folsight/static/media/8.4a4dfec407436bee6790.png",
     "static/media/grc-01.png": "/folsight/static/media/grc-01.ec1cc2b489bcd0b72b32.png",
     "static/media/2.png": "/folsight/static/media/2.31d25e1118e3a1be23ce.png",
@@ -33,11 +41,11 @@
     "static/media/4.png": "/folsight/static/media/4.e52f66b8c280bc676248.png",
     "static/media/icon_01.png": "/folsight/static/media/icon_01.fb73af149f76b6d1cc83.png",
     "index.html": "/folsight/index.html",
-    "main.80cdbf21.css.map": "/folsight/static/css/main.80cdbf21.css.map",
-    "main.3fadb864.js.map": "/folsight/static/js/main.3fadb864.js.map"
+    "main.130391da.css.map": "/folsight/static/css/main.130391da.css.map",
+    "main.9517bd4b.js.map": "/folsight/static/js/main.9517bd4b.js.map"
   },
   "entrypoints": [
-    "static/css/main.80cdbf21.css",
-    "static/js/main.3fadb864.js"
+    "static/css/main.130391da.css",
+    "static/js/main.9517bd4b.js"
   ]
 }
