@@ -16,9 +16,8 @@ const SignInForm = () => {
                     <div class="col-lg-8 offset-lg-2">
                         <div class="basic-sign-in">
                             {/* <div className="basicLogin-top"> */}
-                            <h3 class="mb-20">Register From Here</h3>
-                            <p>Welcome! Please confirm that your are visiting <br />
-                             <a href="/">https://www.folisght.com</a>
+                            <h3 class="mb-20">Register</h3>
+                            <p>Welcome! please Kindly enter your information<br />
                             </p>
                             <div class="mb-30"></div>
                             {/* </div> */}
@@ -35,7 +34,7 @@ const SignInForm = () => {
                                 </div>
                                 </div>
                                 <label for="pass">Email Address <span>**</span></label>
-                                <input id="pass" type="email" placeholder="******" />
+                                <input id="pass" type="email" placeholder="Your Email" />
                                 <label for="pass">Phone No <span>**</span></label>
                                 <input id="pass" type="text" placeholder="******" />
                                 <div className="register-wrapper">
@@ -58,7 +57,7 @@ const SignInForm = () => {
 
                                         <div className="forgotlogin">
                                         {/* <span className="forget-login"> */}
-                                        <a  href="/login">Lost your password?</a>
+                                        <a  href="/login">Forget password?</a>
                                         {/* </span> */}
                                     </div>
                                     </div>
@@ -66,7 +65,7 @@ const SignInForm = () => {
                                 <button className="login-btn w-100">Login Now</button>
                                 <div className="signUp text-center mt-30">
                                 <span>Already have an Account?</span>
-                                <button className="login-text-btn">Login</button>
+                                <button className="login-text-btn">Sign up</button>
                                 </div>
                             </form>
                         </div>

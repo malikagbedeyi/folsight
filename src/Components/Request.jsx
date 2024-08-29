@@ -167,8 +167,7 @@ const [icontoggle , setIconToggle] = useState(false)
                 <div class="basic-sign-in">
                     {/* <div className="basicLogin-top"> */}
                     <h3 class="mb-20">Request A Demo</h3>
-                    <p>Welcome! Please complete the form to request a demo <br />
-                     <a href="/">https://www.folisght.com</a>
+                    <p>Welcome! please Kindly enter your information<br />
                     </p>
                     <div class="mb-30"></div>
                     {/* </div> */}
@@ -275,7 +274,7 @@ const [icontoggle , setIconToggle] = useState(false)
                         <button className="login-btn">Request a Demo</button>
                         <div className="signUp text-center mt-30">
                             <span>New User?</span>
-                            <a href='#' className="login-text-btn">Register Now</a>
+                            <a href='#/register' className="login-text-btn">Register Now</a>
                         </div>
                     </form>
                 </div>

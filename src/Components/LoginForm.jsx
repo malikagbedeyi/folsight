@@ -66,16 +66,15 @@ const LoginForm = () => {
                     <div class="col-lg-8 offset-lg-2">
                         <div class="basic-login">
                             {/* <div className="basicLogin-top"> */}
-                            <h3 class="mb-20">Login From Here</h3>
-                            <p>Welcome! Please confirm that your are visiting <br />
-                             <a href="/">https://www.folisght.com</a>
+                            <h3 class="mb-20">Login</h3>
+                            <p>Welcome! please Kindly enter your information<br/>
                             </p>
                             <div class="mb-30"></div>
                             {/* </div> */}
                             <form action="#">
                                 <div className="input-action">
                                 <label for="name">Email Address  <span>**</span></label>
-                                <input id="name" type="text" placeholder="Your Name" />
+                                <input id="name" type="text" placeholder="Your Email" />
                                 <label for="pass">Password <span>**</span></label>
                                 <input id="pass" type="password" placeholder="******" />
                                 <label for="pass">confirm Password <span>**</span></label>
@@ -90,7 +89,7 @@ const LoginForm = () => {
 
                                         <div className="forgotlogin">
                                         {/* <span className="forget-login"> */}
-                                        <a  href="/login">Lost your password?</a>
+                                        <a  href="#/login">Forget password?</a>
                                         {/* </span> */}
                                     </div>
                                     </div>
@@ -98,7 +97,7 @@ const LoginForm = () => {
                                 <button className="login-btn w-100">Login Now</button>
                                 <div className="signUp text-center mt-30">
                                     <span>New User?</span>
-                                    <button className="login-text-btn">Register Now</button>
+                                    <button onClick={navigate('/register')}  className="login-text-btn">Register Now</button>
                                 </div>
                             </form>
                         </div>
