@@ -5,13 +5,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import FrameWork_03_Body from '../../FrameWorkBody/FrameWork_03_Body'
 import TOpbar from '../../Topbar';
 import CoverFrame_03 from '../../FrameWorkBody/CoverFramework/CoverFrame_03';
+import FrameWorkForm from './FrameWorkForm';
+import Navbar from '../../Navbar';
 
 const FrameWork03 = () => {
   return (
     <div className='framework'>
       {/* <Navbar /> */}
-      <TOpbar />
+      <Navbar />
       <CoverFrame_03 />
+      <FrameWorkForm />
       <FrameWork_03_Body />
       <Footer />
     </div>

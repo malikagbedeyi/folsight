@@ -251,7 +251,7 @@ const Navbar = () => {
                               <img src={icon7} alt="" />
                               </div>
                                 <p>
-                                <a href="/">Contact US</a>
+                                <a href="#/contact-us">Contact US</a>
                                 <span>Designed for flexibility/Built empower.</span>
                                 {/* Innovation that inspires. Performance that delivers */}
                                 </p>
