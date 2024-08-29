@@ -159,7 +159,7 @@ const Navbar = () => {
                        <ul>
                             <li> 
                               <div className="hoverImg">
-                              <img src={icon1} alt="" />
+                              <img src={icon10} alt="" />
                               </div>
                                 <p>
                                 <a onClick={() => navigate('/framework_01')}>IS027001</a>
@@ -169,7 +169,7 @@ const Navbar = () => {
                               </li>
                              <li>
                              <div className="hoverImg">
-                              <img src={icon2} alt="" />
+                              <img src={icon11} alt="" />
                               </div>
                                 <p>
                                 <a onClick={() => navigate('/framework_02')}>HIPAA </a>
@@ -178,7 +178,7 @@ const Navbar = () => {
                                  </li>
                                  <li> 
                               <div className="hoverImg">
-                              <img src={icon3} alt="" />
+                              <img src={icon12} alt="" />
                               </div>
                                 <p>
                                 <a onClick={() => navigate('/framework_03')}>SOC2 </a>
@@ -193,7 +193,7 @@ const Navbar = () => {
                          <ul>
                              <li>
                              <div className="hoverImg">
-                              <img src={icon8} alt="" />
+                              <img src={icon13} alt="" />
                               </div>
                                 <p>
                                 <a onClick={() => navigate('/framework_04')}>GDPR </a>
@@ -202,7 +202,7 @@ const Navbar = () => {
                                  </li>
                                  <li> 
                               <div className="hoverImg">
-                              <img src={icon7} alt="" />
+                              <img src={icon14} alt="" />
                               </div>
                                 <p>
                                 <a onClick={() => navigate('/framework_05')}>NIST </a>
