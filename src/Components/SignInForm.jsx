@@ -48,24 +48,10 @@ const SignInForm = () => {
                                 </div>
                                 </div>
                                 </div>
-                                <div className="login-action mb-20 fix">
-                                    <div className="logrem">
-                                        <span className='log-rem'>
-                                        <input id="remember" type="checkbox" className='input'/>
-                                        <label className='label' for="remember">Remember me!</label>
-                                        </span>
-
-                                        <div className="forgotlogin">
-                                        {/* <span className="forget-login"> */}
-                                        <a  href="/login">Forget password?</a>
-                                        {/* </span> */}
-                                    </div>
-                                    </div>
-                                </div>
-                                <button className="login-btn w-100">Login Now</button>
+                                <a href='#/' className="login-btn w-100">Sign Up</a>
                                 <div className="signUp text-center mt-30">
                                 <span>Already have an Account?</span>
-                                <button className="login-text-btn">Sign up</button>
+                                <a href='#/login'  className="login-text-btn">Login</a>
                                 </div>
                             </form>
                         </div>

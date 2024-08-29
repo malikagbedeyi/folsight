@@ -21,7 +21,7 @@ const FrameWork_02_Body = () => {
     <h1>Making Great Things Possible</h1>
     <p>Land from day very fill that midst stars one dominion. Itself was let that divided itself god don't subdue wherein let behold over he whose of sea moved called.</p>
     </div>
-
+    {/*********************** HIPA ***********************/}
             </div>  
              <div className="learnMoreProductContainer row">
                 <div className="learnMoreProductContainerParent col-lg-6">
@@ -33,18 +33,22 @@ const FrameWork_02_Body = () => {
                 <div className="learnMoreProductContainerParent col-lg-6">
                     <div className="learnMoreProductContainerChild">
                         <div className="learnMoreProductContainerChildTop">
-                        <h1>Risk Assessment</h1>
-                        <p>Folsight automates risk assessments of third-party providers by evaluating their data management practices and generating risk scores. It allows for customizable questionnaires to assess vendors' security controls and compliance, prioritizing those needing stricter oversight.</p>
+                        <h1>Advanced Encrytion</h1>
+                        <p>Folsight enforces encryption policies for patient PHI, monitors compliance with encryption standards, and securely manages encryption keys, restricting access to authorized personnel.</p>
                         </div>
                         <div className="learnMoreProductContainerChildBody">
                             <ul>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p> Third-Party Risk Assessments (TPRM)</p>
+                                <p> Data Encryption Policies</p>
                                 </li>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p> Automated Risk Evaluation</p>
+                                <p> Encryption Compliance Monitoring</p>
+                                </li>
+                                <li>
+                                <i className="fa-solid fa-square-check"></i>
+                                <p>  Key Management</p>
                                 </li>
                             </ul>
                         </div>
@@ -60,18 +64,19 @@ const FrameWork_02_Body = () => {
                     <div className="learnMoreCategoryContainerChild">
                         <div className="learnMoreCategoryContainerChildTop">
                         <h1 >Ensure Compliance with Industry Standards</h1>
-                        <p>Folsight distributes data security policies to third-party providers, tracks their acknowledgment, and automates compliance checks to ensure adherence to required data management procedures. </p>
+                        <p>Folsight ensures PHI protection aligns with healthcare regulations like HIPAA, updates compliance as needed, and generates reports on security status to support informed decisions.</p>
                          </div>
                         <div className="learnMoreCategoryContainerChildBody">
                             <ul>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p> Comprehensive Audit Trails</p>
+                                <p> Regulatory Compliance Tracking</p>
                                 </li>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p>Data Management</p>
+                                <p>Reporting and Analytics</p>
                                 </li>
+                              
                             </ul>
                         </div>
                         <div className="learnMoreCategoryContainerChildButtom" data-aos="fade-in-up" data-aos-delay="500" data-aos-duration="1500">
@@ -96,22 +101,18 @@ const FrameWork_02_Body = () => {
                 <div className="learnMoreProductContainerParent col-lg-6">
                     <div className="learnMoreProductContainerChild">
                         <div className="learnMoreProductContainerChildTop">
-                        <h1>Safeguard Sensitive Information:</h1>
-                        <p>Folsight enforces Role-Based Access Controls (RBAC) and Multi-Factor Authentication (MFA) for vendor access to client data, ensures strong encryption and secure communication protocols, and integrates with security systems for real-time threat detection and automated incident response.</p>
+                        <h1>Safeguard Sensitive Information</h1>
+                        <p>Folsight provides real-time security dashboards and generates reports from audits and monitoring, helping management make informed decisions on data protection.</p>
                         </div>
                         <div className="learnMoreProductContainerChildBody">
                             <ul>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p>Vendor Risk Profiling</p>
+                                <p>Security Performance Dashboards</p>
                                 </li>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p>Access Control Management</p>
-                                </li>
-                                <li>
-                                <i className="fa-solid fa-square-check"></i>
-                                <p>Data Encryption and Secure Communication</p>
+                                <p>Custom Reports</p>
                                 </li>
                             </ul>
                         </div>

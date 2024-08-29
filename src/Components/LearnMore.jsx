@@ -171,7 +171,7 @@ const LearnMore = () => {
                         </div>
                         <div className="learn-more-child-bodyrightWrapper">
                         <img src={img19} alt="" />
-                        </div>         
+                        </div>
                          </div>
                          </div>
                 <div className="learn-more-child-bodyMiddle">
@@ -196,10 +196,10 @@ const LearnMore = () => {
                              </div>
                              </div>
                 <div className="learn-more-child-bodyMiddle">
-                    <h1>Cloud Compatibility</h1>
+                    <h1>Operational Efficiency</h1>
                     </div>
                     <div className="learn-more-child-bodyBottom">
-                        <p>Man fruit moving fourt moving multiply so years rule is not It after you also do seed grass that so which grass fowl him.</p>
+                        <p>Streamline governance, risk, and compliance processes by automating routine tasks, enhancing overall efficiency. </p>
                         {/* with real-time insights and automation, helping your business stay resilient and compliant. */}
                     </div>
 

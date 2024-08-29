@@ -94,10 +94,10 @@ const LoginForm = () => {
                                     </div>
                                     </div>
                                 </div>
-                                <button className="login-btn w-100">Login Now</button>
+                                <a href='#/' className="login-btn w-100">Login Now</a>
                                 <div className="signUp text-center mt-30">
                                     <span>New User?</span>
-                                    <button onClick={navigate('/register')}  className="login-text-btn">Register Now</button>
+                                    <a href='#/'   className="login-text-btn">Register Now</a>
                                 </div>
                             </form>
                         </div>

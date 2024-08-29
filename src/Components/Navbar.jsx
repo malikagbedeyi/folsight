@@ -19,6 +19,15 @@ import icon11 from '../assets/Images/Icons1-2/6.png'
 import icon12 from '../assets/Images/Icons1-2/7.png'
 import icon13 from '../assets/Images/Icons1-2/8.png'
 import icon14 from '../assets/Images/Icons1-2/9.png'
+import icon15 from '../assets/Images/Products Icons/AI.png'
+import icon16 from '../assets/Images/Products Icons/AuditRoom.png'
+import icon17 from '../assets/Images/Products Icons/Compl.ai.png'
+import icon18 from '../assets/Images/Products Icons/Integration.png'
+import icon19 from '../assets/Images/Products Icons/RiskCore.png'
+import icon20 from '../assets/Images/Products Icons/AI.png'
+import icon21 from '../assets/Images/Company/AboutUs.png'
+import icon22 from '../assets/Images/Company/ContactUs.png'
+import icon23 from '../assets/Images/Company/Team.png'
 // import icon1 from '../assets/Images/p1.png'
 // import icon1 from '../assets/Images/p1.png'
 // import icon1 from '../assets/Images/p1.png'
@@ -69,41 +78,31 @@ const Navbar = () => {
                      <ul className="submenu">
                        <li className='dFlex'>
                        <ul>
-                            <li> 
-                              <div className="hoverImg">
-                              <img src={icon1} alt="" />
-                              </div>
-                                <p>
-                                <a href="/">Product 01 </a>
-                                <span>Performance that delivers.</span>
-                                {/* Innovation that inspires. Performance that delivers */}
-                                </p>
-                              </li>
-                             <li>
-                             <div className="hoverImg">
-                              <img src={icon2} alt="" />
-                              </div>
-                                <p>
-                                <a href="/">Product 02 </a>
-                                <span>Performance that delivers.</span>
-                                </p>
-                                 </li>
                              <li>
                                  <div className="hoverImg">
-                              <img src={icon1} alt="" />
+                              <img src={icon17} alt="" />
                               </div>
                                 <p>
-                                <a href="/">Product 03 </a>
-                                <span>Performance that delivers.</span>
+                                <a href="/">AUDITROOM </a>
+                                <span>Tool for comprehensive website audits and performance analysis.</span>
                                 </p>
                                   </li>
                                   <li>
                                  <div className="hoverImg">
-                              <img src={icon3} alt="" />
+                              <img src={icon18} alt="" />
                               </div>
                                 <p>
-                                <a href="/">Product 04 </a>
-                                <span>Performance that delivers</span>
+                                <a href="/">COMPL.AI</a>
+                                <span>AI-powered tool for compliance management and automation.</span>
+                                </p>
+                                  </li>
+                                  <li>
+                                 <div className="hoverImg">
+                              <img src={icon20} alt="" />
+                              </div>
+                                <p>
+                                <a href="/">RISKCORE</a>
+                                <span>Platform for managing and mitigating business risks.</span>
                                 </p>
                                   </li>
                        </ul>
@@ -111,43 +110,35 @@ const Navbar = () => {
                          <li className="dMiddleLine"></li>
                          <li className='dFlex'>
                          <ul>
-                            <li> 
+                         <li> 
                               <div className="hoverImg">
-                              <img src={icon7} alt="" />
+                              <img src={icon15} alt="" />
                               </div>
                                 <p>
-                                <a href="/">Platform 01 </a>
-                                <span>Designed for flexibility/Built empower.</span>
+                                <a href="/">AI </a>
+                                <span>A framework for developing, deploying, and managing AI models and applications.</span>
                                 {/* Innovation that inspires. Performance that delivers */}
                                 </p>
                               </li>
                              <li>
                              <div className="hoverImg">
-                              <img src={icon8} alt="" />
+                              <img src={icon16} alt="" />
                               </div>
                                 <p>
-                                <a href="/">Platform 02 </a>
-                                <span>Designed for flexibility/Built empower.</span>
+                                <a href="/">API </a>
+                                <span>A system for building, managing, and integrating APIs to enable software communication</span>
                                 </p>
                                  </li>
-                             <li>
+                                 <li>
                                  <div className="hoverImg">
-                              <img src={icon7} alt="" />
+                              <img src={icon19} alt="" />
                               </div>
                                 <p>
-                                <a href="/">Platform 03 </a>
-                                <span>Designed for flexibility/Built empower.</span>
+                                <a href="/">INTEGRATION</a>
+                                <span>Connects and unifies different software systems for seamless data flow</span>
                                 </p>
                                   </li>
-                                  <li>
-                                 <div className="hoverImg">
-                              <img src={icon9} alt="" />
-                              </div>
-                                <p>
-                                <a href="/">Platform 04 </a>
-                                <span>Designed for flexibility/Built empower</span>
-                                </p>
-                                  </li>
+
                        </ul>
                         </li>
                     </ul>
@@ -163,7 +154,7 @@ const Navbar = () => {
                               </div>
                                 <p>
                                 <a onClick={() => navigate('/framework_01')}>IS027001</a>
-                                <span>Designed for flexibility/Built empower.</span>
+                                <span>Framework for managing information security.</span>
                                 {/* Innovation that inspires. Performance that delivers */}
                                 </p>
                               </li>
@@ -173,16 +164,16 @@ const Navbar = () => {
                               </div>
                                 <p>
                                 <a onClick={() => navigate('/framework_02')}>HIPAA </a>
-                                <span>Designed for flexibility/Built empower.</span>
+                                <span>Regulation for protecting health information privacy.</span>
                                 </p>
                                  </li>
                                  <li> 
                               <div className="hoverImg">
-                              <img src={icon12} alt="" />
+                              <img src={icon14} alt="" />
                               </div>
                                 <p>
                                 <a onClick={() => navigate('/framework_03')}>SOC2 </a>
-                                <span>Designed for flexibility/Built empower.</span>
+                                <span>Ensures data security and privacy controls.</span>
                                 {/* Innovation that inspires. Performance that delivers */}
                                 </p>
                               </li>
@@ -193,20 +184,20 @@ const Navbar = () => {
                          <ul>
                              <li>
                              <div className="hoverImg">
-                              <img src={icon13} alt="" />
+                              <img src={icon12} alt="" />
                               </div>
                                 <p>
                                 <a onClick={() => navigate('/framework_04')}>GDPR </a>
-                                <span>Designed for flexibility/Built empower.</span>
+                                <span>EU regulation for data privacy protection.</span>
                                 </p>
                                  </li>
                                  <li> 
                               <div className="hoverImg">
-                              <img src={icon14} alt="" />
+                              <img src={icon13} alt="" />
                               </div>
                                 <p>
                                 <a onClick={() => navigate('/framework_05')}>NIST </a>
-                                <span>Designed for flexibility/Built empower.</span>
+                                <span>Framework for cybersecurity standards.</span>
                                 {/* Innovation that inspires. Performance that delivers */}
                                 </p>
                               </li>
@@ -223,21 +214,21 @@ const Navbar = () => {
                        <ul>
                             <li> 
                               <div className="hoverImg">
-                              <img src={icon1} alt="" />
+                              <img src={icon21} alt="" />
                               </div>
                                 <p>
                                 <a href="#/about_us">About US</a>
-                                <span>Performance that delivers.</span>
+                                <span>Company overview and mission</span>
                                 {/* Innovation that inspires. Performance that delivers */}
                                 </p>
                               </li>
                               <li> 
                               <div className="hoverImg">
-                              <img src={icon2} alt="" />
+                              <img src={icon23} alt="" />
                               </div>
                                 <p>
                                 <a href="/">Team</a>
-                                <span>Performance that delivers.</span>
+                                <span>  Group of individuals working together.(Meet Us).</span>
                                 {/* Innovation that inspires. Performance that delivers */}
                                 </p>
                               </li>
@@ -248,11 +239,11 @@ const Navbar = () => {
                          <ul>
                             <li> 
                               <div className="hoverImg">
-                              <img src={icon7} alt="" />
+                              <img src={icon22} alt="" />
                               </div>
                                 <p>
                                 <a href="#/contact_us">Contact US</a>
-                                <span>Designed for flexibility/Built empower.</span>
+                                <span>Reach out for inquiries or support.</span>
                                 {/* Innovation that inspires. Performance that delivers */}
                                 </p>
                               </li>
@@ -264,10 +255,10 @@ const Navbar = () => {
                 </ul>
                 </div>
                 <div className="loginButton">
-                <a onClick={() => navigate('/login')}>LOGIN</a>
-               <button onClick={() => navigate('/register')}className='btn submit'> Sign UP </button>
+                <a href='#/login'>LOGIN</a>
+               <a href='#/register' className='btn submit'>Sign UP </a>
                <button className="btn toggle navbar-toggler" type="button" onClick={() => setToggle(!toggle)} >
-                          <i className="fa-solid svg fa-bars"></i>
+                   <i className="fa-solid svg fa-bars"></i>
                  </button>
                 </div>
             </div>

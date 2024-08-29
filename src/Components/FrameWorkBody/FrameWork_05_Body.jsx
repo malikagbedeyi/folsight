@@ -21,7 +21,7 @@ const FrameWork_05_Body = () => {
     <h1>Making Great Things Possible</h1>
     <p>Land from day very fill that midst stars one dominion. Itself was let that divided itself god don't subdue wherein let behold over he whose of sea moved called.</p>
     </div>
-
+    {/*********************** NIST ************************/}
             </div>  
              <div className="learnMoreProductContainer row">
                 <div className="learnMoreProductContainerParent col-lg-6">
@@ -33,18 +33,18 @@ const FrameWork_05_Body = () => {
                 <div className="learnMoreProductContainerParent col-lg-6">
                     <div className="learnMoreProductContainerChild">
                         <div className="learnMoreProductContainerChildTop">
-                        <h1>Safeguarding Fundamental Rights</h1>
-                        <p>Folsight safeguards individuals' fundamental rights by implementing privacy measures and data protection practices, ensuring compliance with regulations to secure personal data.</p>
+                        <h1>Proactive Protection</h1>
+                        <p>Folsight integrates with the NIST Cybersecurity Framework, covering all key functions and performs gap analyses to evaluate how current security measures align with the NIST CSF, identifying areas for improvement in current security measures.</p>
                         </div>
                         <div className="learnMoreProductContainerChildBody">
                             <ul>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p> 	Privacy</p>
+                                <p>Gap Analysis</p>
                                 </li>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p> Compliance</p>
+                                <p>Framework Integration</p>
                                 </li>
                             </ul>
                         </div>
@@ -59,18 +59,18 @@ const FrameWork_05_Body = () => {
                 <div className="learnMoreCategoryContainerParent col-lg-6">
                     <div className="learnMoreCategoryContainerChild">
                         <div className="learnMoreCategoryContainerChildTop">
-                        <h1>Privacy Measures</h1>
-                        <p>Folsight upholds privacy and data security by enforcing encryption, access controls, and regular audits, ensuring individuals' personal information remains protected and compliant with regulations.</p>
+                        <h1>Comprehensive Risk Insight</h1>
+                        <p>Folsight uses NIST guidelines to identify and categorize cybersecurity risks, supports regular risk assessments to evaluate their impact and likelihood, and prioritizes mitigation efforts accordingly.</p>
                         </div>
                         <div className="learnMoreCategoryContainerChildBody">
                             <ul>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p>Encryption</p>
+                                <p>Risk Identification</p>
                                 </li>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p>Access Control</p>
+                                <p>Risk Assessment</p>
                                 </li>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
@@ -100,18 +100,18 @@ const FrameWork_05_Body = () => {
                 <div className="learnMoreProductContainerParent col-lg-6">
                     <div className="learnMoreProductContainerChild">
                         <div className="learnMoreProductContainerChildTop">
-                        <h1>Adhering to Regulations</h1>
-                        <p> Folsight ensures compliance with data protection regulations by enforcing access controls, monitoring data usage, and implementing security measures to prevent unauthorized access and misuse.</p>
+                        <h1>Incidence Response Plannin</h1>
+                        <p>Folsight integrates real-time monitoring capabilities based on NIST guidelines to detect potential security incidents and enable swift risk mitigation. It also supports the development and execution of incident response plans in accordance with NIST, ensuring effective management and resolution of security incidents.</p>
                         </div>
                         <div className="learnMoreProductContainerChildBody">
                             <ul>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p>Data Protection</p>
+                                <p>Risk Mitigation</p>
                                 </li>
                                 <li>
                                 <i className="fa-solid fa-square-check"></i>
-                                <p>	Regulatory Standards</p>
+                                <p>Real-time monitoring</p>
                                 </li>
                             </ul>
                         </div>

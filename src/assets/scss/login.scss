@@ -145,7 +145,7 @@
                            color: #222;
                             display: block;
                             cursor: pointer;
-                            font-size: 14px;
+                            font-size: 13px;
                             font-weight: 500;
                             float: right;
                             margin-left: -10%;
@@ -162,7 +162,8 @@
                     }
 
                         }
-                        button{
+                        .login-btn{
+                            text-align: center;
                             background: #8231EB;
                             color: #fff;
                             border: 0;
@@ -189,7 +190,7 @@
                             .login-text-btn{
                                 border: 0;
                                 background: none;
-                                color: #8231EB;
+                                color: #8231EB;;
                                 outline: medium none;
                                 @include mobile{
                                     margin: 5px 0 0;

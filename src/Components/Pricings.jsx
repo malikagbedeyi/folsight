@@ -56,7 +56,7 @@ const Pricing = () => {
         <div className="Container">
         <div className="search-container">
             <div className="search-container-top">
-                <h1>Experience the most simple way to manage business
+                <h1>Discover the easiest way to handle audits
                 </h1>
             </div>
             <div className="search-container-body">
