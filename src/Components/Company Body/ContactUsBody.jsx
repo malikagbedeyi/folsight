@@ -21,7 +21,7 @@ const ContactUsBody = () => {
       <div className="contactBodyAdressParent col-lg-4 col-md-12">
           <div className="contactBodyAdressParentChild">
               <div className="contactBodyAdressParentChildTop">
-                  <h1>Get in tourch </h1>
+                  <h1>Get in touch </h1>
                   <p>Lights under light thing doesn't sixth set made blessed make.</p>
               </div>
               <div className="contactBodyAdressParentChildButtom">
