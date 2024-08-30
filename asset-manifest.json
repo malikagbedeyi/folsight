@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/folsight/static/css/main.130391da.css",
-    "main.js": "/folsight/static/js/main.5ace00c3.js",
+    "main.css": "/folsight/static/css/main.1797646f.css",
+    "main.js": "/folsight/static/js/main.f5ebcf44.js",
     "static/media/grc-02.png": "/folsight/static/media/grc-02.6cfbe35f345d8631bb09.png",
     "static/media/swiftprofile.png": "/folsight/static/media/swiftprofile.e9b3defd4e41f90f8381.png",
     "static/media/01.jpg": "/folsight/static/media/01.8f529a9fe65368ae2ccb.jpg",
@@ -13,6 +13,7 @@
     "static/media/fea-4.png": "/folsight/static/media/fea-4.cf04cdd8de224e6f9a46.png",
     "static/media/7.png": "/folsight/static/media/7.291566b27f24a8f5ee86.png",
     "static/media/fea-41.png": "/folsight/static/media/fea-41.7d41dcaead3198a4bde8.png",
+    "static/media/API.png": "/folsight/static/media/API.e6e93d84c73daafeca6f.png",
     "static/media/Zahtech.png": "/folsight/static/media/Zahtech.af60716dbab4c26c8343.png",
     "static/media/Team.png": "/folsight/static/media/Team.9026c50eab1c75b16fcc.png",
     "static/media/5.png": "/folsight/static/media/5.8a39a6d4cb3dbe748820.png",
@@ -41,11 +42,11 @@
     "static/media/4.png": "/folsight/static/media/4.e52f66b8c280bc676248.png",
     "static/media/icon_01.png": "/folsight/static/media/icon_01.fb73af149f76b6d1cc83.png",
     "index.html": "/folsight/index.html",
-    "main.130391da.css.map": "/folsight/static/css/main.130391da.css.map",
-    "main.5ace00c3.js.map": "/folsight/static/js/main.5ace00c3.js.map"
+    "main.1797646f.css.map": "/folsight/static/css/main.1797646f.css.map",
+    "main.f5ebcf44.js.map": "/folsight/static/js/main.f5ebcf44.js.map"
   },
   "entrypoints": [
-    "static/css/main.130391da.css",
-    "static/js/main.5ace00c3.js"
+    "static/css/main.1797646f.css",
+    "static/js/main.f5ebcf44.js"
   ]
 }
