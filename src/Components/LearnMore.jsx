@@ -61,7 +61,7 @@ const LearnMore = () => {
                     <p>Centralize policy creation, distribution, and tracking to ensure consistent enforcement across the organization, while automating updates in line with regulatory changes.</p>
                 </div> */}
                   <div className="bodyText">
-                    <h3>Project Management</h3>
+                    <h3>AuditRoom</h3>
                     <p>Behold living. Creeping gathered give sea third multiply midst winged tree bring wherein living itsmoving our him dry female his lights herb.</p>
                 </div>
                 <div className="buttonText">
@@ -79,7 +79,7 @@ const LearnMore = () => {
                     <p>Manage user roles and permissions with fine-grained controls, safeguard sensitive information through multi-factor authentication and encryption, and track and audit access to critical systems and data.</p>
                 </div> */}
                  <div className="bodyText">
-                    <h3>User Analytics</h3>
+                    <h3>Compl.AI</h3>
                     <p>Behold living. Creeping gathered give sea third multiply midst winged tree bring wherein living itsmoving our him dry female his lights herb.</p>
                 </div>
                 <div className="buttonText">
@@ -97,7 +97,7 @@ const LearnMore = () => {
                     <p>Access real-time dashboards with key metrics and risk indicators, generate custom reports for stakeholders and regulators, and utilize predictive analytics to anticipate and mitigate future risks.</p>
                 </div> */}
                  <div className="bodyText">
-                    <h3>Cloud Service</h3>
+                    <h3>RiskCore</h3>
                     <p>Behold living. Creeping gathered give sea third multiply midst winged tree bring wherein living itsmoving our him dry female his lights herb.</p>
                 </div>
                 <div className="buttonText">
@@ -247,7 +247,7 @@ const LearnMore = () => {
             <div className="learnMore-wrapper-rightTop">
             <img src={img11} alt="" />
             </div>
-            <h3>Cloud Compatibility</h3>
+            <h3>Operational Efficiency</h3>
            <div className="scroll-right">
             <p>Folsight enhances efficiency by automating repetitive tasks related to governance, risk, and compliance, reducing manual effort and errors. It integrates seamlessly with enterprise systems such as ERP, HR, and finance, streamlining workflows and ensuring consistent data flow across the organization. Additionally, the tool facilitates collaboration among departments and teams involved in GRC activities, promoting better communication, coordination, and alignment of goals. </p>
            </div>

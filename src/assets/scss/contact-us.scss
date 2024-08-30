@@ -14,11 +14,15 @@
     }
 }
 @mixin Destop {
-    @media screen and (max-width:1240px) {
+    @media screen and (max-width:1440px) {
         @content;
     }
 }
-
+@mixin FullHd {
+    @media screen and (max-width:2784px) {
+        @content;
+    }
+}
 
 .contact-us{
     *{
@@ -35,29 +39,37 @@
                     .contactBodyTextChild{
                         text-align: center;
             h1{
-                font-size: 2.5rem;
+                font-size: 2.5vw;
                 font-weight: 600;
                 transition: .3s;
                 font-family: 'Poppins', sans-serif;
               color: #233d63; 
               margin-bottom: 2%;
+              @include Destop{
+                font-size: 2.5rem;
+              }
               @include tablet{
               font-size: 1.6rem;
         }
             }
             p{
-                font-size: 15px;
+                font-size: 1vw;
                 font-weight: 500;
-                line-height: 28px;
+                line-height: 2vw;
                 color: #7b8491;
                 margin-bottom: 15px;
                 transition: .3s;
+                @include Destop{
+                    font-size: 15px;
+                    line-height: 25px;
+                  }
             }
         }
     }
 }
          .contactBodyAdress{
             width: 100%;
+            height: 100%;
             padding:5% 10% ;
             align-items: center;
             .contactBodyAdressParent{
@@ -66,19 +78,26 @@
                     padding: 40px 40px;
                     .contactBodyAdressParentChildTop{
                         h1{
-                            font-size: 2rem;
+                            font-size: 2vw;
                             font-weight: 600;
                             transition: .3s;
                             font-family: 'Poppins', sans-serif;
                           color: #fff; 
+                          @include Destop{
+                            font-size: 2rem;
+                          }
                         }
                         p{
-                            font-size: 16px;
+                            font-size: 1.1vw;
                             font-weight: 520;
-                            line-height: 28px;
+                            line-height: 2vw;
                             color: #fff;
                             margin-bottom: 15px;
                             transition: .3s;
+                            @include Destop{
+                                font-size: 16px;
+                                line-height: 25px;
+                              }
                         }
                     }
                         .contactBodyAdressParentChildButtom{
@@ -99,19 +118,26 @@
                                     .listLeft{
                                         overflow: hidden;
                                     h3{
-                                        font-size: 1.2rem;
+                                        font-size: 1.3vw;
                                         font-weight: 700;
                                         transition: .3s;
                                         font-family: 'Poppins', sans-serif;
                                       color: #fff; 
+                                      @include Destop{
+                                        font-size: 1.2rem;
+                                      }
                                     }
                                     p{
-                                        font-size: 15px;
+                                        font-size: 1vw;
                                         font-weight: 600;
                                         line-height: 28px;
                                         color: #fff;
                                         margin-bottom: 15px;
                                         transition: .3s;
+                                        @include Destop{
+                                            font-size: 15px;
+                                            line-height: 25px;
+                                          }
                                     }
                                 }
                                 }
@@ -130,31 +156,60 @@
                     }
                     form{
                         width: 100%;
-                        input{
+                        height: 100%;
+                        // input{
+                        //     width: 100%;
+                        //     border: none;
+                        //     height: 60px;
+                        // margin-bottom: 30px;
+                        // border: 1px solid #e0e3e7;
+                        // padding: 0 20px;
+                        // text-transform: uppercase;
+                        // overflow: visible;
+                        // font-size: 12px;
+                        //     &::placeholder{
+                        //         color: #7b8491;
+                        //         font-weight: 700;
+                        //     }
+                        // } 
+                         input{
                             width: 100%;
-                            border: none;
                             height: 60px;
-                        margin-bottom: 30px;
-                        border: 1px solid #e0e3e7;
-                        padding: 0 20px;
-                        text-transform: uppercase;
-                        overflow: visible;
-                        font-size: 12px;
-                            &::placeholder{
-                                color: #7b8491;
-                                font-weight: 700;
-                            }
-                        }
-                        textarea{
-                            width: 100%;
-                            height: 200px;
+                            border: 2px solid #eaedff;
+                            color: #6f7172;
+                            padding: 0 20px;
                             margin-bottom: 20px;
-                            border: 1px solid #e0e3e7;
+                            outline-style: none;
+                            @include mobile{
+                                font-size: 13px;
+                                height: 50px;
+                          }
+                            &::placeholder{
+                                font-weight: 500;
+                            }
+                          }
+                        // textarea{
+                        //     width: 100%;
+                        //     height: 200px;
+                        //     margin-bottom: 20px;
+                        //     border: 1px solid #e0e3e7;
+                        //     padding: 20px;
+                        //     text-transform: uppercase;font-size: 12px;
+                        // }
+                        textarea{
+                            height: 100%;
+                            margin-bottom: 25px;
                             padding: 20px;
-                            text-transform: uppercase;font-size: 12px;
-                        }
+                            width: 100%;
+                            border: 2px solid #eaedff;
+                            color: #6f7172;
+                            font-size: 14px;
+                            transition: .3s;
+                            outline-style: none;
+                            font-size: 0.9vw;
+                          }
                         button{
-                            background: #1c3354;
+                            background: #8231EB;
                             border-radius: 5px;
                             padding: 12px 35px;
                             color: #fff;
@@ -165,8 +220,9 @@
                             border: none;
 
                             &:hover{
-                                background: #2f3d51;
-                                color: #fff;
+                                border: 1px solid #8231EB;
+                                background: #fff;
+                                color: #8231EB;
                             }
                         }
                 }

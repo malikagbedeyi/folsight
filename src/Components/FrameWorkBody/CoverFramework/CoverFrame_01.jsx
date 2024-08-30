@@ -3,6 +3,7 @@ import img1 from "../../../assets/Images/shape2.png"
 import img2 from "../../../assets/Images/shape3.png" 
 import img3 from "../../../assets/Images/shape-sq.png"
 import img4 from "../../../assets/Images/shape-c-2.png"
+import img5 from '../../../assets/Images/Icons1-2/5.png'
 import '../../../assets/scss/FrameWork/CoverFrameWork/coverPages.scss'
 const CoverFrame_01 = () => {
   return (
@@ -24,6 +25,7 @@ const CoverFrame_01 = () => {
             <div className="coverTopbarParentLeft">
                 <div className="coverTopbarChildLeft">
                     <p>Home - <span>ISO27001</span> </p>
+                    <img src={img5} alt="" />
                 </div>
             </div>
         </div>

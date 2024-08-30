@@ -101,17 +101,27 @@ animation: animationFramesOne 30s alternate infinite linear;
         .coverTopbarParentLeft{
             
             .coverTopbarChildLeft{
+              display: flex;
+              justify-content: right;
+              gap: 10px;
                 p{
-                    font-size: 15px;
+                    font-size: 1vw;
                     font-weight: 500;
-                    line-height: 28px;
+                    line-height: 2vw;
                     color: #fff;
-                    margin-bottom: 15px;
                     transition: .3s;
+                    @include Destop{
+                      font-size: 15px;
+                      line-height: 25px;
+                    }
                     span{
                       color: #fff;
                       font-weight: 700;
                     }
+                }
+                img{
+                  margin-top: -20px;
+                  width: 10%;
                 }
             }
         }

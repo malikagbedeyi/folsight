@@ -55,18 +55,6 @@
                         font-size: 15px;
                         font-weight: 600;
                         line-height: 28px;
-                        color: #7b8491;
-                        margin-bottom: 20px;
-                        transition: .3s;
-                        @include mobile{
-                            font-size: 13px;
-                      }
-                    }
-                    a{
-                        text-decoration: none;
-                        font-size: 15px;
-                        font-weight: 600;
-                        line-height: 28px;
                         color: #8231EB;
                         margin-bottom: 20px;
                         transition: .3s;
@@ -424,6 +412,28 @@
                                 border-radius: 0 10px;
                             }
                         }
+                          .signUp{
+                            font-weight: 500;
+                            display: flex;
+                            gap: 20px;
+                            justify-content: center;
+                            span{
+                                margin-top: 3px;
+                            }
+                            @include mobile{
+                                margin: 10% 0 0;
+                            }
+                            .login-text-btn{
+                                border: 0;
+                                background: none;
+                                color: #8231EB;
+                                outline: medium none;
+                                @include mobile{
+                                    margin: 5px 0 0;
+                                    font-size: 14px;
+                                }
+                            }
+                          }  
                     }
                 }
             }

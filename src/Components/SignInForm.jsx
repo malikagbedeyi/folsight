@@ -37,16 +37,8 @@ const SignInForm = () => {
                                 <input id="pass" type="email" placeholder="Your Email" />
                                 <label for="pass">Phone No <span>**</span></label>
                                 <input id="pass" type="text" placeholder="******" />
-                                <div className="register-wrapper">
-                                     <div className="leftwrapper">
                                 <label for="name">Password  <span>**</span></label>
                                 <input id="name" type="password" placeholder="Your Name" />
-                                </div>
-                                 <div className="rightwrapper">
-                                <label for="name">Confirm Password <span>**</span></label>
-                                <input id="name" type="password" placeholder="Your Name" />
-                                </div>
-                                </div>
                                 </div>
                                 <a href='#/' className="login-btn w-100">Sign Up</a>
                                 <div className="signUp text-center mt-30">
