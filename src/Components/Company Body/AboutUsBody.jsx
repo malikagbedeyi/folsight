@@ -71,7 +71,7 @@ const AboutUsBody = () => {
             </div>
           </div>
           <div className="about-usBottom">
-            <div className="container">
+            <div className="Container">
               <div className="row aboutUs-bottomContainer">
                 <div className="col-lg-6 aboutUs-bottomParent">
                   <div className="bottomTittle">
@@ -124,7 +124,7 @@ const AboutUsBody = () => {
             </div>
           </div>
           <div className="about-usBottom">
-            <div className="container">
+            <div className="Container">
               <div className="row aboutUs-bottomContainer">
               <div className="col-lg-6 aboutUs-bottomParentright">
                   <div className="aboutUs-bottomChildright">

@@ -14,21 +14,25 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #000;
   }
   .loading-cover{
   }
   
   .spinner {
-    border: 16px solid #f3f3f3;
+    /* border: 16px solid #f3f3f3; */
     border-radius: 50%;
-    border-top: 16px solid #3498db;
+    /* border-top: 16px solid #8231EB;
     width: 120px;
-    height: 120px;
+    height: 120px; */
     animation: spin 2s linear infinite;
+    img{
+      width: 60%;
+  }
   }
   
   @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% { transform: rotate(0deg);
+    opacity: 0.2; }
+    100% { transform: rotate(360deg);
+    opacity: 1; }
   }

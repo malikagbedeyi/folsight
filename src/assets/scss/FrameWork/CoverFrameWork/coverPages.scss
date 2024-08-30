@@ -114,16 +114,18 @@ animation: animationFramesOne 30s alternate infinite linear;
                       font-size: 15px;
                       line-height: 25px;
                     }
-                    span{
-                      color: #fff;
-                      font-weight: 700;
-                    }
                 }
-                img{
-                  margin-top: -20px;
-                  width: 10%;
+                  span{
+                    font-size:1rem;
+                    color: #fff;
+                    font-weight: 700;
+                  }
+                  img{
+                    display: flex;
+                    margin-top: -10px;
+                    width: 8%;
+                  }
                 }
-            }
         }
     }
     .coverIndex{

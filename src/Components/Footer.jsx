@@ -8,14 +8,14 @@ import '../assets/scss/footer.scss'
 const Footer = () => {
   return (
     <div className='footer'>
-        <div className="animate-icons">
+        {/* <div className="animate-icons">
         <div class="shape-slider">
                 <img class="shape shape-2  " src={img1} alt="" />
                 <img class="shape shape-4 " src={img2} alt="" />
                 <img class="shape shape-5 " src={img3} alt="" />
                 <img class="shape shape-6 " src={img4}  alt="" />
             </div>
-        </div>
+        </div> */}
     <div className="footerBody">
       <div className="footerBodyContainer row">
           <div className="footerBodyContainerParent col-lg-4">

@@ -24,8 +24,9 @@ const CoverFrame_04 = () => {
             </div>
             <div className="coverTopbarParentLeft">
                 <div className="coverTopbarChildLeft">
-                    <p>Home - <span>GDPR</span> </p>
+                    <p>Home -</p>
                     <img src={img5} alt="" />
+                    <span>GDPR</span> 
                 </div>
             </div>
         </div>

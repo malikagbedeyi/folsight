@@ -167,8 +167,6 @@ const [icontoggle , setIconToggle] = useState(false)
                 <div class="basic-sign-in">
                     {/* <div className="basicLogin-top"> */}
                     <h3 class="mb-20">Request A Demo</h3>
-                    <p>Welcome! please Kindly enter your information<br />
-                    </p>
                     <div class="mb-30"></div>
                     {/* </div> */}
                     <form action="#">
