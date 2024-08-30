@@ -14,7 +14,12 @@
     }
 }
 @mixin Destop {
-    @media screen and (max-width:1240px) {
+    @media screen and (max-width:1440px) {
+        @content;
+    }
+}
+@mixin FullHd {
+    @media screen and (max-width:2784px) {
         @content;
     }
 }
@@ -59,7 +64,7 @@
         font-family: 'Poppins', sans-serif;
         .about-us-topContainer{
             background: #f9f5fe;
-            padding: 5% 0 7%  ;
+            padding: 10% 0;
             .container{
                .aboutUs-bodyContainer{
                 .aboutUs-bodyParent{
@@ -72,28 +77,24 @@
                     .bodyChildright{
                         color: #8231EB;
                         padding:0 7%;
-                        h5{
-                            text-transform: uppercase;
-                            font-weight: 600;
-                            color: #8231EB;
-                            @include laptop{
-                                margin: 3% 0;
-                            }
-                        }
                         h1{
                             max-width: 450px;
-                            color: #233d63;
-                            font-weight: 600;
-                            span{
-                                color: #8231EB;
-                                font-family:'Times New Roman', Times, serif;
-                                font-weight: 500;
-                                font-style: italic;
+                            color: #8231EB;
+                            font-weight: 700;
+                            font-size: 2.3vw;
+                            @include Destop{
+                                font-size: 2.3rem;
                             }
                         }
                         p{
                             color: #7b8491;
-                            margin-top: 2%;
+                            margin: 2% 0;
+                            font-size: 1.1vw;
+                            line-height: 2vw;
+                            @include Destop{
+                                font-size: 15px;
+                                line-height: 28px;
+                            }
                         }
                         button{
                             margin-top: 2%;
@@ -102,6 +103,10 @@
                             border: none;
                             color: #fff;
                             transition: .3s;
+                            font-size: 1vw;
+                            @include Destop{
+                                font-size: 15px;
+                            }
                             &:hover{
                                 border: 1px solid #8231EB;
                                 background: #fff;
@@ -119,23 +124,34 @@
             background: #fff;
             .container{
                 .aboutUs-middleTIttle{
-                    max-width: 380px;
+                    text-align: center;
                     margin: auto;
-                    h2{
-                        text-align: center;
+                    h1{
                         color: #233d63;
-                        span{
-                            color: #8231EB;
-                            font-family:'Times New Roman', Times, serif;
-                            font-weight: 500;
-                            font-style: italic;
+                            font-weight: 700;
+                            font-size: 2.3vw;
+                            @include Destop{
+                                font-size: 2.3rem;
+                            }
+                    }
+                    p{
+                        color: #7b8491;
+                        margin: 2% 0;
+                        font-size: 1.1vw;
+                        line-height: 2vw;
+                        max-width: 90%;
+                        margin: auto;
+                        @include Destop{
+                            font-size: 15px;
+                            line-height: 28px;
                         }
                     }
                 }
                 .aboutUs-middleBody{
-                    margin: 5% 0;
+                    margin: 5% 0 0;
+                    display: flex;
                     .aboutUs-middleParent{
-                        padding:0 20px;
+                        padding:0 30px;
                         @include laptop{
                             margin-top: 5%;
                         }
@@ -145,9 +161,10 @@
                             justify-content: center;
                             text-align: center;
                             gap: 8px;
-                            padding: 30px 45px;
+                            padding: 10px 35px;
                             transition: .3s;
                             font-family: 'Poppins', sans-serif;
+                            height: 70%;
                             .icons{
                                height: 50px;
                                 width: 50px;
@@ -156,7 +173,7 @@
                                 background: #8231EB;
                                 color: #fff;
                                 text-align: center;
-                                margin: auto;
+                                margin:0 auto;
                                 i{
                                     font-size: 20px;
                                 }
@@ -164,15 +181,29 @@
                             h4{
                                 color: #233d63;
                                 margin-top: 4%;
-                                font-size: 20px;
+                                font-size: 1.5vw;
                                 font-weight: 600;
+                                @include Destop{
+                                    font-size: 20px;
+                                }
                             }
+                            .icons-text{
+                                padding: 10px 0;
+                                height:50%;
+                                overflow-y: auto;
+                                cursor: grab;
+                                scrollbar-width: none;
+                                &::-webkit-scrollbar {
+                                  width:0; 
+                                }
                             p{
                                 font-size: 15px;
                                 line-height: 28px;
                                 color: #7b8491;
                                 font-weight: 500;
+                                text-align: left;
                             }
+                        }
                             &:hover{
                                 box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
                                 background: #fff;
@@ -185,16 +216,6 @@
                                 }
                             }
                         }
-                        .activeChild{
-                            box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
-                            background: #fff;
-                            transition: all .3s ease-out;
-                            color: #7b8491;
-                            .icons{
-                                background: #8231EB;
-                                color: #fff;
-                            }
-                        }
                     }
                 }
                 button{
@@ -203,7 +224,7 @@
                   color: #7b8491;
                   border: 1px solid #8231EB;
                   display: flex;
-                  margin:3% auto;
+                  margin:-7% auto 0;
                   transition: .3s;
                   &:hover{
                     transition: .3s;
@@ -221,69 +242,78 @@
                 .aboutUs-bottomContainer{
                     padding: 0 7%;
                     .aboutUs-bottomParent{
-                        padding: 10px;
+                        padding: 10px 20px ; 
                         .bottomTittle{
+                            padding: 0;
                             h1{
-                                font-weight: 600;
+                                padding: 0;
                                 color: #233d63;
-                                max-width: 500px;
-                                font-size: 2.4rem;
-                                letter-spacing: 1px;
+                                    font-weight: 700;
+                                    font-size: 2.3vw;
+                                    @include Destop{
+                                        font-size: 2.1rem;
+                                    }
                             }
                         }
                         .aboutUs-bottomChildbox{
-                            padding: 20px 20% 20px 0;
+                            padding: 0 10% 0 0;
+                            height: 25%;
                             .bottomChildbox{
                             box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
                             justify-content: center;
                             align-items: center;
                             display: flex;
                             gap: 20px;
-                            padding: 20px 20px;
+                            padding: 20px;
                             border-radius: 30px;
+                            margin: 7% 0;
+                            height: 100%;
                             .number-box{
-                                width: 100px;
-                                height: 50px;
-                                line-height: 50px;
-                                border-radius: 50%;
-                                background: #8231EB;
+                                display: flex;
+                                justify-content: center;
+                                flex: 1;
                                 color: #fff;
                                 font-weight: 600;
-                                text-align: center;
-                                font-size: 15px;
+                                p{
+                                    width: 50px;
+                                    height: 50px;
+                                    line-height: 50px;
+                                    border-radius: 50%;
+                                    background: #8231EB;
+                                    text-align: center;
+                                }
                             }
                                .textbox{
+                                flex: 8;
                                 h3{
-                                    font-size: 15px;
-                                    color: #fff;
+                                    font-size: 1.1vw;
+                                    color: #233d63;
+                                    font-weight: 600;
+                                    @include Destop{
+                                        font-size: 15px;
+                                    }
                                 }
                                 p{
                                     color: #7b8491;
-                                    font-size: 13px;
+                                    font-size: 0.9vw;
+                                    line-height: 1.5vw;
+                                    @include Destop{
+                                        font-size: 13px;
+                                    }
                                 }
 
                             }
                         }
                     }
-                     .bottomboxchildright{
-                        padding: 20px 0 20px 20%;
-                        .bottomChildbox{
-                        }
-
+                    .bottomboxchildright{
+                        padding: 0 0 0 10%;
                     }
+
                 }
                 .aboutUs-bottomParentright{
+                    padding: 7% 20px 0;
                     .aboutUs-bottomChildright{
-                        margin-top: 25%;
-                    p{
-                        color: gray;
-                        max-width: 300px;
-                        margin-left: auto;
-                        margin-right: 30px;
-                        font-style: italic;
-                        margin-top: 10px;
-                        display: none;
-                    }
+                        height: 100%;
                     .bottomImg{
                         background-image: url(../Images/ImageBlog/05.jpg);
                         background-position: center;
@@ -291,18 +321,19 @@
                         background-size: cover;
                         border-radius: 20px;
                         width: 100%;
-                        height: 30vh;
+                        height: 40%;
                     }
                     .bottomImgbox{
+                        height: 100%;
                         .boxImgWrapper{
                             margin-top: 10%;
                             display: flex;
                             border: 10x solid #8231EB;
                         .leftbox{
+                            flex: 1;
                             color: #fff;
                             text-align: center;
                             background: #8231EB;
-                            height: 25vh;
                             border-radius: 20px 0 0 20px;
                             display: flex;
                             flex-direction: column;
@@ -316,12 +347,13 @@
                             }
                         }
                         .rightbox{
+                            flex: 5;
                             background-image: url(../Images/ImageBlog/03.jpg);
                             background-position: center;
                             background-repeat: no-repeat;
                             background-size: cover;
                             border-radius: 0 20px 20px 0;
-                            width: 80%;
+                            width: 100%;
                             height: 25vh;
                         }
                     }
@@ -332,42 +364,76 @@
             }
         }
         .aboutUs-footer{
+            padding: 15px 0;
+            .aboutUs-footerTIttle{
+                text-align: center;
+                margin: auto;
+                h1{
+                    color: #233d63;
+                        font-weight: 700;
+                        font-size: 2.3vw;
+                        @include Destop{
+                            font-size: 2.3rem;
+                        }
+                }
+                p{
+                    color: #7b8491;
+                    margin: 2% 0;
+                    font-size: 1.1vw;
+                    line-height: 2vw;
+                    max-width: 90%;
+                    margin: auto;
+                    @include Destop{
+                        font-size: 15px;
+                        line-height: 28px;
+                    }
+                }
+            }
             .aboutUs-footerContainer{
-                padding: 0 15%;
+                margin: 5% 0;
+                padding: 0 5%;
                 .aboutUs-footerParent{
-                    padding: 0;
                     .aboutUs-footerChild{
-                        height: 30vh;
                         color: #7b8491;
                         padding: 10px 30px;
-                        display: flex;
-                        gap: 20px;
                         justify-content: center;
+                        height: 100%;
                         &:hover{
                             box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
                             background: #fff;
                             transition: all .3s ease-out;
                         }
-                        .footerChildicon{
-                            margin: auto 0;
-                            i{
-                                font-size: 30px;
-                                color: #8231EB;
-                            }
+                        h4{
+                            font-size: 1rem;
+                            font-weight: 600;
+                            font-family: serif;
+                            text-align: center;
                         }
                         .footerCildText{
-                            margin: auto 0;
+                            margin: 5% 0 ;
                             display: flex;
-                            flex-direction: column;
-                            h4{
-                                font-size: 1.3rem;
-                                font-weight: 600;
-                                font-family: serif;
+                            gap: 10px;
+                            .footerChildicon{
+                                flex: 1;
+                                margin: auto 0;
+                                i{
+                                    font-size: 30px;
+                                    color: #8231EB;
+                                }
                             }
+                            .footerCildTextScroll{
+                                flex: 5;
+                                overflow-y: hidden;
+                                scrollbar-width: 0;
+                                &::-webkit-scrollbar {
+                                    width:0; 
+                                  }
                             p{
                                 font-size: 14px;
                                 color: #ddd;
+                                text-align: left;
                             }
+                        }
                         }
                     }
                     .active-aboutUsFooter{
