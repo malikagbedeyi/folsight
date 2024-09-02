@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/folsight/static/css/main.e62fce3f.css",
-    "main.js": "/folsight/static/js/main.f216b5c8.js",
+    "main.css": "/folsight/static/css/main.ae99672d.css",
+    "main.js": "/folsight/static/js/main.a751550f.js",
     "static/media/grc-02.png": "/folsight/static/media/grc-02.6cfbe35f345d8631bb09.png",
     "static/media/swiftprofile.png": "/folsight/static/media/swiftprofile.e9b3defd4e41f90f8381.png",
     "static/media/01.jpg": "/folsight/static/media/01.8f529a9fe65368ae2ccb.jpg",
@@ -16,7 +16,7 @@
     "static/media/API.png": "/folsight/static/media/API.e6e93d84c73daafeca6f.png",
     "static/media/Zahtech.png": "/folsight/static/media/Zahtech.af60716dbab4c26c8343.png",
     "static/media/Team.png": "/folsight/static/media/Team.9026c50eab1c75b16fcc.png",
-    "static/media/5.png": "/folsight/static/media/5.8a39a6d4cb3dbe748820.png",
+    "static/media/5.png": "/folsight/static/media/5.18c223552b1d1e2dcb80.png",
     "static/media/6.png": "/folsight/static/media/6.18a73e8626fcaa1b5ecd.png",
     "static/media/Compl.ai.png": "/folsight/static/media/Compl.ai.ec01e416cb0e1297db33.png",
     "static/media/ContactUs.png": "/folsight/static/media/ContactUs.be709031bd795e3d0f67.png",
@@ -30,23 +30,26 @@
     "static/media/sprintcue.png": "/folsight/static/media/sprintcue.b16a7a6ea026725331d2.png",
     "static/media/people.png": "/folsight/static/media/people.b7611b0c5ade8ec1b200.png",
     "static/media/RiskCore.png": "/folsight/static/media/RiskCore.a3078555c239eefa731d.png",
+    "static/media/11.png": "/folsight/static/media/11.14ffe7ba99baa0bc0d89.png",
     "static/media/8.png": "/folsight/static/media/8.4a4dfec407436bee6790.png",
+    "static/media/10.png": "/folsight/static/media/10.91101cc78f1a4f748141.png",
+    "static/media/4.png": "/folsight/static/media/4.e52f66b8c280bc676248.png",
     "static/media/grc-01.png": "/folsight/static/media/grc-01.ec1cc2b489bcd0b72b32.png",
     "static/media/2.png": "/folsight/static/media/2.31d25e1118e3a1be23ce.png",
     "static/media/icon_02.png": "/folsight/static/media/icon_02.d75bde083e3fafcda52d.png",
+    "static/media/12.png": "/folsight/static/media/12.ae661fbb4fa07accf7cb.png",
     "static/media/3.png": "/folsight/static/media/3.5d52f376a3ca4e4815c6.png",
     "static/media/icon_03.png": "/folsight/static/media/icon_03.5865a00de79823c6f620.png",
     "static/media/burnning.png": "/folsight/static/media/burnning.6980647a49fd782ff33b.png",
     "static/media/1.png": "/folsight/static/media/1.84829054229958f55c9f.png",
     "static/media/icon_04.png": "/folsight/static/media/icon_04.d39ce3e4ad7d74afedf9.png",
-    "static/media/4.png": "/folsight/static/media/4.e52f66b8c280bc676248.png",
     "static/media/icon_01.png": "/folsight/static/media/icon_01.fb73af149f76b6d1cc83.png",
     "index.html": "/folsight/index.html",
-    "main.e62fce3f.css.map": "/folsight/static/css/main.e62fce3f.css.map",
-    "main.f216b5c8.js.map": "/folsight/static/js/main.f216b5c8.js.map"
+    "main.ae99672d.css.map": "/folsight/static/css/main.ae99672d.css.map",
+    "main.a751550f.js.map": "/folsight/static/js/main.a751550f.js.map"
   },
   "entrypoints": [
-    "static/css/main.e62fce3f.css",
-    "static/js/main.f216b5c8.js"
+    "static/css/main.ae99672d.css",
+    "static/js/main.a751550f.js"
   ]
 }
