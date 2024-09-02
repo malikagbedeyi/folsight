@@ -441,8 +441,11 @@
                         }
                     }
                     .learnmoreActive{
-                        box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
+                        box-shadow: 0px 10px 20px rgba(0, 23, 88, 0.1);
                         background: #fff;
+                        &:hover{
+                            box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
+                        }
                     }
                 }
                 }

@@ -54,7 +54,7 @@ const LearnMore = () => {
             </div>
         <div className="learnMoreContainer row">
             <div className=" col-lg-4 col-md-6">
-            <div className="learnMoreContainerChild">
+            <div className="learnmoreActive learnMoreContainerChild">
                 <div className="topImg">
                     <img src={img6} alt="" />
                 </div>
@@ -86,7 +86,7 @@ const LearnMore = () => {
             </div>
             </div>
               <div className="col-lg-4 col-md-6">
-                <div className="learnMoreContainerChild">
+                <div className="learnmoreActive learnMoreContainerChild">
               <div className="topImg">
                     <img src={img8} alt="" />
                 </div>
