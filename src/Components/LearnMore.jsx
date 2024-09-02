@@ -1,9 +1,9 @@
 import React, { useEffect, useReducer, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AOS from 'aos';
-import img6 from "../assets/Images/gea-01.png"
-import img7 from "../assets/Images/gea-02.png"
-import img8 from "../assets/Images/gea-03.png"
+import img6 from "../assets/Images/Icons1-4/10.png"
+import img7 from "../assets/Images/Icons1-4/11.png"
+import img8 from "../assets/Images/Icons1-4/12.png"
 import img9 from "../assets/Images/ImageBlog/01.jpg"
 import img10 from "../assets/Images/ImageBlog/03.jpg"
 import img11 from "../assets/Images/ImageBlog/04.jpg"
@@ -15,6 +15,8 @@ import img16 from "../assets/Images/IconsCover1/icon_01.png"
 import img17 from "../assets/Images/IconsCover1/icon_02.png"
 import img18 from "../assets/Images/IconsCover1/icon_03.png"
 import img19 from "../assets/Images/IconsCover1/icon_04.png"
+import img20 from "../assets/Images/Icons1-5/4.png"
+import img21 from "../assets/Images/Icons1-5/5.png"
 import 'aos/dist/aos.css';
 const LearnMore = () => {
     const [hover,sethover]=useState(1);
@@ -46,8 +48,8 @@ const LearnMore = () => {
     <div className="Container">
      <div className="learnMoreTittle row">
      <div className="col-lg-12">
-    <h1>Making Great Things Possible</h1>
-    <p>Uphold ethical standards, ensure transparency, and foster accountability. Folsight safeguards your organization's reputation by embedding integrity in decision-making, monitoring compliance, and swiftly addressing potential breaches.</p>
+    <h1>Streamlining the Audit Process</h1>
+    <p>Gain instant insights into every stage of your audit process through a centralized platform that integrates all aspects of audit management. Easily track audit progress, identify and document issues in real-time, and enhance collaboration with shared access to key documents and communication tools.</p>
     </div>
             </div>
         <div className="learnMoreContainer row">
@@ -56,10 +58,6 @@ const LearnMore = () => {
                 <div className="topImg">
                     <img src={img6} alt="" />
                 </div>
-                {/* <div className="bodyText">
-                    <h3>Policy Management</h3>
-                    <p>Centralize policy creation, distribution, and tracking to ensure consistent enforcement across the organization, while automating updates in line with regulatory changes.</p>
-                </div> */}
                   <div className="bodyText">
                     <h3>AuditRoom</h3>
                     <p>Behold living. Creeping gathered give sea third multiply midst winged tree bring wherein living itsmoving our him dry female his lights herb.</p>
@@ -188,10 +186,10 @@ const LearnMore = () => {
                 <div className="learn-more-child-bodyTop">
                     <div className="learn-more-child-bodyTopWrapper">
                         <div className="learn-more-child-bodyLeftWrapper">
-                            <img src={img15} alt="" />
+                            <img src={img21} alt="" />
                         </div>
                         <div className="learn-more-child-bodyrightWrapper">
-                        <img src={img16} alt="" />
+                        <img src={img20} alt="" />
                         </div>          
                              </div>
                              </div>

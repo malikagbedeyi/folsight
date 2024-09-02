@@ -6,7 +6,7 @@ const AboutUsBody = () => {
   return (
     <div className='about-usBody'>
       <div className="about-us-topContainer">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row aboutUs-bodyContainer">
             <div className="col-lg-6 col-md-12 aboutUs-bodyParent">
               <div className="aboutUs-bodyChild">
