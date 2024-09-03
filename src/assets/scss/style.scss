@@ -336,7 +336,7 @@
                     }
 
                         h1{
-                            font-size: 2.5vw;
+                            font-size: 2.7vw;
                             font-weight: 500;
                             transition: .3s;
                             font-family: 'Poppins', sans-serif;
@@ -382,14 +382,19 @@
                             }
                             .topImg{
                                 margin: 2% 0 20% 0;
+                                align-items: center;
+                                text-align: center;
                                 img{
                                     width: 30%;
+                                    margin: 0 auto;
+                                    align-items: center;
                                 }
                             }
                             .bodyText{
                                 display: flex;
                                 flex-direction: column;
                                 gap: 20px;
+                                text-align: center;
                                 h3{
                                     font-size: 1.4vw;
                                     font-weight: 600;
@@ -416,6 +421,8 @@
                             }
                             .buttonText{
                                 margin-top: 20px;
+                                align-items: center;
+                                text-align: center;
                                 a{
                                     color: #1c3354;
                                     text-transform: uppercase;
@@ -720,6 +727,7 @@
                              -ms-overflow-style: none;
                              scrollbar-width: none;
                              animation: movingforwards .5s;
+                             text-align: justify; /* For Edge */
                              @include tablet{
                                 height: 100%;
                              }
@@ -728,7 +736,6 @@
                              }
                             p{
                                 font-size: 1vw;
-                                text-align: left;
                                 line-height: 2vw;
                                 color: #7b8491;
                                 transition: .3s;

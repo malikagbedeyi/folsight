@@ -166,7 +166,7 @@
                             padding: 10px 35px;
                             transition: .3s;
                             font-family: 'Poppins', sans-serif;
-                            height: 70%;
+                            height: 100%;
                             .icons{
                                height: 50px;
                                 width: 50px;
@@ -191,19 +191,18 @@
                             }
                             .icons-text{
                                 padding: 10px 0;
-                                height:50%;
-                                overflow-y: auto;
                                 cursor: grab;
+                                text-align: justify; /* For Edge */
+                                 text-align-last: justify;
                                 scrollbar-width: none;
                                 &::-webkit-scrollbar {
                                   width:0; 
                                 }
                             p{
                                 font-size: 15px;
-                                line-height: 28px;
+                                line-height: 25px;
                                 color: #7b8491;
                                 font-weight: 500;
-                                text-align: left;
                             }
                         }
                             &:hover{
@@ -226,7 +225,7 @@
                   color: #7b8491;
                   border: 1px solid #8231EB;
                   display: flex;
-                  margin:-7% auto 0;
+                  margin:3% auto 0;
                   transition: .3s;
                   &:hover{
                     transition: .3s;
