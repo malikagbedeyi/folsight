@@ -83,7 +83,7 @@ const Navbar = () => {
                               <img src={icon16} alt="" />
                               </div>
                                 <p>
-                                <a href="/">AUDITROOM </a>
+                                <a href="#/audit_room">AUDITROOM </a>
                                 <span>Tool for comprehensive website audits.</span>
                                 {/*  and performance analysis */}
                                 </p>
