@@ -225,7 +225,7 @@
                   color: #7b8491;
                   border: 1px solid #8231EB;
                   display: flex;
-                  margin:3% auto 0;
+                  margin:4% auto 0;
                   transition: .3s;
                   &:hover{
                     transition: .3s;
@@ -447,7 +447,6 @@
                             p{
                                 font-size: 0.9vw;
                                 color: #7b8491;
-                                text-align: left;
                                 @include Destop{
                                     font-size: 14px;
                                }
