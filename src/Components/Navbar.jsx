@@ -158,7 +158,7 @@ const Navbar = () => {
                               <img src={icon10} alt="" />
                               </div>
                                 <p>
-                                <a onClick={() => navigate('/framework_01')}>IS027001</a>
+                                <a href='#/framework_01'>IS027001</a>
                                 <span>Framework for managing information security.</span>
                                 {/* Innovation that inspires. Performance that delivers */}
                                 </p>
@@ -168,7 +168,7 @@ const Navbar = () => {
                               <img src={icon11} alt="" />
                               </div>
                                 <p>
-                                <a onClick={() => navigate('/framework_02')}>HIPAA </a>
+                                <a href='#/framework_02'>HIPAA </a>
                                 <span>Regulation for protecting health information privacy.</span>
                                 </p>
                                  </li>
@@ -177,7 +177,7 @@ const Navbar = () => {
                               <img src={icon14} alt="" />
                               </div>
                                 <p>
-                                <a onClick={() => navigate('/framework_03')}>SOC2 </a>
+                                <a href='#/framework_03'>SOC2 </a>
                                 <span>Ensures data security and privacy controls.</span>
                                 {/* Innovation that inspires. Performance that delivers */}
                                 </p>
@@ -192,7 +192,7 @@ const Navbar = () => {
                               <img src={icon12} alt="" />
                               </div>
                                 <p>
-                                <a onClick={() => navigate('/framework_04')}>GDPR </a>
+                                <a href='#/framework_04'>GDPR </a>
                                 <span>EU regulation for data privacy protection.</span>
                                 </p>
                                  </li>
@@ -201,7 +201,7 @@ const Navbar = () => {
                               <img src={icon13} alt="" />
                               </div>
                                 <p>
-                                <a onClick={() => navigate('/framework_05')}>NIST </a>
+                                <a href='#/framework_05'>NIST </a>
                                 <span>Framework for cybersecurity standards.</span>
                                 {/* Innovation that inspires. Performance that delivers */}
                                 </p>
@@ -267,76 +267,32 @@ const Navbar = () => {
                  </button>
                 </div>
             </div>
-            {/* <ul>
-                    <li className=''><a className="nav-link" href="#">PRODUCTS</a>
-                       <ul className="submenu" id={openMenu ? "open" : "close"}>
-                            <li> <a href="/">Product 01 </a> <span className="i"></span> </li>
-                             <li> <a href="#">Product 02</a> <span className="i"></span> </li>
-                             <li> <a href="#">Product 03</a> <span className="i"></span>  </li>
-                             <li> <a href="#">Product 04</a> <span className="i"></span> </li>
-                        </ul>
-                        <i className="fa-solid fa-plus" onClick={() => setOpenMeu(!openMenu)}></i>
-                    </li>
-    
-                    <li className=''><a className="nav-link" href="#">PLATFORMS</a>
-                    <ul className="submenu" id={openMenu ? "open" : "close"}>
-                            <li> <a href="/">Platform 01 </a> <span className="i"></span> </li>
-                             <li> <a href="#">Platform 02</a> <span className="i"></span> </li>
-                             <li> <a href="#">Platform 03</a> <span className="i"></span>  </li>
-                             <li> <a href="#">Platform 04</a> <span className="i"></span> </li>
-                        </ul>
-                    <i className="fa-solid fa-plus" onClick={() => setOpenMeu2(!openMenu2)}></i>
-                    </li>
-    
-                    <li className='nav-item'> <a className="nav-link" href="#">FRAMEWORKS</a>
-                    <ul className="submenu" id={openMenu ? "open" : "close"}>
-                            <li> <a href="/">IS027001</a> <span className="i"></span> </li>
-                             <li> <a href="#">HIPAA</a> <span className="i"></span> </li>
-                             <li> <a href="#">SOC2</a> <span className="i"></span>  </li>
-                             <li> <a href="#">GDPR</a> <span className="i"></span> </li>
-                             <li> <a href="#">NIST</a> <span className="i"></span> </li>
-                        </ul>
-                        <i className="fa-solid fa-plus" onClick={() => setOpenMeu3(!openMenu3)}></i>
-                    </li>
-                    <li className='nav-item'> <a className="nav-link"  href="#">PLANS</a> 
-                    </li>
-                    <li className='nav-item'> <a className="nav-link" href="#">COMPANY</a>
-                    <ul className="submenu" id={openMenu ? "open" : "close"}>
-                            <li> <a href="/">About Us</a> <span className="i"></span> </li>
-                             <li> <a href="#">Team</a> <span className="i"></span> </li>
-                             <li> <a href="#">Contact us</a> <span className="i"></span>  </li>
-                        </ul>
-                          <i className="fa-solid fa-plus" onClick={() => setOpenMeu6(!openMenu6)}></i>
-                    </li>
-                </ul> */}
             <div className='mobileResponsive' id={toggle ? "open" : "close"}>
                 <ul>
                     <li className=''><a className="nav-link" href="#">PRODUCT</a>
                        <ul className="submenu" id={openMenu ? "open" : "close"}>
-                            <li> <a href="/">Product 01 </a> <span className="i"></span> </li>
-                             <li> <a href="#">Product 02</a> <span className="i"></span> </li>
-                             <li> <a href="#">Product 03</a> <span className="i"></span>  </li>
-                             <li> <a href="#">Product 04</a> <span className="i"></span> </li>
+                            <li> <a href="#/audit_room">AUDITROOM </a> <span className="i"></span> </li>
+                             <li> <a href="#">COMPL.AI </a> <span className="i"></span> </li>
+                             <li> <a href="#">RISKCORE 03</a> <span className="i"></span>  </li>
                         </ul>
                         <i className={openMenu ? "fa-solid fa-minus": "fa-solid fa-plus"} onClick={() => setOpenMeu(!openMenu)}></i>
                     </li>
     
                     <li className=''><a className="nav-link" href="#">PLATFORM</a>
                     <ul className="submenu" id={openMenu2 ? "open" : "close"}>
-                            <li> <a href="/">Platform 01 </a> <span className="i"></span> </li>
-                             <li> <a href="#">Platform 02</a> <span className="i"></span> </li>
-                             <li> <a href="#">Platform 03</a> <span className="i"></span>  </li>
-                             <li> <a href="#">Platform 04</a> <span className="i"></span> </li>
+                            <li> <a href="#">AI </a> <span className="i"></span> </li>
+                             <li> <a href="#">API</a> <span className="i"></span> </li>
+                             <li> <a href="#">INTEGRATION</a> <span className="i"></span>  </li>
                         </ul>
                         <i className={openMenu3 ? "fa-solid fa-minus": "fa-solid fa-plus"} onClick={() => setOpenMeu2(!openMenu2)}></i>
                     </li>
                     <li className=''><a className="nav-link" href="#">FRAMEWORKS</a>
                     <ul className="submenu" id={openMenu3 ? "open" : "close"}>
-                    <li> <a href="/">IS027001</a> <span className="i"></span> </li>
-                             <li> <a href="#">HIPAA</a> <span className="i"></span> </li>
-                             <li> <a href="#">SOC2</a> <span className="i"></span>  </li>
-                             <li> <a href="#">GDPR</a> <span className="i"></span> </li>
-                             <li> <a href="#">NIST</a> <span className="i"></span> </li>
+                    <li> <a href='#/framework_01'>IS027001</a> <span className="i"></span> </li>
+                             <li> <a href="#/framework_02">HIPAA</a> <span className="i"></span> </li>
+                             <li> <a href="#/framework_03">SOC2</a> <span className="i"></span>  </li>
+                             <li> <a href="#/framework_04">GDPR</a> <span className="i"></span> </li>
+                             <li> <a href="#/framework_05">NIST</a> <span className="i"></span> </li>
                         </ul>
                         <i className={openMenu3 ? "fa-solid fa-minus": "fa-solid fa-plus"} onClick={() => setOpenMeu3(!openMenu3)}></i>
                     </li>
@@ -345,9 +301,9 @@ const Navbar = () => {
                     </li>
                     <li className='nav-item'> <a className="nav-link" href="#">COMPANY</a>
                     <ul className="submenu" id={openMenu5 ? "open" : "close"}>
-                             <li> <a href="/">About Us</a> <span className="i"></span> </li>
+                             <li> <a href="#/about_us">About Us</a> <span className="i"></span> </li>
                              <li> <a href="#">Team</a> <span className="i"></span> </li>
-                             <li> <a href="#">Contact us</a> <span className="i"></span> </li>
+                             <li> <a href="#/contact_us">Contact us</a> <span className="i"></span> </li>
                         </ul>
                         <i className={openMenu5 ? "fa-solid fa-minus": "fa-solid fa-plus"} onClick={() => setOpenMeu5(!openMenu5)}></i>
                     </li>

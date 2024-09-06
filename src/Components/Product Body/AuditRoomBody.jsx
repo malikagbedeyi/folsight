@@ -195,8 +195,6 @@ const AuditRoomBody = () => {
                     <div className="col-lg-3 auditBottomParent">
                         <div className="auditBottomChildRight">
                             <img src={img9} alt="" />
-                            <img src={img9} alt="" />
-
                         </div>
                     </div>
                 </div>
