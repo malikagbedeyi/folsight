@@ -93,7 +93,7 @@ const Navbar = () => {
                               <img src={icon17} alt="" />
                               </div>
                                 <p>
-                                <a href="/">COMPL.AI</a>
+                                <a href="#/compliance">COMPL.AI</a>
                                 <span>AI-powered tool for compliance management.</span>
                                 {/* management and automation. */}
                                 </p>
@@ -103,7 +103,7 @@ const Navbar = () => {
                               <img src={icon19} alt="" />
                               </div>
                                 <p>
-                                <a href="/">RISKCORE</a>
+                                <a href="#/risk_core">RISKCORE</a>
                                 <span>Platform for managing and mitigating.</span>
                                 {/* business risks */}
                                 </p>
@@ -272,12 +272,11 @@ const Navbar = () => {
                     <li className=''><a className="nav-link" href="#">PRODUCT</a>
                        <ul className="submenu" id={openMenu ? "open" : "close"}>
                             <li> <a href="#/audit_room">AUDITROOM </a> <span className="i"></span> </li>
-                             <li> <a href="#">COMPL.AI </a> <span className="i"></span> </li>
-                             <li> <a href="#">RISKCORE 03</a> <span className="i"></span>  </li>
+                             <li> <a href="#/compliance">COMPL.AI </a> <span className="i"></span> </li>
+                             <li> <a href="#/risk_core">RISKCORE</a> <span className="i"></span>  </li>
                         </ul>
                         <i className={openMenu ? "fa-solid fa-minus": "fa-solid fa-plus"} onClick={() => setOpenMeu(!openMenu)}></i>
                     </li>
-    
                     <li className=''><a className="nav-link" href="#">PLATFORM</a>
                     <ul className="submenu" id={openMenu2 ? "open" : "close"}>
                             <li> <a href="#">AI </a> <span className="i"></span> </li>
