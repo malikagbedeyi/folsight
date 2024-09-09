@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/folsight/static/css/main.0064354d.css",
-    "main.js": "/folsight/static/js/main.b1f693d6.js",
+    "main.css": "/folsight/static/css/main.aacfe7a7.css",
+    "main.js": "/folsight/static/js/main.d3259eee.js",
     "static/media/auditi01.png": "/folsight/static/media/auditi01.0f3166f409a815264d86.png",
     "static/media/grc-02.png": "/folsight/static/media/grc-02.6cfbe35f345d8631bb09.png",
     "static/media/01Home.png": "/folsight/static/media/01Home.55c48f1a0c7a155ab820.png",
@@ -12,6 +12,7 @@
     "static/media/02.jpg": "/folsight/static/media/02.00efdfaad41f1e1c04a5.jpg",
     "static/media/p-mockup.png": "/folsight/static/media/p-mockup.761337f7ac0d838f5b22.png",
     "static/media/04.jpg": "/folsight/static/media/04.9cbf51425882d1ead206.jpg",
+    "static/media/fea-3.png": "/folsight/static/media/fea-3.285ea1fdf772d9b34138.png",
     "static/media/05.jpg": "/folsight/static/media/05.9f946bc85c36b770cb81.jpg",
     "static/media/fea-4.png": "/folsight/static/media/fea-4.cf04cdd8de224e6f9a46.png",
     "static/media/7.png": "/folsight/static/media/7.291566b27f24a8f5ee86.png",
@@ -48,11 +49,11 @@
     "static/media/icon_04.png": "/folsight/static/media/icon_04.d39ce3e4ad7d74afedf9.png",
     "static/media/icon_01.png": "/folsight/static/media/icon_01.fb73af149f76b6d1cc83.png",
     "index.html": "/folsight/index.html",
-    "main.0064354d.css.map": "/folsight/static/css/main.0064354d.css.map",
-    "main.b1f693d6.js.map": "/folsight/static/js/main.b1f693d6.js.map"
+    "main.aacfe7a7.css.map": "/folsight/static/css/main.aacfe7a7.css.map",
+    "main.d3259eee.js.map": "/folsight/static/js/main.d3259eee.js.map"
   },
   "entrypoints": [
-    "static/css/main.0064354d.css",
-    "static/js/main.b1f693d6.js"
+    "static/css/main.aacfe7a7.css",
+    "static/js/main.d3259eee.js"
   ]
 }
