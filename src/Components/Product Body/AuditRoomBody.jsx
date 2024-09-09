@@ -8,6 +8,9 @@ import img6 from '../../assets/Images/gea-03.png'
 import img7 from '../../assets/Images/grc-01.png'
 import img8 from '../../assets/Images/grc-02.png'
 import img9 from '../../assets/Images/about-01.png'
+import img10 from "../../assets/Images/fea-4.png"
+import img11 from "../../assets/Images/fea-41.png"
+import img12 from "../../assets/Images/fea-3.png"
 
 import MainBody from '../MainBody'
 const AuditRoomBody = () => {
@@ -18,8 +21,8 @@ const AuditRoomBody = () => {
                 <div className="col-lg-6 auditParent">
                     <div className="auditChildLeft">
                         <h1>Audit Room</h1>
-                        <p>AuditRoom is a secure, collaborative workspace within our GRC solution designed to simplify and enhance the audit process. It provides a centralized platform where auditors and stakeholders can Collaborate Efficiently,Maintain Security and Compliance,Enhance Transparency and Accountability</p>
-                        <p>In today's fast-paced and highly regulated business environment, efficient audit management is critical for maintaining compliance and mitigating risks. AuditRoom is an innovative, secure, and centralized audit workspace within our GRC solution, designed to enhance every aspect of the audit process. It empowers organizations to manage both internal and external audits with confidence and precision, ensuring a smoother, more transparent experience for all involved.</p>
+                        <p>Audit room supports both internal and external audits end-to-end, including annual internal audit planning. It enables auditors and auditees to manage information requests and evidence collection with controlled access. Results of control tests are presented through customizable dashboards, exportable to PowerPoint, Word, and PDF. Additionally, audit metrics and analytics, such as control failures, can be exported to Excel for further analysis.</p>
+                        <button>Request Demo</button>
                     </div>
                 </div>
                 <div className="col-lg-6 auditParent">
@@ -29,9 +32,9 @@ const AuditRoomBody = () => {
                 </div>
             </div>
         </div>
-        <div className="auditImgContainer">
+        {/* <div className="auditImgContainer">
             <img src={img2} alt="" />
-        </div>
+        </div> */}
         <div className="partherShip">
         <MainBody />
         </div>
@@ -64,57 +67,100 @@ const AuditRoomBody = () => {
                 <div className="auditNewsTittle">
                     <h1>Key Features of AuditRoom</h1>
                 </div>
-                <div className="row auditNewsContainer">
-                    <div className="col-lg-4 col-md-6 auditNewsParent">
-                        <div className="auditNewsChild">
-                            {/* <h1>Audit Planning</h1> */}
-                            <p><span>Audit Planning:</span> Audit planning is simplified with easy collaboration and budgeting tools, allowing teams to plan audits, allocate budgets, and categorize requests into accepted or rejected lists. Folsight provides alerts two months before audits to ensure preparedness. It includes a lock feature, limiting changes to the audit plan to administrators, and offers user access management for assigning specific roles and permissions, ensuring security and control throughout the process.</p>
+                <div className=" auditNewsContainer">
+                    <div className="row auditKeyContainer">
+                        <div className="col-lg-6 auditKeyParent">
+                            <div className="auditKeyChild">
+                                <div className="auditKeyChildText">
+                            <h1>Audit Planning</h1>
+                            <p> Audit planning is simplified with easy collaboration and budgeting tools, allowing teams to plan audits, allocate budgets, and categorize requests into accepted or rejected lists. Folsight provides alerts two months before audits to ensure preparedness. It includes a lock feature, limiting changes to the audit plan to administrators, and offers user access management for assigning specific roles and permissions, ensuring security and control throughout the process.</p>
+                        </div>
+                        </div>
+                        </div>
+                        <div className="col-lg-6 auditKeyParent">
+                            <div className="auditKeyChild" >
+                            <img src={img10} style={{float:"right"}} alt="" />
+                            </div>
+                            
+                            </div>
+                    </div>
+                    <div className="row auditKeyContainer">
+                        <div className="col-lg-6 auditKeyParent">
+                            <div className="auditKeyChild" >
+                                   <img src={img11} style={{float:"left"}} alt="" />
+                            </div>
+                            
+                         </div>
+                         <div className="col-lg-6 auditKeyParent">
+                            <div className="auditKeyChild">
+                                <div className="auditKeyChildText">
+                            <h1>Audit Engagement</h1>
+                            <p>  The Audit Engagement feature allows you to map engagements to planned audits, ensuring alignment with audit strategies. When creating an audit, you can link it to the audit plan and specify whether it's recurring. For recurring audits, you can roll forward and update relevant data seamlessly. Additionally, the system distinguishes between standard and required standards, with all requirements available on the GRC tool for easy reference and compliance tracking, making the audit process more efficient and organized.</p>  
+                        </div>
+                        </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 auditNewsParent">
-                        <div className="auditNewsChild">
-                            {/* <h1>Audit Engagement</h1> */}
-                            <p> <span>Audit Engagement:</span> The Audit Engagement feature allows you to map engagements to planned audits, ensuring alignment with audit strategies. When creating an audit, you can link it to the audit plan and specify whether it's recurring. For recurring audits, you can roll forward and update relevant data seamlessly. Additionally, the system distinguishes between standard and required standards, with all requirements available on the GRC tool for easy reference and compliance tracking, making the audit process more efficient and organized.</p>    
+                    <div className="row auditKeyContainer">
+                        <div className="col-lg-6 auditKeyParent">
+                            <div className="auditKeyChild">
+                                <div className="auditKeyChildText">
+                            <h1>Secured Audit Plan</h1>
+                            <p> Folsight includes the ability to lock the audit plan, restricting modifications so that only administrators with proper permissions can access and make changes. Permissions can be customized based on roles, such as read-only access for general users and full editing rights for administrators. This ensures that the integrity of the audit plan is maintained and prevents unauthorized alteration.</p>
+                        </div>
+                        </div>
+                        </div>
+                        <div className="col-lg-6 auditKeyParent">
+                            <div className="auditKeyChild">
+                                   <img src={img12} style={{float:"right"}} alt="" />
+                            </div>
+                            
+                         </div>
+                    </div>
+                    <div className="row auditKeyContainer">
+                        <div className="col-lg-6 auditKeyParent">
+                            <div className="auditKeyChild">
+                                   <img src={img10} style={{float:"left"}} alt="" />
+                            </div>
+                            
+                        </div>
+                        <div className="col-lg-6 auditKeyParent">
+                            <div className="auditKeyChild">
+                                <div className="auditKeyChildText">
+                        <h1>Centralized Collaboration Hub</h1>
+                        <p>Connect your entire audit team, including internal and external stakeholders, in one cohesive digital space. AuditRoom allows for seamless communication, document sharing, and collaboration, eliminating the inefficiencies of scattered emails and fragmented communication channels.</p>
+                        </div>
+                        </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 auditNewsParent">
-                        <div className="auditNewsChild">
-                            {/* <h1>Secured Audit Plan</h1> */}
-                            <p> <span>Secured Audit Plan:</span> Folsight includes the ability to lock the audit plan, restricting modifications so that only administrators with proper permissions can access and make changes. Permissions can be customized based on roles, such as read-only access for general users and full editing rights for administrators. This ensures that the integrity of the audit plan is maintained and prevents unauthorized alteration.</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="row auditNewsContainerMiddle">
-                    <div className="col-lg-6 auditNewsParentMiddle">
-                        <div className="auditNewsChildMiddle">
-                            <h1>Centralized Collaboration Hub</h1>
-                            <p>Connect your entire audit team, including internal and external stakeholders, in one cohesive digital space. AuditRoom allows for seamless communication, document sharing, and collaboration, eliminating the inefficiencies of scattered emails and fragmented communication channels.</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 auditNewsParentMiddle">
-                        <div className="auditNewsChildMiddle">
-                            <h1>Advanced Security Controls</h1>
+                    <div className="row auditKeyContainer">
+                        <div className="col-lg-6 auditKeyParent">
+                            <div className="auditKeyChild">
+                                <div className="auditKeyChildText">
+                             <h1>Advanced Security Controls</h1>
                             <p>Protect sensitive data with robust security features, including multi-factor authentication, encryption, and role-based access controls. Ensure your organization meets regulatory requirements and safeguards information from unauthorized access or breaches.</p>
                         </div>
-                    </div>
-                </div>
-                <div className="row auditNewsContainer">
-                    <div className="col-lg-4 col-md-6 auditNewsParent">
-                        <div className="auditNewsChild">
-                            {/* <h1>Comprehensive Audit Tracking</h1> */}
-                            <p> <span>Comprehensive Audit Tracking: </span>Gain full visibility into every step of the audit process with detailed tracking and reporting tools. Monitor audit progress, deadlines, task assignments, and changes in real-time, enabling better oversight and faster issue resolution.</p>
                         </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 auditNewsParent">
-                        <div className="auditNewsChild">
-                            {/* <h1>Automated Workflows and Notifications</h1> */}
-                            <p> <span>Automated Workflows and Notifications: </span>Streamline your audit process with automated workflows that guide auditors through each phase, from planning to execution and reporting. Automated notifications and reminders help keep everyone on track, ensuring deadlines are met and nothing is overlooked.</p>  
                         </div>
+                        <div className="col-lg-6 auditKeyParent">
+                            <div className="auditKeyChild" >
+                            <img src={img12} style={{float:"right"}} alt="" />
+                            </div>
+                            </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 auditNewsParent">
-                        <div className="auditNewsChild">
-                            {/* <h1>Data-Driven Insights and Reporting</h1> */}
-                            <p> <span>Data-Driven Insights and Reporting: </span>Leverage powerful analytics and reporting capabilities to gain valuable insights into audit findings, trends, and potential risks. Use these insights to make informed decisions, improve future audits, and strengthen your overall risk management strategy.</p>
+                    <div className="row auditKeyContainer">
+                        <div className="col-lg-6 auditKeyParent">
+                            <div className="auditKeyChild">
+                                   <img src={img11} style={{float:"left"}} alt="" />
+                            </div>
+                            
+                         </div>
+                         <div className="col-lg-6 auditKeyParent">
+                            <div className="auditKeyChild">
+                                <div className="auditKeyChildText">
+                            <h1>Automated Workflows and Notifications</h1>
+                        <p> Streamline your audit process with automated workflows that guide auditors through each phase, from planning to execution and reporting. Automated notifications and reminders help keep everyone on track, ensuring deadlines are met and nothing is overlooked.</p>  
+                        </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -167,7 +213,7 @@ const AuditRoomBody = () => {
                 <img src={img7} alt=""  />
                 </div>
             </div>
-            <div className="auditBottom">
+            {/* <div className="auditBottom">
                 <div className="row auditBottomContainer">
                     <div className="col-lg-9 auditBottomParent">
                         <div className="auditBottomChild">
@@ -198,7 +244,7 @@ const AuditRoomBody = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
     </div>
   )
