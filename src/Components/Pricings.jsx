@@ -61,10 +61,7 @@ const Pricing = () => {
             </div>
             <div className="search-container-body">
                 <div className=" search-box">
-                    <div className="search-input">
-                    <input type="text" />
-                    <button>Free Trail</button>
-                    </div>
+                <button>Request a Demo</button>
                     <div className="burnning">
                     <img src={img1} alt="" />
                 </div>
