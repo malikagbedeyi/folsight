@@ -11,6 +11,9 @@ import img9 from '../../assets/Images/about-01.png'
 import img10 from "../../assets/Images/fea-4.png"
 import img11 from "../../assets/Images/fea-41.png"
 import img12 from "../../assets/Images/fea-3.png"
+import img13 from "../../assets/Images/ImageBlog/01.jpg"
+import img14 from "../../assets/Images/ImageBlog/03.jpg"
+import img15 from "../../assets/Images/ImageBlog/04.jpg"
 
 import MainBody from '../MainBody'
 const AuditRoomBody = () => {
@@ -44,25 +47,52 @@ const AuditRoomBody = () => {
                 <p>AuditRoom transforms your audit experience, providing a streamlined, organized, and compliant approach to managing audits within your organization.</p>
             </div>
             <div className="row auditMiddleContainer">
-                <div className="col-lg-6 auditMiddleParent">
+                <div className="col-lg-4 auditMiddleParent">
                     <div className="auditMiddleChild">
+                    <div className="auditMiddleChildTop">
+                        <img src={img13} alt="" />
+                    </div>
+                    <div className="auditMiddleChildmiddle">
+                        <div className="auditMiddleChildmiddleTOp">
                         <h1>Collaborate Efficiently</h1>
-                        <p>Share documents, communicate, and track audit progress in real-time, all within a single digital environment.</p>
+                        </div>
+                        <div className="auditMiddleChildButtom">
+                    <p>Share documents, communicate, and track audit progress in real-time, all within a single digital environment.</p>
                     </div>
+                    </div>
+                    </div>
+                </div>
+                <div className="col-lg-4 auditMiddleParent">
                     <div className="auditMiddleChild">
+                    <div className="auditMiddleChildTop">
+                        <img src={img14} alt="" />
+                    </div>
+                    <div className="auditMiddleChildmiddle">
+                        <div className="auditMiddleChildmiddleTOp">
                         <h1>Enhance Transparency and Accountability</h1>
+                        </div>
+                        <div className="auditMiddleChildButtom">
                         <p>Keep a clear record of all actions, comments, and document changes to ensure full transparency throughout the audit process.</p>
+                        </div>
                     </div>
+                    </div>
+                </div>
+                <div className="col-lg-4 auditMiddleParent">
                     <div className="auditMiddleChild">
+                    <div className="auditMiddleChildTop">
+                        <img src={img15} alt="" />
+                    </div>
+                    <div className="auditMiddleChildmiddle">
+                        <div className="auditMiddleChildmiddleTOp">
                         <h1>Improve Audit Readiness</h1>
-                        <p>Access all necessary documents and evidence in one place, reducing preparation time and ensuring readiness for internal or external audits.</p>
+                        </div>
+                        <div className="auditMiddleChildButtom">
+                    <p>Access all necessary documents and evidence in one place, reducing preparation time and ensuring readiness for internal or external audits.</p>
+                    </div>
+                    </div>
                     </div>
                 </div>
-                <div className="col-lg-6 auditMiddleParentRight ">
-                   <div className="auditMiddleRightChild">
-                   <img src={img3} alt="" />
-                   </div>
-                </div>
+                
             </div>
         </div>
         <div className="auditNews">
