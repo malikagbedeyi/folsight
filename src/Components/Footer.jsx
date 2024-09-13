@@ -45,31 +45,30 @@ const Footer = () => {
                   <div className='footerRightChildTittle'>
                       <h3>Products</h3>
                       <ul>
-                                  <li><a href="#">Product 01</a></li>
-                                  <li><a href="#">Product 02</a></li>
-                                  <li><a href="#">Product 03</a></li>
-                                  <li><a href="#">Product 04</a></li>
+                        <li><a href="#">Audit Room</a></li>
+                          <li><a href="#">Compliance</a></li>
+                          <li><a href="#">RiskCore</a></li>
                               </ul>
               </div>
 
               <div className='footerRightChildTittle'>
                      <h3>Platforms</h3>
                       <ul>
-                                  <li><a href="#">Platform 01</a></li>
-                                  <li><a href="#">Platform 02</a></li>
-                                  <li><a href="#">Platform 03</a></li>
-                                  <li><a href="#">Platform 04</a></li>
+                                  <li><a href="#">Ai</a></li>
+                                  <li><a href="#">Api</a></li>
+                                  <li><a href="#">Integration</a></li>
+                            
                               </ul>
               </div>
 
               <div className='footerRightChildTittle'>
                          <h3>Frameworks</h3>
                       <ul>
-                                  <li><a href="#">IS027001</a></li>
-                                  <li><a href="#">HIPAA</a></li>
-                                  <li><a href="#">SOC2</a></li>
-                                  <li><a href="#">GDPR</a></li>
-                                  <li><a href="#">NIST</a></li>
+                                  <li><a href="#/framework_01">IS027001</a></li>
+                                  <li><a href="#/framework_02">HIPAA</a></li>
+                                  <li><a href="#/framework_03">SOC2</a></li>
+                                  <li><a href="#/framework_04">GDPR</a></li>
+                                  <li><a href="#/framework_05">NIST</a></li>
                               </ul>
               </div>
 
@@ -79,8 +78,6 @@ const Footer = () => {
                                   <li><a href="#/about_us">About Us</a></li>
                                   <li><a href="#">Contact Us</a></li>
                                   <li><a href="#">Team</a></li>
-                                  <li><a href="#">Our Client</a></li>
-                                  <li><a href="#">Become a Partner</a></li>
                               </ul>
               </div>
                      

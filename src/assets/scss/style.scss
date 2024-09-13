@@ -61,10 +61,45 @@
         opacity: 1;
       }
   }
+  @keyframes movingdown {
+    0% {
+      transform: translateY(70%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes movingright {
+    0% {
+      transform: translateX(-60%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes movingleft {
+    0% {
+      transform: translateX(70%);
+      opacity: 0.2;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
   *{
     list-style: none;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+  }
+  p{
+    transition: .3s;
   }
 .menuSection{
     padding:0;
@@ -72,9 +107,12 @@
     width: 100%;
     overflow-x: hidden;
     .coverback{
-        background-color: #f9f5fe;
       position: relative;
       margin: 3% 0 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #f9f5fe;
 
     @include tablet{
         margin: 10% 0 0;
@@ -108,12 +146,13 @@
                 .leftWrapperText{
                     display: flex;
                     flex-direction: column;
-                    gap: 40px;
+                    gap: 20px;
                     h1{
                         color: #233d63;
                         font-size: 3vw;
                         font-weight: 600;
                         line-height: 1.4;
+                        transition: .3s;
                          margin: 0;
                            @include Destop{
                              font-size: 2.5rem;
@@ -131,7 +170,7 @@
                         padding-right: 50px;
                          margin: 0;
                            @include Destop{
-                         font-size: 14px;
+                         font-size: 15px;
                          }
                            @include mobile{
                          font-size: 16px;
@@ -194,7 +233,7 @@
                     transition: 0.5s ease;
                     text-transform: uppercase;
                     font-weight: 600;
-                    margin-top:10%;
+                    margin-top:5%;
                     animation: movingDown .5s;
                     @include Destop{
                          font-size: 14px;
@@ -209,32 +248,36 @@
             }
         }
         .rightWrapper{
-            .rightWrapperImg{
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            // background-repeat: no-repeat;
-            // background-size: cover;
-            // min-height: 610px;
-            position: relative;
-            animation: moving 2s ease-in-out;
-            img{
-                width: 40%;
-                margin: 0;
-                opacity: 0.9;
-            }
-            .middleImg{
-                position: absolute;
-                left: 15%;
-                top: 30%;
-                width: 50%;
-                opacity: 0.8;
-            }
-            .bottomImg{
-                margin-top: -5%;
-            }
-     }
+            .rightWrapperImg {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;
+                
+                img {
+                 width: 40%;
+                 margin: 0;
+                 opacity: 0.9;
+                 animation: movingright 0.4s forwards;;
+                 will-change: transform, opacity;
+                }
+              
+                .middleImg {
+                  position: absolute;
+                  left: 15%;
+                  top: 30%;
+                  width: 50%;
+                  opacity: 0.8;
+                  animation: movingleft 0.4s forwards;;
+                }
+              
+                .bottomImg {
+                    margin-top: -5%;
+                    animation: movingdown 0.4s forwards;
+                  }
+              }
     }
+    
     }
 }
     }
@@ -262,9 +305,10 @@
                     }
                     h1{
                         font-size: 2.5vw;
-                        font-weight: 500;
+                        font-weight: 600;
                         transition: .3s;
-                        font-family: 'Poppins', sans-serif;
+                        transition: .3s;
+                        letter-spacing: 1px;
                       color: #233d63;
                       @include mobile{
                         font-size: 1.6rem;
@@ -330,16 +374,17 @@
                 .Container{
                     padding:0 7%;
                     .learnMoreTittle{
-                        padding: 0 20%;
+                        padding: 0 10%;
                         @include tablet{
                             padding:0 2%;
                     }
 
                         h1{
                             font-size: 2.7vw;
-                            font-weight: 500;
+                            font-weight: 600;
                             transition: .3s;
-                            font-family: 'Poppins', sans-serif;
+                            transition: .3s;
+                            letter-spacing: 1px;
                           color: #233d63; 
                           @include tablet{
                           font-size: 1.6rem;
@@ -352,8 +397,8 @@
                             margin-bottom: 15px;
                             transition: .3s;
                               @include Destop{
-                                        font-size: 13px;
-                                        line-height: 25px;
+                                font-size: 15px;
+                                 line-height: 25px;
                                      }
                         }
                     }
@@ -371,7 +416,6 @@
                         .learnMoreContainerChild{
                             text-align: left;
                             padding: 50px 40px;
-                            transition: all .3s ease-in;
                             &:hover{
                                 box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
                                 background: #fff;
@@ -398,7 +442,7 @@
                                 h3{
                                     font-size: 1.4vw;
                                     font-weight: 600;
-                                    font-family: 'Poppins', sans-serif;
+                                    letter-spacing: 1px;
                                      color: #233d63; 
                                      @include Destop{
                                         font-size: 1.3rem;
@@ -414,7 +458,7 @@
                                     transition: .3s;
                                     font-weight: 500;
                                       @include Destop{
-                                        font-size: 13px;
+                                        font-size: 14px;
                                         line-height: 25px;
                                      }
                                 }
@@ -478,8 +522,8 @@
                             h1{
                              font-size: 2vw;
                              font-weight: 700;
+                             transition: .3s;
                             transition: .3s;
-                             font-family: 'Rubik',sans-serif;
                              color: #233d63;
                                @include tablet{
                                 font-size: 2rem;
@@ -540,6 +584,7 @@
                                         transition: .3s;
                                         box-sizing: border-box;
                                         cursor: pointer;
+                                        transition: .4s ease-in-out;
                                         .learn-more-child-bodyTop{
                                             position: relative;
                                             padding: 0;
@@ -569,7 +614,7 @@
                                                 font-size: 1.3vw;
                                                 font-weight: 600;
                                                 transition: .3s;
-                                                font-family: 'Poppins', sans-serif;
+                                                transition: .3s;
                                               color: #233d63; 
                                               @include laptop{
                                                 font-size: 1.3rem;
@@ -579,13 +624,13 @@
                                         .learn-more-child-bodyBottom{
                                             p{
                                                 font-size: 1vw;
-                                                font-weight: 500;
+                                                font-weight: 600;
                                                 line-height: 2vw;
                                                 color: #7b8491;
                                                 margin-bottom: 15px;
                                                 transition: .3s;
                                                 @include Destop{
-                                                    font-size: 14px;
+                                                    font-size: 13px;
                                                     line-height: 23px;
                                                 }
                                                 @include tablet{
@@ -601,6 +646,7 @@
                                             .learn-more-child-bodyMiddle h1,
                                             .learn-more-child-bodyBottom p{
                                             color: #fff;
+                                            transition: .4s ease-in-out;
                                             }
                                             .learn-more-child-bodyTopWrapper{
                                                 .learn-more-child-bodyLeftWrapper{
@@ -620,6 +666,7 @@
                                         .learn-more-child-bodyMiddle h1,
                                         .learn-more-child-bodyBottom p{
                                         color: #fff;
+                                        transition: .4s ease-in-out;
                                         }
                                         .learn-more-child-bodyTopWrapper{
                                             .learn-more-child-bodyLeftWrapper{
@@ -706,10 +753,9 @@
                                 }
                             }
                             h3{
-                               font-size: 1.3vw;
+                               font-size: 1.5vw;
                               font-weight: 600;
                               transition: .3s;
-                              font-family: 'Rubik',sans-serif;
                             color: #233d63;
                             margin-top: 4%;
                             animation: movingforwards 3s;
@@ -796,6 +842,9 @@
                             font-weight: 600;
                             font-size: 2vw;
                             margin-bottom: 20px;
+                            @include Destop{
+                                font-size: 2rem;
+                            }
                           }
                           p{
                             color: #fff;
@@ -804,6 +853,10 @@
                             line-height: 2vw;
                             margin-bottom: 15px;
                             transition: .3s;
+                            @include Destop{
+                                font-size: 15px;
+                                line-height: 25px;
+                            }
                           }
                     }
                     }
@@ -834,18 +887,21 @@
                                     font-size: 1.1vw;
                                     font-weight: 500;
                                     margin-bottom: 16px;
+                                    @include Destop{
+                                        font-size: 1.2rem;
+                                    }
                                 }
                                 p{
                                     font-size: 0.9vw;
                                     font-weight: 500;
                                     line-height: 1.2vw;
                                     color: #fff;
-                                    opacity: 0.7;
+                                    opacity: 0.8;
                                     margin-bottom: 15px;
                                     transition: .3s;
                                     @include Destop{
                                         font-size: 14px;
-                                        line-height: 25px;
+                                        line-height: 28px;
                                     }
                                 }
                             }
@@ -906,97 +962,7 @@
                 }
             }
         }
-    //     .Pricing{
-    //         width: 100%;
-    //         margin: 10% 0;
 
-    //         .container{
-    //             align-items: center;
-    //             text-align: center;
-    //       .PricingSearch{
-    //         margin: 0 auto;
-    //         .PricingSearchTittle{
-            
-    //             .PricingSearchTittleParent{
-
-    //                 .PricingSearchTittleParent{
-    //                     padding: 2px 50px;
-                        // h2{
-                        //     font-size: 2.5rem;
-                        //     font-weight: 600;
-                        //     transition: .3s;
-                        //     font-family: 'Poppins', sans-serif;
-                        //   color: #233d63;
-
-                        //    @include mobile{
-                        //             font-size: 1.6rem;
-                        //         }
-                        // }
-    //                 }
-    //             }
-    //         }
-
-    //         .PricingSearchInput{
-    //                    @include mobile{
-    //                                 margin-bottom: 30%;
-    //                             }
-    //             .PricingSearchInputParent{
-    //                 .PricingSearchInputChild{
-    //                     position: relative;
-    //                     margin-left: 15%;
-    //                     form{
-    //                         flex-wrap: wrap;
-    //                          margin: 10% 0 0 5%;
-    //                         display: flex;
-    //                         justify-content: space-between;
-    //                         width: 90%;
-    //                         .form-input{
-    //                         input{
-    //                           height: 70px;
-    //                           border: 1px solid #ddd;
-    //                           padding: 0 20px;
-    //                           text-transform: uppercase;
-    //                             float: left;
-    //                             border-radius: 5px;
-    //                             margin-bottom: 20px;
-    //                             outline-style: none;
-    //                             outline: none;
-    //                             @include mobile{
-    //                                 width: 100%;
-    //                             }
-
-    //                         }
-    //                     }
-                            // button{
-                            //     background-image: -webkit-linear-gradient( 0deg, rgb(0,0,184) 0%, rgb(115,0,233) 100%);
-                            //     height: 70px;
-                            //     border-radius: 5px;
-                            //     padding: 0 50px;
-                            //     color: #fff;
-                            //     text-transform: uppercase;
-                            //     border: 0;
-                            //     float: right;
-                            //     font-weight: 500;
-                            //     font-size: 13px;
-                            //     letter-spacing: 1px;
-
-                            //      @include mobile{
-                            //         float: left;
-                            //     }
-                            // }
-    //                     }
-    //                 }
-    //             }
-    //             .burnnig{
-    //                 img{
-    //                     width: 50%;
-    //                 }
-    //             }
-    //         }
-
-    //       }  
-    //     }
-    // }
     .searchBurnning{
         margin: 5% 0;
         .search-container{
@@ -1019,8 +985,8 @@
                     font-size: 2.5vw;
                     font-weight: 600;
                     transition: .3s;
-                    font-family: 'Poppins', sans-serif;
                   color: #233d63;
+                  transition: .3s;
                    @include laptop{
                     font-size: 2rem;
                     }

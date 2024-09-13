@@ -33,6 +33,12 @@
       opacity: 1;
     }
   }
+  *{
+    list-style: none;
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+  }
   @keyframes movingDown {
     0% {
       transform: translateY(70%);
@@ -62,7 +68,6 @@
     overflow: hidden;
     .about-usBody{
         margin: 5% 0;
-        font-family: 'Poppins', sans-serif;
         .about-us-topContainer{
             background: #f9f5fe;
             padding: 10% 0;
@@ -93,6 +98,8 @@
                             color: #8231EB;
                             font-weight: 700;
                             font-size: 2.3vw;
+                            font-family: "Oswald", sans-serif;
+                            letter-spacing: 1px;
                             @include Destop{
                                 font-size: 2.3rem;
                             }
@@ -175,9 +182,8 @@
                             justify-content: center;
                             text-align: center;
                             gap: 20px;
-                            padding: 30px 35px;
+                            padding: 50px 35px;
                             transition: .3s;
-                            font-family: 'Poppins', sans-serif;
                             height: 100%;
                         
                             .icons{
@@ -197,20 +203,22 @@
                                 color: #233d63;
                                 font-size: 1.5vw;
                                 font-weight: 600;
+                                margin: 0;
                                 @include Destop{
-                                    font-size: 20px;
+                                    font-size: 1.5rem;
                                 }
                             }
-                            .icons-text{
-                                padding: 10px 0;
-                                cursor: grab;
-                                text-align: center;
                             p{
-                                font-size: 15px;
-                                line-height: 25px;
+                                text-align: center;
+                                margin: 0;
+                                font-size: 1.3vew;
+                                line-height: 2vew;
                                 color: #7b8491;
                                 font-weight: 500;
-                            }
+                                @include Destop{
+                                    font-size: 14px;
+                                    line-height: 25px;
+                                }
                         }
                             &:hover{
                                 box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
@@ -316,7 +324,7 @@
                                     color: #233d63;
                                     font-weight: 600;
                                     @include Destop{
-                                        font-size: 15px;
+                                        font-size: 1.1rem;
                                     }
                                 }
                                 p{
@@ -325,6 +333,7 @@
                                     line-height: 1.5vw;
                                     @include Destop{
                                         font-size: 13px;
+                                        line-height: 25px;
                                     }
                                 }
 
@@ -485,6 +494,25 @@
         // }
         .aboutUs-footer{
             .container{
+
+                .aboutUs-footerTittle{
+                    margin: 10% auto 3%;
+                    text-align: center;
+                    h1{
+                        text-decoration: none;
+                        margin: 0;
+                        color: #233d63;
+                        font-size: 2.5vew;
+                        font-weight: bold;
+                        text-transform: capitalize;
+                        -webkit-transition: all 500ms ease;
+                        transition: all 500ms ease;
+                        cursor: pointer;
+                        @include Destop{
+                            font-size: 2rem;
+                    }
+                }
+                }
                 .aboutUs-footerContaienr{
                     .aboutUs-footerParent{
                         .aboutUs-footerChild{

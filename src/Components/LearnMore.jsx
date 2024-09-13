@@ -22,7 +22,13 @@ const LearnMore = () => {
     const [hover,sethover]=useState(1);
     const [active, setActive] = useState(null);
     const [animate, setAnimate] = useState(false);
-
+            useEffect(() => {
+                AOS.init({
+                    duration: 800, // Customize the duration of the animation
+                    easing: 'ease-in-out', // Customize the easing of the animation
+                    once: true, // Whether animation should happen only once
+                  });
+              }, []);
     const handleHover = (id) => {
         setActive(id);
         sethover(id)
@@ -43,6 +49,26 @@ const LearnMore = () => {
     useEffect(() => {
         AOS.init({initClassName: true})
     },[])
+    document.addEventListener('DOMContentLoaded', () => {
+        const elements = document.querySelectorAll('.learnMoreCategoryContainer');
+        
+        function checkVisibility() {
+          const windowHeight = window.innerHeight;
+          
+          elements.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            const isVisible = rect.top < windowHeight && rect.bottom >= 0;
+            
+            if (isVisible) {
+              element.classList.add('visible');
+            }
+          });
+        }
+        
+        window.addEventListener('scroll', checkVisibility);
+        // Initial check in case elements are already in view
+        checkVisibility();
+      });
   return (
     <div className="learnMore">
     <div className="Container">
@@ -53,8 +79,8 @@ const LearnMore = () => {
     </div>
             </div>
         <div className="learnMoreContainer row">
-            <div className=" col-lg-4 col-md-6">
-            <div className="learnmoreActive learnMoreContainerChild">
+            <div className=" col-lg-4 col-md-6 slideIn" data-aos="flip-down">
+            <div className="learnmoreActive learnMoreContainerChild ">
                 <div className="topImg">
                     <img src={img6} alt="" />
                 </div>
@@ -67,8 +93,8 @@ const LearnMore = () => {
                     </div>
                 </div>
             </div>
-              <div className=" col-lg-4 col-md-6">
-              <div className="learnmoreActive learnMoreContainerChild">
+              <div className=" col-lg-4 col-md-6 slideUp" data-aos="zoom-out-up">
+              <div className="learnmoreActive learnMoreContainerChild ">
               <div className="topImg">
                     <img src={img7}  alt="" />
                 </div>
@@ -85,8 +111,8 @@ const LearnMore = () => {
                 </div>
             </div>
             </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="learnmoreActive learnMoreContainerChild">
+              <div className="col-lg-4 col-md-6 slideright" data-aos="flip-up">
+                <div className="learnmoreActive learnMoreContainerChild ">
               <div className="topImg">
                     <img src={img8} alt="" />
                 </div>
@@ -116,7 +142,7 @@ const LearnMore = () => {
         </div>
         <div className="learnMoreCategoryContainerChildBody">
             <div className="CategoryContainerChildBodyWrapper">
-                <div className="CategoryContainerChildBodytop">
+                <div className="CategoryContainerChildBodytop" data-aos="slide-right">
                 <div className="learn-more-parent-body">
                 <div onClick={()=>handleHover(1)} className={ hover === 1 ? "learn-more-child-body learnMore-active" : "learn-more-child-body"}>
                 <div className="learn-more-child-bodyTop">
@@ -159,7 +185,7 @@ const LearnMore = () => {
                     </div>
             </div>
                 </div>
-                <div className="CategoryContainerChildBodybottom">
+                <div className="CategoryContainerChildBodybottom" data-aos="slide-left">
                 <div className="learn-more-parent-body">
                 <div onClick={()=>handleHover(3)} className={hover  === 3 ? "learn-more-child-body learnMore-active" : "learn-more-child-body"}>
                 <div className="learn-more-child-bodyTop">
@@ -210,7 +236,7 @@ const LearnMore = () => {
     </div>
 </div>
 
-<div className="learnMoreCategoryContainerParent col-lg-5">
+<div className="learnMoreCategoryContainerParent col-lg-5" data-aos="flip-down">
     <div className="learnMore-wrapper">
     <div className={`learnMore-wrapper-right ${hover === 1 ? (animate ? "fadeIn" : "") : "close"}`}>
             <div className="learnMore-wrapper-rightTop">

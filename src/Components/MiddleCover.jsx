@@ -9,20 +9,24 @@ import 'aos/dist/aos.css';
 
 const MiddleCover = () => {
     useEffect(() => {
-        AOS.init({initClassName: true})
-    },[])
+        AOS.init({
+            duration: 800, // Customize the duration of the animation
+            easing: 'ease-in-out', // Customize the easing of the animation
+            once: true, // Whether animation should happen only once
+          });
+      }, []);
   return (
     <div className="middleCover">
     <div className="Container">
         <div className="middleCoverContainer row">
-            <div className=" middleCoverContainerParent col-xl-8 col-lg-10">
+            <div className=" middleCoverContainerParent col-xl-8 col-lg-10" data-aos="flip-down">
                 <div className='middleCoverContainerChild'>
                     <h2>Maintain Corporate Integrity</h2>   
                     <p>Uphold ethical standards, ensure transparency, and foster accountability. Folsight safeguards your organization's reputation by embedding integrity in decision-making, monitoring compliance, and swiftly addressing potential breaches.</p>
                 </div>
             </div>
         </div>
-        <div class="middleContainerBody row">
+        <div class="middleContainerBody row" data-aos="flip-up">
             <div class="middleContainerBodyParent col-lg-4 col-md-4">
                 <div class="middleContainerBodyChild">
                     <div class="middleContainerBodyImg">
@@ -57,7 +61,7 @@ const MiddleCover = () => {
                 </div>
             </div>
         </div>
-        <div class="middleCoverContainerbuttom row d-none d-md-block mt-5" data-aos="fade-in-up" data-aos-delay="500" data-aos-duration="1500">
+        <div class="middleCoverContainerbuttom row d-none d-md-block mt-5" data-aos="zoom-in-up">
             <div class="middleCoverContainerParent col-xl-8 col-lg-10  offset-lg-1 offset-xl-2">
                 <div class="middleCoverContainerChild  mb-40" >
                     <img src={img14} alt="" />

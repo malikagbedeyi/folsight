@@ -76,8 +76,8 @@ function AppContent() {
 function App() {
   return (
     <div className="App">
-      <HashRouter>
-        <ScrollToTop />
+       <HashRouter>
+        <ScrollToTop />  
         <AppContent />
       </HashRouter>
     </div>

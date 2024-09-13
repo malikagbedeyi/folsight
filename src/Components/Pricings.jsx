@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import img1 from '../assets/Images/burnning.png'
-
+import { Link, useNavigate } from 'react-router-dom';
 const Pricing = () => {
-
+    const navigate =  useNavigate()
   return (
     // <div className='Pricing'>
     //     <div className=" container">
@@ -61,7 +61,7 @@ const Pricing = () => {
             </div>
             <div className="search-container-body">
                 <div className=" search-box">
-                <button>Request a Demo</button>
+                <button onClick={() => navigate('/request-demo')} >Request a Demo</button>
                     <div className="burnning">
                     <img src={img1} alt="" />
                 </div>

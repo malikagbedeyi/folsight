@@ -11,9 +11,12 @@ import img9 from '../../assets/Images/about-01.png'
 import img10 from "../../assets/Images/fea-4.png"
 import img11 from "../../assets/Images/fea-41.png"
 import img12 from "../../assets/Images/fea-3.png"
-import MainBody from '../MainBody'
+import img13 from "../../assets/Images/ImageBlog/01.jpg"
+import img14 from "../../assets/Images/ImageBlog/03.jpg"
+import img15 from "../../assets/Images/ImageBlog/04.jpg"
 
-const RiskCoreBody = () => {
+import MainBody from '../MainBody'
+const AuditRoomBody = () => {
   return (
     <div className='auditRoom'>
         <div className="auditCover">
@@ -21,7 +24,7 @@ const RiskCoreBody = () => {
                 <div className="col-lg-6 auditParent">
                     <div className="auditChildLeft">
                         <h1>RiskCore</h1>
-                        <p>RiskCore supports both internal and external audits end-to-end, including annual internal audit planning. It enables auditors and auditees to manage information requests and evidence collection with controlled access. Results of control tests are presented through customizable dashboards, exportable to PowerPoint, Word, and PDF. Additionally, audit metrics and analytics, such as control failures, can be exported to Excel for further analysis.</p>
+                        <p>Audit room supports both internal and external audits end-to-end, including annual internal audit planning. It enables auditors and auditees to manage information requests and evidence collection with controlled access. Results of control tests are presented through customizable dashboards, exportable to PowerPoint, Word, and PDF. Additionally, audit metrics and analytics, such as control failures, can be exported to Excel for further analysis.</p>
                         <button>Request Demo</button>
                     </div>
                 </div>
@@ -44,23 +47,52 @@ const RiskCoreBody = () => {
                 <p>AuditRoom transforms your audit experience, providing a streamlined, organized, and compliant approach to managing audits within your organization.</p>
             </div>
             <div className="row auditMiddleContainer">
-                <div className="col-lg-6 auditMiddleParent">
+                <div className="col-lg-4 auditMiddleParent">
                     <div className="auditMiddleChild">
+                    <div className="auditMiddleChildTop">
+                        <img src={img13} alt="" />
+                    </div>
+                    <div className="auditMiddleChildmiddle">
+                        <div className="auditMiddleChildmiddleTOp">
                         <h1>Collaborate Efficiently</h1>
-                        <p>Share documents, communicate, and track audit progress in real-time, all within a single digital environment.</p>
+                        </div>
+                        <div className="auditMiddleChildButtom">
+                    <p>Share documents, communicate, and track audit progress in real-time, all within a single digital environment.</p>
                     </div>
+                    </div>
+                    </div>
+                </div>
+                <div className="col-lg-4 auditMiddleParent">
                     <div className="auditMiddleChild">
+                    <div className="auditMiddleChildTop">
+                        <img src={img14} alt="" />
+                    </div>
+                    <div className="auditMiddleChildmiddle">
+                        <div className="auditMiddleChildmiddleTOp">
                         <h1>Enhance Transparency and Accountability</h1>
+                        </div>
+                        <div className="auditMiddleChildButtom">
                         <p>Keep a clear record of all actions, comments, and document changes to ensure full transparency throughout the audit process.</p>
+                        </div>
                     </div>
+                    </div>
+                </div>
+                <div className="col-lg-4 auditMiddleParent">
                     <div className="auditMiddleChild">
+                    <div className="auditMiddleChildTop">
+                        <img src={img15} alt="" />
+                    </div>
+                    <div className="auditMiddleChildmiddle">
+                        <div className="auditMiddleChildmiddleTOp">
                         <h1>Improve Audit Readiness</h1>
-                        <p>Access all necessary documents and evidence in one place, reducing preparation time and ensuring readiness for internal or external audits.</p>
+                        </div>
+                        <div className="auditMiddleChildButtom">
+                    <p>Access all necessary documents and evidence in one place, reducing preparation time and ensuring readiness for internal or external audits.</p>
+                    </div>
+                    </div>
                     </div>
                 </div>
-                <div className="col-lg-6 auditMiddleParentRight">
-                    <img src={img3} alt="" />
-                </div>
+                
             </div>
         </div>
         <div className="auditNews">
@@ -223,4 +255,4 @@ const RiskCoreBody = () => {
   )
 }
 
-export default RiskCoreBody
+export default AuditRoomBody
