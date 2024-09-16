@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from '../Navbar'
+import Navbar from '../Components/Navbar'
     import 'bootstrap/dist/css/bootstrap.min.css';
-import LoginForm from '../LoginForm';
-import Footer from '../Footer';
-import CoverLogin from '../CoverLogin';
+import LoginForm from '../Components/LoginForm';
+import Footer from '../Components/Footer';
+import CoverLogin from '../Components/CoverLogin';
 const Login = () => {
     return (
         <div className="Login">

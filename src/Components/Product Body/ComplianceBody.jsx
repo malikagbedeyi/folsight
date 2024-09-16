@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import img1 from '../../assets/Images/01Home.png'
 import img2 from '../../assets/Images/auditi01.png'
 import img3 from '../../assets/Images/p-mockup.png'
@@ -14,21 +14,31 @@ import img12 from "../../assets/Images/fea-3.png"
 import img13 from "../../assets/Images/ImageBlog/01.jpg"
 import img14 from "../../assets/Images/ImageBlog/03.jpg"
 import img15 from "../../assets/Images/ImageBlog/04.jpg"
-
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 import MainBody from '../MainBody'
-const AuditRoomBody = () => {
+
+const ComplianceBody = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 800, 
+            easing: 'ease-in',
+            once: true, 
+          });
+      }, []);
   return (
     <div className='auditRoom'>
         <div className="auditCover">
             <div className="row auditContainer">
-                <div className="col-lg-6 auditParent">
+                <div className="col-lg-6 auditParent" data-aos="zoom-out-left">
                     <div className="auditChildLeft">
                         <h1>Compl.Ai</h1>
-                        <p>Audit room supports both internal and external audits end-to-end, including annual internal audit planning. It enables auditors and auditees to manage information requests and evidence collection with controlled access. Results of control tests are presented through customizable dashboards, exportable to PowerPoint, Word, and PDF. Additionally, audit metrics and analytics, such as control failures, can be exported to Excel for further analysis.</p>
+                        <p>Folsight leverages cutting-edge Artificial Intelligence (AI) to enhance efficiency and accuracy while ensuring full compliance with industry standards and regulations. We understand the critical importance of regulatory compliance in today’s business landscape. Folsight is committed to helping organizations meet their compliance requirements with our AI-powered GRC tool.</p>
                         <button>Request Demo</button>
                     </div>
                 </div>
-                <div className="col-lg-6 auditParent">
+                <div className="col-lg-6 auditParent" data-aos="zoom-out-right">
                     <div className="auditChildRight">
                         <img src={img1} alt="" />
                     </div>
@@ -43,82 +53,81 @@ const AuditRoomBody = () => {
         </div>
         <div className="auditMiddle">
             <div className="auditMiddleTittle">
-                <h1>Streamline Your Audit Process</h1>
-                <p>AuditRoom transforms your audit experience, providing a streamlined, organized, and compliant approach to managing audits within your organization.</p>
+                <h1>AI-driven Compliance</h1>
+                <p>Our AI technology enhances the ability to detect, assess, and mitigate risks in real time.</p>
             </div>
             <div className="row auditMiddleContainer">
-                <div className="col-lg-4 auditMiddleParent">
+                <div className="col-lg-4 col-md-6 auditMiddleParent" data-aos="slide-right">
                     <div className="auditMiddleChild">
                     <div className="auditMiddleChildTop">
                         <img src={img13} alt="" />
                     </div>
                     <div className="auditMiddleChildmiddle">
                         <div className="auditMiddleChildmiddleTOp">
-                        <h1>Collaborate Efficiently</h1>
+                        <h1>Data Encryption</h1>
                         </div>
                         <div className="auditMiddleChildButtom">
-                    <p>Share documents, communicate, and track audit progress in real-time, all within a single digital environment.</p>
+                            <p> All data is encrypted both in transit and at rest using advanced industry-standard encryption methods, </p>
                     </div>
                     </div>
                     </div>
                 </div>
-                <div className="col-lg-4 auditMiddleParent">
+                <div className="col-lg-4 col-md-6 auditMiddleParent" data-aos="zoom-out">
                     <div className="auditMiddleChild">
                     <div className="auditMiddleChildTop">
                         <img src={img14} alt="" />
                     </div>
                     <div className="auditMiddleChildmiddle">
                         <div className="auditMiddleChildmiddleTOp">
-                        <h1>Enhance Transparency and Accountability</h1>
+                        <h1>Automated Risk Assessment</h1>
                         </div>
                         <div className="auditMiddleChildButtom">
-                        <p>Keep a clear record of all actions, comments, and document changes to ensure full transparency throughout the audit process.</p>
+                            <p>AI-powered analytics proactively identify potential risks early on and automatically assign severity ratings based on data analysis.</p>
                         </div>
                     </div>
                     </div>
                 </div>
-                <div className="col-lg-4 auditMiddleParent">
+                <div className="col-lg-4 col-md-6 auditMiddleParent" data-aos="zoom-in-left">
                     <div className="auditMiddleChild">
                     <div className="auditMiddleChildTop">
                         <img src={img15} alt="" />
                     </div>
                     <div className="auditMiddleChildmiddle">
                         <div className="auditMiddleChildmiddleTOp">
-                        <h1>Improve Audit Readiness</h1>
+                        <h1>Continuous Monitoring</h1>
                         </div>
                         <div className="auditMiddleChildButtom">
-                    <p>Access all necessary documents and evidence in one place, reducing preparation time and ensuring readiness for internal or external audits.</p>
+                            <p> Our platform continuously monitors compliance activities, automatically updating risk profiles in real time based on the latest data insights.</p>
                     </div>
                     </div>
                     </div>
                 </div>
-                
             </div>
         </div>
         <div className="auditNews">
                 <div className="auditNewsTittle">
-                    <h1>Key Features of AuditRoom</h1>
+                    <h1>Key Features of Complance</h1>
                 </div>
                 <div className="container-fluid">
                 <div className=" auditNewsContainer">
                     <div className="row auditKeyContainer">
-                        <div className="col-lg-6 auditKeyParent">
+                        <div className="col-lg-6 auditKeyParent" >
                             <div className="auditKeyChild">
                                 <div className="auditKeyChildText">
-                            <h1>Audit Planning</h1>
-                            <p>Audit planning is simplified with easy collaboration and budgeting tools, allowing teams to plan audits, allocate budgets, and categorize requests into accepted or rejected lists. Folsight provides alerts two months before audits to ensure preparedness.</p>
+                            <h1>Gap Assessment</h1>
+                            <p>Folsight automates data collection, reduces errors, and eliminates manual entry. It includes pre-built compliance frameworks, monitors compliance, identifies real-time gaps, and offers dashboards for prioritizing and addressing issues.</p>
                         </div>
                         </div>
                         </div>
-                        <div className="col-lg-6 auditKeyParent">
-                            <div className="auditKeyChild" >
-                            <img src={img10} style={{float:"right"}} alt="" />
+                        <div className="col-lg-6 auditKeyParent" data-aos="fade-left" >
+                            <div className="auditKeyChild">
+                            <img src={img10} style={{float:"right"}} alt=""  />
                             </div>
                             
                             </div>
                     </div>
                     <div className="row auditKeyContainer">
-                        <div className="col-lg-6 auditKeyParent">
+                        <div className="col-lg-6 auditKeyParent" data-aos="fade-right">
                             <div className="auditKeyChild" >
                                    <img src={img11} style={{float:"left"}} alt="" />
                             </div>
@@ -127,8 +136,8 @@ const AuditRoomBody = () => {
                          <div className="col-lg-6 auditKeyParent">
                             <div className="auditKeyChild">
                                 <div className="auditKeyChildText">
-                            <h1>Audit Engagement</h1>
-                            <p>The Audit Engagement feature allows you to map engagements to planned audits, ensuring alignment with audit strategies. When creating an audit, you can link it to the audit plan and specify whether it's recurring.</p>
+                            <h1>Framework/Standard</h1>
+                            <p> Folsight includes pre-built compliance frameworks, such as ISO, GDPR, NIST, and many others, covering industry-specific and regulatory standards. It offers everything you need to easily align with multiple compliance requirements across various sectors.</p>
                         </div>
                         </div>
                         </div>
@@ -137,12 +146,12 @@ const AuditRoomBody = () => {
                         <div className="col-lg-6 auditKeyParent">
                             <div className="auditKeyChild">
                                 <div className="auditKeyChildText">
-                            <h1>Information Request</h1>
-                            <p>Leverage the AI-enabled feature to automatically generate information requests based on the audit scope, predefined templates, or historical data, ensuring that relevant information is efficiently collected from stakeholders.</p>
+                            <h1>Requirementst</h1>
+                            <p> Timely alerts for upcoming audits, policy reviews, or changes in regulations, ensuring that your organization stays on top of compliance obligations.</p>
                         </div>
                         </div>
                         </div>
-                        <div className="col-lg-6 auditKeyParent">
+                        <div className="col-lg-6 auditKeyParent" data-aos="slide-left">
                             <div className="auditKeyChild">
                                    <img src={img12} style={{float:"right"}} alt="" />
                             </div>
@@ -150,7 +159,7 @@ const AuditRoomBody = () => {
                          </div>
                     </div>
                     <div className="row auditKeyContainer">
-                        <div className="col-lg-6 auditKeyParent">
+                        <div className="col-lg-6 auditKeyParent" data-aos="slide-right">
                             <div className="auditKeyChild">
                                    <img src={img10} style={{float:"left"}} alt="" />
                             </div>
@@ -159,8 +168,8 @@ const AuditRoomBody = () => {
                         <div className="col-lg-6 auditKeyParent">
                             <div className="auditKeyChild">
                                 <div className="auditKeyChildText">
-                        <h1> Workpapers</h1>
-                        <p>Digitize and centralize all your audit documentation to create a single source of truth. With Folsight AuditRoom, you can easily manage, annotate, and link workpapers, ensuring that every piece of evidence is securely stored and readily available.</p>
+                        <h1> Controls</h1>
+                        <p> Set up controls specific to your organization’s needs, ensuring compliance with both general and industry-specific regulations.</p>
                         </div>
                         </div>
                         </div>
@@ -174,14 +183,14 @@ const AuditRoomBody = () => {
                         </div>
                         </div>
                         </div>
-                        <div className="col-lg-6 auditKeyParent">
+                        <div className="col-lg-6 auditKeyParent" data-aos="zoom-in">
                             <div className="auditKeyChild" >
                             <img src={img12} style={{float:"right"}} alt="" />
                             </div>
                             </div>
                     </div>
                     <div className="row auditKeyContainer">
-                        <div className="col-lg-6 auditKeyParent">
+                        <div className="col-lg-6 auditKeyParent" data-aos="zoom-out">
                             <div className="auditKeyChild">
                                    <img src={img11} style={{float:"left"}} alt="" />
                             </div>
@@ -204,7 +213,7 @@ const AuditRoomBody = () => {
                     <h1>Benefits of Using AuditRoom</h1>
                 </div>
                 <div className="row auditBenefitCoontainer">
-                    <div className="col-lg-4 col-md-6 auditBenefitParent">
+                    <div className="col-lg-4 col-md-6 auditBenefitParent" data-aos="flip-right">
                         <div className="auditBenefitChild">
                             <img src={img4} alt="" />
                             <div className="bodyText">
@@ -214,7 +223,7 @@ const AuditRoomBody = () => {
                         </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 auditBenefitParent">
+                    <div className="col-lg-4 col-md-6 auditBenefitParent" data-aos="zoom-in">
                         <div className="auditBenefitChild">
                             <img src={img5} alt="" />
                             <div className="bodyText"> 
@@ -224,7 +233,7 @@ const AuditRoomBody = () => {
                         </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 auditBenefitParent">
+                    <div className="col-lg-4 col-md-6 auditBenefitParent" data-aos="flip-left">
                         <div className="auditBenefitChild">
                             <img src={img6} alt="" />
                             <div className="bodyText"> 
@@ -236,7 +245,7 @@ const AuditRoomBody = () => {
                     </div>
                 </div>
             </div>
-            <div className="auditImage">
+            <div className="auditImage" data-aos="flip-right">
                 <div className="imgcover">
                 <img src={img3} alt=""  />
                 </div>
@@ -255,4 +264,4 @@ const AuditRoomBody = () => {
   )
 }
 
-export default AuditRoomBody
+export default ComplianceBody

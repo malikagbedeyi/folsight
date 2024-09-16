@@ -1,13 +1,31 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from '../assets/Images/folsight.png'
 import img1 from "../assets/Images/shape2.png"
 import img2 from "../assets/Images/shape3.png" 
 import img3 from "../assets/Images/shape-sq.png"
 import img4 from "../assets/Images/shape-c-2.png"
 import '../assets/scss/footer.scss'
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 const Footer = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 800, 
+            easing: 'ease-in',
+            once: true, 
+          });
+      }, []);
   return (
     <div className='footer'>
+        <div className="footerForm"  data-aos="zoom-out-right">
+            <div className="footerFormText">
+                <h1>Subscribe Our Newsletter to Get New Updates.</h1>
+            </div>
+            <div className="footerEmail">
+                <input type="email" />
+                <button><i className="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
         {/* <div className="animate-icons">
         <div class="shape-slider">
                 <img class="shape shape-2  " src={img1} alt="" />
@@ -18,7 +36,7 @@ const Footer = () => {
         </div> */}
     <div className="footerBody">
       <div className="footerBodyContainer row">
-          <div className="footerBodyContainerParent col-lg-4">
+          <div className="footerBodyContainerParent col-lg-3">
               <div className="footerBodyContainerChild">
                   <div className="footerBodyContainerChildTop">
                       <img src={logo} alt="" />
@@ -29,18 +47,9 @@ const Footer = () => {
                           for. Midst life.Over a great night. Green upon years
                            rule ying</p>
                   </div>
-                  <div className="footerBodyContainerChildButtom">
-                      <ul>
-                          <li><a href=""><i className="fa-brands fa-facebook"></i>  </a> </li>
-                          <li><a href=""> <i className="fa-brands fa-linkedin"></i>  </a> </li>
-                          <li><a href=""> <i className="fa-brands fa-skype"></i> </a> </li>
-                          <li><a href=""> <i className="fa-sharp fa-solid fa-x"></i> </a> </li>
-                          
-                      </ul>
-                  </div>
               </div>
           </div>
-          <div className="footerRightParent col-lg-8">
+          <div className="footerRightParent col-lg-6">
               <div className="footerRightChild">
                   <div className='footerRightChildTittle'>
                       <h3>Products</h3>
@@ -50,8 +59,7 @@ const Footer = () => {
                           <li><a href="#">RiskCore</a></li>
                               </ul>
               </div>
-
-              <div className='footerRightChildTittle'>
+              {/* <div className='footerRightChildTittle'>
                      <h3>Platforms</h3>
                       <ul>
                                   <li><a href="#">Ai</a></li>
@@ -59,8 +67,7 @@ const Footer = () => {
                                   <li><a href="#">Integration</a></li>
                             
                               </ul>
-              </div>
-
+              </div> */}
               <div className='footerRightChildTittle'>
                          <h3>Frameworks</h3>
                       <ul>
@@ -71,7 +78,6 @@ const Footer = () => {
                                   <li><a href="#/framework_05">NIST</a></li>
                               </ul>
               </div>
-
               <div className='footerRightChildTittle'>
               <h3>Pages</h3>
                       <ul>
@@ -84,6 +90,15 @@ const Footer = () => {
               </div>
 
               </div>
+              <div className="footerBodyContainerChildButtom col-lg-3">
+                      <ul>
+                          <li className='iconCover'><a href=""><i class="fa-brands fa-facebook-f"></i>  </a> </li>
+                          <li className='iconCover'><a href=""> <i class="fa-brands fa-linkedin-in"></i>  </a> </li>
+                          <li className='iconCover'><a href=""> <i class="fa-brands fa-skype"></i> </a> </li>
+                          <li className='iconCover'><a href=""> <i className=" fa-solid fa-x"></i> </a> </li>
+                          
+                      </ul>
+                  </div>
       </div>
 
       <div className="copyright row">

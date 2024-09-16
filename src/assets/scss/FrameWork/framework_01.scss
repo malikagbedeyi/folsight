@@ -81,7 +81,90 @@
                           }
                     }
                 }
-
+                .learnMoreCategoryContainer{
+                    margin: 0 0 10% 0;
+                    padding: 0 3%;
+                    @include tablet{
+                        padding: 0;
+                    }
+                    .learnMoreCategoryContainerParent{
+                        .learnMoreCategoryContainerFristChild{
+                            float: right;
+    
+                             @include tablet{
+                                float: left;
+                    }
+                        }
+                    .learnMoreCategoryContainerChild{
+                        text-align: left;
+                        float: left;
+                        padding:0 5% 0 0;
+                        margin-left: 5%;
+                        @include tablet{
+                                margin-left: 0;
+                                padding-right: 0;
+                        }
+    
+                        .learnMoreCategoryContainerChildBody{
+                            ul{
+                                margin-top: 5%;
+                                margin-left: -30px;
+                                @include tablet{
+                                    margin-left: -30px;
+                                }
+                                li{
+                                    display: flex;
+                                    color: #7b8491;
+                                    font-size: 15px;
+                                    transition: .3s;
+                                    font-weight: 500;
+                                    margin-bottom: -3px;
+    
+                                    i{
+                                        margin-right: 10px;
+                                        line-height: 28px;
+                                    }
+    
+                                    p{
+                                        line-height: 28px;
+                                    }
+                                }
+                            }
+                        }
+    
+                    }
+                }
+                }
+                .learnMoreProductContainerChildTop,
+                .learnMoreCategoryContainerChildTop{
+                    @include tablet{
+                        margin-top: 10%;
+                    }
+                    h1{
+                        font-size: 2.3vw;
+                     font-weight: 700;
+                    transition: .3s;
+                margin-bottom: 20px;
+              color: #233d63;
+              @include Destop{
+                font-size: 2rem;
+              }
+              @include tablet{
+                font-size: 1.6rem;
+            }
+                    }
+                    p{
+                        font-size: 1vw;
+                        line-height: 2vw;
+                        color: #7b8491;
+                        transition: .3s;
+                        font-weight: 500;
+                        @include Destop{
+                            font-size: 15px;
+                            line-height: 25px;
+                          }
+                    }
+                }
             .learnMoreProductContainer{
                 margin:5% 0 10%;
                 padding: 0 3%;
@@ -113,35 +196,35 @@
                         margin-left: 0;
                         padding-left: 0;
                 }
-                    .learnMoreProductContainerChildTop{
-                        @include tablet{
-                            margin-top: 10%;
-                        }
-                        h1{
-                            font-size: 2.3vw;
-                         font-weight: 700;
-                        transition: .3s;
-                    margin-bottom: 20px;
-                  color: #233d63;
-                  @include Destop{
-                    font-size: 2rem;
-                  }
-                  @include tablet{
-                    font-size: 1.6rem;
-                }
-                        }
-                        p{
-                            font-size: 1vw;
-                            line-height: 2vw;
-                            color: #7b8491;
-                            transition: .3s;
-                            font-weight: 500;
-                            @include Destop{
-                                font-size: 15px;
-                                line-height: 25px;
-                              }
-                        }
-                    }
+                //     .learnMoreProductContainerChildTop{
+                //         @include tablet{
+                //             margin-top: 10%;
+                //         }
+                //         h1{
+                //             font-size: 2.3vw;
+                //          font-weight: 700;
+                //         transition: .3s;
+                //     margin-bottom: 20px;
+                //   color: #233d63;
+                //   @include Destop{
+                //     font-size: 2rem;
+                //   }
+                //   @include tablet{
+                //     font-size: 1.6rem;
+                // }
+                //         }
+                //         p{
+                //             font-size: 1vw;
+                //             line-height: 2vw;
+                //             color: #7b8491;
+                //             transition: .3s;
+                //             font-weight: 500;
+                //             @include Destop{
+                //                 font-size: 15px;
+                //                 line-height: 25px;
+                //               }
+                //         }
+                //     }
 
                     .learnMoreProductContainerChildBody{
 
@@ -170,40 +253,6 @@
                                       }
                                 }
                             }
-                        }
-                    }
-
-                    .learnMoreProductContainerChildButtom{
-                        margin-top:3%;
-                        @include tablet{
-                            margin-bottom: 5%;
-                    }
-                        button{
-                            border-radius: 2px;
-                            background:linear-gradient( 120deg, rgb(0,0,184) 0%, rgb(115,0,233) 100%);
-                            color: #fff;
-                            cursor: pointer;
-                            font-size: 1vw;
-                            font-weight: 500;
-                            letter-spacing: 1px;
-                            line-height: 1;
-                            padding: 17px 35px;
-                            text-align: center;
-                            text-transform: uppercase;
-                            transition: all 0.3s ease 0s;
-                            vertical-align: middle;
-                            white-space: nowrap;
-                            border: 1px solid transparent;
-                            position: relative;
-                            transition: all 0.3s ease-in;
-                            &:hover{
-                                background: linear-gradient( 120deg, rgb(115,0,233) 0%, rgb(0,0,184) 100%);
-                                text-decoration: none;
-                                transition: all 0.3s ease-out;
-                            }
-                            @include Destop{
-                                font-size: 14px;
-                              }
                         }
                     }
                 }

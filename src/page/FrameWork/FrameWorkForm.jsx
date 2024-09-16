@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import '../../../assets/scss/FrameWork/framework-form.scss'
+import '../../assets/scss/FrameWork/framework-form.scss'
 import { Link, useNavigate } from 'react-router-dom';
 import ReCAPTCHA from 'react-google-recaptcha';
 import PhoneInput from 'react-phone-input-2';

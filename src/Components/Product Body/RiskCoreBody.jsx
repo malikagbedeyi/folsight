@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import img1 from '../../assets/Images/01Home.png'
 import img2 from '../../assets/Images/auditi01.png'
 import img3 from '../../assets/Images/p-mockup.png'
@@ -14,21 +14,31 @@ import img12 from "../../assets/Images/fea-3.png"
 import img13 from "../../assets/Images/ImageBlog/01.jpg"
 import img14 from "../../assets/Images/ImageBlog/03.jpg"
 import img15 from "../../assets/Images/ImageBlog/04.jpg"
-
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 import MainBody from '../MainBody'
-const AuditRoomBody = () => {
+
+const RiskCoreBody = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 800, 
+            easing: 'ease-in',
+            once: true, 
+          });
+      }, []);
   return (
     <div className='auditRoom'>
         <div className="auditCover">
             <div className="row auditContainer">
-                <div className="col-lg-6 auditParent">
+                <div className="col-lg-6 auditParent" data-aos="zoom-out-left">
                     <div className="auditChildLeft">
-                        <h1>RiskCore</h1>
-                        <p>Audit room supports both internal and external audits end-to-end, including annual internal audit planning. It enables auditors and auditees to manage information requests and evidence collection with controlled access. Results of control tests are presented through customizable dashboards, exportable to PowerPoint, Word, and PDF. Additionally, audit metrics and analytics, such as control failures, can be exported to Excel for further analysis.</p>
+                        <h1>Risk Core</h1>
+                        <p>RiskCore supports both internal and external audits end-to-end, including annual internal audit planning. It enables auditors and auditees to manage information requests and evidence collection with controlled access. Results of control tests are presented through customizable dashboards, exportable to PowerPoint, Word, and PDF. Additionally, audit metrics and analytics, such as control failures, can be exported to Excel for further analysis.</p>
                         <button>Request Demo</button>
                     </div>
                 </div>
-                <div className="col-lg-6 auditParent">
+                <div className="col-lg-6 auditParent" data-aos="zoom-out-right">
                     <div className="auditChildRight">
                         <img src={img1} alt="" />
                     </div>
@@ -43,56 +53,54 @@ const AuditRoomBody = () => {
         </div>
         <div className="auditMiddle">
             <div className="auditMiddleTittle">
-                <h1>Streamline Your Audit Process</h1>
-                <p>AuditRoom transforms your audit experience, providing a streamlined, organized, and compliant approach to managing audits within your organization.</p>
+                <h1>Conduct audits efficiently with minimal disruptions and streamlined workflows.</h1>
             </div>
             <div className="row auditMiddleContainer">
-                <div className="col-lg-4 auditMiddleParent">
+                <div className="col-lg-4 col-md-6 auditMiddleParent" data-aos="slide-right">
                     <div className="auditMiddleChild">
                     <div className="auditMiddleChildTop">
                         <img src={img13} alt="" />
                     </div>
                     <div className="auditMiddleChildmiddle">
                         <div className="auditMiddleChildmiddleTOp">
-                        <h1>Collaborate Efficiently</h1>
+                        <h1>Automated Alerting</h1>
                         </div>
                         <div className="auditMiddleChildButtom">
-                    <p>Share documents, communicate, and track audit progress in real-time, all within a single digital environment.</p>
+                            <p> Folsight sends automated, customizable alerts for upcoming audits, ensuring timely notifications for better planning, resource allocation, and preventing missed deadlines.</p>
                     </div>
                     </div>
                     </div>
                 </div>
-                <div className="col-lg-4 auditMiddleParent">
+                <div className="col-lg-4 col-md-6 auditMiddleParent" data-aos="zoom-out">
                     <div className="auditMiddleChild">
                     <div className="auditMiddleChildTop">
                         <img src={img14} alt="" />
                     </div>
                     <div className="auditMiddleChildmiddle">
                         <div className="auditMiddleChildmiddleTOp">
-                        <h1>Enhance Transparency and Accountability</h1>
+                        <h1>Auto Updating</h1>
                         </div>
                         <div className="auditMiddleChildButtom">
-                        <p>Keep a clear record of all actions, comments, and document changes to ensure full transparency throughout the audit process.</p>
+                            <p> Folsight automatically updates audit statuses, from not started to completed, ensuring real-time tracking of audit progress and expenses for efficient management.</p>
                         </div>
                     </div>
                     </div>
                 </div>
-                <div className="col-lg-4 auditMiddleParent">
+                <div className="col-lg-4 col-md-6 auditMiddleParent" data-aos="zoom-in-left">
                     <div className="auditMiddleChild">
                     <div className="auditMiddleChildTop">
                         <img src={img15} alt="" />
                     </div>
                     <div className="auditMiddleChildmiddle">
                         <div className="auditMiddleChildmiddleTOp">
-                        <h1>Improve Audit Readiness</h1>
+                        <h1>Secured Audit Plan</h1>
                         </div>
                         <div className="auditMiddleChildButtom">
-                    <p>Access all necessary documents and evidence in one place, reducing preparation time and ensuring readiness for internal or external audits.</p>
+                            <p> Folsight locks audit plans, allowing only authorized administrators to make changes, preserving integrity with customizable role-based permissions for users and admins.</p>
                     </div>
                     </div>
                     </div>
                 </div>
-                
             </div>
         </div>
         <div className="auditNews">
@@ -102,7 +110,7 @@ const AuditRoomBody = () => {
                 <div className="container-fluid">
                 <div className=" auditNewsContainer">
                     <div className="row auditKeyContainer">
-                        <div className="col-lg-6 auditKeyParent">
+                        <div className="col-lg-6 auditKeyParent" >
                             <div className="auditKeyChild">
                                 <div className="auditKeyChildText">
                             <h1>Audit Planning</h1>
@@ -110,15 +118,15 @@ const AuditRoomBody = () => {
                         </div>
                         </div>
                         </div>
-                        <div className="col-lg-6 auditKeyParent">
-                            <div className="auditKeyChild" >
-                            <img src={img10} style={{float:"right"}} alt="" />
+                        <div className="col-lg-6 auditKeyParent" data-aos="fade-left" >
+                            <div className="auditKeyChild">
+                            <img src={img10} style={{float:"right"}} alt=""  />
                             </div>
                             
                             </div>
                     </div>
                     <div className="row auditKeyContainer">
-                        <div className="col-lg-6 auditKeyParent">
+                        <div className="col-lg-6 auditKeyParent" data-aos="fade-right">
                             <div className="auditKeyChild" >
                                    <img src={img11} style={{float:"left"}} alt="" />
                             </div>
@@ -142,7 +150,7 @@ const AuditRoomBody = () => {
                         </div>
                         </div>
                         </div>
-                        <div className="col-lg-6 auditKeyParent">
+                        <div className="col-lg-6 auditKeyParent" data-aos="slide-left">
                             <div className="auditKeyChild">
                                    <img src={img12} style={{float:"right"}} alt="" />
                             </div>
@@ -150,7 +158,7 @@ const AuditRoomBody = () => {
                          </div>
                     </div>
                     <div className="row auditKeyContainer">
-                        <div className="col-lg-6 auditKeyParent">
+                        <div className="col-lg-6 auditKeyParent" data-aos="slide-right">
                             <div className="auditKeyChild">
                                    <img src={img10} style={{float:"left"}} alt="" />
                             </div>
@@ -174,14 +182,14 @@ const AuditRoomBody = () => {
                         </div>
                         </div>
                         </div>
-                        <div className="col-lg-6 auditKeyParent">
+                        <div className="col-lg-6 auditKeyParent" data-aos="zoom-in">
                             <div className="auditKeyChild" >
                             <img src={img12} style={{float:"right"}} alt="" />
                             </div>
                             </div>
                     </div>
                     <div className="row auditKeyContainer">
-                        <div className="col-lg-6 auditKeyParent">
+                        <div className="col-lg-6 auditKeyParent" data-aos="zoom-out">
                             <div className="auditKeyChild">
                                    <img src={img11} style={{float:"left"}} alt="" />
                             </div>
@@ -204,7 +212,7 @@ const AuditRoomBody = () => {
                     <h1>Benefits of Using AuditRoom</h1>
                 </div>
                 <div className="row auditBenefitCoontainer">
-                    <div className="col-lg-4 col-md-6 auditBenefitParent">
+                    <div className="col-lg-4 col-md-6 auditBenefitParent" data-aos="flip-right">
                         <div className="auditBenefitChild">
                             <img src={img4} alt="" />
                             <div className="bodyText">
@@ -214,7 +222,7 @@ const AuditRoomBody = () => {
                         </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 auditBenefitParent">
+                    <div className="col-lg-4 col-md-6 auditBenefitParent" data-aos="zoom-in">
                         <div className="auditBenefitChild">
                             <img src={img5} alt="" />
                             <div className="bodyText"> 
@@ -224,7 +232,7 @@ const AuditRoomBody = () => {
                         </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 auditBenefitParent">
+                    <div className="col-lg-4 col-md-6 auditBenefitParent" data-aos="flip-left">
                         <div className="auditBenefitChild">
                             <img src={img6} alt="" />
                             <div className="bodyText"> 
@@ -236,7 +244,7 @@ const AuditRoomBody = () => {
                     </div>
                 </div>
             </div>
-            <div className="auditImage">
+            <div className="auditImage" data-aos="flip-right">
                 <div className="imgcover">
                 <img src={img3} alt=""  />
                 </div>
@@ -255,4 +263,4 @@ const AuditRoomBody = () => {
   )
 }
 
-export default AuditRoomBody
+export default RiskCoreBody

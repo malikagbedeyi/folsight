@@ -74,9 +74,8 @@
                         font-size: 1vw;
                         font-weight: 500;
                         letter-spacing: .3px;
+                        font-family: "Poppins", sans-serif;
                         line-height: 1.9;
-                        font-family: "Roboto", sans-serif;
-                        font-style: italic;
                            @include Destop{
                          font-size: 15px;
                          }
@@ -140,81 +139,19 @@
         .auditMiddleTittle{
             text-align: center;
                     margin:3% auto;
+                    max-width: 70%;
                     h1{
                         color: #233d63;
-                            font-weight: 700;
-                            font-size: 2.3vw;
+                            font-weight: 600;
+                            font-size: 2vw;
                             @include Destop{
-                                font-size: 2.3rem;
+                                font-size: 2rem;
                             }
                     }
-                    p{
-                        color: #7b8491;
-                        font-size: 1.1vw;
-                        line-height: 2vw;
-                        font-weight: 500;
-                        margin: auto;
-                        @include Destop{
-                            font-size: 15px;
-                            line-height: 28px;
-                        }
-                    }
         }
-        // .auditMiddleContainer{
-        //     padding:0 5%;
-        //     margin-top: 3%;
-        //     .auditMiddleParent{
-        //         background: #f00;
-        //         height: 100%;
-        //         display: flex;
-        //         flex-direction: column;
-        //         gap: 20px;
-        //         .auditMiddleChild{
-        //             background: #fff;
-        //             border: 2px solid #8231EB;
-        //             padding: 2% 3%;
-        //             border-radius: 20px;
-        //             color: #fff;
-        //             h1{
-        //                 font-size: 1.2vw;
-        //                 color: #233d63;
-        //                 // 233d63
-        //                 font-weight: 600;
-        //                 text-align: center;
-        //                 @include Destop{
-        //                     font-size: 15px;
-        //                 }
-        //             }
-        //             p{
-        //                 color: #7b8491;
-        //                 font-size: 1vw;
-        //                 line-height: 1.5vw;
-        //                 text-align: center;
-        //                 @include Destop{
-        //                     font-size: 15px;
-        //                     line-height: 25px;
-        //                 }
-        //             }
-        //         }
-        //     }
-        //     .auditMiddleParentRight{
-        //         background: #000;
-        //             height: 100%;
-        //         img{
-        //             width: 100%;
-        //             height: 100%;
-        //     }
-        //     }
-        // }
         .auditMiddleContainer {
             padding: 0 5%;
             margin-top: 3%;
-            display: flex;
-            
-            .auditMiddleParent, .auditMiddleParentRight {
-              height: 100%;
-              flex: 1;
-            }
             .auditMiddleParent {
               height: 100%;
               padding: 0 2%;
@@ -246,12 +183,13 @@
                     width: 0;
                     height: 100%;
                     border-bottom: 2px solid #8231EB;
-                    transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+                    transition: width 0.8s ease-in-out, left 0.8s ease-in-out;
                 }
                 :hover::before {
                     border-radius: 0;
                     width: 100%;
                     left: 0;
+                    transition: .4s;
                   }
                 .auditMiddleChildmiddleTOp{
                 h1 {

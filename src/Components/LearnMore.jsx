@@ -79,7 +79,7 @@ const LearnMore = () => {
     </div>
             </div>
         <div className="learnMoreContainer row">
-            <div className=" col-lg-4 col-md-6 slideIn" data-aos="flip-down">
+            <div className=" col-lg-4 col-md-6 " data-aos="flip-down">
             <div className="learnmoreActive learnMoreContainerChild ">
                 <div className="topImg">
                     <img src={img6} alt="" />
@@ -93,7 +93,7 @@ const LearnMore = () => {
                     </div>
                 </div>
             </div>
-              <div className=" col-lg-4 col-md-6 slideUp" data-aos="zoom-out-up">
+              <div className=" col-lg-4 col-md-6 " data-aos="zoom-out-up">
               <div className="learnmoreActive learnMoreContainerChild ">
               <div className="topImg">
                     <img src={img7}  alt="" />
@@ -111,7 +111,7 @@ const LearnMore = () => {
                 </div>
             </div>
             </div>
-              <div className="col-lg-4 col-md-6 slideright" data-aos="flip-up">
+              <div className="col-lg-4 col-md-6 " data-aos="flip-up">
                 <div className="learnmoreActive learnMoreContainerChild ">
               <div className="topImg">
                     <img src={img8} alt="" />
@@ -236,7 +236,7 @@ const LearnMore = () => {
     </div>
 </div>
 
-<div className="learnMoreCategoryContainerParent col-lg-5" data-aos="flip-down">
+<div className="learnMoreCategoryContainerParent col-lg-5">
     <div className="learnMore-wrapper">
     <div className={`learnMore-wrapper-right ${hover === 1 ? (animate ? "fadeIn" : "") : "close"}`}>
             <div className="learnMore-wrapper-rightTop">

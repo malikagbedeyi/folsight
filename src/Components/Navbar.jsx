@@ -211,7 +211,7 @@ const Navbar = () => {
                     </ul>
                      <div className="triangle"></div>
                     </li>
-                    <li className="nav-item"> <a className="nav-link" href="#">PLANS</a>
+                    <li className="nav-item"> <a className="nav-link" href="#/plans">PLANS</a>
                     </li>
                     <li className="nav-item"> <a className="nav-link"  href="#">COMPANY</a> 
                          <ul className="submenu2">
@@ -232,7 +232,7 @@ const Navbar = () => {
                               <img src={icon23} alt="" />
                               </div>
                                 <p>
-                                <a href="/">Team</a>
+                                <a href="#/team">Team</a>
                                 <span>  Group of individuals working together.(Meet Us).</span>
                                 {/* Innovation that inspires. Performance that delivers */}
                                 </p>
@@ -295,13 +295,13 @@ const Navbar = () => {
                         </ul>
                         <i className={openMenu3 ? "fa-solid fa-minus": "fa-solid fa-plus"} onClick={() => setOpenMeu3(!openMenu3)}></i>
                     </li>
-                    <li className='nav-item'> <a className="nav-link"  href="#">PLANS</a> 
+                    <li className='nav-item'> <a className="nav-link"  href="#/plans">PLANS</a> 
                     <i className="fa-solid fa-minus" onClick={() => setOpenMeu5(!openMenu4)}></i>
                     </li>
                     <li className='nav-item'> <a className="nav-link" href="#">COMPANY</a>
                     <ul className="submenu" id={openMenu5 ? "open" : "close"}>
                              <li> <a href="#/about_us">About Us</a> <span className="i"></span> </li>
-                             <li> <a href="#">Team</a> <span className="i"></span> </li>
+                             <li> <a href="#/team">Team</a> <span className="i"></span> </li>
                              <li> <a href="#/contact_us">Contact us</a> <span className="i"></span> </li>
                         </ul>
                         <i className={openMenu5 ? "fa-solid fa-minus": "fa-solid fa-plus"} onClick={() => setOpenMeu5(!openMenu5)}></i>

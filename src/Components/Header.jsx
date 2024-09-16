@@ -23,7 +23,7 @@ const Header = () => {
         <div className="">
         <section className="menuSection">
                 <Navbar />
-                <div className="  coverback">
+                <div className="coverback">
             <div className="row">
                 <div className="leftWrapper col-xl-6 col-lg-6 col-md-10">
                 <div className="container">

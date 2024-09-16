@@ -1,0 +1,186 @@
+@mixin mobile {
+    @media screen and (max-width:580px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width:980px) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media screen and (max-width:1190px) {
+        @content;
+    }
+}
+@mixin Destop {
+    @media screen and (max-width:1440px) {
+        @content;
+    }
+}
+@mixin FullHd {
+    @media screen and (max-width:2784px) {
+        @content;
+    }
+}
+@keyframes middle{
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+}
+*{
+    list-style: none;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+}
+@keyframes movingIcon {
+    from  {transform: translateY(100px);}
+    to  {transform: translateY(0px);}
+}
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+.team{
+       .teamBody{
+        width: 100%;
+        margin: 10% 0;
+        padding: 0;
+        .teamBodyContainer{
+            width: 100%;
+            .teamBodyParent{
+                .teamBodyTopChild{
+                    width: 100%;
+                    text-align: center;
+                    h1{
+                        font-size: 2.5rem;
+                        font-weight: 600;
+                        transition: .3s;
+                        font-family: 'Poppins', sans-serif;
+                      color: #233d63; 
+                      margin-bottom: 2%;
+                     
+                    }
+                    p{
+                        margin-top: -1%;
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        color: #7b8491;
+                        margin-bottom: 15px;
+                        transition: .3s;
+                    }
+                }
+            }
+}
+  .teamBodyMiddle{
+    margin-top: 5%;
+    .teamBodyMiddleContainer{
+        padding: 0 5%;
+        .teamBodyMiddleParent{
+            .teamBodyMiddleChild{
+                align-items: center;
+                text-align: center;
+                .teamBodyMiddleImg{
+                    margin-bottom: 25px;
+                    img{
+
+                    }
+                }
+                .teamBodyMiddleText{
+                    font-family: 'Rubik', sans-serif;
+                    h3{
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        transition: .3s;
+                        font-family: 'Poppins', sans-serif;
+                      color: #233d63; 
+                    }
+                    p{
+                        font-weight: 700;
+                        color: #7b8491;
+                        font-size: 14px;
+                        display: block;
+                        margin-bottom: 10px;
+                        transition: .3s;
+                        
+                    }
+                    ul{
+                        display: flex;
+                        justify-content: center;
+                        padding: 0;
+                        gap: 10px;
+                        margin-bottom: 25px;
+                        li{
+                            a{
+                                color: #7e8383;
+                                font-size: 13px;
+                                outline: medium none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+  .teamBodyButtom{
+    margin-top: 5%;
+    padding: 0 5%;
+    .dragableScroll{
+        align-items: center;
+        text-align: center;
+        .softwareContainerTittle{
+            margin: 0;
+            padding: 0;
+            .softwareTittleParent{
+                padding: 0 5%;
+                .softwareTittleChild{
+                    h1{
+                        font-size: 2.5rem;
+                        font-weight: 600;
+                        transition: .3s;
+                        font-family: 'Poppins', sans-serif;
+                        margin: 2% 0;
+                      color: #233d63; 
+                      @include tablet{
+                      font-size: 1.6rem;
+                }
+                    }
+                    p{
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        color: #7b8491;
+                        margin-bottom: 15px;
+                        transition: .3s;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+         .dragableScrollImg{
+             margin:5% 0 7%;
+             padding:0 5%;
+             .dragableScrollImgContainer{
+             display: flex;
+             gap: 80px;
+             flex-wrap: wrap;
+             align-items: center;
+             justify-content: center;
+         }
+         }
+    }
+  }
+       }
+    
+    
+    }

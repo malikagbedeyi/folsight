@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from '../Navbar'
-import Footer from '../Footer'
+import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import SignInForm from '../SignInForm';
-import CoverSignIn from '../CoverSignIn';
+import SignInForm from '../Components/SignInForm';
+import CoverSignIn from '../Components/CoverSignIn';
 const Register = () => {
 
 return (

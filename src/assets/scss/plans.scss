@@ -1,0 +1,954 @@
+@mixin mobile {
+    @media screen and (max-width:580px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width:980px) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media screen and (max-width:1190px) {
+        @content;
+    }
+}
+@mixin Destop {
+    @media screen and (max-width:1440px) {
+        @content;
+    }
+}
+@mixin FullHd {
+    @media screen and (max-width:2784px) {
+        @content;
+    }
+}
+@keyframes middle{
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+}
+*{
+    list-style: none;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+}
+@keyframes movingIcon {
+    from  {transform: translateY(100px);}
+    to  {transform: translateY(0px);}
+}
+
+
+
+.pricing{
+    *{
+        list-style: none;
+        text-decoration: none;
+    }
+       .pricingBody{
+        .pricingBodyTop{
+            width: 100%;
+            margin: 10% 0 0 0;
+            .container{
+                align-items: center;
+                text-align: center;
+                .PricingContainer{
+                    text-align: center;
+                    .PricingContainerParent{
+                        padding: 10px 20%;
+                          @include mobile{
+                           padding:30px 5px;
+                                }
+                        .PricingContainerChild{
+                            padding: 0 10px;
+                        h1{
+                            font-size: 2.5rem;
+                            font-weight: 500;
+                            transition: .3s;
+                            font-family: 'Poppins', sans-serif;
+                          color: #233d63;
+                            @include mobile{
+                                    font-size: 1.7rem;
+                                }
+                        }
+                        p{
+                            font-size: 15px;
+                            font-weight: 500;
+                            line-height: 28px;
+                            color: #7b8491;
+                            margin-bottom: 15px;
+                            transition: .3s;
+                        }
+                      
+                    }
+                    }
+                }
+                .priceTable{
+                    align-items: center;
+                text-align: center;
+                margin: 0;
+                .priceTableButtton{
+                    display: flex;
+                    align-items: center;
+                        text-align: center;
+                        justify-content: center;
+                    gap: 10px;
+                    margin:3% 0 4%;
+
+                      @include mobile{
+                                    margin-bottom: 15%;
+                                }
+
+                    button{
+                        background: none;
+                        background-image: none;
+                      padding: 18px 40px;
+                      display: inline-block;
+                      text-transform: uppercase;
+                      font-weight: 500;
+                      font-size: 12px;
+                      line-height: 1;
+                      border: 1px solid #dfe0e5;
+                      transition: .5s;
+                    }
+                    .PricingActive{
+                        background-image:linear-gradient( 120deg, rgb(0,0,184) 0%, rgb(115,0,233) 100%);
+                         border-color: transparent;
+                         color: #fff;
+                         transition: .5s;
+                    }
+                }
+
+                .pricingWrapper{
+                    position: relative;
+                    margin: 0;
+
+                    .pricingWrapperMain{ 
+                    width: 100%;
+                    padding:2% 5% 5% 5%;
+                    display: block;
+                    transition: .3s;
+                .priceTableContainer{
+                   padding:1% 0 5% 0;
+                    margin: auto;
+                    
+                    .priceTableParent{
+                        padding: 3px 20px;
+                        @include mobile{
+                                    margin-bottom: 7%;
+                                }
+                        .priceTableChild{
+                            padding: 10px 30px;
+                            border: 1px solid  #7b8491;
+                            .priceTableChildTop{
+                                margin: 20% 0;
+
+                            }
+                            .priceTableChildBody{
+                                margin: 10% 0;
+                                h2{
+                                    font-size: 2rem;
+                                    font-weight: 600;
+                                    transition: .3s;
+                                    font-family: 'Poppins', sans-serif;
+                                  color: #233d63;
+                                }
+                                h3{
+                                    font-size: 1.2rem;
+                                    font-weight: 600;
+                                    transition: .3s;
+                                    font-family: 'Poppins', sans-serif;
+                                  color: #233d63;
+                                }
+                                ul{
+                                    margin: 10% 0;
+                                    padding: 5px 40px;
+                                    list-style: none;
+                                    li{
+                                        border-bottom: 1px solid  #7b8491;;
+                                        padding: 3px 2px;
+                                        margin: 5% 0;
+                                        text-align: center;
+                                        p{
+                                            text-align: center;
+                                            font-size: 15px;
+                                            font-weight: 600;
+                                            line-height: 28px;
+                                            color: #7b8491;
+                                            margin-bottom: 15px;
+                                            transition: .3s;
+                                        }
+                                    }
+                                }
+                            }
+                            .priceTableChildBottom{
+                                margin: 5% 0;
+                                button{
+                                    border: none;
+                                    border-radius: 3px;
+                                    overflow: hidden;
+                                    padding: 18px 40px;
+                                    display: inline-block;
+                                    text-transform: uppercase;
+                                    font-weight: 900;
+                                    font-size: 12px;
+                                    line-height: 1;
+                                    background-image:linear-gradient( 120deg, rgb(0,0,184) 0%, rgb(115,0,233) 100%);
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                    }
+                }
+               .content{
+                display: none;
+                transition: .3s;
+               }
+            }
+
+                }
+        }
+        .pricingBodyTopButtom{
+            margin:  0;
+            margin-bottom: 0;
+            width: 100%;
+            .PricingContainer{
+                width: 100%;
+                text-align: center;
+                .PricingContainerParent{
+                    padding: 10px 20%;
+                      @include mobile{
+                                 padding:30px 5px;
+                            }
+                    .PricingContainerChild{
+                        padding: 0 15%;
+                    h1{
+                        font-size: 2.5rem;
+                        font-weight: 500;
+                        transition: .3s;
+                        font-family: 'Poppins', sans-serif;
+                      color: #233d63;
+                        @include mobile{
+                                font-size: 1.7rem;
+                            }
+                    }
+                    p{
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        color: #ff5b5b;
+                        margin-bottom: 15px;
+                        transition: .3s;
+                    }
+                  
+                }
+                }
+            }
+
+            .priceTable{
+                align-items: center;
+            text-align: center;
+            margin: 0;
+            margin-bottom: 0;
+            
+            .priceTableButtton{
+                display: flex;
+                align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                gap: 10px;
+                margin:3% 0 4%;
+
+                  @include mobile{
+                          margin-bottom: 15%;
+                            }
+
+                button{
+                    background: none;
+                    background-image: none;
+                  padding: 18px 40px;
+                  display: inline-block;
+                  text-transform: uppercase;
+                  font-weight: 500;
+                  font-size: 12px;
+                  line-height: 1;
+                  border: 1px solid #dfe0e5;
+                  transition: .5s;
+                }
+                .PricingActive{
+                    background:#ff5b5b;
+                     border-color: transparent;
+                     color: #fff;
+                     transition: .5s;
+                }
+            }
+
+            .pricingWrapper{
+                position: relative;
+                margin: 0;
+                margin-bottom: 0;
+                .pricingWrapperMain{ 
+                width: 100%;
+                padding:2% 5% 5% 5%;
+                display: block;
+                transition: .3s;
+                margin: 0;
+                margin-bottom: 0;
+            .priceTableContainer{
+               padding:1% 0 5% 0;
+                margin: auto;
+                
+                .priceTableParent{
+                    padding: 3px 35px;
+                    @include mobile{
+                    margin-bottom: 7%;
+                            }
+                    .priceTableChild{
+                        padding: 10px 50px;
+                        border: 1px solid  #7b8491;
+                        .priceTableChildTop{
+                            margin: 20% 0;
+                            .borderSpace{
+                            padding: 10%;
+                            margin: 0 auto;
+                            width: 60%;
+                            border-bottom: 1px solid #7b8491;
+                        }
+                        }
+                        .priceTableChildBody{
+                            margin: 10% 0;
+                            h2{
+                                font-size: 2.5rem;
+                                font-weight: 700;
+                                transition: .3s;
+                                font-family: 'Poppins', sans-serif;
+                              color: #233d63;
+                            }
+                            p{
+                                text-align: center;
+                                        font-size: 15px;
+                                        font-weight: 600;
+                                        line-height: 28px;
+                                        color: #7b8491;
+                                        margin-bottom: 15px;
+                                        transition: .3s;
+                            }
+                            ul{
+                                margin: 5% 0;
+                                list-style: none;
+                                li{
+                                    padding: 0;
+                                    margin: 5% 0;
+                                    text-align: center;
+                                    p{
+                                        text-align: center;
+                                        font-size: 15px;
+                                        font-weight: 600;
+                                        line-height: 28px;
+                                        color: #7b8491;
+                                        margin-bottom: 15px;
+                                        transition: .3s;
+                                    }
+                                }
+                            }
+                        }
+                        .priceTableChildBottom{
+                            margin: 5% 0;
+                            button{
+                                border: 1px solid #7b8491;
+                                border-radius: 3px;
+                                overflow: hidden;
+                                padding: 18px 40px;
+                                display: inline-block;
+                                text-transform: uppercase;
+                                font-weight: 900;
+                                font-size: 12px;
+                                line-height: 1;
+                                color:#233d63;
+                                background-color: #fff;
+                                &:hover{
+                                    background-color: #ff5b5b;
+                                    color: #fff;
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                }
+            }
+           .content{
+            display: none;
+            transition: .3s;
+           }
+        }
+
+            }
+         }
+        }
+        .pricingBodyMiddle{
+            margin: 0;
+            width: 100%;
+            .pricingBodyMiddleTop{
+                margin:  0;
+                .PricingContainer{
+                    text-align: center;
+                    .PricingContainerParent{
+                        padding: 10px 20%;
+                          @include mobile{
+                                     padding:30px 5px;
+                                }
+                        .PricingContainerChild{
+                            padding: 0 15%;
+                        h1{
+                            font-size: 2.5rem;
+                            font-weight: 700;
+                            transition: .3s;
+                            font-family: 'Poppins', sans-serif;
+                          color: #233d63;
+                            @include mobile{
+                                    font-size: 1.7rem;
+                                }
+                        }
+                        p{
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: 28px;
+                            color: #ff5b5b;
+                            margin-bottom: 15px;
+                            transition: .3s;
+                        }
+                      
+                    }
+                    }
+                }
+    
+                .priceTable{
+                    align-items: center;
+                text-align: center; 
+                 margin:  0;
+                
+    
+                .pricingWrapper{
+                    position: relative;
+                    margin: 0;
+                    .pricingWrapperMain{ 
+                    width: 100%;
+                    padding:2% 5% 5% 5%;
+                    display: block;
+                    transition: .3s;
+                .priceTableContainer{
+                   padding:1% 0 5% 0;
+                    margin: auto;
+                    
+                    .priceTableParent{
+                        padding: 3px 35px;
+                        @include mobile{
+                        margin-bottom: 7%;
+                                }
+                        .priceTableChild{
+                            padding: 10px 20px 10px 10px;
+                            border: 1px solid  #7b8491;
+                            .priceTableChildTop{
+                                margin: 20% 0;
+                                .borderSpace{
+                                padding: 10%;
+                                margin: 0 auto;
+                                width: 60%;
+                                border-bottom: 1px solid #7b8491;
+                            }
+                            }
+                            .priceTableChildBody{
+                                margin: 10% 0;
+                                h2{
+                                    font-size: 2.5rem;
+                                    font-weight: 700;
+                                    transition: .3s;
+                                    font-family: 'Poppins', sans-serif;
+                                  color: #233d63;
+                                }
+                                p{
+                                    text-align: center;
+                                            font-size: 15px;
+                                            font-weight: 600;
+                                            line-height: 28px;
+                                            color: #7b8491;
+                                            margin-bottom: 15px;
+                                            transition: .3s;
+                                }
+                                ul{
+                                    margin: 5% 0;
+                                    list-style: none;
+                                    li{
+                                        padding: 0;
+                                        margin: 5% 0;
+                                        text-align: center;
+                                        p{
+                                            text-align: center;
+                                            font-size: 15px;
+                                            font-weight: 600;
+                                            line-height: 28px;
+                                            color: #7b8491;
+                                            margin-bottom: 15px;
+                                            transition: .3s;
+                                        }
+                                    }
+                                }
+                            }
+                            .priceTableChildBottom{
+                                margin: 5% 0;
+                                button{
+                                    border: 1px solid #7b8491;
+                                    border-radius: 3px;
+                                    overflow: hidden;
+                                    padding: 18px 40px;
+                                    display: inline-block;
+                                    text-transform: uppercase;
+                                    font-weight: 900;
+                                    font-size: 12px;
+                                    line-height: 1;
+                                    color:#233d63;
+                                    background-color: #fff;
+                                    &:hover{
+                                        background-color: #ff5b5b;
+                                        color: #fff;
+                                        border: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    }
+                }
+               .content{
+                display: none;
+                transition: .3s;
+               }
+            }
+    
+                }
+             }
+             .priceBodtMiddleButtom{
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                .priceBodtMiddleButtomTittleContainer{
+                    text-align: center;
+                    .priceBodtMiddleButtomTittleParent{
+                        .priceBodtMiddleButtomTittleChild{
+                              text-align: center;
+                              h2{
+                                font-size: 2.3rem;
+                                font-weight: 400;
+                                transition: .3s;
+                                font-family: 'Poppins', sans-serif;
+                              color: #233d63;
+                            
+                            }
+                            p{
+                                font-size: 18px;
+                                font-weight: 600;
+                                line-height: 28px;
+                                color: #7b8491;
+                                margin-bottom: 15px;
+                                transition: .3s;
+                            }
+                        }
+                    }
+                }
+                .pricingMiddleButtomMain{
+                    margin: 5% 0;
+                    .pricingMiddleButtomMainContainer{
+                        padding: 0 4%;
+                        .pricingMiddleButtomMainParent{
+                            padding: 0 2%;
+                            .pricingMiddleButtomMainChild{
+                                border: 1px solid #eaecee;
+                                background-color: #ffffff;
+                                padding: 5% 0;
+                                margin: 0;
+                                text-align: center;
+                                align-items: center;
+                                transition: .3s;
+                                .pricingMiddleButtomMainChildTop{
+                                    margin: 10% 0;
+                                    padding: 0 10%;
+                                    h2{
+                                        font-size: 1.5rem;
+                                        font-weight: 400;
+                                        transition: .3s;
+                                        font-family: 'Poppins', sans-serif;
+                                      color: #233d63;
+                                      margin-bottom: 10%;
+                                    }
+                                    div{
+                                        border-bottom: 1px solid #7b8491;
+                                        opacity: 0.4;
+                                    }
+                                }
+                                .pricingMiddleButtomMainChildBody{
+                                    margin: 10% 0;
+                                    padding: 0 15%;
+                                    h2{
+                                        font-size: 2rem;
+                                        font-weight: 600;
+                                        transition: .3s;
+                                        font-family: 'Poppins', sans-serif;
+                                      color: #233d63;
+                                      margin: 10% 0;
+                                      span{
+                                        font-size: 20px;
+                                        font-weight: 700;
+                                        line-height: 28px;
+                                        color: #7b8491;
+                                        margin-bottom: 15px;
+                                        transition: .3s;
+                                      }
+                                    }
+                                    ul{
+                                        padding: 0;
+                                        li{
+                                          font-size: 14px;
+                                        font-weight: 600;
+                                        line-height: 28px;
+                                        color: #7b8491;
+                                        margin-bottom: 10px;
+                                        transition: .3s;
+                                        }
+                                    }
+                                    div{
+                                        border-bottom: 1px solid #7b8491;
+                                        opacity: 0.4;
+                                    }
+                                }
+                                .pricingMiddleButtomMainChildButtom{
+                                    margin: 3% 0;
+                                    a{
+                                        color: #000;
+                                        font-weight: 700;
+                                        font-size: 13px;
+                                        transition: .3s;
+                                        &:hover{
+                                                color: #6e60f6;
+                                        }
+                                    }
+                                }
+                                &:hover{
+                                    box-shadow: 0px 15px 30px 0px rgba(0, 3, 143, 0.1);
+                                    border-color: transparent;
+                                }
+                            }
+                            .pricingMiddleMainActive{
+                                box-shadow: 0px 15px 30px 0px rgba(0, 3, 143, 0.1);
+                                border-color: transparent;
+                            }
+                        }
+                    }
+                }
+             }
+        }
+        .pricingBodyButtom{
+            margin: 5% 0;
+            padding: 0 5%;
+            align-items: center;
+            justify-content: center;
+         .pricingBodyButtomTop{
+            .priceChangeCombine{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+            .pricingBodyButtomTopContainer{
+                width: 100%;
+                padding: 0 5%;
+                flex: 1;
+                .pricingBodyButtomParent{
+                    padding: 3% 2%;
+                    .pricingBodyButtomChild{
+                        align-items: center;
+                        text-align: center;
+                        .PricingContainerChildTittle{
+                            text-align: left;
+                            span{
+                                font-size: 15px;
+                                font-weight: 600;
+                                line-height: 28px;
+                                color: #ff5b5b;
+                                margin-bottom: 15px;
+                                transition: .3s;
+                            }
+                            h1{
+                                font-size: 2.5rem;
+                                font-weight: 600;
+                                transition: .3s;
+                                margin: 5% 0;
+                                font-family: 'Poppins', sans-serif;
+                              color: #233d63;
+                                @include mobile{
+                                        font-size: 1.7rem;
+                                    }
+                            }
+                            p{
+                                font-size: 15px;
+                                font-weight: 500;
+                                line-height: 28px;
+                                color: #7b8491;
+                                margin-bottom: 15px;
+                                transition: .3s;
+                            }
+                        }
+                        .priceTableBodyButtomChildButtton{
+                            text-align: left;
+                                display: flex;
+                                gap: 10px;
+                                margin:15% 0;
+                
+                                  @include mobile{
+                                          margin-bottom: 15%;
+                                            }
+                
+                                button{
+                                    background: none;
+                                    background-image: none;
+                                  padding: 18px 40px;
+                                  display: inline-block;
+                                  text-transform: uppercase;
+                                  font-weight: 500;
+                                  font-size: 12px;
+                                  line-height: 1;
+                                  border: 1px solid #dfe0e5;
+                                  transition: .5s;
+                                }
+                                .PricingActive{
+                                    background:#ff5b5b;
+                                     border-color: transparent;
+                                     color: #fff;
+                                     transition: .5s;
+                                }
+                        }
+                    }
+                }
+            }
+            .PriceChange{
+                width: 100%;
+                padding: 0 5%;
+                flex: 2;
+                .pricingWrapperMain{
+                    display: block;
+                .PriceChangeContainer{
+                .pricingBodyButtomParent{
+                    padding: 3% 2%;
+                    .pricingBodyButtomChild{
+                        align-items: center;
+                        text-align: center;
+            .priceTableBodyButtomChildButttonTop{
+                    padding: 10px 20px 10px 10px;
+                    border: 1px solid  #7b8491;
+                    .priceTableChildTop{
+                        margin: 20% 0;
+                        .borderSpace{
+                        padding: 10%;
+                        margin: 0 auto;
+                        width: 60%;
+                        border-bottom: 1px solid #7b8491;
+                    }
+                    }
+                    .priceTableChildBody{
+                        margin: 10% 0;
+                        h2{
+                            font-size: 2.5rem;
+                            font-weight: 700;
+                            transition: .3s;
+                            font-family: 'Poppins', sans-serif;
+                          color: #233d63;
+                        }
+                        p{
+                            text-align: center;
+                                    font-size: 15px;
+                                    font-weight: 600;
+                                    line-height: 28px;
+                                    color: #7b8491;
+                                    margin-bottom: 15px;
+                                    transition: .3s;
+                        }
+                        ul{
+                            margin: 5% 0;
+                            list-style: none;
+                            li{
+                                padding: 0;
+                                margin: 5% 0;
+                                text-align: center;
+                                p{
+                                    text-align: center;
+                                    font-size: 15px;
+                                    font-weight: 600;
+                                    line-height: 28px;
+                                    color: #7b8491;
+                                    margin-bottom: 15px;
+                                    transition: .3s;
+                                }
+                            }
+                        }
+                    }
+                    .priceTableChildBottom{
+                        margin: 5% 0;
+                        button{
+                            border: 1px solid #7b8491;
+                            border-radius: 3px;
+                            overflow: hidden;
+                            padding: 18px 40px;
+                            display: inline-block;
+                            text-transform: uppercase;
+                            font-weight: 900;
+                            font-size: 12px;
+                            line-height: 1;
+                            color:#233d63;
+                            background-color: #fff;
+                            &:hover{
+                                background-color: #ff5b5b;
+                                color: #fff;
+                                border: none;
+                            }
+                        }
+                    }
+            }
+        }
+    }
+        }
+    }
+        .content{
+            display: none;
+            transition: .3s;
+           }
+    }
+         }
+        }
+        .pricingBodyButtomDown{
+            margin: 10% 0;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                .priceBodtMiddleButtomTittleContainer{
+                    text-align: center;
+                    .priceBodtMiddleButtomTittleParent{
+                        .priceBodtMiddleButtomTittleChild{
+                              text-align: center;
+                              h2{
+                                font-size: 2.5rem;
+                                font-weight: 600;
+                                transition: .3s;
+                                font-family: 'Poppins', sans-serif;
+                              color: #233d63;
+                            
+                            }
+                            p{
+                                font-size: 15px;
+                                font-weight: 500;
+                                line-height: 28px;
+                                color: #7b8491;
+                                margin-bottom: 15px;
+                                transition: .3s;
+                            }
+                        }
+                    }
+                }
+                .pricingMiddleButtomMain{
+                    margin: 5% 0;
+                    .pricingMiddleButtomMainContainer{
+                        padding: 0 4%;
+                        .pricingMiddleButtomMainParent{
+                            padding: 0 2%;
+                            .pricingMiddleButtomMainChild{
+                                border: 1px solid #eaecee;
+                                background-color: #ffffff;
+                                padding: 5% 0;
+                                margin: 0;
+                                text-align: center;
+                                align-items: center;
+                                transition: .3s;
+                                .pricingMiddleButtomMainChildTop{
+                                    margin: 10% 0;
+                                    padding: 0 10%;
+                                    h2{
+                                        font-size: 1.5rem;
+                                        font-weight: 700;
+                                        transition: .3s;
+                                        font-family: 'Poppins', sans-serif;
+                                      color: #233d63;
+                                      margin-bottom: 10%;
+                                    }
+                                    div{
+                                        border-bottom: 1px solid #7b8491;
+                                        opacity: 0.4;
+                                    }
+                                }
+                                .pricingMiddleButtomMainChildBody{
+                                    margin: 10% 0;
+                                    padding: 0 15%;
+                                    h2{
+                                        font-size: 2rem;
+                                        font-weight: 600;
+                                        transition: .3s;
+                                        font-family: 'Poppins', sans-serif;
+                                      color: #233d63;
+                                      margin: 10% 0;
+                                      span{
+                                        font-size: 20px;
+                                        font-weight: 700;
+                                        line-height: 28px;
+                                        color: #7b8491;
+                                        margin-bottom: 15px;
+                                        transition: .3s;
+                                      }
+                                    }
+                                    ul{
+                                        padding: 0;
+                                        li{
+                                          font-size: 14px;
+                                        font-weight: 600;
+                                        line-height: 28px;
+                                        color: #7b8491;
+                                        margin-bottom: 10px;
+                                        transition: .3s;
+                                        }
+                                    }
+                                    div{
+                                        border-bottom: 1px solid #7b8491;
+                                        opacity: 0.4;
+                                    }
+                                }
+                                .pricingMiddleButtomMainChildButtom{
+                                    margin: 3% 0;
+                                    a{
+                                        color: #000;
+                                        font-weight: 700;
+                                        font-size: 13px;
+                                        transition: .3s;
+                                        &:hover{
+                                            color: #00c867;
+                                        }
+                                    }
+                                }
+                                &:hover{
+                                    box-shadow: 0px 15px 30px 0px rgba(0, 3, 143, 0.1);
+                                    border-color: transparent;
+                                }
+                            }
+                            .pricingMiddleMainActive{
+                                box-shadow: 0px 15px 30px 0px rgba(0, 3, 143, 0.1);
+                                border-color: transparent;
+                            }
+                        }
+                    }
+                }
+        }
+        }
+       }
+
+}

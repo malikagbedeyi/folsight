@@ -1,8 +1,8 @@
 import React from 'react'
-import Footer from '../Footer'
-import Navbar from '../Navbar'
-import Request from '../Request'
-import CoverDemo from '../CoverDemo'
+import Footer from '../Components/Footer'
+import Navbar from '../Components/Navbar'
+import Request from '../Components/Request'
+import CoverDemo from '../Components/CoverDemo'
 const RequestDemo= () => {
     return (
         <div className="">

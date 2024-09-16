@@ -1,22 +1,23 @@
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
-import Home from './Components/page/Home';
-import SignIn from './Components/page/Login';
-import RequestDemo from './Components/page/RequestDemo';
-import FrameWork01 from './Components/page/FrameWork/FrameWork01';
-import FrameWork02 from './Components/page/FrameWork/FrameWork02';
-import FrameWork03 from './Components/page/FrameWork/FrameWork03';
-import FrameWork04 from './Components/page/FrameWork/FrameWork04';
-import FrameWork05 from './Components/page/FrameWork/FrameWork05';
-import Register from './Components/page/Register';
-import Login from './Components/page/Login';
-import AboutUs from './Components/page/AboutUs';
+import Home from './page/Home';
+import RequestDemo from './page/RequestDemo';
+import FrameWork01 from './page/FrameWork/FrameWork01';
+import FrameWork02 from './page/FrameWork/FrameWork02';
+import FrameWork03 from './page/FrameWork/FrameWork03';
+import FrameWork04 from './page/FrameWork/FrameWork04';
+import FrameWork05 from './page/FrameWork/FrameWork05';
+import Register from './page/Register';
+import Login from './page/Login';
+import AboutUs from './page/Company/AboutUs';
 import { useEffect, useState } from 'react';
 import ScrollToTop from './ScrollToTop';
 import LoadingSpinner from './LoadingSpinner';
-import ContactUs from './Components/page/ContactUs';
-import AuditRoom from './Components/page/Product/AuditRoom';
-import Compliance from './Components/page/Product/Compliance';
-import RiskCore from './Components/page/Product/RiskCore';
+import ContactUs from './page/Company/ContactUs';
+import AuditRoom from './page/Product/AuditRoom';
+import Compliance from './page/Product/Compliance';
+import RiskCore from './page/Product/RiskCore';
+import Plans from './page/Plans/Plans';
+import Team from './page/Team/Team';
 function AppContent() {
   const [loading, setLoading] = useState(false);
   const location = useLocation();
@@ -55,19 +56,21 @@ function AppContent() {
 
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/request-demo' element={<RequestDemo />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/register' element={<Register />} />
+        <Route path='/audit_room' element={<AuditRoom />} />
+        <Route path='/compliance' element={<Compliance />} />
+        <Route path='/risk_core' element={<RiskCore />} />
         <Route path='/framework_01' element={<FrameWork01 />} />
         <Route path='/framework_02' element={<FrameWork02 />} />
         <Route path='/framework_03' element={<FrameWork03 />} />
         <Route path='/framework_04' element={<FrameWork04 />} />
         <Route path='/framework_05' element={<FrameWork05 />} />
+        <Route path='/plans' element={<Plans />} />
         <Route path='/about_us' element={<AboutUs />} />
         <Route path='/contact_us' element={<ContactUs />} />
-        <Route path='/audit_room' element={<AuditRoom />} />
-        <Route path='/compliance' element={<Compliance />} />
-        <Route path='/risk_core' element={<RiskCore />} />
+        <Route path='/team' element={<Team />} />
+        <Route path='/request-demo' element={<RequestDemo />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
       </Routes>
     </>
   );

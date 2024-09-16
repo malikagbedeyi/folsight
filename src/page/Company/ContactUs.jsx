@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../Navbar'
-import CoverContact from '../CoverContact'
-import ContactUsBody from '../Company Body/ContactUsBody'
+import Navbar from '../../Components/Navbar'
+import CoverContact from '../../Components/CoverContact'
+import ContactUsBody from '../../Components/Company Body/ContactUsBody'
 
 const ContactUs = () => {
   return (
