@@ -187,8 +187,8 @@ const ComplianceBody = () => {
                         <div className="auditBenefitChild">
                             <img src={img4} alt="" />
                             <div className="bodyText">
-                            <h1>Increased Efficiency</h1>
-                            <p>Reduce audit time and effort with automated workflows and centralized resources.</p>
+                            <h1> utomated Compliance Management</h1>
+                            <p>AI-driven automation reduces manual tasks, such as data collection, gap analysis, and reporting, saving time and minimizing errors.</p>
                         </div>
                         </div>
                     </div>
@@ -196,8 +196,8 @@ const ComplianceBody = () => {
                         <div className="auditBenefitChild">
                             <img src={img5} alt="" />
                             <div className="bodyText"> 
-                                 <h1>Improved Compliance</h1>
-                            <p>Ensure adherence to regulatory standards with robust security and data management.</p>
+                                 <h1>Real-Time Risk Detection</h1>
+                                 <p>AI continuously monitors systems and processes, identifying compliance risks in real time, allowing for faster responses to potential issues.</p>
                         </div>
                         </div>
                     </div>
@@ -205,8 +205,8 @@ const ComplianceBody = () => {
                         <div className="auditBenefitChild">
                             <img src={img6} alt="" />
                             <div className="bodyText"> 
-                                 <h1>Data-Driven Insights</h1>
-                            <p> Leverage powerful analytics to identify risks, trends, and areas for improvement.</p>
+                                 <h1>Continuous Monitoring</h1>
+                            <p>AI operates around the clock, providing 24/7 compliance monitoring, ensuring that organizations stay compliant with changing regulations.</p>
                         </div>
                         </div>
                     </div>
