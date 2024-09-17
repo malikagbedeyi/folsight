@@ -147,7 +147,7 @@ const ComplianceBody = () => {
                         <div className="col-lg-6 auditKeyParent">
                             <div className="auditKeyChild">
                                 <div className="auditKeyChildText">
-                            <h1>Requirementst</h1>
+                            <h1>Requirements</h1>
                             <p> Timely alerts for upcoming audits, policy reviews, or changes in regulations, ensuring that your organization stays on top of compliance obligations.</p>
                         </div>
                         </div>

@@ -8,7 +8,9 @@ const LoadingSpinner = () => {
         <div className='loading-cover'></div>
       {/* You can customize this with any loading animation */}
       <div className="spinner">
+        <div className='imgspinner'>
         <img src={img1} alt='loading...'/>
+        </div>
         </div>
     </div>
   );
