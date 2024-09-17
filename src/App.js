@@ -18,6 +18,7 @@ import Compliance from './page/Product/Compliance';
 import RiskCore from './page/Product/RiskCore';
 import Plans from './page/Plans/Plans';
 import Team from './page/Team/Team';
+import NewsCaster from './NewsCaster';
 function AppContent() {
   const [loading, setLoading] = useState(false);
   const location = useLocation();
@@ -77,12 +78,20 @@ function AppContent() {
 }
 
 function App() {
+  // const handleClearNewsletterPreference = () => {
+  //   localStorage.removeItem('newsletter'); // Clear only the newsletter data
+  //   alert('Newsletter subscription preference has been cleared.');
+  // };
   return (
     <div className="App">
        <HashRouter>
+        <NewsCaster />
         <ScrollToTop />  
         <AppContent />
       </HashRouter>
+      {/* <button onClick={handleClearNewsletterPreference} style={{ marginTop: '20px' }}>
+        Clear Newsletter LocalStorage
+      </button> */}
     </div>
   );
 }

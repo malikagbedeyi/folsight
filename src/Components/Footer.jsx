@@ -17,15 +17,16 @@ const Footer = () => {
       }, []);
   return (
     <div className='footer'>
-        <div className="footerForm"  data-aos="zoom-out-right">
+        {/* <div className="footerForm"  data-aos="zoom-out-right">
             <div className="footerFormText">
                 <h1>Subscribe Our Newsletter to Get New Updates.</h1>
             </div>
             <div className="footerEmail">
-                <input type="email" />
+                <input type="email"
+                placeholder='Enter your email' />
                 <button><i className="fa-solid fa-arrow-right"></i></button>
             </div>
-        </div>
+        </div> */}
         {/* <div className="animate-icons">
         <div class="shape-slider">
                 <img class="shape shape-2  " src={img1} alt="" />

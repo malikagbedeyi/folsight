@@ -14,12 +14,13 @@ import img12 from "../../assets/Images/fea-3.png"
 import img13 from "../../assets/Images/ImageBlog/01.jpg"
 import img14 from "../../assets/Images/ImageBlog/03.jpg"
 import img15 from "../../assets/Images/ImageBlog/04.jpg"
+import { Link, useNavigate } from 'react-router-dom';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import MainBody from '../MainBody'
 
 const RiskCoreBody = () => {
-
+    const navigate =  useNavigate();
     useEffect(() => {
         AOS.init({
             duration: 800, 
@@ -218,7 +219,6 @@ const RiskCoreBody = () => {
                             <div className="bodyText">
                             <h1>Increased Efficiency</h1>
                             <p>Reduce audit time and effort with automated workflows and centralized resources.</p>
-                            <a href="#">LEARN MORE</a>
                         </div>
                         </div>
                     </div>
@@ -228,7 +228,6 @@ const RiskCoreBody = () => {
                             <div className="bodyText"> 
                                  <h1>Improved Compliance</h1>
                             <p>Ensure adherence to regulatory standards with robust security and data management.</p>
-                            <a href="#">LEARN MORE</a>
                         </div>
                         </div>
                     </div>
@@ -238,7 +237,6 @@ const RiskCoreBody = () => {
                             <div className="bodyText"> 
                                  <h1>Data-Driven Insights</h1>
                             <p> Leverage powerful analytics to identify risks, trends, and areas for improvement.</p>
-                            <a href="#">LEARN MORE</a>
                         </div>
                         </div>
                     </div>

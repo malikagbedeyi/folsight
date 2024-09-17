@@ -17,9 +17,10 @@ import img15 from "../../assets/Images/ImageBlog/04.jpg"
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import MainBody from '../MainBody'
+import { Link, useNavigate } from 'react-router-dom';
 
 const AuditRoomBody = () => {
-
+        const navigate =  useNavigate()
     useEffect(() => {
         AOS.init({
             duration: 800, 
@@ -56,7 +57,7 @@ const AuditRoomBody = () => {
                 <h1>Conduct audits efficiently with minimal disruptions and streamlined workflows.</h1>
             </div>
             <div className="row auditMiddleContainer">
-                <div className="col-lg-4 col-md-6 auditMiddleParent" data-aos="slide-right">
+                <div className="col-lg-4 col-md-6 auditMiddleParent">
                     <div className="auditMiddleChild">
                     <div className="auditMiddleChildTop">
                         <img src={img13} alt="" />
@@ -71,7 +72,7 @@ const AuditRoomBody = () => {
                     </div>
                     </div>
                 </div>
-                <div className="col-lg-4 col-md-6 auditMiddleParent" data-aos="zoom-out">
+                <div className="col-lg-4 col-md-6 auditMiddleParent">
                     <div className="auditMiddleChild">
                     <div className="auditMiddleChildTop">
                         <img src={img14} alt="" />
@@ -86,7 +87,7 @@ const AuditRoomBody = () => {
                     </div>
                     </div>
                 </div>
-                <div className="col-lg-4 col-md-6 auditMiddleParent" data-aos="zoom-in-left">
+                <div className="col-lg-4 col-md-6 auditMiddleParent">
                     <div className="auditMiddleChild">
                     <div className="auditMiddleChildTop">
                         <img src={img15} alt="" />
@@ -218,7 +219,6 @@ const AuditRoomBody = () => {
                             <div className="bodyText">
                             <h1>Increased Efficiency</h1>
                             <p>Reduce audit time and effort with automated workflows and centralized resources.</p>
-                            <a href="#">LEARN MORE</a>
                         </div>
                         </div>
                     </div>
@@ -228,7 +228,6 @@ const AuditRoomBody = () => {
                             <div className="bodyText"> 
                                  <h1>Improved Compliance</h1>
                             <p>Ensure adherence to regulatory standards with robust security and data management.</p>
-                            <a href="#">LEARN MORE</a>
                         </div>
                         </div>
                     </div>
@@ -238,7 +237,6 @@ const AuditRoomBody = () => {
                             <div className="bodyText"> 
                                  <h1>Data-Driven Insights</h1>
                             <p> Leverage powerful analytics to identify risks, trends, and areas for improvement.</p>
-                            <a href="#">LEARN MORE</a>
                         </div>
                         </div>
                     </div>
@@ -256,7 +254,7 @@ const AuditRoomBody = () => {
                 </div>
             </div>
             <div className="auditBottom">
-                <button>Request a Demo</button>
+            <button onClick={() => navigate('/request-demo')} >Request a Demo</button>
             </div>
 
     </div>

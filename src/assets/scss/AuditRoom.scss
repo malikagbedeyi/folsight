@@ -36,7 +36,7 @@
 *{
     list-style: none;
     text-decoration: none;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Ubuntu", sans-serif!important;
     font-style: normal;
 }
 @keyframes movingIcon {
@@ -461,29 +461,19 @@
         justify-content: center;
         align-items: center;
         button{
-            width: 20%;
-            background-color: #8231EB;
-            color: #fff;
-            font-size: 0.9vw;
-            padding: 15px 5px;
-            border: none;
-            display: block;
-            outline: none;
-            overflow: hidden;
+            margin: auto;
+            align-items: center;
+            margin-left: 40%;
+            margin-top: -1%;
+            padding: 20px 50px;
+            background-image: -webkit-linear-gradient( 0deg, rgb(0,0,184) 0%, rgb(115,0,233) 100%);
             border-radius: 5px;
-            transition: 0.5s ease;
+            color: #fff;
             text-transform: uppercase;
-            font-weight: 600;
-            animation: movingDown .5s;
-            @include Destop{
-                 font-size: 14px;
-                }
-            &:hover{
-                background-color:#a96ef7;
-                color: #fff;
-                border: none;
-                transition: 0.5s ease;
-            }
+            border: 0;
+            font-weight: 500;
+            font-size: 1vw;
+            letter-spacing: 1px;
         }
     }
 }

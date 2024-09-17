@@ -79,7 +79,7 @@ const LearnMore = () => {
     </div>
             </div>
         <div className="learnMoreContainer row">
-            <div className=" col-lg-4 col-md-6 " data-aos="flip-down">
+            <div className=" col-lg-4 col-md-6 " >
             <div className="learnmoreActive learnMoreContainerChild ">
                 <div className="topImg">
                     <img src={img6} alt="" />
@@ -89,11 +89,11 @@ const LearnMore = () => {
                     <p>Behold living. Creeping gathered give sea third multiply midst winged tree bring wherein living itsmoving our him dry female his lights herb.</p>
                 </div>
                 <div className="buttonText">
-                <a href="#">LEARN MORE  → </a>
+                <a href="#/audit_room">LEARN MORE  → </a>
                     </div>
                 </div>
             </div>
-              <div className=" col-lg-4 col-md-6 " data-aos="zoom-out-up">
+              <div className=" col-lg-4 col-md-6 " >
               <div className="learnmoreActive learnMoreContainerChild ">
               <div className="topImg">
                     <img src={img7}  alt="" />
@@ -107,11 +107,11 @@ const LearnMore = () => {
                     <p>Behold living. Creeping gathered give sea third multiply midst winged tree bring wherein living itsmoving our him dry female his lights herb.</p>
                 </div>
                 <div className="buttonText">
-                    <a href="#">LEARN MORE  → </a>
+                    <a href="#/compliance">LEARN MORE  → </a>
                 </div>
             </div>
             </div>
-              <div className="col-lg-4 col-md-6 " data-aos="flip-up">
+              <div className="col-lg-4 col-md-6 " >
                 <div className="learnmoreActive learnMoreContainerChild ">
               <div className="topImg">
                     <img src={img8} alt="" />
@@ -125,7 +125,7 @@ const LearnMore = () => {
                     <p>Behold living. Creeping gathered give sea third multiply midst winged tree bring wherein living itsmoving our him dry female his lights herb.</p>
                 </div>
                 <div className="buttonText">
-                <a href="#">LEARN MORE  → </a>
+                <a href="#/risk_core">LEARN MORE  → </a>
                 </div>
             </div>
         </div>
@@ -142,7 +142,7 @@ const LearnMore = () => {
         </div>
         <div className="learnMoreCategoryContainerChildBody">
             <div className="CategoryContainerChildBodyWrapper">
-                <div className="CategoryContainerChildBodytop" data-aos="slide-right">
+                <div className="CategoryContainerChildBodytop" >
                 <div className="learn-more-parent-body">
                 <div onClick={()=>handleHover(1)} className={ hover === 1 ? "learn-more-child-body learnMore-active" : "learn-more-child-body"}>
                 <div className="learn-more-child-bodyTop">
@@ -185,7 +185,7 @@ const LearnMore = () => {
                     </div>
             </div>
                 </div>
-                <div className="CategoryContainerChildBodybottom" data-aos="slide-left">
+                <div className="CategoryContainerChildBodybottom">
                 <div className="learn-more-parent-body">
                 <div onClick={()=>handleHover(3)} className={hover  === 3 ? "learn-more-child-body learnMore-active" : "learn-more-child-body"}>
                 <div className="learn-more-child-bodyTop">

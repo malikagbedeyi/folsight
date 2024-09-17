@@ -17,9 +17,10 @@ import img15 from "../../assets/Images/ImageBlog/04.jpg"
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import MainBody from '../MainBody'
+import { Link, useNavigate } from 'react-router-dom';
 
 const ComplianceBody = () => {
-
+    const navigate =  useNavigate();
     useEffect(() => {
         AOS.init({
             duration: 800, 
@@ -174,43 +175,12 @@ const ComplianceBody = () => {
                         </div>
                         </div>
                     </div>
-                    <div className="row auditKeyContainer">
-                        <div className="col-lg-6 auditKeyParent">
-                            <div className="auditKeyChild">
-                                <div className="auditKeyChildText">
-                             <h1>Audit Tasks</h1>
-                             <p>Optimize the audit workflow with a structured task management system that clearly defines responsibilities, timelines, and deliverables. AuditRoom allows you to assign tasks to specific team members, set priorities, and monitor progress in real time.</p>
-                        </div>
-                        </div>
-                        </div>
-                        <div className="col-lg-6 auditKeyParent" data-aos="zoom-in">
-                            <div className="auditKeyChild" >
-                            <img src={img12} style={{float:"right"}} alt="" />
-                            </div>
-                            </div>
-                    </div>
-                    <div className="row auditKeyContainer">
-                        <div className="col-lg-6 auditKeyParent" data-aos="zoom-out">
-                            <div className="auditKeyChild">
-                                   <img src={img11} style={{float:"left"}} alt="" />
-                            </div>
-                            
-                         </div>
-                         <div className="col-lg-6 auditKeyParent">
-                            <div className="auditKeyChild">
-                                <div className="auditKeyChildText">
-                            <h1>Audit Report</h1>
-                            <p>Produce detailed, professional audit reports with ease using our customizable templates and reporting tools. Capture key findings, insights, and recommendations, and present them in a clear, concise format that meets the needs of all stakeholders.</p>
-                        </div>
-                        </div>
-                        </div>
-                    </div>
                 </div>
                 </div>
             </div>
             <div className="auditBenefit">
                 <div className="auditBenefitTittle">
-                    <h1>Benefits of Using AuditRoom</h1>
+                    <h1>Benefits of Using Compliance</h1>
                 </div>
                 <div className="row auditBenefitCoontainer">
                     <div className="col-lg-4 col-md-6 auditBenefitParent" data-aos="flip-right">
@@ -219,7 +189,6 @@ const ComplianceBody = () => {
                             <div className="bodyText">
                             <h1>Increased Efficiency</h1>
                             <p>Reduce audit time and effort with automated workflows and centralized resources.</p>
-                            <a href="#">LEARN MORE</a>
                         </div>
                         </div>
                     </div>
@@ -229,7 +198,6 @@ const ComplianceBody = () => {
                             <div className="bodyText"> 
                                  <h1>Improved Compliance</h1>
                             <p>Ensure adherence to regulatory standards with robust security and data management.</p>
-                            <a href="#">LEARN MORE</a>
                         </div>
                         </div>
                     </div>
@@ -239,7 +207,6 @@ const ComplianceBody = () => {
                             <div className="bodyText"> 
                                  <h1>Data-Driven Insights</h1>
                             <p> Leverage powerful analytics to identify risks, trends, and areas for improvement.</p>
-                            <a href="#">LEARN MORE</a>
                         </div>
                         </div>
                     </div>
@@ -257,7 +224,7 @@ const ComplianceBody = () => {
                 </div>
             </div>
             <div className="auditBottom">
-                <button>Request a Demo</button>
+            <button onClick={() => navigate('/request-demo')} >Request a Demo</button>
             </div>
 
     </div>
