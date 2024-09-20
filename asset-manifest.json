@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/folsight/static/css/main.98068670.css",
-    "main.js": "/folsight/static/js/main.d5acd882.js",
+    "main.css": "/folsight/static/css/main.ac29df3a.css",
+    "main.js": "/folsight/static/js/main.86b0b00f.js",
     "static/media/auditi01.png": "/folsight/static/media/auditi01.0f3166f409a815264d86.png",
     "static/media/grc-02.png": "/folsight/static/media/grc-02.6cfbe35f345d8631bb09.png",
+    "static/media/10.png": "/folsight/static/media/10.91101cc78f1a4f748141.png",
     "static/media/01Home.png": "/folsight/static/media/01Home.55c48f1a0c7a155ab820.png",
     "static/media/swiftprofile.png": "/folsight/static/media/swiftprofile.e9b3defd4e41f90f8381.png",
     "static/media/about-01.png": "/folsight/static/media/about-01.8f8ca13d57d565f8e9d6.png",
@@ -38,7 +39,6 @@
     "static/media/RiskCore.png": "/folsight/static/media/RiskCore.a3078555c239eefa731d.png",
     "static/media/11.png": "/folsight/static/media/11.14ffe7ba99baa0bc0d89.png",
     "static/media/8.png": "/folsight/static/media/8.4a4dfec407436bee6790.png",
-    "static/media/10.png": "/folsight/static/media/10.91101cc78f1a4f748141.png",
     "static/media/4.png": "/folsight/static/media/4.e52f66b8c280bc676248.png",
     "static/media/grc-01.png": "/folsight/static/media/grc-01.ec1cc2b489bcd0b72b32.png",
     "static/media/2.png": "/folsight/static/media/2.31d25e1118e3a1be23ce.png",
@@ -56,11 +56,11 @@
     "static/media/icon_01.png": "/folsight/static/media/icon_01.fb73af149f76b6d1cc83.png",
     "static/media/price-tab1.png": "/folsight/static/media/price-tab1.9d927f27f827970612c1.png",
     "index.html": "/folsight/index.html",
-    "main.98068670.css.map": "/folsight/static/css/main.98068670.css.map",
-    "main.d5acd882.js.map": "/folsight/static/js/main.d5acd882.js.map"
+    "main.ac29df3a.css.map": "/folsight/static/css/main.ac29df3a.css.map",
+    "main.86b0b00f.js.map": "/folsight/static/js/main.86b0b00f.js.map"
   },
   "entrypoints": [
-    "static/css/main.98068670.css",
-    "static/js/main.d5acd882.js"
+    "static/css/main.ac29df3a.css",
+    "static/js/main.86b0b00f.js"
   ]
 }
