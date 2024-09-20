@@ -2,24 +2,23 @@ import React from 'react'
 import Footer from '../../Components/Footer'
 import '../../assets/scss/FrameWork/framework_01.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import FrameWork_04_Body from '../../Components/FrameWorkBody/FrameWork_04_Body'
-
-import CoverFrame_04 from '../../Components/FrameWorkBody/CoverFramework/CoverFrame_04';
-import FrameWorkForm from './FrameWorkForm';
 import Navbar from '../../Components/Navbar';
+import FrameWorkForm from './FrameWorkForm';
 import TOpbar from '../../Components/Topbar';
+import CoverFrame_06 from '../../Components/FrameWorkBody/CoverFramework/CoverFrame_06';
+import FrameWork_06_Body from '../../Components/FrameWorkBody/FrameWork_06_Body';
 
-const FrameWork04 = () => {
+const FrameWork06 = () => {
   return (
     <div className='framework'>
       {/* <Navbar /> */}
       <TOpbar />
-      <CoverFrame_04 />
+      <CoverFrame_06 />
       <FrameWorkForm />
-      <FrameWork_04_Body />
+      <FrameWork_06_Body />
       <Footer />
     </div>
   )
 }
 
-export default FrameWork04
+export default FrameWork06

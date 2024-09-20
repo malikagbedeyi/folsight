@@ -35,7 +35,7 @@ const AuditRoomBody = () => {
                 <div className="col-lg-6 auditParent" data-aos="zoom-out-left">
                     <div className="auditChildLeft">
                         <h1>Audit Room</h1>
-                        <p>Audit room supports both internal and external audits end-to-end, including annual internal audit planning. It enables auditors and auditees to manage information requests and evidence collection with controlled access. Results of control tests are presented through customizable dashboards, exportable to PowerPoint, Word, and PDF. Additionally, audit metrics and analytics, such as control failures, can be exported to Excel for further analysis.</p>
+                        <p>Audit room supports both internal and external audits end-to-end, including annual internal audit planning. It enables auditors and auditees to manage information requests and evidence collection with controlled access. Results of control tests are presented through customizable dashboards, exportable to PowerPoint, Word, and PDF. Additionally, audit metrics and analytics, such as control failures, can be exported to Excel for further analysis...</p>
                         <button>Request Demo</button>
                     </div>
                 </div>
@@ -245,12 +245,6 @@ const AuditRoomBody = () => {
             <div className="auditImage" data-aos="flip-right">
                 <div className="imgcover">
                 <img src={img3} alt=""  />
-                </div>
-                <div className="imgtop">
-                <img src={img7} alt="" />
-                </div>
-                <div className="imgdown">
-                <img src={img7} alt=""  />
                 </div>
             </div>
             <div className="auditBottom">

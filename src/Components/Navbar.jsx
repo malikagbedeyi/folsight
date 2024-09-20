@@ -19,6 +19,7 @@ import icon11 from '../assets/Images/Icons1-2/6.png'
 import icon12 from '../assets/Images/Icons1-2/7.png'
 import icon13 from '../assets/Images/Icons1-2/8.png'
 import icon14 from '../assets/Images/Icons1-2/9.png'
+import icon24 from '../assets/Images/Icons1-2/10.png'
 import icon15 from '../assets/Images/Products Icons/AI.png'
 import icon16 from '../assets/Images/Products Icons/AuditRoom.png'
 import icon17 from '../assets/Images/Products Icons/Compl.ai.png'
@@ -206,6 +207,16 @@ const Navbar = () => {
                                 {/* Innovation that inspires. Performance that delivers */}
                                 </p>
                               </li>
+                              <li> 
+                              <div className="hoverImg">
+                              <img src={icon24} alt="" />
+                              </div>
+                                <p>
+                                <a href='#/framework_06'>PCI DSS </a>
+                                <span>Framework for cybersecurity standards.</span>
+                                {/* Innovation that inspires. Performance that delivers */}
+                                </p>
+                              </li>
                        </ul>
                         </li>
                     </ul>
@@ -292,6 +303,7 @@ const Navbar = () => {
                              <li> <a href="#/framework_03">SOC2</a> <span className="i"></span>  </li>
                              <li> <a href="#/framework_04">GDPR</a> <span className="i"></span> </li>
                              <li> <a href="#/framework_05">NIST</a> <span className="i"></span> </li>
+                             <li> <a href="#/framework_06">PCI DSS</a> <span className="i"></span> </li>
                         </ul>
                         <i className={openMenu3 ? "fa-solid fa-minus": "fa-solid fa-plus"} onClick={() => setOpenMeu3(!openMenu3)}></i>
                     </li>

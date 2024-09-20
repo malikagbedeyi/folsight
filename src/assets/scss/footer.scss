@@ -118,6 +118,9 @@
     width: 100%;
     z-index: 1;
     position: relative;
+    *{
+        font-family: 'Poppins', sans-serif!important;
+    }
     .footerForm{
         margin: 3% auto;
         width: 80%;
@@ -208,11 +211,11 @@
         }
     }
     .footerBody{
-        padding: 0;
+        padding:  0;
         background-color: #f9f5fe;
         .footerBodyContainer{
-            padding:   0;
-            margin:0 3% 3%;
+            padding:  7% 3% 5%;
+            margin:0 ;
             border-bottom: 1px solid gray;
             .footerBodyContainerParent{
                 .footerBodyContainerChild{
@@ -227,7 +230,7 @@
                             max-height: none;
                         }
                         img{
-                            margin: -10% 0 0 -5%;
+                            margin: -20% 0 0 -5%;
                             width: 50%;
                             @include laptop{
                                 margin: 0;
@@ -246,7 +249,6 @@
                         margin-bottom: 15px;
                         transition: .3s;
                         font-weight: 600;
-                            font-family: 'Poppins', sans-serif;
                         }
 
                     }
@@ -256,7 +258,7 @@
                 .footerRightChild{
                     flex-wrap: wrap;
                     display: flex;
-                    gap: 10%;
+                    gap: 15%;
                     padding: 0;
                     margin: 0 auto;
                     justify-content: center;
@@ -266,14 +268,86 @@
                     .footerRightChildTittle{
                         margin: 2% 0;
                         h3{
-                            text-align: center;
+                            text-align: left;
                             font-size: 1.3rem;
-                            margin-bottom:  20px;
+                            margin-bottom:  10px;
                             padding: 0;
                             font-weight: 600;
                             transition: .3s;
-                            font-family: 'Poppins', sans-serif;
                             color: #233d63;
+                        }
+                        ul{
+                            padding: 3% 10px 0 0;
+                            list-style: none;
+                            text-align: left;
+                            li{
+                                margin-bottom: 10px;
+                                a{
+                                    text-decoration: none;
+                                    font-size: 15px;
+                                    line-height: 28px;
+                                    color: #7b8491;
+                                    margin-bottom: 15px;
+                                    transition: .3s;
+                                    font-weight: 600;
+
+                                    &:hover{
+                                        color: #233d63;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .footerRightChildTittle-2{
+                        margin: 2% 0;
+                        h3{
+                            text-align: center;
+                            font-size: 1.3rem;
+                            margin-bottom:  10px;
+                            padding: 0;
+                            font-weight: 600;
+                            transition: .3s;
+                            color: #233d63;
+                        }
+                        .WrapperTittle-2{
+                            display: flex;
+                            gap: 40px;
+                            justify-content: center;
+                            .leftTittle-2, .rightTittle-2{
+                                flex: 1;
+                                ul{
+                                    padding: 3% 10px 0 0;
+                                    list-style: none;
+                                    text-align: left;
+                                    li{
+                                        margin-bottom: 5px;
+                                        a{
+                                            text-decoration: none;
+                                            font-size: 15px;
+                                            line-height: 28px;
+                                            color: #7b8491;
+                                            margin-bottom: 15px;
+                                            transition: .3s;
+                                            font-weight: 600;
+        
+                                            &:hover{
+                                                color: #233d63;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .leftTittle-2{
+
+                                ul{
+                                    text-align: left;
+                                }
+                            }
+                            .rightTittle-2{
+                                ul{
+                                text-align: right;
+                            }
+                        }
                         }
                         ul{
                             padding: 3% 10px 0 0;
@@ -289,7 +363,6 @@
                                     margin-bottom: 15px;
                                     transition: .3s;
                                     font-weight: 600;
-                                     font-family: 'Poppins', sans-serif;
 
                                     &:hover{
                                         color: #233d63;
@@ -310,36 +383,42 @@
 
                     li{
                         text-align: center;
-                        a{
-                            text-decoration: none;
-                            color: #8231EB;
-                            i{
-                                font-size: 1.5rem;
-                                font-weight: 600;
-                            }
-                        }
-                    }
-                    .iconCover{
                         height: 50px;
                         width: 50px;
-                        line-height: 55px;
+                        line-height: 50px;
                         border-radius: 50%;
                         text-align: center;
-                        // box-shadow: 0px 20px 20px 0px rgba(0, 23, 88, 0.2);
                         box-shadow: 0px 10px 60px 0px rgba(0, 23, 88, 0.1);
                         background: #fff;
                         transition: all .5s;
                         &:hover{
-                            background:#8231EB ;
+                            background:#8231EB;
                             a{
                                 color: #fff;
                                 transition: all .4s;
+                                svg{
+                                    fill: #fff;
+                                }
                             }
                         }
                         a{
+                            text-decoration: none;
                             color: #8231EB;
                             transition: all .3s;
+                            i{
+                                font-size: 1.5rem;
+                                font-weight: 600;
+                                text-align: center;
+                            }
+                            svg{
+                                fill: #8231EB;
+                                text-align: center;
+                            }
+                            .iconCover{
+                                width: 20px;
                         }
+                        }
+
                     }
                 }
               
@@ -381,7 +460,6 @@
                                 margin-bottom: 15px;
                                 transition: .3s;
                                 font-weight: 600;
-                                 font-family: 'Poppins', sans-serif;
 
                                 &:hover{
                                     color: #233d63;

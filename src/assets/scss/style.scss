@@ -91,16 +91,18 @@
       opacity: 1;
     }
   }
-  
   *{
     list-style: none;
     margin: 0;
-    font-family: "Poppins", sans-serif!important;
     font-style: normal;
   }
   p{
     transition: .3s;
   }
+  .Home{
+   *{
+    font-family: "Poppins", sans-serif!important;
+   }
 .menuSection{
     padding:0;
     margin: 0;
@@ -116,10 +118,11 @@
 
     @include tablet{
         margin: 10% 0 0;
-        padding: 7% 0;
+        padding: 5% 0;
     }
     @include mobile{
-        margin-top: 18%;
+        margin-top: 20%;
+
     }
      .row{
         margin: 0;
@@ -127,8 +130,8 @@
         @include FullHd{
         padding: 5% 3% 5% 7%;
         }
-        @include laptop{
-            margin-top: 10%;
+        @include tablet{
+            margin-top: 5%;
         }
 
             .leftWrapper{
@@ -301,7 +304,7 @@
                     text-align: center;
                     justify-content: center;
                     @include mobile{
-                        margin-top: 5%;
+                        margin-top: 10%;
                     }
                     h1{
                         font-size: 2.5vw;
@@ -310,6 +313,12 @@
                         transition: .3s;
                         letter-spacing: 1px;
                       color: #233d63;
+                      @include Destop{
+                        font-size:2.5rem ;
+                    }
+                    @include tablet{
+                       font-size: 2rem;
+                    }
                       @include mobile{
                         font-size: 1.6rem;
                 }
@@ -343,6 +352,7 @@
                         }
                         @include mobile{
                             width: 30%;
+                            margin-top: -5%;
                         }
                      }
                      .swift{
@@ -386,9 +396,15 @@
                             transition: .3s;
                             letter-spacing: 1px;
                           color: #233d63; 
+                          @include Destop{
+                            font-size: 2.5rem;
+                        }
                           @include tablet{
-                          font-size: 1.6rem;
-                    }
+                          font-size: 2rem;
+                       }
+                         @include mobile{
+                            font-size: 1.6rem;
+                         }
                         }
                         p{
                             font-size: 1vw;
@@ -398,8 +414,13 @@
                             transition: .3s;
                               @include Destop{
                                 font-size: 15px;
-                                 line-height: 25px;
-                                     }
+                                line-height: 25px;
+                             }
+                             @include mobile{
+                                font-size: 0.9rem;
+                                text-align: left;
+                             }
+
                         }
                     }
                     .learnMoreContainer{
@@ -432,7 +453,13 @@
                                     width: 30%;
                                     margin: 0 auto;
                                     align-items: center;
+                                      @include tablet{
+                                        width: 25%;
+                                   }
                                 }
+                                  @include tablet{
+                                    margin:5% 0 15% ;
+                               }
                             }
                             .bodyText{
                                 display: flex;
@@ -447,8 +474,11 @@
                                      @include Destop{
                                         font-size: 1.3rem;
                                      }
+                                      @include tablet{
+                                      font-size: 1.5rem;
+                                   }
                                      @include mobile{
-                                        font-size: 1.3rem;
+                                        font-size: 1.4rem;
                                      }
                                 }
                                 p{
@@ -461,6 +491,9 @@
                                         font-size: 14px;
                                         line-height: 25px;
                                      }
+                                     @include mobile{
+                                        font-size: 13px;
+                                     }
                                 }
                             }
                             .buttonText{
@@ -472,11 +505,14 @@
                                     text-transform: uppercase;
                                     font-size: 1vw;
                                     letter-spacing: .6px;
-                                    font-weight: 500;
+                                    font-weight: 600;
                                     text-decoration: none;
                                     @include Destop{
                                         font-size: 15px;
                                     }
+                                     @include mobile{
+                                        font-size: 16px;
+                                     }
 
                                 &:hover{
                                     color: #1400c0;
@@ -485,7 +521,7 @@
                             }
 
                             @include tablet{
-                                margin-top: 15%;
+                                margin-top: 5%;
                                 box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
                                 background: #fff;
                             }
@@ -525,9 +561,17 @@
                              transition: .3s;
                             transition: .3s;
                              color: #233d63;
-                               @include tablet{
-                                font-size: 2rem;
+                             @include Destop{
+                                font-size: 2.5rem;
                             }
+                              @include tablet{
+                              font-size: 2rem;
+                           }
+                             @include mobile{
+                                font-size: 1.6rem;
+                                text-align: center;
+                                margin: 2% 0 20px;
+                             }
                             }
                             p{
                                 font-size: 1vw;
@@ -535,13 +579,17 @@
                                 line-height: 2vw;
                                 color: #7b8491;
                                 transition: .3s;
+                                letter-spacing: 1px;
                                 @include Destop{
                                     font-size: 14px;
                                     line-height: 23px;
                                 }
-                                @include tablet{
-                                    font-size: 15px;
-                                }
+                                  @include tablet{
+                                  font-size: 1rem;
+                               }
+                                 @include mobile{
+                                    font-size: 1rem;
+                                 }
 
                             }
                         }
@@ -557,20 +605,23 @@
                                 flex-direction: column;
                                 flex-wrap: wrap;
                                 gap: 30px;
+                                @include tablet{
+                                    margin-top: 4%;
+                                }
                                  .CategoryContainerChildBodytop,
                                 .CategoryContainerChildBodybottom{
                                     display: flex;
                                     gap: 30px;
                                     @media screen and (max-width: 980px) {
                                         flex-direction: column;
-                                        margin: 4% 0;
+                                        margin: 0 0 2%;
                                     }
                                     .learn-more-parent-body{
                                         flex: 1;
                                         position: relative;
                                         box-sizing: border-box;
                                         @media screen and (max-width: 980px) {
-                                            margin: 4% 0;
+                                            margin: 2% 0;
                                         }
                                     .learn-more-child-body{
                                         align-items: center;
@@ -589,6 +640,7 @@
                                             position: relative;
                                             padding: 0;
                                             .learn-more-child-bodyTopWrapper{
+                                                width: 100%;
                                                 margin: 0;
                                                 .learn-more-child-bodyLeftWrapper{
                                                     position: absolute;
@@ -597,6 +649,10 @@
                                                 img{
                                                    width: 15%;
                                             }
+                                            @include tablet{
+                                                left: 0;
+                                                right: 0;
+                                            }
                                                 }
                                                 .learn-more-child-bodyrightWrapper{
                                                     position: absolute;
@@ -604,6 +660,10 @@
                                                     display: none;
                                                 img{
                                                   width: 15%;
+                                            }
+                                              @include tablet{
+                                                left: 0;
+                                                right: 0;
                                             }
                                                 }
                                             }
@@ -627,7 +687,7 @@
                                                 font-weight: 600;
                                                 line-height: 2vw;
                                                 color: #7b8491;
-                                                margin-bottom: 15px;
+                                                margin:5% 0  15px;
                                                 transition: .3s;
                                                 @include Destop{
                                                     font-size: 13px;
@@ -1017,6 +1077,12 @@
                         font-weight: 500;
                         font-size: 1vw;
                         letter-spacing: 1px;
+                        @include Destop{
+                            font-size: 14px;
+                        }
+                        @include tablet{
+                            margin: 0 auto;
+                        }
                     }
                 .burnning{
                     max-width: 20%;
@@ -1032,3 +1098,4 @@
             }
         }
     }
+}

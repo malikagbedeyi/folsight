@@ -20,9 +20,8 @@ const Header = () => {
           }, []);
     
       return (
-        <div className="">
+        <div >
         <section className="menuSection">
-                <Navbar />
                 <div className="coverback">
             <div className="row">
                 <div className="leftWrapper col-xl-6 col-lg-6 col-md-10">

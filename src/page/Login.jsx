@@ -4,10 +4,12 @@ import Navbar from '../Components/Navbar'
 import LoginForm from '../Components/LoginForm';
 import Footer from '../Components/Footer';
 import CoverLogin from '../Components/CoverLogin';
+import TOpbar from '../Components/Topbar';
 const Login = () => {
     return (
         <div className="Login">
-            <Navbar />
+            {/* <Navbar /> */}
+            <TOpbar />
             <CoverLogin />
             <LoginForm />
             <Footer />

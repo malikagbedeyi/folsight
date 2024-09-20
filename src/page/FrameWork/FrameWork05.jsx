@@ -6,12 +6,13 @@ import FrameWork_05_Body from '../../Components/FrameWorkBody/FrameWork_05_Body'
 import CoverFrame_05 from '../../Components/FrameWorkBody/CoverFramework/CoverFrame_05';
 import Navbar from '../../Components/Navbar';
 import FrameWorkForm from './FrameWorkForm';
+import TOpbar from '../../Components/Topbar';
 
 const FrameWork05 = () => {
   return (
     <div className='framework'>
       {/* <Navbar /> */}
-      <Navbar />
+      <TOpbar />
       <CoverFrame_05 />
       <FrameWorkForm />
       <FrameWork_05_Body />

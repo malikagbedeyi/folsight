@@ -19,6 +19,7 @@ import RiskCore from './page/Product/RiskCore';
 import Plans from './page/Plans/Plans';
 import Team from './page/Team/Team';
 import NewsCaster from './NewsCaster';
+import FrameWork06 from './page/FrameWork/FrameWork06';
 function AppContent() {
   const [loading, setLoading] = useState(false);
   const location = useLocation();
@@ -65,6 +66,7 @@ function AppContent() {
         <Route path='/framework_03' element={<FrameWork03 />} />
         <Route path='/framework_04' element={<FrameWork04 />} />
         <Route path='/framework_05' element={<FrameWork05 />} />
+        <Route path='/framework_06' element={<FrameWork06 />} />
         <Route path='/plans' element={<Plans />} />
         <Route path='/about_us' element={<AboutUs />} />
         <Route path='/contact_us' element={<ContactUs />} />

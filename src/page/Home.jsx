@@ -6,10 +6,12 @@ import MiddleCover from '../Components/MiddleCover'
 import Pricings from '../Components/Pricings'
 import Footer from '../Components/Footer'
 import Header from '../Components/Header'
+import Navbar from '../Components/Navbar'
 
 const Home = () => {
   return (
-    <div>
+    <div className='Home'>
+      <Navbar />
         <Header />
       <MainBody />
       <LearnMore />

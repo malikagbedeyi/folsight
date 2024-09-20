@@ -41,7 +41,7 @@ const AboutUsBody = () => {
       <div className="about-us-middleContainer">
           <div className="container">
           <div className="row aboutUs-middleBody">
-          <div className="col-lg-4 col-md-6 aboutUs-middleParent" data-aos="flip-down">
+          <div className="col-lg-4 col-md-6 aboutUs-middleParent" >
               <div className="aboutUs-middleChild">
                 <div className="icons">
                 <i class=" fa-solid fa-circle"></i>
@@ -51,7 +51,7 @@ const AboutUsBody = () => {
                 {/* By providing innovative, data-driven solutions, we enable businesses to operate securely and compliantly, minimizing risks and ensuring adherence to regulatory standards. */}
               </div>
               </div>
-            <div className="col-lg-4 col-md-6 aboutUs-middleParent" data-aos="zoom-out-up">
+            <div className="col-lg-4 col-md-6 aboutUs-middleParent" >
               <div className="aboutUs-middleChild">
                 <div className="icons">
                 <i className="fa-solid fa-users"></i>
@@ -61,7 +61,7 @@ const AboutUsBody = () => {
                 {/* Internet safety has grown tremendously important, we realized how challenging it would be for companies with rapid expansion to dedicate the energy and time required to build a good security framework,we aim to enhance operational efficiency, elevate compliance standards, and foster a culture of proactive risk management. */}
              </div>
               </div>
-              <div className="col-lg-4 col-md-6 aboutUs-middleParent" data-aos="flip-up">
+              <div className="col-lg-4 col-md-6 aboutUs-middleParent" >
               <div className="aboutUs-middleChild activeChild">
                 <div className="icons">
                 <i class="fa-solid fa-lightbulb"></i>
@@ -82,7 +82,7 @@ const AboutUsBody = () => {
                   </div>
               <div className="row aboutUs-bottomContainer">
                 <div className="col-lg-6 aboutUs-bottomParent">
-                  <div className="aboutUs-bottomChildbox" data-aos="slide-right">
+                  <div className="aboutUs-bottomChildbox">
                     <div className="bottomChildbox">
                     <div className="number-box"><p>01</p></div>
                     <div className="textbox">
@@ -91,7 +91,7 @@ const AboutUsBody = () => {
                     </div>
                   </div>
                   </div>
-                  <div className="aboutUs-bottomChildbox" data-aos="slide-right">
+                  <div className="aboutUs-bottomChildbox">
                     <div className="bottomChildbox">
                     <div className="number-box"><p>02</p></div>
                     <div className="textbox">
@@ -100,7 +100,7 @@ const AboutUsBody = () => {
                     </div>
                   </div>
                   </div>
-                  <div className="aboutUs-bottomChildbox" data-aos="slide-right">
+                  <div className="aboutUs-bottomChildbox">
                     <div className="bottomChildbox">
                     <div className="number-box"><p>03</p></div>
                     <div className="textbox">
@@ -141,7 +141,7 @@ const AboutUsBody = () => {
                   </div>
                 </div>
                 <div className="col-lg-6 aboutUs-bottomParent">
-                  <div className="aboutUs-bottomChildbox bottomboxchildright" data-aos="slide-left">
+                  <div className="aboutUs-bottomChildbox bottomboxchildright">
                     <div className="bottomChildbox">
                     <div className="number-box"><p>01</p></div>
                     <div className="textbox">
@@ -150,7 +150,7 @@ const AboutUsBody = () => {
                     </div>
                   </div>
                   </div>
-                  <div className="aboutUs-bottomChildbox bottomboxchildright" data-aos="slide-left">
+                  <div className="aboutUs-bottomChildbox bottomboxchildright">
                     <div className="bottomChildbox">
                     <div className="number-box"><p>02</p></div>
                     <div className="textbox">
@@ -159,7 +159,7 @@ const AboutUsBody = () => {
                     </div>
                   </div>
                   </div>
-                  <div className="aboutUs-bottomChildbox bottomboxchildright" data-aos="slide-left">
+                  <div className="aboutUs-bottomChildbox bottomboxchildright">
                     <div className="bottomChildbox">
                     <div className="number-box"><p>03</p></div>
                     <div className="textbox">

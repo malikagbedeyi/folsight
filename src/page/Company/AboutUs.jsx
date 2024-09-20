@@ -4,10 +4,12 @@ import '../../assets/scss/aboutUs.scss'
 import Navbar from '../../Components/Navbar';
 import Footer from '../../Components/Footer';
 import AboutUsBody from '../../Components/Company Body/AboutUsBody';
+import TOpbar from '../../Components/Topbar';
 const AboutUs = () => {
   return (
     <div className='about-us'>
-      <Navbar />
+      {/* <Navbar /> */}
+      <TOpbar />
       <AboutUsBody />
       <Footer />
     </div>

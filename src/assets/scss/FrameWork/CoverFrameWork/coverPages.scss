@@ -44,6 +44,7 @@
   }
   @include mobile{
     margin: 20% 0;
+    padding: 10% 0;
 }
   .shape-2 {
     left: 3%;
@@ -99,11 +100,15 @@ animation: animationFramesOne 30s alternate infinite linear;
             }
         }
         .coverTopbarParentLeft{
-            
             .coverTopbarChildLeft{
               display: flex;
               justify-content: right;
               gap: 10px;
+              @include tablet{
+                justify-content: left;
+                gap: 20px;
+                margin-top: 20px;
+              }
                 p{
                     font-size: 1vw;
                     font-weight: 500;
@@ -124,6 +129,17 @@ animation: animationFramesOne 30s alternate infinite linear;
                     display: flex;
                     margin-top: -10px;
                     width: 8%;
+                    @include mobile{
+                      width: 20%;
+                      margin-top: -20px;
+                    }
+                  }
+                  .pcidss{
+                    width: 5%;
+                    margin-top: -20px;
+                    @include tablet{
+                      width: 20%;
+                    }
                   }
                 }
         }

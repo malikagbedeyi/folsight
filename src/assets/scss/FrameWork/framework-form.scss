@@ -28,6 +28,9 @@
 
        .frameForm{
         margin: 10%;
+        @include tablet{
+          margin: 3%;
+        }
         .container{
             .row{
                 .basic-sign-in{

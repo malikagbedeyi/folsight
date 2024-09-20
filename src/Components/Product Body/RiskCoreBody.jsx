@@ -32,14 +32,14 @@ const RiskCoreBody = () => {
     <div className='auditRoom'>
         <div className="auditCover">
             <div className="row auditContainer">
-                <div className="col-lg-6 auditParent" data-aos="zoom-out-left">
+                <div className="col-lg-6 auditParent" >
                     <div className="auditChildLeft">
                         <h1>Risk Core</h1>
-                        <p>RiskCore supports both internal and external audits end-to-end, including annual internal audit planning. It enables auditors and auditees to manage information requests and evidence collection with controlled access. Results of control tests are presented through customizable dashboards, exportable to PowerPoint, Word, and PDF. Additionally, audit metrics and analytics, such as control failures, can be exported to Excel for further analysis.</p>
+                        <p>RiskCore supports both internal and external audits end-to-end, including annual internal audit planning. It enables auditors and auditees to manage information requests and evidence collection with controlled access. Results of control tests are presented through customizable dashboards, exportable to PowerPoint, Word, and PDF. Additionally, audit metrics and analytics, such as control failures, can be exported to Excel for further analysis...</p>
                         <button>Request Demo</button>
                     </div>
                 </div>
-                <div className="col-lg-6 auditParent" data-aos="zoom-out-right">
+                <div className="col-lg-6 auditParent" >
                     <div className="auditChildRight">
                         <img src={img1} alt="" />
                     </div>
@@ -57,7 +57,7 @@ const RiskCoreBody = () => {
                 <h1>Conduct audits efficiently with minimal disruptions and streamlined workflows.</h1>
             </div>
             <div className="row auditMiddleContainer">
-                <div className="col-lg-4 col-md-6 auditMiddleParent" data-aos="slide-right">
+                <div className="col-lg-4 col-md-6 auditMiddleParent">
                     <div className="auditMiddleChild">
                     <div className="auditMiddleChildTop">
                         <img src={img13} alt="" />
@@ -72,7 +72,7 @@ const RiskCoreBody = () => {
                     </div>
                     </div>
                 </div>
-                <div className="col-lg-4 col-md-6 auditMiddleParent" data-aos="zoom-out">
+                <div className="col-lg-4 col-md-6 auditMiddleParent">
                     <div className="auditMiddleChild">
                     <div className="auditMiddleChildTop">
                         <img src={img14} alt="" />
@@ -87,7 +87,7 @@ const RiskCoreBody = () => {
                     </div>
                     </div>
                 </div>
-                <div className="col-lg-4 col-md-6 auditMiddleParent" data-aos="zoom-in-left">
+                <div className="col-lg-4 col-md-6 auditMiddleParent">
                     <div className="auditMiddleChild">
                     <div className="auditMiddleChildTop">
                         <img src={img15} alt="" />
@@ -213,7 +213,7 @@ const RiskCoreBody = () => {
                     <h1>Benefits of Using AuditRoom</h1>
                 </div>
                 <div className="row auditBenefitCoontainer">
-                    <div className="col-lg-4 col-md-6 auditBenefitParent" data-aos="flip-right">
+                    <div className="col-lg-4 col-md-6 auditBenefitParent" >
                         <div className="auditBenefitChild">
                             <img src={img4} alt="" />
                             <div className="bodyText">
@@ -222,7 +222,7 @@ const RiskCoreBody = () => {
                         </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 auditBenefitParent" data-aos="zoom-in">
+                    <div className="col-lg-4 col-md-6 auditBenefitParent" >
                         <div className="auditBenefitChild">
                             <img src={img5} alt="" />
                             <div className="bodyText"> 
@@ -231,7 +231,7 @@ const RiskCoreBody = () => {
                         </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 auditBenefitParent" data-aos="flip-left">
+                    <div className="col-lg-4 col-md-6 auditBenefitParent" >
                         <div className="auditBenefitChild">
                             <img src={img6} alt="" />
                             <div className="bodyText"> 
@@ -242,15 +242,9 @@ const RiskCoreBody = () => {
                     </div>
                 </div>
             </div>
-            <div className="auditImage" data-aos="flip-right">
+            <div className="auditImage"data-aos="zoom-in-up">
                 <div className="imgcover">
                 <img src={img3} alt=""  />
-                </div>
-                <div className="imgtop">
-                <img src={img7} alt="" />
-                </div>
-                <div className="imgdown">
-                <img src={img7} alt=""  />
                 </div>
             </div>
             <div className="auditBottom">
