@@ -1,0 +1,178 @@
+@mixin mobile {
+    @media screen and (max-width:580px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width:980px) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media screen and (max-width:1190px) {
+        @content;
+    }
+}
+@mixin Destop {
+    @media screen and (max-width:1440px) {
+        @content;
+    }
+}
+@mixin FullHd {
+    @media screen and (max-width:2784px) {
+        @content;
+    }
+}
+.Carousel{
+    display: none;
+    margin-top: 20%;
+    @include mobile{
+        display: block;
+    }
+    .learnMoreCategoryContainerChildTop{
+        h1{
+         font-size: 2vw;
+         font-weight: 700;
+         transition: .3s;
+        transition: .3s;
+         color: #233d63;
+         @include Destop{
+            font-size: 2.5rem;
+        }
+          @include tablet{
+          font-size: 2rem;
+       }
+         @include mobile{
+            font-size: 1.6rem;
+            text-align: center;
+            margin: 2% 0 20px;
+         }
+        }
+        p{
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 2vw;
+            color: #7b8491;
+            transition: .3s;
+            letter-spacing: 1px;
+            text-align: center;
+            max-width: 90%;
+            line-height: 25px;
+            margin: 0 auto;
+            }
+        
+    }
+.CarouselSilde{
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* for Internet Explorer, Edge */
+    scrollbar-width: none;  /* for Firefox */
+    &::-webkit-scrollbar {
+      display: none; 
+    }
+    // background: #f9f5fe;
+    .CarouselContainer{
+        margin: 5% auto 50px;
+        margin-left: 7%;
+        display: flex;
+        gap: 50px;
+        .CarouselParent{
+            flex-shrink: 0;
+            .CarouselChild{
+                width: 350px;
+                border-radius: 20px;
+                background: #fff;
+                box-shadow: 0 9px 20px rgba(0,0,0,.15),0 2px 9px rgba(0,0,0,.1);
+                padding: 24px 2px 36px;
+                display: flex;
+                flex-direction: column;
+                height: 570px;
+                .CarouselChildTop{
+                a{
+                    text-align: center;
+                    color: #233d63;
+                    text-decoration: none;
+                    background-color: rgba(0,0,0,0);
+                    position: relative;
+                    .Tools_title{
+                        padding-bottom: 12px;
+                        font-weight: bold;
+                        font-size: 12px;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        color: #233d63;
+                        border-bottom: 1px solid #ebebeb;
+                        margin-bottom: 24px;
+                    }
+                    &:hover{
+                        text-decoration: underline;
+                        color: #141c26;
+                    }
+                }
+            }
+            .CarouselChildMiddle{
+                min-height: 200px;
+                padding: 0;
+                overflow: hidden;
+                img{
+                    max-height: 200px;
+                    height: auto;
+                    width: auto;
+                    margin: 0 auto;
+                    position: relative;
+                    z-index: 1;
+                    overflow: visible;
+                    user-drag: none;
+                    -webkit-user-select: none;
+                    user-select: none;
+                    pointer-events: none;
+                }
+            }
+            .CarouselChildBottom{
+            padding: 0 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+                 .Tools_card-text{
+                margin: 36px auto 0;
+                height: 210px;
+                overflow-y: auto;
+                padding-right: 20px;
+                p{
+                    font-weight: normal;
+                    text-align: justify;
+                    font-size: 14px;
+                    color: #444;
+                }
+            }
+            }
+        }
+        }
+        .last-slide{
+            margin-right: 7%;
+        }
+    }
+}
+.carousel-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    .middle{
+        font-size: 16px;
+        color: #141c26;
+    }
+    .scroll-button{
+        border: none;
+        background: #fff;
+        fill: #8231EB;
+    }
+    .left{
+
+    }
+    .right{
+
+    }
+}
+
+// style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"
+}

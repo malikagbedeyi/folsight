@@ -13,7 +13,7 @@ const SignInForm = () => {
             <div className='signBody'>
       <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 offset-lg-2">
+                    <div class="basic-sign-inParent col-lg-8 col-md-12 col-sm-12 ">
                         <div class="basic-sign-in">
                             {/* <div className="basicLogin-top"> */}
                             <h3 class="mb-20">Register</h3>

@@ -75,7 +75,8 @@ const LearnMore = () => {
      <div className="learnMoreTittle row">
      <div className="col-lg-12">
     <h1>Streamlining the Audit Process</h1>
-    <p>Gain instant insights into every stage of your audit process through a centralized platform that integrates all aspects of audit management. Easily track audit progress, identify and document issues in real-time, and enhance collaboration with shared access to key documents and communication tools.</p>
+    <p className='textDisplay'>Gain instant insights into every stage of your audit process through a centralized platform that integrates all aspects of audit management. Easily track audit progress, identify and document issues in real-time, and enhance collaboration with shared access to key documents and communication tools.</p>
+    <p className='textDisplay-2'>Gain instant insights into every stage of your audit process through a centralized platform that integrates all aspects of audit management.</p>
     </div>
             </div>
         <div className="learnMoreContainer row">
@@ -138,7 +139,6 @@ const LearnMore = () => {
         <div className="learnMoreCategoryContainerChildTop">
         <h1>GRC Made Easy</h1>
         <p>Effortlessly manage your organization's governance, risk, and compliance needs with Folsight. Our platform simplifies complex processes, providing you with clear insights, automated workflows, and real-time reporting.</p>
-        {/* <p>Stay ahead of regulatory changes, mitigate risks proactively, and ensure seamless compliance, all from a single, user-friendly interface.</p> */}
         </div>
         <div className="learnMoreCategoryContainerChildBody">
             <div className="CategoryContainerChildBodyWrapper">

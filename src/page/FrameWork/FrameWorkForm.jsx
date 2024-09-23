@@ -81,7 +81,7 @@ const [icontoggle , setIconToggle] = useState(false)
     <div className='frameForm'>
 <div class="container">
         <div class="row">
-            <div class="col-lg-12 ">
+            <div class=" basic-sign-inParent col-lg-12 ">
                 <div class="basic-sign-in">
                     {/* <div className="basicLogin-top"> */}
                     <h3 class="mb-20">Request A Demo</h3>
@@ -136,7 +136,7 @@ const [icontoggle , setIconToggle] = useState(false)
                        placeholder="Select a country"
                        readOnly
                      />
-                       <i onClick={handleIcons}  className="fa-solid fa-chevron-down"></i>
+                       <svg onClick={handleIcons}  xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
                           </div>
                        {icontoggle && (
                         <div className={icontoggle ? "option":"colseOption"}>

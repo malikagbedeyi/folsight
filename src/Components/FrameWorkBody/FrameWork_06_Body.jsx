@@ -25,12 +25,11 @@ const FrameWork_06_Body = () => {
     {/*********************** PCIDSS ************************/}
             </div>  
              <div className="learnMoreProductContainer row">
-                <div className="learnMoreProductContainerParent col-lg-6">
+                <div className="learnMoreProductContainerParent col-lg-6 topDisplay">
                     <div className="learnMoreProductContainerFristChild" data-aos="fade-in-left" data-aos-delay="500" data-aos-duration="1500">
                         <img src={img9} style={{width:"100%"}} alt="" />
                     </div>
                 </div>
-
                 <div className="learnMoreProductContainerParent col-lg-6">
                     <div className="learnMoreProductContainerChild">
                         <div className="learnMoreProductContainerChildTop">
@@ -55,6 +54,11 @@ const FrameWork_06_Body = () => {
                         </div>
                         <div className="learnMoreProductContainerChildButtom" data-aos="fade-in-up" data-aos-delay="500" data-aos-duration="1500">
                         </div>
+                    </div>
+                </div>
+                <div className="learnMoreProductContainerParent col-lg-6 buttomDisplay">
+                    <div className="learnMoreProductContainerFristChild" data-aos="fade-in-left" data-aos-delay="500" data-aos-duration="1500">
+                        <img src={img9} style={{width:"100%"}} alt="" />
                     </div>
                 </div>
              </div>
@@ -94,12 +98,11 @@ const FrameWork_06_Body = () => {
                 </div>
              </div>
              <div className="learnMoreProductContainer row">
-                <div className="learnMoreProductContainerParent col-lg-6">
+                <div className="learnMoreProductContainerParent col-lg-6 topDisplay">
                     <div className="learnMoreProductContainerFristChild" data-aos="fade-in-left" data-aos-delay="500" data-aos-duration="1500">
                         <img src={img9} style={{width:"100%"}} alt="" />
                     </div>
                 </div>
-
                 <div className="learnMoreProductContainerParent col-lg-6">
                     <div className="learnMoreProductContainerChild">
                         <div className="learnMoreProductContainerChildTop">
@@ -124,6 +127,11 @@ const FrameWork_06_Body = () => {
                         </div>
                         <div className="learnMoreProductContainerChildButtom" data-aos="fade-in-up" data-aos-delay="500" data-aos-duration="1500">
                         </div>
+                    </div>
+                </div>
+                <div className="learnMoreProductContainerParent col-lg-6 buttomDisplay">
+                    <div className="learnMoreProductContainerFristChild" data-aos="fade-in-left" data-aos-delay="500" data-aos-duration="1500">
+                        <img src={img9} style={{width:"100%"}} alt="" />
                     </div>
                 </div>
              </div>

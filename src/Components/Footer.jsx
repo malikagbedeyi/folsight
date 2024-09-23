@@ -66,27 +66,20 @@ const Footer = () => {
                             
                               </ul>
               </div> */}
-              <div className='footerRightChildTittle-2'>
+              <div className='footerRightChildTittle'>
                          <h3>Frameworks</h3>
-                         <div className="WrapperTittle-2">
-                            <div className="leftTittle-2">
-                                <ul>
-                                <li><a href="#/framework_01">IS027001</a></li>
+                         <ul>
+                         <li><a href="#/framework_01">IS027001</a></li>
                          <li><a href="#/framework_02">HIPAA</a></li>
                          <li><a href="#/framework_03">SOC2</a></li>
-                                </ul>
-                            </div>
-                            <div className="rightTittle-2">
-                                <ul>
-                                <li><a href="#/framework_04">GDPR</a></li>
+                      </ul>
+              </div>
+              <div className='footerRightChildTittle'>
+                <ul>
+                          <li><a href="#/framework_04">GDPR</a></li>
                       <li><a href="#/framework_05">NIST</a></li>
                          <li><a href="#/framework_05">PCIDSS</a></li>
-                                </ul>
-                                </div>
-                         </div>
-                      <ul>
-                                  
-                              </ul>
+                      </ul>
               </div>
               <div className='footerRightChildTittle'>
               <h3>Pages</h3>

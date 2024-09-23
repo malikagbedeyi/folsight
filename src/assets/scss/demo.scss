@@ -30,26 +30,40 @@
 .demo{
     width: 100%;
     overflow-x: hidden;
-    @include laptop{
-        margin: 15% 0;
+    @include tablet{
+        margin: 5% 0;
     }
     @include mobile{
-        margin: 25% 0;
+        margin: 0 0 15%;
+        padding: 0 3%;
     }
        .signBody{
-        margin: 10%;
+        margin: 10% 0;
         .container{
             .row{
+                .basic-sign-inParent{
+                    @include tablet{
+                        width: 100%;
+                        padding: 0;
+                    }
+                    display: flex;
+                    justify-content: center;
+                    margin:0 auto;
                 .basic-sign-in{
+                    width: 100%;
                     padding: 90px;
                     border: 20px solid #fff;
                     box-shadow: 0px 50px 100px 0px rgba(12, 0, 46, 0.05);
                     background: #FBFBFB;
                     @include laptop{
-                        padding: 60px;
+                        padding: 50px;
+                    }
+                    @include tablet{
+                        padding: 40px 20px;
                     }
                     @include mobile{
-                        padding: 50px 20px;
+                    width: 100%;
+                        padding: 30px 20px;
                     }
                     h3{
                         font-size: 1.6rem;
@@ -86,12 +100,16 @@
                             font-size: 13px;
                       }
                     }
+                }
                     form{
                         margin-bottom: 30px;
                         .input-action{
                             .register-wrapper{
                                 display: flex;
                                 gap: 20px;
+                                @include tablet{
+                                    flex-direction: column;
+                                }
                                 .leftwrapper{
                                     flex: 1;
                                     label{

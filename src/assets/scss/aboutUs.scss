@@ -65,6 +65,12 @@
         .about-us-topContainer{
             background: #f9f5fe;
             padding: 10% 0;
+            @include tablet{
+                padding: 15% 0;
+            }
+            @include mobile{
+                padding: 25% 0 15%;
+            }
             .container-fluid{
                .aboutUs-bodyContainer{
                 .aboutUs-bodyParent{
@@ -84,31 +90,57 @@
                         display: flex;
                         flex-direction: column;
                         gap: 20px;
-                        @include Destop{
-                            padding-right: 100px;
+                        @include tablet{
+                            margin-top: 5%;
+                        }
+                        @include mobile{
+                            text-align: center;
+                            gap: 10px;
+                            margin-top: 10%;
                         }
                         h1{
-                            max-width: 450px;
                             color: #8231EB;
                             font-weight: 700;
                             font-size: 2.3vw;
                             font-family: "Ubuntu", sans-serif;
                             letter-spacing: 1px;
+                            transition: .3s;
                             @include Destop{
                                 font-size: 2.3rem;
+                            }
+                            @include mobile{
+                                font-size: 1.5rem;
                             }
                         }
                         p{
                             color: #7b8491;
-                            margin: 2% 0;
                             font-size: 1.1vw;
                             line-height: 2vw;
-                            text-align: justify;
+                            transition: .3s;
                             @include Destop{
                                 font-size: 15px;
                                 line-height: 28px;
+                                max-width: 90%;
+                            }
+                            @include tablet{
+                                max-width: 100%;
+                            }
+                            @include mobile{
+                                font-size: 14px;
                             }
                         }
+                       .textNone{
+                        display: block;
+                        @include mobile{
+                            display: none;
+                        }
+                       }
+                       .textNone-2{
+                        display: none;
+                        @include mobile{
+                            display: block;
+                        }
+                       }
                         button{
                             width: 30%;
                             margin-top: 2%;
@@ -119,8 +151,17 @@
                             transition: .3s;
                             font-size: 1vw;
                             border-radius: 5px;
+                            a{
+                                color: inherit;
+                            }
                             @include Destop{
                                 font-size: 15px;
+                            }
+                            @include mobile{
+                               margin:0 auto;
+                               align-items: center;
+                               text-align: center;
+                               width: 50%;
                             }
                             &:hover{
                                 border: 1px solid #8231EB;
@@ -138,30 +179,6 @@
             padding: 5% 0;
             background: #fff;
             .container{
-                // .aboutUs-middleTIttle{
-                //     text-align: center;
-                //     margin: auto;
-                //     h1{
-                //         color: #233d63;
-                //             font-weight: 700;
-                //             font-size: 2.3vw;
-                //             @include Destop{
-                //                 font-size: 2.3rem;
-                //             }
-                //     }
-                //     p{
-                //         color: #7b8491;
-                //         margin: 2% 0;
-                //         font-size: 1.1vw;
-                //         line-height: 2vw;
-                //         max-width: 90%;
-                //         margin: auto;
-                //         @include Destop{
-                //             font-size: 15px;
-                //             line-height: 28px;
-                //         }
-                //     }
-                // }
                 .aboutUs-middleBody{
                     margin: 5% 0 0;
                     display: flex;
@@ -169,6 +186,9 @@
                         padding:0 30px;
                         @include laptop{
                             margin-top: 5%;
+                        }
+                        @include mobile{
+                        margin-top: 0;
                         }
                         .aboutUs-middleChild{
                             display: flex;
@@ -220,6 +240,9 @@
                                 transition: all .3s ease-out;
                                 color: #ddd;
                                 transition: .3s;
+                                @include tablet{
+                                box-shadow: none;
+                                }
                                 .icons{
                                     background:#8231EB ;
                                     color: #fff;
@@ -236,6 +259,9 @@
                   display: flex;
                   margin:4% auto 0;
                   transition: .3s;
+                  a{
+                    color: inherit;
+                }
                   &:hover{
                     transition: .3s;
                     background: #8231EB;
@@ -260,6 +286,9 @@
                             @include Destop{
                                 font-size: 2.1rem;
                             }
+                            @include tablet{
+                                text-align: center;
+                            }
                     }
                 }
                 .bottomTittle-2{
@@ -274,6 +303,9 @@
                             font-size: 2.3vw;
                             @include Destop{
                                 font-size: 2.1rem;
+                            }
+                            @include tablet{
+                                text-align: center;
                             }
                     }
                 }
@@ -334,8 +366,24 @@
                             }
                         }
                     }
+                    @include tablet{
+                        .aboutUs-bottomChildbox{
+                            padding: 0;
+                            .bottomChildbox{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                gap: 20px;
+                                text-align: center;
+                                padding: 50px 20px;
+                            }
+                        }
+                    }
                     .bottomboxchildright{
                         padding: 0 0 0 10%;
+                        @include tablet{
+                        padding: 0;
+                        }
                     }
 
                 }
@@ -352,140 +400,11 @@
                         width: 100%;
                         height: 100%;
                     }
-                //     .bottomImgbox{
-                //         height: 100%;
-                //         .boxImgWrapper{
-                //             margin-top: 10%;
-                //             display: flex;
-                //             border: 10x solid #8231EB;
-                //         .leftbox{
-                //             flex: 1;
-                //             color: #fff;
-                //             text-align: center;
-                //             background: #8231EB;
-                //             border-radius: 20px 0 0 20px;
-                //             display: flex;
-                //             flex-direction: column;
-                //             justify-content: center;
-                //             padding: 0 25px;
-                //             h2{
-                //                 font-weight: 700;
-                //                 font-size: 2vw;
-                //                 @include Destop{
-                //                     font-size: 2.3rem;
-                //                 }
-                //             }
-                //             span{
-                //                 color: #fff;
-                //                 font-size: 1.2vw;
-                //                 @include Destop{
-                //                     font-size: 18px;
-                //                 }
-                //             }
-                //         }
-                //         .rightbox{
-                //             flex: 5;
-                //             background-image: url(../Images/ImageBlog/03.jpg);
-                //             background-position: center;
-                //             background-repeat: no-repeat;
-                //             background-size: cover;
-                //             border-radius: 0 20px 20px 0;
-                //             width: 100%;
-                //             height: 27vh;
-                //         }
-                //     }
-                // }
                 }
                 }
             }
             }
         }
-        // .aboutUs-footer{
-        //     padding: 15px 0;
-        //     .aboutUs-footerTIttle{
-        //         text-align: center;
-        //         margin:3% auto;
-        //         h1{
-        //             color: #233d63;
-        //                 font-weight: 700;
-        //                 font-size: 2.3vw;
-        //                 @include Destop{
-        //                     font-size: 2.3rem;
-        //                 }
-        //         }
-        //         p{
-        //             color: #7b8491;
-        //             margin: 2% 0;
-        //             font-size: 1.3vw;
-        //             line-height: 2vw;
-        //             max-width: 80%;
-        //             margin: auto;
-        //             @include Destop{
-        //                 font-size: 15px;
-        //                 line-height: 28px;
-        //             }
-        //         }
-        //     }
-        //     .aboutUs-footerContainer{
-        //         margin: 5% 0;
-        //         padding: 0 5%;
-        //         .aboutUs-footerParent{
-        //             .aboutUs-footerChild{
-        //                 color: #7b8491;
-        //                 padding: 10px 30px;
-        //                 justify-content: center;
-        //                 height: 100%;
-        //                 font-family: 'poppins', sans-sarif;
-        //                 &:hover{
-        //                     box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
-        //                     background: #fff;
-        //                     transition: all .3s ease-out;
-        //                 }
-        //                 h4{
-        //                     font-size: 1.1vw;
-        //                     font-weight: 600;
-        //                     font-family: serif;
-        //                     text-align: center;
-        //                     color: #8231EB;
-        //                     margin-top: 5%;
-        //                     font-family: 'poppins', sans-sarif;
-        //                     @include Destop{
-        //                          font-size: 15px;
-        //                     }
-        //                 }
-        //                 .footerCildText{
-        //                     margin: 5% 0 0;
-        //                     display: flex;
-        //                     gap: 10px;
-        //                     .footerChildicon{
-        //                         flex: 1;
-        //                         margin: auto 0;
-        //                         i{
-        //                             font-size: 30px;
-        //                             color: #8231EB;
-        //                         }
-        //                     }
-        //                     .footerCildTextScroll{
-        //                         flex: 5;
-        //                         overflow-y: hidden;
-        //                         scrollbar-width: 0;
-        //                         &::-webkit-scrollbar {
-        //                             width:0; 
-        //                           }
-        //                     p{
-        //                         font-size: 0.9vw;
-        //                         color: #7b8491;
-        //                         @include Destop{
-        //                             font-size: 14px;
-        //                        }
-        //                     }
-        //                 }
-        //                 }
-        //             }
-
-        //         }
-        //     }
-        // }
         .aboutUs-footer{
             .container{
 
@@ -511,7 +430,7 @@
                     .aboutUs-footerParent{
                         .aboutUs-footerChild{
                             margin-top: 30px;
-                            background-color: #eff1f4;
+                            background-image: -webkit-linear-gradient( 0deg, rgb(0,0,184) 0%, rgb(115,0,233) 100%);
                             padding: 50px ;
                             display: -webkit-box;
                             display: -ms-flexbox;
@@ -523,11 +442,18 @@
                             align-items: center;
                             -webkit-transition: all 500ms ease;
                             transition: all 500ms ease;
+                            .leftfooterChild{
+                                flex: 1;
+                                img{
+                                    width: 100%;
+                                }
+                            }
                             .rightfooterChild{
+                                flex: 3;
                                 h1{
                                         text-decoration: none;
                                         margin: 0;
-                                        color: #233d63;
+                                        color: #fff;
                                         font-size: 1.5rem;
                                         font-weight: bold;
                                         text-transform: capitalize;
@@ -550,13 +476,13 @@
                             transition: all 500ms ease;
                             button{
                                 border: none;
-                                background: #8231EB;
+                                background-image: -webkit-linear-gradient( 0deg, rgb(0,0,184) 0%, rgb(115,0,233) 100%);
                                 color: #fff;
-                                font-size: 14px;
-                                font-weight: 600;
+                                font-weight: 500;
                                 padding: 20px 30px;
                                 border-radius: 10px;
                                 transition: all 500ms ease;
+                                font-size: 15px;
                             }
                         }
                     }

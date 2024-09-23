@@ -45,6 +45,20 @@ const ComplianceBody = () => {
                     </div>
                 </div>
             </div>
+            <div className="row auditContainer-2">
+            <div className="col-lg-6 auditParent" >
+                    <div className="auditChildRight">
+                        <img src={img13} alt="" />
+                    </div>
+                </div>
+                <div className="col-lg-6 auditParent" >
+                    <div className="auditChildLeft">
+                        <h1>Compl.Ai</h1>
+                        <p>Folsight leverages cutting-edge Artificial Intelligence (AI) to enhance efficiency and accuracy while ensuring full compliance with industry standards and regulations. We understand the critical importance of regulatory compliance in today’s business landscape...</p>
+                        <button>Request Demo</button>
+                    </div>
+                </div>
+            </div>
         </div>
         {/* <div className="auditImgContainer">
             <img src={img2} alt="" />
@@ -173,6 +187,79 @@ const ComplianceBody = () => {
                         <p> Set up controls specific to your organization’s needs, ensuring compliance with both general and industry-specific regulations.</p>
                         </div>
                         </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div className="auditNews-2">
+                <div className="auditNewsTittle">
+                    <h1>Key Features of Complance</h1>
+                </div>
+                <div className="container-fluid">
+                <div className=" auditNewsContainer">
+                    <div className="row auditKeyContainer">
+                            <div className="col-lg-6 auditKeyParent" >
+                            <div className="auditKeyChild">
+                                <div className="auditKeyChildText">
+                            <h1>Gap Assessment</h1>
+                            <p>Folsight automates data collection, reduces errors, and eliminates manual entry. It includes pre-built compliance frameworks, monitors compliance, identifies real-time gaps, and offers dashboards for prioritizing and addressing issues.</p>
+                        </div>
+                        </div>
+                        </div>
+                        <div className="col-lg-6 auditKeyParent" data-aos="fade-left" >
+                            <div className="auditKeyChild">
+                            <img src={img10} style={{float:"right"}} alt=""  />
+                            </div>
+                            
+                            </div>
+                    </div>
+                    <div className="row auditKeyContainer">
+                         <div className="col-lg-6 auditKeyParent">
+                            <div className="auditKeyChild">
+                                <div className="auditKeyChildText">
+                            <h1>Framework/Standard</h1>
+                            <p> Folsight includes pre-built compliance frameworks, such as ISO, GDPR, NIST, and many others, covering industry-specific and regulatory standards. It offers everything you need to easily align with multiple compliance requirements across various sectors.</p>
+                        </div>
+                        </div>
+                        </div>
+                        <div className="col-lg-6 auditKeyParent" data-aos="fade-right">
+                            <div className="auditKeyChild" >
+                                   <img src={img11} style={{float:"left"}} alt="" />
+                            </div>
+                            
+                         </div>
+                    </div>
+                    <div className="row auditKeyContainer">
+                        <div className="col-lg-6 auditKeyParent">
+                            <div className="auditKeyChild">
+                                <div className="auditKeyChildText">
+                            <h1>Requirements</h1>
+                            <p> Timely alerts for upcoming audits, policy reviews, or changes in regulations, ensuring that your organization stays on top of compliance obligations.</p>
+                        </div>
+                        </div>
+                        </div>
+                        <div className="col-lg-6 auditKeyParent" data-aos="slide-left">
+                            <div className="auditKeyChild">
+                                   <img src={img12} style={{float:"right"}} alt="" />
+                            </div>
+                            
+                         </div>
+                    </div>
+                    <div className="row auditKeyContainer">
+                        <div className="col-lg-6 auditKeyParent">
+                            <div className="auditKeyChild">
+                                <div className="auditKeyChildText">
+                        <h1> Controls</h1>
+                        <p> Set up controls specific to your organization’s needs, ensuring compliance with both general and industry-specific regulations.</p>
+                        </div>
+                        </div>
+                        </div>
+                        <div className="col-lg-6 auditKeyParent" data-aos="slide-right">
+                            <div className="auditKeyChild">
+                                   <img src={img10} style={{float:"left"}} alt="" />
+                            </div>
+                            
                         </div>
                     </div>
                 </div>

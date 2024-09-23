@@ -7,6 +7,7 @@ import Pricings from '../Components/Pricings'
 import Footer from '../Components/Footer'
 import Header from '../Components/Header'
 import Navbar from '../Components/Navbar'
+import CarouselSilde from '../Components/CarouselSilde'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <Header />
       <MainBody />
       <LearnMore />
+      <CarouselSilde />
       <MiddleCover />
       <Pricings />
       <Footer />

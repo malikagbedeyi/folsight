@@ -61,7 +61,7 @@ const MiddleCover = () => {
                 </div>
             </div>
         </div>
-        <div class="middleCoverContainerbuttom row d-none d-md-block mt-5" data-aos="zoom-in-up">
+        <div class="middleCoverContainerbuttom row  d-md-block mt-5" data-aos="zoom-in-up">
             <div class="middleCoverContainerParent col-xl-8 col-lg-10  offset-lg-1 offset-xl-2">
                 <div class="middleCoverContainerChild  mb-40" >
                     <img src={img14} alt="" />

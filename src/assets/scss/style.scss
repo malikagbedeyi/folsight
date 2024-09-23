@@ -127,6 +127,9 @@
      .row{
         margin: 0;
         padding: 7% 3% 7% 7%;
+        @include mobile{
+            padding: 7% 1%!important;
+        }
         @include FullHd{
         padding: 5% 3% 5% 7%;
         }
@@ -161,7 +164,8 @@
                              font-size: 2.5rem;
                          }
                         @include mobile{
-                            font-size: 35px;
+                            font-size: 1.7rem;
+                            font-weight: 700;
                         }
                     }
                     p{
@@ -176,8 +180,9 @@
                          font-size: 15px;
                          }
                            @include mobile{
-                         font-size: 16px;
-                         padding-right: 10px;
+                         font-size: 0.9rem;
+                         padding-right: 0;
+                         text-align: justify;
                          }
                         }
                 }
@@ -236,7 +241,7 @@
                     transition: 0.5s ease;
                     text-transform: uppercase;
                     font-weight: 600;
-                    margin-top:5%;
+                    margin-top:10%;
                     animation: movingDown .5s;
                     @include Destop{
                          font-size: 14px;
@@ -251,6 +256,13 @@
             }
         }
         .rightWrapper{
+            @include tablet{
+                margin-bottom: 10%;
+            }
+            @include mobile{
+                margin-bottom: 20%;
+                margin-top: -5%;
+            }
             .rightWrapperImg {
                 width: 100%;
                 display: flex;
@@ -263,17 +275,21 @@
                  opacity: 0.9;
                  animation: movingright 0.4s forwards;;
                  will-change: transform, opacity;
+                 @include mobile{
+                    width: 50%;
+                 }
                 }
-              
                 .middleImg {
                   position: absolute;
                   left: 15%;
                   top: 30%;
                   width: 50%;
                   opacity: 0.8;
-                  animation: movingleft 0.4s forwards;;
+                  animation: movingleft 0.4s forwards;
+                  @include mobile{
+                    width:60%;
+                 }
                 }
-              
                 .bottomImg {
                     margin-top: -5%;
                     animation: movingdown 0.4s forwards;
@@ -281,6 +297,17 @@
               }
     }
     
+    }
+    .firstRow{
+        @include mobile{
+
+        }
+    }
+    .secondRow{
+        display: none;
+        @include mobile{
+            display: none;
+        }
     }
 }
     }
@@ -372,7 +399,6 @@
                 }
             }
         }
-
             .learnMore{
                 margin: 7% 0;
                 align-items: center;
@@ -403,7 +429,8 @@
                           font-size: 2rem;
                        }
                          @include mobile{
-                            font-size: 1.6rem;
+                            font-size: 1.5rem;
+                            font-weight: 700;
                          }
                         }
                         p{
@@ -421,6 +448,17 @@
                                 text-align: left;
                              }
 
+                        }
+                        .textDisplay{
+                            @include mobile{
+                                display: none;
+                            }
+                        }
+                        .textDisplay-2{
+                            @include mobile{
+                                display: block;
+                                text-align: center;
+                            }
                         }
                     }
                     .learnMoreContainer{
@@ -479,6 +517,7 @@
                                    }
                                      @include mobile{
                                         font-size: 1.4rem;
+                                        border-radius: 20px;
                                      }
                                 }
                                 p{
@@ -495,9 +534,12 @@
                                         font-size: 13px;
                                      }
                                 }
+                                @include mobile{
+                                    gap: 10px;
+                                }
                             }
                             .buttonText{
-                                margin-top: 20px;
+                                margin: 20px 0 10px;
                                 align-items: center;
                                 text-align: center;
                                 a{
@@ -518,6 +560,9 @@
                                     color: #1400c0;
                                 }
                             }
+                            @include mobile{
+                                margin: 10px 0;
+                            }
                             }
 
                             @include tablet{
@@ -530,6 +575,9 @@
                     .learnmoreActive{
                         box-shadow: 0px 10px 20px rgba(0, 23, 88, 0.1);
                         background: #fff;
+                        @include tablet{
+                            border-radius: 20px;
+                        }
                         &:hover{
                             box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
                         }
@@ -537,8 +585,11 @@
                 }
                 }
                 .learnMoreCategoryContainer{
+                    @include mobile{
+                        display: none;
+                    }
                     margin: 10% 0;
-                    padding:  3% 0;
+                    padding: 3% 0;
                     width: 100%;
                     height: 100%;
                     .learnMoreCategoryContainerParent{
@@ -591,6 +642,16 @@
                                     font-size: 1rem;
                                  }
 
+                            }
+                            .textDisplay{
+                                @include mobile{
+                                    display: none;
+                                }
+                            }
+                            .textDisplay-2{
+                                @include mobile{
+                                    display: block;
+                                }
                             }
                         }
     
@@ -868,24 +929,27 @@
                 }
                 }
             }
-
             .middleCover{
+             background-color:#7300e9;
                 width: 100%;
-                background-image: url(../Images/people.png);
-                background-position:top;
+                 position: relative;
+                 box-sizing: border-box;
+                 overflow-x: hidden;
+                 @include FullHd{
+                 padding:5% 0 ;
+                 }
+                 @include Destop{
+                    background-image: url(../Images/people.png);
+                     background-position:top;
                   background-position-x: center;
                   background-position-y: top;
                  padding-top: 310px;
                  background-repeat: no-repeat;
-                 position: relative;
-                 box-sizing: border-box;
-                 overflow-x: hidden;
-
+                    background-color:#fff;
+                    }
                 @include laptop{
-       background-image: none;
-        padding: 120px 0;
-         background: #3F00D3;
-         background-image: none;
+                padding: 10% 0;
+                 background-image: -webkit-linear-gradient( 0deg, rgb(0,0,184) 0%, rgb(115,0,233) 100%);
             margin: 90px 0;
                 }
                 .Container{
@@ -905,9 +969,14 @@
                             @include Destop{
                                 font-size: 2rem;
                             }
+                            @include mobile{
+                                font-size: 1.6rem;
+                                color: #ddd;
+                            }
                           }
                           p{
                             color: #fff;
+                            opacity: 0.8;
                             font-size: 1vw;
                             font-weight: 500;
                             line-height: 2vw;
@@ -916,6 +985,9 @@
                             @include Destop{
                                 font-size: 15px;
                                 line-height: 25px;
+                            }
+                            @include mobile{
+                                font-size: 14px;
                             }
                           }
                     }
@@ -928,13 +1000,16 @@
                         text-align: center;
                         align-items: center;
                         @include FullHd{
-                            max-width: 80%;
+                            max-width: 100%;
                         }
                         @include Destop{
                             max-width: 100%;
                         }
                         .middleContainerBodyParent{
                             padding: 0 30px;
+                            @include mobile{
+                                padding: 0 10px;
+                            }
                             .middleContainerBodyChild{
                                 text-align: left;
                                 margin-bottom: 20px;

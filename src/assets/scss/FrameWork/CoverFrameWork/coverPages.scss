@@ -132,6 +132,7 @@ animation: animationFramesOne 30s alternate infinite linear;
                     @include mobile{
                       width: 20%;
                       margin-top: -20px;
+                      display: none;
                     }
                   }
                   .pcidss{

@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
-import img1 from  '../../assets/Images//ImageBlog/03.jpg'
-import img2 from  '../../assets/Images//ImageBlog/04.jpg'
-import img3 from '../../assets/Images/ImageBlog/05.jpg'
-import img4 from '../../assets/Images/rd-01.png'
-import img5 from '../../assets/Images/rd-02.png'
-import img6 from '../../assets/Images/rd-03.png'
+import img6 from  '../../assets/Images//ImageBlog/03.jpg'
+import img1 from "../../assets/Images/IconsCover1/icon_01.png"
+import img2 from "../../assets/Images/IconsCover1/icon_02.png"
+import img3 from "../../assets/Images/IconsCover1/icon_03.png"
+import img4 from "../../assets/Images/IconsCover1/icon_04.png"
+import img5 from "../../assets/Images/Icons1-5/4.png"
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import {  useNavigate } from 'react-router-dom'
@@ -25,14 +25,15 @@ const AboutUsBody = () => {
           <div className="row aboutUs-bodyContainer">
             <div className="col-lg-6 col-md-12 aboutUs-bodyParent">
               <div className="aboutUs-bodyChild">
-                <img src={img1} alt="" data-aos="slide-right" />
+                <img src={img6} alt="" data-aos="slide-right" />
               </div>
             </div>
             <div className="col-lg-6 col-md-12 aboutUs-bodyParent" data-aos="zoom-out-up">
               <div className="bodyChildright">
                 <h1>About Folsight</h1>
-                <p>Folsight is a premier global Trust Management Platform on a mission to restore confidence in web-based companies by helping them enhance and showcase their security. We are reshaping the IT Audit and Governance, Risk, and Compliance (GRC) landscape with a focus on empowering businesses through robust IT governance and comprehensive risk management. Folsight aims to revolutionize the risk profession, close vulnerability gaps, and elevate audit, risk, and compliance teams to a proactive role. </p>
-                <button>Learn More</button>
+                <p className='textNone'>Folsight is a premier global Trust Management Platform on a mission to restore confidence in web-based companies by helping them enhance and showcase their security. We are reshaping the IT Audit and Governance, Risk, and Compliance (GRC) landscape with a focus on empowering businesses through robust IT governance and comprehensive risk management. Folsight aims to revolutionize the risk profession, close vulnerability gaps, and elevate audit, risk, and compliance teams to a proactive role. </p>
+                <p className='textNone-2'>Folsight is a premier global Trust Management Platform on a mission to restore confidence in web-based companies by helping them enhance and showcase their security. We are reshaping the IT Audit and Governance, Risk, and Compliance (GRC). </p>
+                <button> <a href='#/request-demo'>Request a Demo</a></button>
               </div>
             </div>
           </div>
@@ -72,7 +73,7 @@ const AboutUsBody = () => {
               </div>
               </div>
               </div>
-              <button>Join Folsight today</button>
+             <button> <a href='#/register'>Join Folsight today</a></button>
             </div>
           </div>
           <div className="about-usBottom">
@@ -241,7 +242,7 @@ const AboutUsBody = () => {
                 <div className="col-lg-4 aboutUs-footerParent">
                   <div className="aboutUs-footerChild">
                     <div className="leftfooterChild">
-                      <img src={img4} alt="" />
+                      <img src={img5} alt="" />
                     </div>
                     <div className='rightfooterChild'>
                       <h1> User-Centric Design</h1> </div>
@@ -250,7 +251,7 @@ const AboutUsBody = () => {
                 <div className="col-lg-4 aboutUs-footerParent">
                   <div className="aboutUs-footerChild">
                     <div className="leftfooterChild">
-                      <img src={img5} alt="" />
+                      <img src={img2} alt="" />
                     </div>
                     <div className='rightfooterChild'>
                       <h1> Comprehensive Analytics</h1> </div>
@@ -259,7 +260,7 @@ const AboutUsBody = () => {
                 <div className="col-lg-4 aboutUs-footerParent">
                   <div className="aboutUs-footerChild">
                     <div className="leftfooterChild">
-                      <img src={img6} alt="" />
+                      <img src={img3} alt="" />
                     </div>
                     <div className='rightfooterChild'>
                       <h1> Dedicated Customer Support</h1>  </div>
@@ -277,7 +278,7 @@ const AboutUsBody = () => {
                 <div className="col-lg-4 aboutUs-footerParent">
                   <div className="aboutUs-footerChild">
                     <div className="leftfooterChild">
-                      <img src={img5} alt="" />
+                      <img src={img1} alt="" />
                     </div>
                     <div className='rightfooterChild'>
                       <h1>Innovation-Driven Solutions </h1> </div>

@@ -375,12 +375,17 @@
             }
             .footerBodyContainerChildButtom{
                 margin: auto 0;
+                @include tablet{
+                    margin: auto;
+                }
                 ul{
                     list-style: none;
                     display: flex;
                     gap: 25px;
                     padding: 0;
-
+                    @include tablet{
+                        justify-content: center;
+                    }
                     li{
                         text-align: center;
                         height: 50px;
