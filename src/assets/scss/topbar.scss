@@ -71,18 +71,13 @@
                 cursor: pointer;
             }
         }
-        .scrollChange{
+        .navbarChange.scrollChange {
             transition: all 0.4s ease-in-out;
-            background-color: #ffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Offset-X | Offset-Y | Blur-Radius | Shadow Color */
-        
-            @include Destop{
-                padding-bottom: 0;
-                margin-bottom: 0;
-               }
-        }
-          header{
-            background-color: #fff;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+          .navbarChange{
+            background: #fff;
             position:fixed;
             width: 100%;
             top: 0;

@@ -71,6 +71,9 @@ const FrameWorkResource = ({page}) => {
                 </div>
         </div>
     </div>
+    <div className="viewFrameWork">
+        <button>View More</button>
+    </div>
     </div>
   )
 }

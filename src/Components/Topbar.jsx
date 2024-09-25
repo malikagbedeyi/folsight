@@ -33,8 +33,7 @@ import icon23 from '../assets/Images/Company/Team.png'
 // import icon1 from '../assets/Images/p1.png'
 // import icon1 from '../assets/Images/p1.png'
 
-const TOpbar = () => {
-  const [scroll,setScroll] = useState(false)
+const TOpbar = ({}) => {
   const [input,setInput] = useState("")
   const [toggle, setToggle] = useState(false);
   const [openMenu, setOpenMeu] = useState(false)
@@ -49,21 +48,22 @@ const TOpbar = () => {
       AOS.init({initClassName: true})
   },[])
 
-  const changeBackground = () => {
-      if(window.scrollY >= 150){
-          setScroll(true);
-      }else{
-          setScroll(false);
-      }
-      console.log(setScroll)
-  };
-  window.addEventListener('scroll',changeBackground);
+  const [scrollY,setScrollY] = useState(false)
 
+  function HandleScroll(){
+    if(window.scrollY >= 150){
+      setScrollY(true)
+    }
+    else{
+      setScrollY(false)
+    }
+  }
+  window.addEventListener('scroll',HandleScroll)
       return (
         <div className="topbar">
           <section className="menuSection">
             <div className=" ">
-            <header className= {scroll ? 'scrollChange':'navbarChange'}
+            <header className= {scrollY ? 'navbarChange scrollChange':'navbarChange'}
              // data-aos="fade-in-down" data-aos-delay="300" data-aos-duratio="2000"
               >
         <div className="Container">
@@ -74,7 +74,7 @@ const TOpbar = () => {
             <div className='topbarMenu'>
                 <ul className='topbarMenu-ul'>
                     <li className='nav-item' > 
-                    <a className='nav-link active' href="#">PRODUCTS</a>
+                    <a className='nav-link active'>PRODUCTS</a>
                      <ul className="submenu">
                        <li className='dFlex'>
                        <ul>
@@ -149,7 +149,7 @@ const TOpbar = () => {
                     </ul>
                     <div className="triangle"></div>
                     </li>
-                    <li className="nav-item" ><a className="nav-link" href="#">FRAMEWORKS</a>
+                    <li className="nav-item" ><a className="nav-link">FRAMEWORKS</a>
                     <ul className="submenu">
                        <li className='dFlex'>
                        <ul>
@@ -225,7 +225,7 @@ const TOpbar = () => {
                     </li>
                     <li className="nav-item"> <a className="nav-link" href="#/resources">Resources</a>
                     </li>
-                    <li className="nav-item"> <a className="nav-link"  href="#">COMPANY</a> 
+                    <li className="nav-item"> <a className="nav-link" >COMPANY</a> 
                          <ul className="submenu2">
                        <li className='dFlex'>
                        <ul>

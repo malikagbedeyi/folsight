@@ -75,7 +75,7 @@ const Navbar = () => {
             <div className='topbarMenu'>
                 <ul className='topbarMenu-ul'>
                     <li className='nav-item' > 
-                    <a className='nav-link active' href="#">PRODUCTS</a>
+                    <a className='nav-link active'>PRODUCTS</a>
                      <ul className="submenu">
                        <li className='dFlex'>
                        <ul>
@@ -150,7 +150,7 @@ const Navbar = () => {
                     </ul>
                     <div className="triangle"></div>
                     </li>
-                    <li className="nav-item" ><a className="nav-link" href="#">FRAMEWORKS</a>
+                    <li className="nav-item" ><a className="nav-link">FRAMEWORKS</a>
                     <ul className="submenu">
                        <li className='dFlex'>
                        <ul>
@@ -226,7 +226,7 @@ const Navbar = () => {
                     </li>
                     <li className="nav-item"> <a className="nav-link" href="#/resources">Resources</a>
                     </li>
-                    <li className="nav-item"> <a className="nav-link"  href="#">COMPANY</a> 
+                    <li className="nav-item"> <a className="nav-link">COMPANY</a> 
                          <ul className="submenu2">
                        <li className='dFlex'>
                        <ul>

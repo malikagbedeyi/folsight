@@ -57,16 +57,7 @@ const Footer = () => {
                           <li><a href="#">RiskCore</a></li>
                               </ul>
               </div>
-              {/* <div className='footerRightChildTittle'>
-                     <h3>Platforms</h3>
-                      <ul>
-                                  <li><a href="#">Ai</a></li>
-                                  <li><a href="#">Api</a></li>
-                                  <li><a href="#">Integration</a></li>
-                            
-                              </ul>
-              </div> */}
-              <div className='footerRightChildTittle'>
+              <div className='footerRightChildTittle-1'>
                          <h3>Frameworks</h3>
                          <ul>
                          <li><a href="#/framework_01">IS027001</a></li>
@@ -74,8 +65,18 @@ const Footer = () => {
                          <li><a href="#/framework_03">SOC2</a></li>
                       </ul>
               </div>
-              <div className='footerRightChildTittle'>
+              <div className='footerRightChildTittle-1'>
                 <ul>
+                          <li><a href="#/framework_04">GDPR</a></li>
+                      <li><a href="#/framework_05">NIST</a></li>
+                         <li><a href="#/framework_05">PCIDSS</a></li>
+                      </ul>
+              </div>
+              <div className='footerRightChildTittle2'>
+                <ul>
+                <li><a href="#/framework_01">IS027001</a></li>
+                         <li><a href="#/framework_02">HIPAA</a></li>
+                         <li><a href="#/framework_03">SOC2</a></li>
                           <li><a href="#/framework_04">GDPR</a></li>
                       <li><a href="#/framework_05">NIST</a></li>
                          <li><a href="#/framework_05">PCIDSS</a></li>
