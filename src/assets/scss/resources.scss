@@ -190,6 +190,22 @@
 
                 }
             }
+            .viewFrameWork{
+                margin-top: 5%;
+                margin-right: 5%;
+                display: flex;
+                justify-content: center;
+                button{
+                    border: none;
+                    background-image: -webkit-linear-gradient( 0deg, rgb(0,0,184) 0%, rgb(115,0,233) 100%);
+                    color: #fff;
+                    font-weight: 500;
+                    padding: 20px 40px;
+                    border-radius: 5px;
+                    transition: all 500ms ease;
+                    font-size: 15px;
+                }
+            }
         }
         .nonrightbar{
             display: none;
