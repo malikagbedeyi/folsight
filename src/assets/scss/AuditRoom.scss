@@ -129,10 +129,8 @@
                     position: absolute;
                     top: 10%;
                     right: 0;
-                    @include Destop{
                         img{
                             width: 100%;
-                        }
                     }
                     @include tablet{
                         margin-top: 10%;
