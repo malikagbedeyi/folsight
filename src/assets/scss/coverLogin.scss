@@ -34,8 +34,8 @@
       background-image: url(../Images/ImageBlog/03.jpg);
       background-size: cover;
    background-attachment: fixed;
-      padding: 15% 0 8%;
-      margin-top: 0;
+      padding: 5% 0;
+      margin-top: 6%;
       position: relative;
   
       @include tablet{
@@ -67,6 +67,7 @@
     .shape {
       top: 20%;
       position: absolute;
+      display: none;
     }
       .coverTopbarContainer{
           display: flex;

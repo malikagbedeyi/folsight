@@ -63,9 +63,9 @@ const ComplianceBody = () => {
         {/* <div className="auditImgContainer">
             <img src={img2} alt="" />
         </div> */}
-        <div className="partherShip">
+        {/* <div className="partherShip">
         <MainBody />
-        </div>
+        </div> */}
         <div className="auditMiddle">
             <div className="auditMiddleTittle">
                 <h1>AI-driven Compliance</h1>

@@ -224,6 +224,8 @@ const Navbar = () => {
                     </li>
                     <li className="nav-item"> <a className="nav-link" href="#/plans">PLANS</a>
                     </li>
+                    <li className="nav-item"> <a className="nav-link" href="#/resources">Resources</a>
+                    </li>
                     <li className="nav-item"> <a className="nav-link"  href="#">COMPANY</a> 
                          <ul className="submenu2">
                        <li className='dFlex'>

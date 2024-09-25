@@ -64,9 +64,9 @@ const AuditRoomBody = () => {
         {/* <div className="auditImgContainer">
             <img src={img2} alt="" />
         </div> */}
-        <div className="partherShip">
+        {/* <div className="partherShip">
         <MainBody />
-        </div>
+        </div> */}
         <div className="auditMiddle">
             <div className="auditMiddleTittle">
                 <h1>Conduct audits efficiently with minimal disruptions and streamlined workflows.</h1>

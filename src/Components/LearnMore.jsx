@@ -87,7 +87,7 @@ const LearnMore = () => {
                 </div>
                   <div className="bodyText">
                     <h3>AuditRoom</h3>
-                    <p>Behold living. Creeping gathered give sea third multiply midst winged tree bring wherein living itsmoving our him dry female his lights herb.</p>
+                    <p>Audit room supports both internal and external audits end-to-end, including annual internal audit planning...</p>
                 </div>
                 <div className="buttonText">
                 <a href="#/audit_room">LEARN MORE  → </a>
@@ -105,7 +105,7 @@ const LearnMore = () => {
                 </div> */}
                  <div className="bodyText">
                     <h3>Compl.AI</h3>
-                    <p>Behold living. Creeping gathered give sea third multiply midst winged tree bring wherein living itsmoving our him dry female his lights herb.</p>
+                    <p>Folsight leverages cutting-edge Artificial Intelligence (AI) to enhance efficiency and accuracy while ensuring full compliance with industry standards and regulations...</p>
                 </div>
                 <div className="buttonText">
                     <a href="#/compliance">LEARN MORE  → </a>
@@ -123,7 +123,7 @@ const LearnMore = () => {
                 </div> */}
                  <div className="bodyText">
                     <h3>RiskCore</h3>
-                    <p>Behold living. Creeping gathered give sea third multiply midst winged tree bring wherein living itsmoving our him dry female his lights herb.</p>
+                    <p>Audit room supports both internal and external audits end-to-end, including annual internal audit planning...</p>
                 </div>
                 <div className="buttonText">
                 <a href="#/risk_core">LEARN MORE  → </a>

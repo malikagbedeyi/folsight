@@ -256,16 +256,23 @@
             }
             .footerRightParent{
                 .footerRightChild{
-                    flex-wrap: wrap;
-                    display: flex;
-                    gap: 15%;
-                    padding: 0;
-                    margin: 0 auto;
+                       display: grid;
+                       display: grid;
+                       grid-template-columns:1fr 1fr 1fr 1fr;
+                       grid-gap: 2rem;
                     justify-content: center;
+                    max-width: 100%;
+                    @include tablet{
+                        grid-gap: 3rem;
+                    }
+                    @include Destop{
+                        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+                    }
                     @include mobile{
                         gap: 50px;
                     }
-                    .footerRightChildTittle{
+                    .footerRightChildTittle,
+                    .footerRightChildTittle-1{
                         margin: 2% 0;
                         h3{
                             text-align: left;
@@ -298,10 +305,13 @@
                             }
                         }
                     }
-                    .footerRightChildTittle-2{
+                    .footerRightChildTittle2{
                         margin: 2% 0;
+                        display: none;
+                        @include tablet{
+                        display: block;
                         h3{
-                            text-align: center;
+                            text-align: left;
                             font-size: 1.3rem;
                             margin-bottom:  10px;
                             padding: 0;
@@ -309,52 +319,12 @@
                             transition: .3s;
                             color: #233d63;
                         }
-                        .WrapperTittle-2{
-                            display: flex;
-                            gap: 40px;
-                            justify-content: center;
-                            .leftTittle-2, .rightTittle-2{
-                                flex: 1;
-                                ul{
-                                    padding: 3% 10px 0 0;
-                                    list-style: none;
-                                    text-align: left;
-                                    li{
-                                        margin-bottom: 5px;
-                                        a{
-                                            text-decoration: none;
-                                            font-size: 15px;
-                                            line-height: 28px;
-                                            color: #7b8491;
-                                            margin-bottom: 15px;
-                                            transition: .3s;
-                                            font-weight: 600;
-        
-                                            &:hover{
-                                                color: #233d63;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            .leftTittle-2{
-
-                                ul{
-                                    text-align: left;
-                                }
-                            }
-                            .rightTittle-2{
-                                ul{
-                                text-align: right;
-                            }
-                        }
-                        }
                         ul{
                             padding: 3% 10px 0 0;
                             list-style: none;
                             text-align: left;
                             li{
-                                margin-bottom: 5px;
+                                margin-bottom: 10px;
                                 a{
                                     text-decoration: none;
                                     font-size: 15px;
@@ -372,11 +342,12 @@
                         }
                     }
                 }
+                }
             }
             .footerBodyContainerChildButtom{
                 margin: auto 0;
                 @include tablet{
-                    margin: auto;
+                    margin:5% auto 2%;
                 }
                 ul{
                     list-style: none;

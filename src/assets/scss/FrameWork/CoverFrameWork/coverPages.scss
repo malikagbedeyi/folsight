@@ -35,8 +35,8 @@
     background-image: url(../../../Images/ImageBlog/03.jpg);
     background-size: cover;
  background-attachment: fixed;
-    padding: 8% 0;
-    margin-top: 7%;
+    padding: 5% 0;
+    margin-top: 6%;
     position: relative;
 
     @include tablet{
@@ -69,6 +69,7 @@ animation: animationFramesOne 30s alternate infinite linear;
   .shape {
     top: 20%;
     position: absolute;
+    display: none;
   }
     .coverTopbarContainer{
         display: flex;
@@ -101,6 +102,7 @@ animation: animationFramesOne 30s alternate infinite linear;
         }
         .coverTopbarParentLeft{
             .coverTopbarChildLeft{
+              margin-top: 30px;
               display: flex;
               justify-content: right;
               gap: 10px;
