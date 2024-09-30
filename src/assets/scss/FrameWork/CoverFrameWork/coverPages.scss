@@ -97,6 +97,7 @@ animation: animationFramesOne 30s alternate infinite linear;
                     color: #fff;
                     margin-bottom: 15px;
                     transition: .3s;
+                     display: none ;
                 }
             }
         }
@@ -126,6 +127,9 @@ animation: animationFramesOne 30s alternate infinite linear;
                     font-size:1rem;
                     color: #fff;
                     font-weight: 700;
+                  }
+                  .resources{
+
                   }
                   img{
                     display: flex;

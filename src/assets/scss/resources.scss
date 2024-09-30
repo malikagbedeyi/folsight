@@ -305,10 +305,9 @@
                                 display: flex;
                                 flex-direction: column;
                                 gap: 20px;
-                                // color: #fff;
                                 color: #233d63;
                             h1{
-                                font-size: 1.5vw;
+                                font-size: 2.3vw!important;
                                 font-weight: 600;
                                 margin: 0;
                                 @include Destop{
@@ -317,9 +316,10 @@
                             }
                             p{
                                 margin: 0;
-                                font-size: 1.3vew;
-                                line-height: 2vew;
-                                font-weight: 500;
+                                font-size:1.04vw!important;
+                                line-height: 2vw;
+                                font-weight: 450;
+                                color: #7b8491;
                                 @include Destop{
                                     font-size: 0.9rem;
                                     line-height: 25px;
@@ -333,6 +333,7 @@
                                 margin-left: auto;
                                 width: 50%;
                                 border: none;
+                                outline-style: none;
                                 border-radius: 5px;
                                 padding: 15px 10px;
                                 background-color: #8231EB;
@@ -382,7 +383,7 @@
                     text-decoration: none;
                     margin: 5% 0 3%;
                     color: #233d63;
-                    font-size: 2.5vew;
+                    font-size: 2.5vw;
                     font-weight: bold;
                     text-transform: capitalize;
                     -webkit-transition: all 500ms ease;
