@@ -53,7 +53,7 @@
         padding: 9% 3% 13% 7%;
         background: #f9f5fe;
         height: 100%;
-        @include mobile{
+        @include Destop{
             padding: 9% 3% 9% 7%;
         }
         @include mobile{
