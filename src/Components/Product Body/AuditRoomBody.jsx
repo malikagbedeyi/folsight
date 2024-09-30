@@ -30,10 +30,10 @@ const AuditRoomBody = () => {
       }, []);
   return (
     <div className='auditRoom'>
-        <div className="auditCover">
+        <div className="auditCover auditCover-2">
             <div className="row auditContainer">
                 <div className="col-lg-6 auditParent" >
-                    <div className="auditChildLeft">
+                    <div className="auditChildLeft auditleft2">
                         <h1>Audit Room</h1>
                         <p >Audit room supports both internal and external audits end-to-end, including annual internal audit planning. It enables auditors and auditees to manage information requests and evidence collection with controlled access.</p>
                         <button>Request Demo</button>

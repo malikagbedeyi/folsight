@@ -267,14 +267,14 @@ const ComplianceBody = () => {
             </div>
             <div className="auditBenefit">
                 <div className="auditBenefitTittle">
-                    <h1>Benefits of Using Compliance</h1>
+                    <h1>Benefits of Using Compl.ai</h1>
                 </div>
                 <div className="row auditBenefitCoontainer">
                     <div className="col-lg-4 col-md-6 auditBenefitParent" >
                         <div className="auditBenefitChild">
                             <img src={img4} alt="" />
                             <div className="bodyText">
-                            <h1> utomated Compliance Management</h1>
+                            <h1> Automated Compliance Management</h1>
                             <p>AI-driven automation reduces manual tasks, such as data collection, gap analysis, and reporting, saving time and minimizing errors.</p>
                         </div>
                         </div>

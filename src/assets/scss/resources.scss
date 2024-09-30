@@ -47,7 +47,7 @@
         .resourcesWrapper{
             display: flex;
             flex-wrap: wrap;
-             gap: 1rem;
+             gap: 50px;
             max-width: 100%;
             margin: 0;
             padding: 0;
@@ -335,7 +335,7 @@
                                 border: none;
                                 border-radius: 5px;
                                 padding: 15px 10px;
-                                background-color: #835fb2;
+                                background-color: #8231EB;
                                 color: #fff;
                                 font-size: 1.2rem;
                                 transition: .3s;
@@ -368,7 +368,7 @@
                 justify-content: center;
                 button{
                     border: none;
-                    background-image: -webkit-linear-gradient( 0deg, rgb(0,0,184) 0%, rgb(115,0,233) 100%);
+                    background: #8231EB;
                     color: #fff;
                     font-weight: 500;
                     padding: 20px 40px;

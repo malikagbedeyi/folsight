@@ -46,9 +46,16 @@
 .auditRoom{
     width: 100%;
     overflow-x: hidden;
+    .auditCover-2{
+        padding-bottom: 12%;
+    }
     .auditCover{
-        padding: 9% 3% 9% 7%;
+        padding: 9% 3% 13% 7%;
         background: #f9f5fe;
+        height: 100%;
+        @include mobile{
+            padding: 9% 3% 9% 7%;
+        }
         @include mobile{
             padding: 20% 7% 10%;
         }
@@ -64,6 +71,7 @@
                     height: 100%;
                     margin-top: 10%;
                     gap: 20px;
+                    padding-right: 40px;
                     h1{
                         color: #233d63;
                         font-size: 3vw;
@@ -123,6 +131,12 @@
                             border: none;
                             transition: 0.5s ease;
                         }
+                    }
+                }
+                .auditleft2{
+                    max-width: 700px;
+                    @include Destop{
+                        max-width: 500px;
                     }
                 }
                 .auditChildRight{

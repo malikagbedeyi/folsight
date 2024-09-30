@@ -265,7 +265,7 @@ const RiskCoreBody = () => {
         </div>
         <div className="auditBenefit">
             <div className="auditBenefitTittle">
-                <h1>Benefits of Using AuditRoom</h1>
+                <h1>Benefits of Using Riskcore</h1>
             </div>
             <div className="row auditBenefitCoontainer">
                 <div className="col-lg-4 col-md-6 auditBenefitParent" >
