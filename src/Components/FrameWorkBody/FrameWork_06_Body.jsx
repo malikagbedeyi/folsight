@@ -39,15 +39,15 @@ const FrameWork_06_Body = () => {
                         <div className="learnMoreProductContainerChildBody">
                             <ul>
                                 <li>
-                                <i className="fa-solid fa-square-check"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 32H64C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zM173.9 387.1l-83.9-83.9c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l44.7 44.7 103.7-103.7c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L207.8 387.1c-9.4 9.4-24.6 9.4-33.9 0z"/></svg>
                                 <p>PCI DSS Implementation</p>
                                 </li>
                                 <li>
-                                <i className="fa-solid fa-square-check"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 32H64C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zM173.9 387.1l-83.9-83.9c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l44.7 44.7 103.7-103.7c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L207.8 387.1c-9.4 9.4-24.6 9.4-33.9 0z"/></svg>
                                 <p>Network and Data Encryption</p>
                                 </li>
                                 <li>
-                                <i className="fa-solid fa-square-check"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 32H64C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zM173.9 387.1l-83.9-83.9c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l44.7 44.7 103.7-103.7c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L207.8 387.1c-9.4 9.4-24.6 9.4-33.9 0z"/></svg>
                                 <p>Access Control Measures</p>
                                 </li>
                             </ul>
@@ -73,15 +73,15 @@ const FrameWork_06_Body = () => {
                         <div className="learnMoreCategoryContainerChildBody">
                             <ul>
                                 <li>
-                                <i className="fa-solid fa-square-check"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 32H64C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zM173.9 387.1l-83.9-83.9c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l44.7 44.7 103.7-103.7c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L207.8 387.1c-9.4 9.4-24.6 9.4-33.9 0z"/></svg>
                                 <p>Continuous System Monitoring</p>
                                 </li>
                                 <li>
-                                <i className="fa-solid fa-square-check"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 32H64C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zM173.9 387.1l-83.9-83.9c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l44.7 44.7 103.7-103.7c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L207.8 387.1c-9.4 9.4-24.6 9.4-33.9 0z"/></svg>
                                 <p>Identifying Gaps in Compliance</p>
                                 </li>
                                 <li>
-                                <i className="fa-solid fa-square-check"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 32H64C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zM173.9 387.1l-83.9-83.9c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l44.7 44.7 103.7-103.7c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L207.8 387.1c-9.4 9.4-24.6 9.4-33.9 0z"/></svg>
                                 <p>Vulnerability Management</p>
                                 </li>
                             </ul>
@@ -112,15 +112,15 @@ const FrameWork_06_Body = () => {
                         <div className="learnMoreProductContainerChildBody">
                             <ul>
                                 <li>
-                                <i className="fa-solid fa-square-check"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 32H64C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zM173.9 387.1l-83.9-83.9c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l44.7 44.7 103.7-103.7c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L207.8 387.1c-9.4 9.4-24.6 9.4-33.9 0z"/></svg>
                                 <p>	Regular Risk Assessments</p>
                                 </li>
                                 <li>
-                                <i className="fa-solid fa-square-check"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 32H64C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zM173.9 387.1l-83.9-83.9c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l44.7 44.7 103.7-103.7c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L207.8 387.1c-9.4 9.4-24.6 9.4-33.9 0z"/></svg>
                                 <p>Identifying Fraud Risks</p>
                                 </li>
                                 <li>
-                                <i className="fa-solid fa-square-check"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 32H64C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zM173.9 387.1l-83.9-83.9c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l44.7 44.7 103.7-103.7c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L207.8 387.1c-9.4 9.4-24.6 9.4-33.9 0z"/></svg>
                                 <p>  Prioritized Remediation Efforts</p>
                                 </li>
                             </ul>

@@ -57,12 +57,12 @@ const Footer = () => {
                           <li><a href="#">RiskCore</a></li>
                               </ul>
               </div>
-              <div className='footerRightChildTittle-1'>
-                         <h3>Frameworks</h3>
+              <div className='footerRightChildTittle'>
+                         <h3>Platform</h3>
                          <ul>
-                         <li><a href="#/framework_01">IS027001</a></li>
-                         <li><a href="#/framework_02">HIPAA</a></li>
-                         <li><a href="#/framework_03">SOC2</a></li>
+                         <li><a href="#"> INTEGRATION</a></li>
+                         <li><a href="#">Ai</a></li>
+                         <li><a href="#">Api</a></li>
                       </ul>
               </div>
               <div className='footerRightChildTittle-1'>
@@ -73,6 +73,7 @@ const Footer = () => {
                       </ul>
               </div>
               <div className='footerRightChildTittle2'>
+              <h3>Frameworks</h3>
                 <ul>
                 <li><a href="#/framework_01">IS027001</a></li>
                          <li><a href="#/framework_02">HIPAA</a></li>

@@ -8,6 +8,11 @@
         @content;
     }
 }
+@mixin Responsive($breakpoint) {
+    @media screen and (max-width: $breakpoint) {
+      @content;
+    }
+  }
 @mixin laptop {
     @media screen and (max-width:1190px) {
         @content;
@@ -257,16 +262,18 @@
             .footerRightParent{
                 .footerRightChild{
                        display: grid;
-                       display: grid;
-                       grid-template-columns:1fr 1fr 1fr 1fr;
-                       grid-gap: 2rem;
+                       grid-template-columns: repeat(4, 1fr);
+                       gap: 3rem;
                     justify-content: center;
                     max-width: 100%;
                     @include tablet{
-                        grid-gap: 3rem;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 2rem;
                     }
-                    @include Destop{
-                        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+                    @include Responsive(330px){
+                        grid-template-columns: repeat(1, 1fr);
+                        gap: 1rem;
+                        
                     }
                     @include mobile{
                         gap: 50px;
@@ -282,11 +289,17 @@
                             font-weight: 600;
                             transition: .3s;
                             color: #233d63;
+                            @include Responsive(330px){
+                                text-align: center;
+                            }
                         }
                         ul{
                             padding: 3% 10px 0 0;
                             list-style: none;
                             text-align: left;
+                            @include Responsive(330px){
+                                text-align: center;
+                            }
                             li{
                                 margin-bottom: 10px;
                                 a{
@@ -305,11 +318,18 @@
                             }
                         }
                     }
-                    .footerRightChildTittle2{
-                        margin: 2% 0;
+                    .footerRightChildTittle-1{
                         display: none;
                         @include tablet{
+                        display: none;
+                        }
+                    }
+                    .footerRightChildTittle2{
+                        margin: 2% 0;
                         display: block;
+                        @include tablet{
+                        display: block;
+                        }
                         h3{
                             text-align: left;
                             font-size: 1.3rem;
@@ -318,11 +338,17 @@
                             font-weight: 600;
                             transition: .3s;
                             color: #233d63;
+                            @include Responsive(330px){
+                                text-align: center;
+                            }
                         }
                         ul{
                             padding: 3% 10px 0 0;
                             list-style: none;
                             text-align: left;
+                            @include Responsive(330px){
+                                text-align: center;
+                            }
                             li{
                                 margin-bottom: 10px;
                                 a{
@@ -340,7 +366,6 @@
                                 }
                             }
                         }
-                    }
                 }
                 }
             }

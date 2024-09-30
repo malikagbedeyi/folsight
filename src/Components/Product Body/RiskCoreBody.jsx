@@ -35,7 +35,7 @@ const RiskCoreBody = () => {
             <div className="col-lg-6 auditParent" >
                 <div className="auditChildLeft">
                     <h1>Risk core</h1>
-                    <p>Risk core supports both internal and external audits end-to-end, including annual internal audit planning. It enables auditors and auditees to manage information requests and evidence collection with controlled access. Results of control tests are presented through customizable dashboards, exportable to PowerPoint, Word, and PDF. Additionally, audit metrics and analytics, such as control failures, can be exported to Excel for further analysis...</p>
+                    <p>At Riskcore, we specialize in delivering comprehensive project risk management solutions that empower organizations to navigate uncertainties with confidence. Leveraging our proprietary Riscor® methodology, we provide both qualitative and quantitative risk assessments, incorporating advanced simulations like Monte Carlo to forecast potential impacts on costs and schedules.</p>
                     <p className='textDisplay'>Audit room supports both internal and external audits end-to-end, including annual internal audit planning. It enables auditors and auditees to manage information requests and evidence collection with controlled access.</p>
                     <button>Request Demo</button>
                 </div>
@@ -55,7 +55,7 @@ const RiskCoreBody = () => {
             <div className="col-lg-6 auditParent" >
                 <div className="auditChildLeft">
                     <h1>Risk core</h1>
-                    <p >Risk core supports both internal and external audits end-to-end, including annual internal audit planning. It enables auditors and auditees to manage information requests and evidence collection with controlled access...</p>
+                    <p>At Riskcore, we deliver expert project risk management solutions, enabling organizations to handle uncertainty. Our Riscor® methodology provides qualitative and quantitative risk assessments, using Monte Carlo simulations to forecast cost and schedule impacts.</p>
                     <button>Request Demo</button>
                 </div>
             </div>
@@ -123,11 +123,11 @@ const RiskCoreBody = () => {
             <div className="container-fluid">
             <div className=" auditNewsContainer">
                 <div className="row auditKeyContainer">
-                    <div className="col-lg-6 auditKeyParent" >
+                <div className="col-lg-6 auditKeyParent" >
                         <div className="auditKeyChild">
-                            <div className="auditKeyChildText">
-                        <h1>Audit Planning</h1>
-                        <p>Audit planning is simplified with easy collaboration and budgeting tools, allowing teams to plan audits, allocate budgets, and categorize requests into accepted or rejected lists. Folsight provides alerts two months before audits to ensure preparedness.</p>
+                            <div className="auditKeyChildText"> 
+                        <h1>Comprehensive Risk Assessment</h1>
+                        <p> Riskcore offers an extensive evaluation of potential risks from every angle, combining both qualitative insights—such as expert opinions and stakeholder feedback—with quantitative data models.</p>
                     </div>
                     </div>
                     </div>
@@ -147,9 +147,9 @@ const RiskCoreBody = () => {
                      </div>
                      <div className="col-lg-6 auditKeyParent">
                         <div className="auditKeyChild">
-                            <div className="auditKeyChildText">
-                        <h1>Audit Engagement</h1>
-                        <p>The Audit Engagement feature allows you to map engagements to planned audits, ensuring alignment with audit strategies. When creating an audit, you can link it to the audit plan and specify whether it's recurring.</p>
+                            <div className="auditKeyChildText"> 
+                        <h1> Proprietary Riscor® Methodology</h1>
+                        <p>The Riscor® methodology is a proprietary framework developed specifically for risk management in complex projects. It incorporates advanced techniques like scenario analysis and Monte Carlo simulations to predict how various risks could impact project timelines, costs, and outcomes. </p>
                     </div>
                     </div>
                     </div>
@@ -157,9 +157,9 @@ const RiskCoreBody = () => {
                 <div className="row auditKeyContainer">
                     <div className="col-lg-6 auditKeyParent">
                         <div className="auditKeyChild">
-                            <div className="auditKeyChildText">
-                        <h1>Information Request</h1>
-                        <p>Leverage the AI-enabled feature to automatically generate information requests based on the audit scope, predefined templates, or historical data, ensuring that relevant information is efficiently collected from stakeholders.</p>
+                            <div className="auditKeyChildText"> 
+                        <h1>Tailored Solutions</h1>
+                        <p>Every project has unique risk factors, and Riskcore recognizes that a one-size-fits-all approach won’t suffice. Riskcore customizes its risk management strategies to suit the industry, scope, and specific needs of each client. </p>
                     </div>
                     </div>
                     </div>
@@ -179,9 +179,9 @@ const RiskCoreBody = () => {
                     </div>
                     <div className="col-lg-6 auditKeyParent">
                         <div className="auditKeyChild">
-                            <div className="auditKeyChildText">
-                    <h1> Workpapers</h1>
-                    <p>Digitize and centralize all your audit documentation to create a single source of truth. With Folsight AuditRoom, you can easily manage, annotate, and link workpapers, ensuring that every piece of evidence is securely stored and readily available.</p>
+                            <div className="auditKeyChildText"> 
+                    <h1>Proactive Risk Mitigation</h1>
+                    <p>Rather than reacting to risks as they arise, Riskcore employs proactive strategies to identify and manage risks early in the project lifecycle. Through continuous monitoring, early warning systems, and predictive analytics.</p>
                     </div>
                     </div>
                     </div>
@@ -190,8 +190,8 @@ const RiskCoreBody = () => {
                     <div className="col-lg-6 auditKeyParent">
                         <div className="auditKeyChild">
                             <div className="auditKeyChildText">
-                         <h1>Audit Tasks</h1>
-                         <p>Optimize the audit workflow with a structured task management system that clearly defines responsibilities, timelines, and deliverables. AuditRoom allows you to assign tasks to specific team members, set priorities, and monitor progress in real time.</p>
+                         <h1> Data-Driven Insights</h1>
+                         <p> Riskcore’s use of advanced analytics and reporting tools enables organizations to make informed decisions based on real-time data. By leveraging these insights, organizations can better understand the probability and impact of potential risks, prioritize risk mitigation efforts, and adjust project plans accordingly.</p>
                     </div>
                     </div>
                     </div>
@@ -206,13 +206,12 @@ const RiskCoreBody = () => {
                         <div className="auditKeyChild">
                                <img src={img11} style={{float:"left"}} alt="" />
                         </div>
-                        
                      </div>
                      <div className="col-lg-6 auditKeyParent">
                         <div className="auditKeyChild">
-                            <div className="auditKeyChildText">
-                        <h1>Audit Report</h1>
-                        <p>Produce detailed, professional audit reports with ease using our customizable templates and reporting tools. Capture key findings, insights, and recommendations, and present them in a clear, concise format that meets the needs of all stakeholders.</p>
+                            <div className="auditKeyChildText"> 
+                        <h1>Workshops and Training</h1>
+                        <p>Riskcore offers specialized workshops and training sessions designed to strengthen the skills of project teams in risk identification, management, and mitigation.</p>
                     </div>
                     </div>
                     </div>
@@ -229,9 +228,9 @@ const RiskCoreBody = () => {
                 <div className="row auditKeyContainer">
                     <div className="col-lg-6 auditKeyParent" >
                         <div className="auditKeyChild">
-                            <div className="auditKeyChildText">
-                        <h1>Audit Planning</h1>
-                        <p>Audit planning is simplified with easy collaboration and budgeting tools, allowing teams to plan audits, allocate budgets, and categorize requests into accepted or rejected lists. Folsight provides alerts two months before audits to ensure preparedness.</p>
+                            <div className="auditKeyChildText"> 
+                        <h1>Comprehensive Risk Assessment</h1>
+                        <p> Combines qualitative and quantitative approaches to evaluate risks from multiple perspectives, ensuring thorough risk analysis for better decision-making.</p>
                     </div>
                     </div>
                     </div>
@@ -245,9 +244,9 @@ const RiskCoreBody = () => {
                 <div className="row auditKeyContainer">
                      <div className="col-lg-6 auditKeyParent">
                         <div className="auditKeyChild">
-                            <div className="auditKeyChildText">
-                        <h1>Audit Engagement</h1>
-                        <p>The Audit Engagement feature allows you to map engagements to planned audits, ensuring alignment with audit strategies. When creating an audit, you can link it to the audit plan and specify whether it's recurring.</p>
+                            <div className="auditKeyChildText"> 
+                        <h1> Proprietary Riscor® Methodology</h1>
+                        <p>Uses advanced techniques like Monte Carlo simulations to predict the impact of risks on project timelines, costs, and outcomes with precision. </p>
                     </div>
                     </div>
                     </div>
@@ -262,8 +261,8 @@ const RiskCoreBody = () => {
                     <div className="col-lg-6 auditKeyParent">
                         <div className="auditKeyChild">
                             <div className="auditKeyChildText">
-                        <h1>Information Request</h1>
-                        <p>Leverage the AI-enabled feature to automatically generate information requests based on the audit scope, predefined templates, or historical data, ensuring that relevant information is efficiently collected from stakeholders.</p>
+                        <h1>Tailored Solutions</h1>
+                        <p>Adapts risk management strategies to the specific needs and industry of each client, offering flexible, customized solutions for different projects.</p>
                     </div>
                     </div>
                     </div>
@@ -278,8 +277,8 @@ const RiskCoreBody = () => {
                 <div className="col-lg-6 auditKeyParent">
                         <div className="auditKeyChild">
                             <div className="auditKeyChildText">
-                    <h1> Workpapers</h1>
-                    <p>Digitize and centralize all your audit documentation to create a single source of truth. With Folsight AuditRoom, you can easily manage, annotate, and link workpapers, ensuring that every piece of evidence is securely stored and readily available.</p>
+                    <h1> Proactive Risk Mitigation</h1>
+                    <p> Identifies and addresses risks early with continuous monitoring, reducing delays and cost overruns by tackling issues before they escalate.</p>
                     </div>
                     </div>
                     </div>
@@ -294,8 +293,8 @@ const RiskCoreBody = () => {
                     <div className="col-lg-6 auditKeyParent">
                         <div className="auditKeyChild">
                             <div className="auditKeyChildText">
-                         <h1>Audit Tasks</h1>
-                         <p>Optimize the audit workflow with a structured task management system that clearly defines responsibilities, timelines, and deliverables. AuditRoom allows you to assign tasks to specific team members, set priorities, and monitor progress in real time.</p>
+                         <h1>Data-Driven Insights</h1>
+                         <p> Provides real-time analytics and reports to inform decisions, prioritize mitigation efforts, and enhance project transparency and control.</p>
                     </div>
                     </div>
                     </div>
@@ -309,8 +308,8 @@ const RiskCoreBody = () => {
                 <div className="col-lg-6 auditKeyParent">
                         <div className="auditKeyChild">
                             <div className="auditKeyChildText">
-                        <h1>Audit Report</h1>
-                        <p>Produce detailed, professional audit reports with ease using our customizable templates and reporting tools. Capture key findings, insights, and recommendations, and present them in a clear, concise format that meets the needs of all stakeholders.</p>
+                        <h1> Workshops and Training</h1>
+                        <p>Delivers specialized sessions to empower project teams with practical risk management tools, fostering a culture of risk awareness and readiness.</p>
                     </div>
                     </div>
                     </div>

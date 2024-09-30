@@ -275,7 +275,7 @@ const TOpbar = ({}) => {
                 <a href='#/login'>LOGIN</a>
                <a href='#/register' className='btn submit'>Sign UP </a>
                <button className="btn toggle navbar-toggler" type="button" onClick={() => setToggle(!toggle)} >
-                   <i className="fa-solid svg fa-bars"></i>
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 88C0 74.7 10.7 64 24 64H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24C10.7 112 0 101.3 0 88zM424 224H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H424c13.3 0 24-10.7 24-24s-10.7-24-24-24zM424 400H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H424c13.3 0 24-10.7 24-24s-10.7-24-24-24z"/></svg>
                  </button>
                 </div>
             </div>
@@ -287,7 +287,12 @@ const TOpbar = ({}) => {
                              <li> <a href="#/compliance">COMPL.AI </a> <span className="i"></span> </li>
                              <li> <a href="#/risk_core">RISKCORE</a> <span className="i"></span>  </li>
                         </ul>
-                        <i className={openMenu ? "fa-solid fa-minus": "fa-solid fa-plus"} onClick={() => setOpenMeu(!openMenu)}></i>
+                        <div onClick={() => setOpenMeu(!openMenu)}>
+                           {openMenu ? (<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M416 256c0 17.7-14.3 32-32 32H64c-17.7 0-32-14.3-32-32s14.3-32 32-32H384c17.7 0 32 14.3 32 32z" /> </svg>
+                            ) : (  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M432 256c0 17.7-14.3 32-32 32H256v144c0 17.7-14.3 32-32 32s-32-14.3-32-32V288H48c-17.7 0-32-14.3-32-32s14.3-32 32-32H192V80c0-17.7 14.3-32 32-32s32 14.3 32 32V224H400c17.7 0 32 14.3 32 32z" /></svg>
+
+                             )}</div>
+
                     </li>
                     <li className=''><a className="nav-link" href="#">PLATFORM</a>
                     <ul className="submenu" id={openMenu2 ? "open" : "close"}>
@@ -295,7 +300,11 @@ const TOpbar = ({}) => {
                              <li> <a href="#">API</a> <span className="i"></span> </li>
                              <li> <a href="#">INTEGRATION</a> <span className="i"></span>  </li>
                         </ul>
-                        <i className={openMenu3 ? "fa-solid fa-minus": "fa-solid fa-plus"} onClick={() => setOpenMeu2(!openMenu2)}></i>
+                        <div onClick={() => setOpenMeu2(!openMenu2)}>
+                           {openMenu3 ? (<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M416 256c0 17.7-14.3 32-32 32H64c-17.7 0-32-14.3-32-32s14.3-32 32-32H384c17.7 0 32 14.3 32 32z" /> </svg>
+                            ) : (  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M432 256c0 17.7-14.3 32-32 32H256v144c0 17.7-14.3 32-32 32s-32-14.3-32-32V288H48c-17.7 0-32-14.3-32-32s14.3-32 32-32H192V80c0-17.7 14.3-32 32-32s32 14.3 32 32V224H400c17.7 0 32 14.3 32 32z" /></svg>
+
+                             )}</div>
                     </li>
                     <li className=''><a className="nav-link" href="#">FRAMEWORKS</a>
                     <ul className="submenu" id={openMenu3 ? "open" : "close"}>
@@ -306,10 +315,21 @@ const TOpbar = ({}) => {
                              <li> <a href="#/framework_05">NIST</a> <span className="i"></span> </li>
                              <li> <a href="#/framework_06">PCI DSS</a> <span className="i"></span> </li>
                         </ul>
-                        <i className={openMenu3 ? "fa-solid fa-minus": "fa-solid fa-plus"} onClick={() => setOpenMeu3(!openMenu3)}></i>
+                        <div onClick={() => setOpenMeu3(!openMenu3)}>
+                           {openMenu3 ? (<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M416 256c0 17.7-14.3 32-32 32H64c-17.7 0-32-14.3-32-32s14.3-32 32-32H384c17.7 0 32 14.3 32 32z" /> </svg>
+                            ) : (  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M432 256c0 17.7-14.3 32-32 32H256v144c0 17.7-14.3 32-32 32s-32-14.3-32-32V288H48c-17.7 0-32-14.3-32-32s14.3-32 32-32H192V80c0-17.7 14.3-32 32-32s32 14.3 32 32V224H400c17.7 0 32 14.3 32 32z" /></svg>
+
+                             )}</div>
                     </li>
                     <li className='nav-item'> <a className="nav-link"  href="#/plans">PLANS</a> 
-                    <i className="fa-solid fa-minus" onClick={() => setOpenMeu5(!openMenu4)}></i>
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M416 256c0 17.7-14.3 32-32 32H64c-17.7 0-32-14.3-32-32s14.3-32 32-32H384c17.7 0 32 14.3 32 32z" /> </svg>
+                      </div>
+                    </li>
+                    <li className="nav-item"> <a className="nav-link" href="#/resources">Resources</a>
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M416 256c0 17.7-14.3 32-32 32H64c-17.7 0-32-14.3-32-32s14.3-32 32-32H384c17.7 0 32 14.3 32 32z" /> </svg>
+                      </div>
                     </li>
                     <li className='nav-item'> <a className="nav-link" href="#">COMPANY</a>
                     <ul className="submenu" id={openMenu5 ? "open" : "close"}>
@@ -317,7 +337,11 @@ const TOpbar = ({}) => {
                              <li> <a href="#/team">Team</a> <span className="i"></span> </li>
                              <li> <a href="#/contact_us">Contact us</a> <span className="i"></span> </li>
                         </ul>
-                        <i className={openMenu5 ? "fa-solid fa-minus": "fa-solid fa-plus"} onClick={() => setOpenMeu5(!openMenu5)}></i>
+                        <div onClick={() => setOpenMeu5(!openMenu5)}>
+                           {openMenu5 ? (<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M416 256c0 17.7-14.3 32-32 32H64c-17.7 0-32-14.3-32-32s14.3-32 32-32H384c17.7 0 32 14.3 32 32z" /> </svg>
+                            ) : (  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M432 256c0 17.7-14.3 32-32 32H256v144c0 17.7-14.3 32-32 32s-32-14.3-32-32V288H48c-17.7 0-32-14.3-32-32s14.3-32 32-32H192V80c0-17.7 14.3-32 32-32s32 14.3 32 32V224H400c17.7 0 32 14.3 32 32z" /></svg>
+
+                             )}</div>
                     </li>
                 </ul>
                 </div>

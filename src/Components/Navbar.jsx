@@ -312,6 +312,9 @@ const Navbar = () => {
                     <li className='nav-item'> <a className="nav-link"  href="#/plans">PLANS</a> 
                     <i className="fa-solid fa-minus" onClick={() => setOpenMeu5(!openMenu4)}></i>
                     </li>
+                    <li className='nav-item'> <a className="nav-link"  href="#/resources">Resources</a> 
+                    <i className="fa-solid fa-minus" onClick={() => setOpenMeu5(!openMenu4)}></i>
+                    </li>
                     <li className='nav-item'> <a className="nav-link" href="#">COMPANY</a>
                     <ul className="submenu" id={openMenu5 ? "open" : "close"}>
                              <li> <a href="#/about_us">About Us</a> <span className="i"></span> </li>

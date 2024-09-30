@@ -8,11 +8,13 @@ import Footer from '../Components/Footer'
 import Header from '../Components/Header'
 import Navbar from '../Components/Navbar'
 import CarouselSilde from '../Components/CarouselSilde'
+import TOpbar from '../Components/Topbar'
 
 const Home = () => {
   return (
     <div className='Home'>
-      <Navbar />
+      {/* <Navbar /> */}
+      <TOpbar />
         <Header />
       <MainBody />
       <LearnMore />

@@ -96,7 +96,7 @@
               margin: 0;
               padding: 0;
               margin-top: -13px;
-              @include laptop{
+              @include tablet{
                 gap: 50%;
             }
               .logo  img{
@@ -113,7 +113,7 @@
                     padding: 0;
                     list-style: none;
                     display: flex;
-                    gap: 100px;
+                    gap: 80px;
                     flex-wrap: wrap;
                      margin: 0;
                       
@@ -321,7 +321,7 @@
                 }
                }
         }
-        @include laptop{
+        @include tablet{
            display: none;
        }
        }
@@ -336,7 +336,7 @@
              font-size: 13px;
              font-weight: 500;
              text-align: center;
-              @include laptop{
+              @include tablet{
              display: none;
          }
          }
@@ -355,7 +355,7 @@
              font-weight: 600;
              font-size: 13px;
              margin: 0;
-              @include laptop{
+              @include tablet{
              display: none;
          }
                 
@@ -371,7 +371,7 @@
             color: #fff;
             border: 1px solid #fff;
             font-size: 1rem;
-            padding: 15px 20px;
+            padding: 10px 15px;
             display: block;
             border-radius: 5px;
             transition: 0.5s ease;
@@ -380,8 +380,13 @@
             outline: none;
             overflow: hidden;
             transition: 0.5s ease;
-             @include laptop{
+             @include tablet{
                  display: block;
+             }
+             svg{
+                width:20px;
+                height: 20px;
+                fill: #fff;
              }
         }
       }
@@ -391,7 +396,6 @@
             display: none;
             align-items: center;
             padding: 5px;
-            // animation: movingdown .3s ease;
             ul{
                  list-style: none;
                 display: block;
@@ -425,16 +429,17 @@
                         color: gray;
                     }
                     }
-                    i{
-    
+                    svg{
                         background-color: #1B1D3D;
                         border-top: 1px solid rgba(255, 255, 255, 0.5);
                          padding: 13px;
                          justify-content: center;
-                         color: #fff;
+                         fill: #fff;
                          margin-left: 3px;
                          z-index: 5;
                          transition: .3s;
+                         width: 43px;
+                         height: 43px;
                         &:hover{
                             opacity: 0.9;
                             color: gray;
@@ -453,7 +458,7 @@
                                 position: absolute;
                                 background-color: #1B1D3D;
                                 border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-                                 padding:22px 21px;
+                                 padding:22px 23px;
                                  margin-top: 1px;
                                  justify-content: center;
                                  color: #fff;
@@ -463,8 +468,7 @@
                     }
                 }
             }
-    
-            @include laptop{
+            @include tablet{
                 display: block;
             }
             @include Destop{

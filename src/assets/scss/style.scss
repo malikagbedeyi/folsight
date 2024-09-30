@@ -300,13 +300,13 @@
     }
     .firstRow{
         @include mobile{
-
+            display: none;
         }
     }
     .secondRow{
         display: none;
         @include mobile{
-            display: none;
+            display: block;
         }
     }
 }

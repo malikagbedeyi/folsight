@@ -40,7 +40,9 @@
         font-style:normal;
         list-style: none;
       }
+      width: 100%;
     .frameworkBody{
+        width: 100%;
         padding:  0 0;
         margin: 0;
             align-items: center;
@@ -120,7 +122,10 @@
                                     font-weight: 500;
                                     margin-bottom: -3px;
     
-                                    i{
+                                    svg{
+                                        width: 20px;
+                                        height: 20px;
+                                        fill: #7b8491;
                                         margin-right: 10px;
                                         line-height: 28px;
                                     }
@@ -242,7 +247,10 @@
                                 transition: .3s;
                                 font-weight: 500;
 
-                                i{
+                                svg{
+                                    width: 20px;
+                                    height: 20px;
+                                    fill: #7b8491;
                                     margin-right: 10px;
                                     line-height: 2vw;
                                     @include Destop{
