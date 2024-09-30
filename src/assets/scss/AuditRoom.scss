@@ -338,6 +338,18 @@
                 font-size: 1.3rem;
             }
                  }
+                 p{
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 2vw;
+                    color: #7b8491;
+                    margin-bottom: 1.1vw;
+                    transition: .3s;
+                    @include Destop{
+                        font-size: 15px;
+                        line-height: 25px;
+                      }
+                }
         }
         .auditMiddleContainer {
             padding: 0 5%;

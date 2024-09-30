@@ -35,7 +35,7 @@ const ComplianceBody = () => {
                 <div className="col-lg-6 auditParent" >
                     <div className="auditChildLeft">
                         <h1>Compl.Ai</h1>
-                        <p>Folsight leverages cutting-edge Artificial Intelligence (AI) to enhance efficiency and accuracy while ensuring full compliance with industry standards and regulations. We understand the critical importance of regulatory compliance in today’s business landscape. Folsight is committed to helping organizations meet their compliance requirements with our AI-powered GRC tool...</p>
+                        <p>Folsight leverages cutting-edge Artificial Intelligence (AI) to enhance efficiency and accuracy while ensuring full compliance with industry standards and regulations. We understand the critical importance of regulatory compliance in today’s business landscape..</p>
                         <button>Request Demo</button>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ const ComplianceBody = () => {
                 <div className="col-lg-6 auditParent" >
                     <div className="auditChildLeft">
                         <h1>Compl.Ai</h1>
-                        <p>Folsight leverages cutting-edge Artificial Intelligence (AI) to enhance efficiency and accuracy while ensuring full compliance with industry standards and regulations. We understand the critical importance of regulatory compliance in today’s business landscape...</p>
+                        <p>Folsight leverages cutting-edge Artificial Intelligence (AI) to enhance efficiency and accuracy while ensuring full compliance with industry standards and regulations. We understand the critical importance of regulatory compliance in today’s business landscape.</p>
                         <button>Request Demo</button>
                     </div>
                 </div>
@@ -121,7 +121,7 @@ const ComplianceBody = () => {
         </div>
         <div className="auditNews">
                 <div className="auditNewsTittle">
-                    <h1>Key Features of Complance</h1>
+                    <h1>Key Features of Compl.ai</h1>
                 </div>
                 <div className="container-fluid">
                 <div className=" auditNewsContainer">
@@ -194,7 +194,7 @@ const ComplianceBody = () => {
             </div>
             <div className="auditNews-2">
                 <div className="auditNewsTittle">
-                    <h1>Key Features of Complance</h1>
+                    <h1>Key Features of Compl.ai</h1>
                 </div>
                 <div className="container-fluid">
                 <div className=" auditNewsContainer">

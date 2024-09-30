@@ -74,7 +74,7 @@ const TOpbar = ({}) => {
             <div className='topbarMenu'>
                 <ul className='topbarMenu-ul'>
                     <li className='nav-item' > 
-                    <a className='nav-link active'>PRODUCTS</a>
+                    <a className='nav-link active'>Products</a>
                      <ul className="submenu">
                        <li className='dFlex'>
                        <ul>
@@ -149,7 +149,7 @@ const TOpbar = ({}) => {
                     </ul>
                     <div className="triangle"></div>
                     </li>
-                    <li className="nav-item" ><a className="nav-link">FRAMEWORKS</a>
+                    <li className="nav-item" ><a className="nav-link">Frameworks</a>
                     <ul className="submenu">
                        <li className='dFlex'>
                        <ul>
@@ -221,11 +221,11 @@ const TOpbar = ({}) => {
                     </ul>
                      <div className="triangle"></div>
                     </li>
-                    <li className="nav-item"> <a className="nav-link" href="#/plans">PLANS</a>
+                    <li className="nav-item"> <a className="nav-link" href="#/plans">Plans</a>
                     </li>
                     <li className="nav-item"> <a className="nav-link" href="#/resources">Resources</a>
                     </li>
-                    <li className="nav-item"> <a className="nav-link" >COMPANY</a> 
+                    <li className="nav-item"> <a className="nav-link" >Company</a> 
                          <ul className="submenu2">
                        <li className='dFlex'>
                        <ul>

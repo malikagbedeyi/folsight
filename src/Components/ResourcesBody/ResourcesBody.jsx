@@ -58,7 +58,7 @@ const ResourcesBody = () => {
         </aside>
         <div className="responsiveSidebar">
             <div className="responsiveSidebarContainer">
-            <div className='filterMobile' onClick={() => handlePage(4)}>
+            <div className='filterMobile'>
                 <div className="filterMobilechild">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M10 20C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10zm0-2c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm11.293-7.707-4-4-1.414 1.414 4 4 1.414-1.414z"/>

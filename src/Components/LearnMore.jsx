@@ -75,8 +75,7 @@ const LearnMore = () => {
      <div className="learnMoreTittle row">
      <div className="col-lg-12">
     <h1>Streamlining the Audit Process</h1>
-    <p className='textDisplay'>Gain instant insights into every stage of your audit process through a centralized platform that integrates all aspects of audit management. Easily track audit progress, identify and document issues in real-time, and enhance collaboration with shared access to key documents and communication tools.</p>
-    <p className='textDisplay-2'>Gain instant insights into every stage of your audit process through a centralized platform that integrates all aspects of audit management.</p>
+    <p>Gain instant insights into every stage of your audit process through a centralized platform that integrates all aspects of audit management.</p>
     </div>
             </div>
         <div className="learnMoreContainer row">
