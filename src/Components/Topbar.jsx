@@ -321,15 +321,11 @@ const TOpbar = ({}) => {
 
                              )}</div>
                     </li>
-                    <li className='nav-item'> <a className="nav-link"  href="#/plans">PLANS</a> 
-                    <div>
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M416 256c0 17.7-14.3 32-32 32H64c-17.7 0-32-14.3-32-32s14.3-32 32-32H384c17.7 0 32 14.3 32 32z" /> </svg>
-                      </div>
+                    <li className='nav-item'> <a className="nav-link"  href="#/plans">PLANS</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M416 256c0 17.7-14.3 32-32 32H64c-17.7 0-32-14.3-32-32s14.3-32 32-32H384c17.7 0 32 14.3 32 32z" /> </svg>
                     </li>
                     <li className="nav-item"> <a className="nav-link" href="#/resources">Resources</a>
-                    <div>
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M416 256c0 17.7-14.3 32-32 32H64c-17.7 0-32-14.3-32-32s14.3-32 32-32H384c17.7 0 32 14.3 32 32z" /> </svg>
-                      </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M416 256c0 17.7-14.3 32-32 32H64c-17.7 0-32-14.3-32-32s14.3-32 32-32H384c17.7 0 32 14.3 32 32z" /> </svg>         
                     </li>
                     <li className='nav-item'> <a className="nav-link" href="#">COMPANY</a>
                     <ul className="submenu" id={openMenu5 ? "open" : "close"}>

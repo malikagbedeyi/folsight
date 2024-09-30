@@ -141,7 +141,8 @@ animation: animationFramesOne 30s alternate infinite linear;
                     width: 5%;
                     margin-top: -20px;
                     @include tablet{
-                      width: 20%;
+                      width: 10%;
+                      margin-top: -5px;
                     }
                   }
                 }
