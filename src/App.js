@@ -21,6 +21,11 @@ import Team from './page/Team/Team';
 import NewsCaster from './NewsCaster';
 import FrameWork06 from './page/FrameWork/FrameWork06';
 import Resources from './page/Resources/Resources';
+import FrameWorkPage from './Components/FrameWorkPage/FrameWorkPage';
+import SeeAllPage from './Components/FrameWorkPage/SeeAllPage';
+import FrameWorkPage_01 from './Components/FrameWorkPage/FrameWorkPage_01';
+import FrameWorkPage_02 from './Components/FrameWorkPage/FrameWorkPage_02';
+import FrameWorkPage_03 from './Components/FrameWorkPage/FrameWorkPage_03';
 function AppContent() {
   const [loading, setLoading] = useState(false);
   const location = useLocation();
@@ -76,6 +81,11 @@ function AppContent() {
         <Route path='/request-demo' element={<RequestDemo />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/frameworkPage' element={<FrameWorkPage />} />
+        <Route path='/frameworkPage_01' element={<FrameWorkPage_01 />} />
+        <Route path='/frameworkPage_02' element={<FrameWorkPage_02 />} />
+        <Route path='/frameworkPage_03' element={<FrameWorkPage_03 />} />
+        <Route path='/seeall' element={<SeeAllPage />} />
       </Routes>
     </>
   );

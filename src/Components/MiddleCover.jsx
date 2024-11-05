@@ -19,14 +19,14 @@ const MiddleCover = () => {
     <div className="middleCover">
     <div className="Container">
         <div className="middleCoverContainer row">
-            <div className=" middleCoverContainerParent col-xl-8 col-lg-10" data-aos="flip-down">
+            <div className=" middleCoverContainerParent col-xl-8 col-lg-10">
                 <div className='middleCoverContainerChild'>
                     <h2>Maintain Corporate Integrity</h2>   
                     <p>Uphold ethical standards, ensure transparency, and foster accountability. Folsight safeguards your organization's reputation by embedding integrity in decision-making, monitoring compliance, and swiftly addressing potential breaches.</p>
                 </div>
             </div>
         </div>
-        <div class="middleContainerBody row" data-aos="flip-up">
+        <div class="middleContainerBody row">
             <div class="middleContainerBodyParent col-lg-4 col-md-4">
                 <div class="middleContainerBodyChild">
                     <div class="middleContainerBodyImg">

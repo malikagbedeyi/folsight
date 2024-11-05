@@ -1593,3 +1593,83 @@ export default AboutUsBody
 }
 
 
+<table style={{ height: '566px', width: '100%', border: '1px solid' }}>
+  <colgroup>
+      <col />
+      <col />
+      <col />
+      <col />
+      <col />
+      <col />
+  </colgroup>
+  <tbody>
+      <tr style={{ height: '25px!important', border: '1px solid'  }}>
+          <td style={{ textAlign: 'center', width: '11.1428%', height: '37px!important', backgroundColor: '#fff1a0' , border: '1px solid' }} rowSpan="2">
+              <strong>Product Area</strong>
+          </td>
+          <td style={{ textAlign: 'center', width: '24.4286%', height: '37px', backgroundColor: '#fff1a0' , border: '1px solid' }} rowSpan="2">
+              <strong>Action</strong>
+          </td>
+          <td style={{ textAlign: 'center', width: '51.857%', height: '25px', backgroundColor: '#fff1a0', border: '1px solid'  }} colSpan="4">
+              <strong>Entity Level Role</strong>
+          </td>
+      </tr>
+      <tr style={{ height: '12px', border: '1px solid'  }}>
+          <td style={{ textAlign: 'center', width: '12.4285%', height: '12px', backgroundColor: '#fff1a0', border: '1px solid'  }}>
+              <strong>Payer</strong>
+          </td>
+          <td style={{ textAlign: 'center', width: '10.2857%', height: '12px', backgroundColor: '#fff1a0', border: '1px solid'  }}>
+              <strong>Payroll Approver</strong>
+          </td>
+          <td style={{ textAlign: 'center', width: '14.5714%', height: '12px', backgroundColor: '#fff1a0', border: '1px solid'  }}>
+              <strong>People Admin</strong>
+          </td>
+          <td style={{ textAlign: 'center', width: '14.5714%', height: '12px', backgroundColor: '#fff1a0', border: '1px solid'  }}>
+              <strong>People & Payroll Admin</strong>
+          </td>
+      </tr>
+      <tr style={{ height: '22px', border: '1px solid'  }}>
+          <td style={{ width: '11.1428%', height: '132px', backgroundColor: '#fff1a0', border: '1px solid'  }} rowSpan="6">
+              <strong>Payroll Submission</strong>
+          </td>
+          <td style={{ width: '24.4286%', height: '22px' , border: '1px solid' }}>View Payroll table</td>
+          <td style={{ textAlign: 'center', width: '51.857%', height: '22px', backgroundColor: '#b1dfb4', border: '1px solid'  }} colSpan="4">
+              Yes
+          </td>
+      </tr>
+      <tr style={{ height: '22px', border: '1px solid'  }}>
+          <td style={{ width: '24.4286%', height: '22px', border: '1px solid'  }}>Submit payroll</td>
+          <td style={{ width: '12.4285%', height: '22px', backgroundColor: '#dfb1b1', textAlign: 'center', border: '1px solid'  }}>No</td>
+          <td style={{ textAlign: 'center', width: '39.4285%', height: '22px', backgroundColor: '#b1dfb4', border: '1px solid'  }} colSpan="3">
+              Yes
+          </td>
+      </tr>
+      <tr style={{ height: '22px' , border: '1px solid' }}>
+          <td style={{ width: '24.4286%', height: '22px' , border: '1px solid' }}>Approve payroll</td>
+          <td style={{ width: '12.4285%', height: '22px', backgroundColor: '#dfb1b1', textAlign: 'center', border: '1px solid'  }}>No</td>
+          <td style={{ width: '10.2857%', height: '22px', backgroundColor: '#b1dfb4', textAlign: 'center', border: '1px solid'  }}>Yes</td>
+          <td style={{ width: '14.5714%', height: '22px', backgroundColor: '#dfb1b1', textAlign: 'center', border: '1px solid'  }}>No</td>
+          <td style={{ width: '14.5714%', height: '22px', backgroundColor: '#b1dfb4', textAlign: 'center', border: '1px solid'  }}>Yes</td>
+      </tr>
+      <tr style={{ height: '22px', border: '1px solid'  }}>
+          <td style={{ width: '24.4286%', height: '22px' , border: '1px solid' }}>Upload, download docs</td>
+          <td style={{ textAlign: 'center', width: '51.857%', height: '22px', backgroundColor: '#b1dfb4', border: '1px solid'  }} colSpan="4">
+              Yes
+          </td>
+      </tr>
+      <tr style={{ height: '22px', border: '1px solid'  }}>
+          <td style={{ width: '24.4286%', height: '22px' , border: '1px solid' }}>Comm. center interaction</td>
+          <td style={{ textAlign: 'center', width: '51.857%', height: '22px', backgroundColor: '#b1dfb4' , border: '1px solid' }} colSpan="4">
+              Yes
+          </td>
+      </tr>
+      <tr style={{ height: '22px' , border: '1px solid' }}>
+          <td style={{ width: '24.4286%', height: '22px' }}>Mark as paid</td>
+          <td style={{ width: '12.4285%', height: '22px', backgroundColor: '#b1dfb4', textAlign: 'center' , border: '1px solid' }}>Yes</td>
+          <td style={{ width: '12.4285%', height: '22px', backgroundColor: '#b1dfb4', textAlign: 'center' , border: '1px solid' }}>Yes</td>
+          <td style={{ width: '14.5714%', height: '22px', backgroundColor: '#dfb1b1', textAlign: 'center' , border: '1px solid' }}>No</td>
+          <td style={{ width: '14.5714%', height: '22px', backgroundColor: '#b1dfb4', textAlign: 'center' , border: '1px solid' }}>Yes</td>
+      </tr>
+      {/* Additional rows go here */}
+  </tbody>
+</table>
