@@ -16,7 +16,7 @@ const Home = () => {
       {/* <Navbar /> */}
       <TOpbar />
         <Header />
-      <MainBody />
+      {/* <MainBody /> */}
       <LearnMore />
       <CarouselSilde />
       <MiddleCover />

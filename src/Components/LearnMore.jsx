@@ -122,7 +122,7 @@ const LearnMore = () => {
                 </div> */}
                  <div className="bodyText">
                     <h3>RiskCore</h3>
-                    <p>Audit room supports both internal and external audits end-to-end, including annual internal audit planning...</p>
+                    <p>RiskCore offers a comprehensive risk management solution to help businesses assess, track, and mitigate operational risks...</p>
                 </div>
                 <div className="buttonText">
                 <a href="#/risk_core">LEARN MORE  → </a>

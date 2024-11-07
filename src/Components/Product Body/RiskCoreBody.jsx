@@ -109,7 +109,7 @@ const RiskCoreBody = () => {
                     <h1>Regulatory Alignment</h1>
                     </div>
                     <div className="auditMiddleChildButtom">
-                        <p> Ensure that your organization’s risk management processes comply with key industry regulations and standards, reducing the risk of fines or legal penalties.</p>
+                        <p> Ensure your risk management processes comply with industry regulations, reducing the risk of fines or penalties..</p>
                 </div>
                 </div>
                 </div>

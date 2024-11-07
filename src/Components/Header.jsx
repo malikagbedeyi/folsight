@@ -28,10 +28,7 @@ const Header = () => {
                 <div className="container">
                 <div className='leftWrapperText'>
                 <h1  data-aos="fade-in-up" >GRC solutions for Your Organization</h1>
-                <p data-aos="fade-in-down">Fortify your organization's governace, risk management,and compliance
-                    effort with our-all-inclusive <strong>GRC</strong> solutions, designed to streamline processes,  enhance security, 
-                    and ensure adherence to regulatory standards across every face of your business
-                </p>
+                <p data-aos="fade-in-down">Scalable <strong>GRC</strong> solutions for organizations of all sizes that grow with you every step of the way, simplifying your security compliance and removing obstacles to help you achieve your goals. </p>
                 </div>
                          <button onClick={() => navigate('/request-demo')} className='btn submit'>REQUEST A DEMO </button>
                 </div>
@@ -58,10 +55,7 @@ const Header = () => {
                 <div className="container">
                 <div className='leftWrapperText'>
                 <h1  data-aos="fade-in-up" >GRC solutions for Your Organization</h1>
-                <p data-aos="fade-in-down">Fortify your organization's governace, risk management,and compliance
-                    effort with our-all-inclusive <strong>GRC</strong> solutions, designed to streamline processes,  enhance security, 
-                    and ensure adherence to regulatory standards across every face of your business
-                </p>
+                <p data-aos="fade-in-down">Scalable <strong>GRC</strong> solutions for organizations of all sizes that grow with you every step of the way, simplifying your security compliance and removing obstacles to help you achieve your goals. </p>
                 </div>
                          <button onClick={() => navigate('/request-demo')} className='btn submit'>REQUEST A DEMO </button>
                 </div>

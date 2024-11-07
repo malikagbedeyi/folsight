@@ -75,31 +75,37 @@ const TOpbar = ({}) => {
                 <ul className='topbarMenu-ul'>
                     <li className='nav-item' > 
                     <a className='nav-link active'>Products</a>
-                     <ul className="submenu">
+
+                    <ul className="submenu2 submenu3">
                        <li className='dFlex'>
                        <ul>
-                             <li>
-                                 <div className="hoverImg">
+                            <li> 
+                              <div className="hoverImg">
                               <img src={icon16} alt="" />
                               </div>
-                                <p>
+                               <p>
                                 <a href="#/audit_room">AUDITROOM </a>
                                 <span>Tool for comprehensive website audits.</span>
                                 {/*  and performance analysis */}
                                 </p>
-                                  </li>
-                                  <li>
-                                 <div className="hoverImg">
+                              </li>
+                              <li> 
+                              <div className="hoverImg">
                               <img src={icon17} alt="" />
                               </div>
-                                <p>
+                              <p>
                                 <a href="#/compliance">COMPL.AI</a>
                                 <span>AI-powered tool for compliance management.</span>
                                 {/* management and automation. */}
                                 </p>
-                                  </li>
-                                  <li>
-                                 <div className="hoverImg">
+                              </li>
+                       </ul>
+                         </li>
+                         <li className="dMiddleLine"></li>
+                         <li className='dFlex'>
+                         <ul>
+                            <li> 
+                              <div className="hoverImg">
                               <img src={icon19} alt="" />
                               </div>
                                 <p>
@@ -107,43 +113,7 @@ const TOpbar = ({}) => {
                                 <span>Platform for managing and mitigating.</span>
                                 {/* business risks */}
                                 </p>
-                                  </li>
-                       </ul>
-                         </li>
-                         <li className="dMiddleLine"></li>
-                         <li className='dFlex'>
-                         <ul>
-                         <li> 
-                              <div className="hoverImg">
-                              <img src={icon15} alt="" />
-                              </div>
-                                <p>
-                                <a href="/">AI </a>
-                                <span>A framework for developing, deploying.</span>
-                                {/* , and managing AI models and applications */}
-                                </p>
                               </li>
-                             <li>
-                             <div className="hoverImg">
-                              <img src={icon20} alt="" />
-                              </div>
-                                <p>
-                                <a href="/">API </a>
-                                <span>A system for building, managing software. </span>
-                                {/*  systems for seamless data flow */}
-                                </p>
-                                 </li>
-                                 <li>
-                                 <div className="hoverImg">
-                              <img src={icon18} alt="" />
-                              </div>
-                                <p>
-                                <a href="/">INTEGRATION</a>
-                                <span>Connects and unifies different software </span>
-                                {/*  systems for seamless data flow */}
-                                </p>
-                                  </li>
-
                        </ul>
                         </li>
                     </ul>
