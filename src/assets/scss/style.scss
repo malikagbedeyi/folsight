@@ -902,7 +902,7 @@
                              -ms-overflow-style: none;
                              scrollbar-width: none;
                              animation: movingforwards .5s;
-                             text-align: justify; /* For Edge */
+                            
                              @include tablet{
                                 height: 100%;
                              }
