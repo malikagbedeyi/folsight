@@ -45,7 +45,7 @@ const AboutUsBody = () => {
           <div className="col-lg-4 col-md-6 aboutUs-middleParent" >
               <div className="aboutUs-middleChild">
                 <div className="icons">
-                <i class=" fa-solid fa-circle"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 5c-3.859 0-7 3.141-7 7s3.141 7 7 7 7-3.141 7-7-3.141-7-7-7zm0 12c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path><path d="M12 9c-1.627 0-3 1.373-3 3s1.373 3 3 3 3-1.373 3-3-1.373-3-3-3z"></path></svg>
                 </div>
                 <h4>Who We Are</h4>
                 <p>Folsight is a leading IT Audit and Governance, Risk, and Compliance (GRC) platform designed to help organizations navigate the intricate landscape of IT governance.</p>
@@ -55,7 +55,7 @@ const AboutUsBody = () => {
             <div className="col-lg-4 col-md-6 aboutUs-middleParent" >
               <div className="aboutUs-middleChild">
                 <div className="icons">
-                <i className="fa-solid fa-users"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2A10.13 10.13 0 0 0 2 12a10 10 0 0 0 4 7.92V20h.1a9.7 9.7 0 0 0 11.8 0h.1v-.08A10 10 0 0 0 22 12 10.13 10.13 0 0 0 12 2zM8.07 18.93A3 3 0 0 1 11 16.57h2a3 3 0 0 1 2.93 2.36 7.75 7.75 0 0 1-7.86 0zm9.54-1.29A5 5 0 0 0 13 14.57h-2a5 5 0 0 0-4.61 3.07A8 8 0 0 1 4 12a8.1 8.1 0 0 1 8-8 8.1 8.1 0 0 1 8 8 8 8 0 0 1-2.39 5.64z"></path><path d="M12 6a3.91 3.91 0 0 0-4 4 3.91 3.91 0 0 0 4 4 3.91 3.91 0 0 0 4-4 3.91 3.91 0 0 0-4-4zm0 6a1.91 1.91 0 0 1-2-2 1.91 1.91 0 0 1 2-2 1.91 1.91 0 0 1 2 2 1.91 1.91 0 0 1-2 2z"></path></svg>
                 </div>
                 <h4>Our Mission</h4>
                 <p> our mission is to empower organizations with the tools and insights needed to transform IT governance and risk management. Through our comprehensive suite of solutions. </p>
@@ -65,7 +65,7 @@ const AboutUsBody = () => {
               <div className="col-lg-4 col-md-6 aboutUs-middleParent" >
               <div className="aboutUs-middleChild activeChild">
                 <div className="icons">
-                <i class="fa-solid fa-lightbulb"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9 20h6v2H9zm7.906-6.288C17.936 12.506 19 11.259 19 9c0-3.859-3.141-7-7-7S5 5.141 5 9c0 2.285 1.067 3.528 2.101 4.73.358.418.729.851 1.084 1.349.144.206.38.996.591 1.921H8v2h8v-2h-.774c.213-.927.45-1.719.593-1.925.352-.503.726-.94 1.087-1.363zm-2.724.213c-.434.617-.796 2.075-1.006 3.075h-2.351c-.209-1.002-.572-2.463-1.011-3.08a20.502 20.502 0 0 0-1.196-1.492C7.644 11.294 7 10.544 7 9c0-2.757 2.243-5 5-5s5 2.243 5 5c0 1.521-.643 2.274-1.615 3.413-.373.438-.796.933-1.203 1.512z"></path></svg>
                 </div>
                 <h4>Our Vision</h4>
                 <p>We envision a future where businesses leverage advanced technology to drive success and innovation in a secure, compliant, and efficient manner. </p>

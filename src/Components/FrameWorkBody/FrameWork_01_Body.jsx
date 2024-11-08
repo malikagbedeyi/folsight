@@ -21,8 +21,8 @@ const FrameWork_01_Body = () => {
     <h1>Making Great Things Possible</h1>
     <p>Land from day very fill that midst stars one dominion. Itself was let that divided itself god don't subdue wherein let behold over he whose of sea moved called.</p>
     </div>
+    </div>  
  {/*********************** ISO 27001 ***********************/}
-            </div>  
              <div className="learnMoreProductContainer row">
                 <div className="learnMoreProductContainerParent col-lg-6 topDisplay">
                     <div className="learnMoreProductContainerFristChild" data-aos="fade-in-left" data-aos-delay="500" data-aos-duration="1500">

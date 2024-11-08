@@ -51,10 +51,10 @@
     }
     .auditCover{
         padding: 9% 3% 13% 7%;
-        background: #f9f5fe;
+        background: #f2f2f2;
         height: 100%;
         @include Destop{
-            padding: 9% 3% 9% 7%;
+            padding: 10% 3% 12% 7%;
         }
         @include mobile{
             padding: 20% 7% 10%;
@@ -70,10 +70,10 @@
                     flex-direction: column;
                     height: 100%;
                     margin-top: 10%;
-                    gap: 20px;
+                    gap: 10px;
                     padding-right: 40px;
                     h1{
-                        color: #233d63;
+                        color: #1a2b6d;
                         font-size: 3vw;
                         font-weight: 600;
                         line-height: 1.4;
@@ -85,7 +85,7 @@
                         }
                     }
                     p{
-                        color: #444;
+                        color: #7b8491;
                         font-size: 1vw;
                         font-weight: 500;
                         letter-spacing: .3px;
@@ -105,11 +105,11 @@
                         }
                     }
                     button{
-                        width: 30%;
-                        background-color: #8231EB;
+                        width: 50%;
+                        background-color: #1a2b6d;
                         color: #fff;
                         font-size: 0.9vw;
-                        padding: 15px 5px;
+                        padding: 15px 10px;
                         border: none;
                         display: block;
                         outline: none;
@@ -126,7 +126,7 @@
                                 width: 50%;
                             }
                         &:hover{
-                            background-color:#a96ef7;
+                            background-color:#d41317;
                             color: #fff;
                             border: none;
                             transition: 0.5s ease;
@@ -169,7 +169,7 @@
                     margin-top: 10%;
                     gap: 20px;
                     h1{
-                        color: #233d63;
+                        color: #1a2b6d;
                         font-size: 3vw;
                         font-weight: 600;
                         line-height: 1.4;
@@ -181,18 +181,18 @@
                         }
                     }
                     p{
-                        color: #444;
+                        color: #7b8491;
                         font-size: 15px;
                         font-weight: 500;
                         letter-spacing: .3px;
                         line-height: 1.8;
                     }
                     button{
-                        width: 30%;
-                        background-color: #8231EB;
+                        width: 50%;
+                        background-color: #1a2b6d;
                         color: #fff;
                         font-size: 0.9vw;
-                        padding: 15px 5px;
+                        padding: 15px 10px;
                         border: none;
                         display: block;
                         outline: none;
@@ -209,7 +209,7 @@
                                 width: 50%;
                             }
                         &:hover{
-                            background-color:#a96ef7;
+                            background-color:#d41317;
                             color: #fff;
                             border: none;
                             transition: 0.5s ease;
@@ -271,7 +271,7 @@
                         transition: .3s;
                         transition: .3s;
                         letter-spacing: 1px;
-                      color: #233d63;
+                      color: #1a2b6d;
                       @include mobile{
                         font-size: 1.6rem;
                 }
@@ -330,7 +330,7 @@
     .auditMiddle{
         .auditMiddleTittle{
             text-align: center;
-                    margin:5% auto 3%;
+                    margin:10% auto 3%;
                     max-width: 70%;
                     @include mobile{
                         max-width: 100%;
@@ -340,7 +340,7 @@
                      font-weight: 600;
                      margin-bottom: 20px;
                     transition: .3s;
-              color: #233d63;
+              color: #1a2b6d;
               @include Destop{
                 font-size: 2rem;
               }
@@ -402,7 +402,7 @@
                     left: 50%;
                     width: 0;
                     height: 100%;
-                    border-bottom: 2px solid #8231EB;
+                    border-bottom: 2px solid #1a2b6d;
                     transition: width 0.8s ease-in-out, left 0.8s ease-in-out;
                 }
                 :hover::before {
@@ -414,7 +414,7 @@
                 .auditMiddleChildmiddleTOp{
                 h1 {
                     font-size: 1.3vw;
-                    color: #233d63;
+                    color: #1a2b6d;
                     font-weight: 600;
                     text-align: center;
                     @include Destop {
@@ -455,7 +455,7 @@
         .auditNewsTittle{
             text-align: center;
             h1{
-                color: #233d63;
+                color: #1a2b6d;
                 font-size: 3vw;
                 font-weight: 600;
                 line-height: 1.4;
@@ -507,7 +507,7 @@
                          font-weight: 600;
                         transition: .3s;
                     font-family: 'Poppins', sans-serif;
-                  color: #233d63;
+                  color: #1a2b6d;
                   @include Destop{
                     font-size: 2rem;
                   }
@@ -563,7 +563,7 @@
         .auditNewsTittle{
             text-align: center;
             h1{
-                color: #233d63;
+                color: #1a2b6d;
                 font-size: 3vw;
                 font-weight: 600;
                 line-height: 1.4;
@@ -615,7 +615,7 @@
                          font-weight: 600;
                         transition: .3s;
                     font-family: 'Poppins', sans-serif;
-                  color: #233d63;
+                  color: #1a2b6d;
                   @include Destop{
                     font-size: 2rem;
                   }
@@ -671,7 +671,7 @@
     .auditBenefitTittle{
     text-align: center;
             h1{
-                color: #233d63;
+                color: #1a2b6d;
                 font-size: 3vw;
                 font-weight: 600;
                 line-height: 1.4;
@@ -725,7 +725,7 @@
         h1{
             font-size: 1.4vw;
             font-weight: 600;
-             color: #233d63; 
+             color: #1a2b6d; 
              @include Destop{
                 font-size: 1.5rem;
              }
@@ -762,7 +762,7 @@
             font-size: 15px;
         }
     &:hover{
-        color: #1400c0;
+        color: #1a2b6d;
     }
 }
       }

@@ -14,7 +14,7 @@ const FrameWork02 = () => {
       {/* <Navbar /> */}
       <TOpbar />
       <CoverFrame_02 />
-      <FrameWorkForm />
+      {/* <FrameWorkForm /> */}
       <FrameWork_02_Body />
       <Footer />
     </div>

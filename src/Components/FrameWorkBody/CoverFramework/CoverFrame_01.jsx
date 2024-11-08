@@ -5,6 +5,7 @@ import img3 from "../../../assets/Images/shape-sq.png"
 import img4 from "../../../assets/Images/shape-c-2.png"
 import img5 from '../../../assets/Images/Icons1-2/5.png'
 import '../../../assets/scss/FrameWork/CoverFrameWork/coverPages.scss'
+import FrameWorkForm from '../../../page/FrameWork/FrameWorkForm'
 const CoverFrame_01 = () => {
   return (
     <div className="coverPage">
@@ -15,18 +16,17 @@ const CoverFrame_01 = () => {
                 <img class="shape shape-5 " src={img3} alt="" />
                 <img class="shape shape-6 " src={img4}  alt="" />
             </div>
-        <div className="coverTopbarContainer container">
-            <div className="coverTopbarParent">
+        <div className="coverTopbarContainer  row">
+            <div className="coverTopbarParent col-lg-5">
                 <div className="coverTopbarChild">
-                    <h1>FrameWork</h1>
-                    <p>Go fifth signs dry sea created greater</p>
+                    <h1>ISO27001</h1>
+                    <div className="border-line"></div>
+                    <p>an international standard for managing information security. It provides a framework for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS). </p>
                 </div>
             </div>
-            <div className="coverTopbarParentLeft">
+            <div className="coverTopbarParentLeft col-lg-7">
                 <div className="coverTopbarChildLeft">
-                    <p>Home -</p>
-                    <img src={img5} alt="" />
-                    <span>ISO27001</span> 
+                    <FrameWorkForm />
                 </div>
             </div>
         </div>

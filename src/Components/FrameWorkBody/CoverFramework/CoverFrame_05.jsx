@@ -5,9 +5,10 @@ import img3 from "../../../assets/Images/shape-sq.png"
 import img4 from "../../../assets/Images/shape-c-2.png"
 import img5 from '../../../assets/Images/Icons1-2/8.png'
 import '../../../assets/scss/FrameWork/CoverFrameWork/coverPages.scss'
+import FrameWorkForm from '../../../page/FrameWork/FrameWorkForm'
 const CoverFrame_05 = () => {
   return (
-    <div className="coverPage"  style={{ backgroundImage: `url(${require('../../../assets/Images/ImageBlog/01.jpg')})` }}>
+    <div className="coverPage"  style={{ backgroundImage: `url(${require('../../../assets/Images/ImageBlog/02.jpg')})` }}>
         <div className="coverIndex"></div>
     <div class="shape-slider">
                 <img class="shape shape-2  " src={img1} alt="" />
@@ -15,18 +16,17 @@ const CoverFrame_05 = () => {
                 <img class="shape shape-5 " src={img3} alt="" />
                 <img class="shape shape-6 " src={img4}  alt="" />
             </div>
-        <div className="coverTopbarContainer container">
-            <div className="coverTopbarParent">
+        <div className="coverTopbarContainer row">
+            <div className="coverTopbarParent col-lg-5">
                 <div className="coverTopbarChild">
-                    <h1>FrameWork</h1>
-                    <p>Go fifth signs dry sea created greater</p>
+                    <h1>NIST</h1>
+                    <div className="border-line"></div>
+                    <p>provides cybersecurity standards and guidelines. Its Cybersecurity Framework helps organizations assess and improve their ability to prevent, detect, and respond to cyber threats.</p>
                 </div>
             </div>
-            <div className="coverTopbarParentLeft">
-                <div className="coverTopbarChildLeft">
-                   <p>Home -</p>
-                    <img src={img5} alt="" />
-                    <span>NIST</span> 
+            <div className="coverTopbarParentLeft col-lg-7">
+                <div className="coverTopbarChildLeft ">
+                 <FrameWorkForm />
                 </div>
             </div>
         </div>

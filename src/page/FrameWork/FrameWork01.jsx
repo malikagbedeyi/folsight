@@ -25,7 +25,7 @@ const FrameWork01 = () => {
       <TOpbar  HandleScroll = {scrollY}/>
       {/* <Navbar /> */}
       <CoverFrame_01 />
-      <FrameWorkForm />
+      {/* <FrameWorkForm /> */}
       <FrameWork_01_Body />
       <Footer />
     </div>

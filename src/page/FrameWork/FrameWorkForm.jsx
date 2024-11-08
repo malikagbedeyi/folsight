@@ -116,7 +116,7 @@ const [icontoggle , setIconToggle] = useState(false)
                        autoFocus: true,
                      }}
                    />
-                 {!isValid && <p style={{ color: 'red' }}>Please enter a valid 10-digit phone number.</p>}
+                 {!isValid && <p style={{ color: 'red' }}>Incorrect Phone No.</p>}
                         </div>
                          <div className="rightwrapper">
                         <label for="name">Job title <span>**</span></label>
@@ -129,6 +129,7 @@ const [icontoggle , setIconToggle] = useState(false)
                          </div>
                          <label for="name">Company Location <span>**</span></label>
                         <div className={icontoggle ? "selectOption":"nonselectOption"}>
+
                         <div className="inputContainer">
                         <input className="dropdown"
                        value={selectedCountry}

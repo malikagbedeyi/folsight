@@ -41,7 +41,7 @@
    */
    .spinner{
     border: 16px solid #f3f3f3;
-  border-top: 16px solid #8231EB; 
+  border-top: 16px solid #1a2b6d;
   display: flex;
   justify-content: center; /* Ensures the content is centered */
   align-items: center; /* Ensures the content is vertically centered */
@@ -66,7 +66,7 @@
 
 @keyframes border-color-change {
   0% {
-    border-top-color: #8231EB;
+    border-top-color: #1a2b6d;
     border-right-color: #f3f3f3;
     border-bottom-color: #f3f3f3;
     border-left-color: #f3f3f3;
@@ -75,22 +75,22 @@
     border-top-color: #f3f3f3;
     border-right-color: #f3f3f3;
     border-bottom-color: #f3f3f3;
-    border-left-color: #8231EB;
+    border-left-color: #1a2b6d;
   }
   50% {
     border-top-color: #f3f3f3;
     border-right-color: #f3f3f3;
-    border-bottom-color: #8231EB;
+    border-bottom-color: #1a2b6d;
     border-left-color: #f3f3f3;
   }
   75% {
     border-top-color: #f3f3f3;
-    border-right-color: #8231EB;
+    border-right-color: #1a2b6d;
     border-bottom-color: #f3f3f3;
     border-left-color: #f3f3f3;
   }
   100% {
-    border-top-color: #8231EB;
+    border-top-color: #1a2b6d;
     border-right-color: #f3f3f3;
     border-bottom-color: #f3f3f3;
     border-left-color: #f3f3f3;
@@ -98,7 +98,7 @@
 }
 @-webkit-keyframes border-color-change {
   0% {
-    border-top-color: #8231EB;
+    border-top-color: #1a2b6d;
     border-right-color: #f3f3f3;
     border-bottom-color: #f3f3f3;
     border-left-color: #f3f3f3;
@@ -107,22 +107,22 @@
     border-top-color: #f3f3f3;
     border-right-color: #f3f3f3;
     border-bottom-color: #f3f3f3;
-    border-left-color: #8231EB;
+    border-left-color: #1a2b6d;
   }
   50% {
     border-top-color: #f3f3f3;
     border-right-color: #f3f3f3;
-    border-bottom-color: #8231EB;
+    border-bottom-color: #1a2b6d;
     border-left-color: #f3f3f3;
   }
   75% {
     border-top-color: #f3f3f3;
-    border-right-color: #8231EB;
+    border-right-color: #1a2b6d;
     border-bottom-color: #f3f3f3;
     border-left-color: #f3f3f3;
   }
   100% {
-    border-top-color: #8231EB;
+    border-top-color: #1a2b6d;
     border-right-color: #f3f3f3;
     border-bottom-color: #f3f3f3;
     border-left-color: #f3f3f3;

@@ -29,39 +29,20 @@ import FrameWorkPage_03 from './Components/FrameWorkPage/FrameWorkPage_03';
 function AppContent() {
   const [loading, setLoading] = useState(false);
   const location = useLocation();
-
   useEffect(() => {
-    setLoading(true); // Show loading spinner
-
+    setLoading(true); // Show loading spinner immediately
     const timeout = setTimeout(() => {
       setLoading(false); // Hide loading spinner after content is ready
-    }, 2000); // Adjust timeout as needed
+    }, 1500);
 
-    return () => clearTimeout(timeout); // Clean up timeout
-  }, [location.pathname]); // Trigger on route change
-  // return (
-  //   <div className="App">
-  // <HashRouter>
-  //   <ScrollToTop />
-  //   <Routes>
-  //     <Route path='/' element={<Home />} />
-  //     <Route path='/request-demo' element={<RequestDemo />} />
-  //     <Route path='/login' element={<Login />} />
-  //     <Route path='/register' element={<Register />} />
-  //     <Route path='/framework_01' element={<FrameWork01 />} />
-  //     <Route path='/framework_02' element={<FrameWork02 />} />
-  //     <Route path='/framework_03' element={<FrameWork03 />} />
-  //     <Route path='/framework_04' element={<FrameWork04 />} />
-  //     <Route path='/framework_05' element={<FrameWork05 />} />
-  //     <Route path='/about_us' element={<AboutUs />} />
-  //     </Routes>
-  //     </HashRouter>
-  //   </div>
-  // );
+    return () => clearTimeout(timeout);
+  }, [location.pathname]);
+
   return (
     <>
-      {loading && <LoadingSpinner />}
-
+      {loading ? (
+        <LoadingSpinner /> // Show only the spinner until loading is complete
+      ) : (
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/audit_room' element={<AuditRoom />} />
@@ -87,7 +68,9 @@ function AppContent() {
         <Route path='/frameworkPage_03' element={<FrameWorkPage_03 />} />
         <Route path='/seeall' element={<SeeAllPage />} />
       </Routes>
+      )}
     </>
+      
   );
 }
 
@@ -109,7 +92,6 @@ function App() {
     </div>
   );
 }
-
 export default App;
 // git add .
 // git commit -m "Your commit message"

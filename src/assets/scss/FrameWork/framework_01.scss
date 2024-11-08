@@ -44,7 +44,7 @@
     .frameworkBody{
         width: 100%;
         padding:  0 0;
-        margin: 0;
+        margin: 10% 0 0;
             align-items: center;
             text-align: center;
             @include tablet{
@@ -54,6 +54,7 @@
             .container{
                 .learnMoreTittle{
                     padding: 0 20%;
+                    display: none;
                     @include tablet{
                         padding:0 2%;
                 }

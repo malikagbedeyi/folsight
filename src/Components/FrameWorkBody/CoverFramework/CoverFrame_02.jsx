@@ -5,6 +5,7 @@ import img3 from "../../../assets/Images/shape-sq.png"
 import img4 from "../../../assets/Images/shape-c-2.png"
 import img5 from '../../../assets/Images/Icons1-2/6.png'
 import '../../../assets/scss/FrameWork/CoverFrameWork/coverPages.scss'
+import FrameWorkForm from '../../../page/FrameWork/FrameWorkForm'
 const CoverFrame_02 = () => {
   return (
     <div className="coverPage"  style={{ backgroundImage: `url(${require('../../../assets/Images/ImageBlog/02.jpg')})` }}>
@@ -15,18 +16,17 @@ const CoverFrame_02 = () => {
                 <img class="shape shape-5 " src={img3} alt="" />
                 <img class="shape shape-6 " src={img4}  alt="" />
             </div>
-        <div className="coverTopbarContainer container">
-            <div className="coverTopbarParent">
+        <div className="coverTopbarContainer row">
+            <div className="coverTopbarParent col-lg-5">
                 <div className="coverTopbarChild">
-                    <h1>FrameWork</h1>
-                    <p>Go fifth signs dry sea created greater</p>
+                    <h1>HIPAA</h1>
+                    <div className="border-line"></div>
+                    <p>HIPAA is a U.S. federal law that sets standards for protecting sensitive patient health information. It applies to healthcare providers, insurers, and their business associates, ensuring confidentiality, integrity, and availability of patient data.</p>
                 </div>
             </div>
-            <div className="coverTopbarParentLeft">
+            <div className="coverTopbarParentLeft col-lg-7">
                 <div className="coverTopbarChildLeft">
-                      <p>Home -</p>
-                    <img src={img5} alt="" />
-                    <span>HIPAA</span>
+                     <FrameWorkForm />
                 </div>
             </div>
         </div>

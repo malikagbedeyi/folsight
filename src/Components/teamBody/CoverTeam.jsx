@@ -5,6 +5,7 @@ import img3 from "../../assets/Images/shape-sq.png"
 import img4 from "../../assets/Images/shape-c-2.png"
 import img5 from '../../assets/Images/Icons1-2/5.png'
 import '../../assets/scss/FrameWork/CoverFrameWork/coverPages.scss'
+import FrameWorkForm from '../../page/FrameWork/FrameWorkForm'
 
 const CoverTeam = () => {
     return (
@@ -16,17 +17,16 @@ const CoverTeam = () => {
                     <img class="shape shape-5 " src={img3} alt="" />
                     <img class="shape shape-6 " src={img4}  alt="" />
                 </div>
-            <div className="coverTopbarContainer container">
-                <div className="coverTopbarParent">
+            <div className="coverTopbarContainer row">
+                <div className="coverTopbarParent col-lg-5">
                     <div className="coverTopbarChild">
                         <h1>Team</h1>
-                        <p>Go fifth signs dry sea created greater</p>
+                        <p> Meet Our Team At Folsight, our team is the backbone of our commitment to protecting your assets and information. With years of expertise across cybersecurity, compliance, and risk management, our professionals are dedicated to anticipating and addressing today’s most complex security challenges. From initial assessments to proactive monitoring, our team is here to protect what matters most to you, 24/7.</p>
                     </div>
                 </div>
-                <div className="coverTopbarParentLeft">
+                <div className="coverTopbarParentLeft col-lg-7">
                     <div className="coverTopbarChildLeft">
-                        <p>Home -</p>
-                        <span>Team</span> 
+                        <FrameWorkForm />
                     </div>
                 </div>
             </div>

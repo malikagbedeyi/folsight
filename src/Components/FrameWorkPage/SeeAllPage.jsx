@@ -38,7 +38,7 @@ const SeeAllPage = ({page}) => {
       </div>
       <div className="seeallBody">
       <div className="container">
-        <div className="seeallTittle">  <h1>Organization & Group Management</h1></div>
+        <div className="seeallTittle"><h1>Organization & Group Management</h1></div>
         <div className="seeallLink">
         {/* onClick={() => handlePage(2)} className={page === 2 ? 'activeli' : ''} */}
             <ul>

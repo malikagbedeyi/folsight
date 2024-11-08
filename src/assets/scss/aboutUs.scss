@@ -63,7 +63,7 @@
     .about-usBody{
         margin: 5% 0;
         .about-us-topContainer{
-            background: #f9f5fe;
+            background: #f2f2f2;
             padding: 7% 0;
             @include tablet{
                 padding: 15% 0;
@@ -84,7 +84,7 @@
                     }
                     .bodyChildright{
                         height: 100%;
-                        color: #8231EB;
+                        color: #1a2b6d;
                         padding:0 7%;
                         margin-top: 3%;
                         display: flex;
@@ -99,10 +99,9 @@
                             margin-top: 10%;
                         }
                         h1{
-                            color: #8231EB;
+                            color: #1a2b6d;
                             font-weight: 700;
                             font-size: 2.3vw;
-                            font-family: "Ubuntu", sans-serif;
                             letter-spacing: 1px;
                             transition: .3s;
                             @include Destop{
@@ -120,7 +119,7 @@
                             @include Destop{
                                 font-size: 15px;
                                 line-height: 28px;
-                                max-width: 90%;
+
                             }
                             @include tablet{
                                 max-width: 100%;
@@ -143,8 +142,8 @@
                        }
                         button{
                             width: 30%;
-                            margin-top: 2%;
-                            background: #8231EB;
+
+                            background: #1a2b6d;
                             padding: 15px 0;
                             border: none;
                             color: #fff;
@@ -164,9 +163,9 @@
                                width: 50%;
                             }
                             &:hover{
-                                border: 1px solid #8231EB;
+                                border: 1px solid #d41317;
                                 background: #fff;
-                                color: #8231EB;
+                                color: #d41317;
                                 transition: .3s;
                             }
                         }
@@ -199,22 +198,44 @@
                             padding: 50px 35px;
                             transition: .3s;
                             height: 100%;
-                        
+                            transition: .3s;
+                            &:hover{
+                                box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
+                                background: #fff;
+                                transition: all .3s ease-out;
+                                transition: .3s;
+                                @include tablet{
+                                box-shadow: none;
+                                }
+                            }
                             .icons{
                                height: 50px;
                                 width: 50px;
                                 border-radius: 50%;
                                 line-height: 50px;
-                                background: #8231EB;
+                                background: #1a2b6d;
                                 color: #fff;
                                 text-align: center;
                                 margin:0 auto;
-                                i{
-                                    font-size: 20px;
+                                transition: .3s;
+                                &:hover{
+                                    background:#f2f2f2;
+                                    border: 1px solid #d41317;
+                                    transition: .3s;
+                                }
+                                svg{
+                                    width: 80%;
+                                    height: 80%;
+                                    align-items: center;
+                                    margin: auto;
+                                    fill: #f2f2f2;
+                                    &:hover{
+                                        fill:#d41317;
+                                    }
                                 }
                             }
                             h4{
-                                color: #233d63;
+                                color: #1a2b6d;
                                 font-size: 1.5vw;
                                 font-weight: 600;
                                 margin: 0;
@@ -234,28 +255,14 @@
                                     line-height: 25px;
                                 }
                         }
-                            &:hover{
-                                box-shadow: 0px 20px 40px 0px rgba(0, 23, 88, 0.2);
-                                background: #fff;
-                                transition: all .3s ease-out;
-                                color: #ddd;
-                                transition: .3s;
-                                @include tablet{
-                                box-shadow: none;
-                                }
-                                .icons{
-                                    background:#8231EB ;
-                                    color: #fff;
-                                }
-                            }
                         }
                     }
                 }
                 button{
-                  padding: 10px;
+                  padding: 10px 20px;
                   background: inherit;
-                  color: #7b8491;
-                  border: 1px solid #8231EB;
+                  color: #f2f2f2;
+                  background: #1a2b6d;
                   display: flex;
                   margin:4% auto 0;
                   transition: .3s;
@@ -264,8 +271,9 @@
                 }
                   &:hover{
                     transition: .3s;
-                    background: #8231EB;
-                    color: #fff;
+                    background: #f2f2f2;
+                    color: #1a2b6d;
+                    border: 1px solid #d41317;
                   }
             }
         }
@@ -280,7 +288,7 @@
                     margin:3% 10% ;
                     h1{
                         padding: 0;
-                        color: #233d63;
+                        color: #1a2b6d;
                             font-weight: 700;
                             font-size: 2.3vw;
                             @include Destop{
@@ -298,7 +306,7 @@
                     margin: 3% 10%;
                     h1{
                         padding: 0;
-                        color: #233d63;
+                        color: #1a2b6d;
                             font-weight: 700;
                             font-size: 2.3vw;
                             @include Destop{
@@ -339,7 +347,7 @@
                                     height: 50px;
                                     line-height: 50px;
                                     border-radius: 50%;
-                                    background: #8231EB;
+                                    background: #1a2b6d;
                                     text-align: center;
                                 }
                             }
@@ -347,7 +355,7 @@
                                 flex: 8;
                                 h3{
                                     font-size: 1.1vw;
-                                    color: #233d63;
+                                    color: #1a2b6d;
                                     font-weight: 600;
                                     @include Destop{
                                         font-size: 1.1rem;
@@ -414,7 +422,7 @@
                     h1{
                         text-decoration: none;
                         margin: 0;
-                        color: #233d63;
+                        color: #1a2b6d;
                         font-size: 2.5vew;
                         font-weight: bold;
                         text-transform: capitalize;
@@ -430,7 +438,8 @@
                     .aboutUs-footerParent{
                         .aboutUs-footerChild{
                             margin-top: 30px;
-                            background-image: -webkit-linear-gradient( 0deg, rgb(0,0,184) 0%, rgb(115,0,233) 100%);
+                            background: #1a2b6d;
+                            color: #fff;
                             padding: 50px ;
                             display: -webkit-box;
                             display: -ms-flexbox;
@@ -442,6 +451,11 @@
                             align-items: center;
                             -webkit-transition: all 500ms ease;
                             transition: all 500ms ease;
+                            // &:hover{
+                            //     background: #f2f2f2;
+                            //     border: 1px solid #d41317;
+                            //     color: #1a2b6d;
+                            // }
                             .leftfooterChild{
                                 flex: 1;
                                 img{
@@ -453,7 +467,6 @@
                                 h1{
                                         text-decoration: none;
                                         margin: 0;
-                                        color: #fff;
                                         font-size: 1.5rem;
                                         font-weight: bold;
                                         text-transform: capitalize;
@@ -476,13 +489,18 @@
                             transition: all 500ms ease;
                             button{
                                 border: none;
-                                background-image: -webkit-linear-gradient( 0deg, rgb(0,0,184) 0%, rgb(115,0,233) 100%);
+                                background: #1a2b6d;
                                 color: #fff;
                                 font-weight: 500;
                                 padding: 20px 30px;
                                 border-radius: 10px;
                                 transition: all 500ms ease;
                                 font-size: 15px;
+                                &:hover{
+                                    background: #f2f2f2;
+                                    border: 1px solid #d41317;
+                                    color: #1a2b6d;
+                                }
                             }
                         }
                     }

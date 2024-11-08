@@ -8,7 +8,7 @@ import '../../assets/scss/FrameWork/CoverFrameWork/coverPages.scss'
 
 const CoverPlans = () => {
     return (
-        <div className="coverPage">
+        <div className="coverPage" style={{height:"90vh"}}>
             <div className="coverIndex"></div>
         <div class="shape-slider">
                     <img class="shape shape-2  " src={img1} alt="" />
@@ -16,17 +16,16 @@ const CoverPlans = () => {
                     <img class="shape shape-5 " src={img3} alt="" />
                     <img class="shape shape-6 " src={img4}  alt="" />
                 </div>
-            <div className="coverTopbarContainer container">
-                <div className="coverTopbarParent">
-                    <div className="coverTopbarChild">
-                        <h1>Plans</h1>
-                        <p>Go fifth signs dry sea created greater</p>
-                    </div>
+                <div className="coverTopbarContainer row">
+            <div className="coverTopbarParent col-lg-5">
+                <div className="coverTopbarChild">
+                    <h1>Contact Us</h1>
+                    <p>Choose from our tailored security plans designed to meet the unique needs of businesses of all sizes. Each plan offers a different level of protection, so you can find the right fit for your organization.</p>
                 </div>
-                <div className="coverTopbarParentLeft">
+            </div>
+            <div className="coverTopbarParentLeft col-lg-7">
                     <div className="coverTopbarChildLeft">
-                        <p>Home -</p>
-                        <span>plans</span> 
+
                     </div>
                 </div>
             </div>

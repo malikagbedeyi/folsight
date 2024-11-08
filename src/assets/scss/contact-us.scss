@@ -45,7 +45,7 @@
                 font-weight: 600;
                 transition: .3s;
                 font-family: 'Poppins', sans-serif;
-              color: #233d63; 
+              color: #1a2b6d; 
               margin-bottom: 2%;
               @include Destop{
                 font-size: 2.5rem;
@@ -86,7 +86,7 @@
                 margin: 0;
                 .contactBodyAdressParentChild{
                     height: 100%;
-                    background: #8231EB;
+                    background: #1a2b6d;
                     padding: 40px 40px;
                     @include tablet{
                         padding:  20px;
@@ -243,7 +243,7 @@
                             font-size: 0.9vw;
                           }
                         button{
-                            background: #8231EB;
+                            background: #1a2b6d;
                             border-radius: 5px;
                             padding: 12px 35px;
                             color: #fff;
@@ -254,9 +254,9 @@
                             border: none;
 
                             &:hover{
-                                border: 1px solid #8231EB;
+                                border: 1px solid #d41317;
                                 background: #fff;
-                                color: #8231EB;
+                                color: #1a2b6d;
                             }
                         }
                 }
