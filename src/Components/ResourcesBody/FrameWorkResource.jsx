@@ -2,7 +2,12 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const FrameWorkResource = ({page}) => {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    const handleClick = () => {
+        window.open(`${window.location.origin}/#/frameworkPage`, "_blank", "noopener,noreferrer");
+      };
+      
+
   return (
     <div className= {page === 3 ?  "rightbar" : "nonrightbar" }>
     <div className="rightbarContainer">
@@ -13,7 +18,7 @@ const FrameWorkResource = ({page}) => {
                     <h1>IS027001</h1>
                     <p>ensures that organizations implement comprehensive information security management to protect sensitive data.</p>
                     </div>
-                    <button onClick={() => navigate('/frameworkPage')}>Learn More</button>
+                    <button onClick={handleClick}>Learn More</button>
                     </div>
                 </div>
         </div>
@@ -24,7 +29,7 @@ const FrameWorkResource = ({page}) => {
                     <h1>HIPAA</h1>
                     <p> regulates the protection of healthcare information, ensuring patient privacy and secure medical data handling.</p>
                     </div>
-                    <button onClick={() => navigate('/frameworkPage')}>Learn More</button>
+                    <button onClick={handleClick}>Learn More</button>
                     </div>
                 </div>
         </div>
@@ -46,7 +51,7 @@ const FrameWorkResource = ({page}) => {
                     <h1>GDPR</h1>
                     <p>enforces strict data protection laws for individuals in the EU, giving users control over their personal information.</p>
                     </div>
-                    <button onClick={() => navigate('/frameworkPage')}>Learn More</button>
+                    <button onClick={handleClick}>Learn More</button>
                     </div>
                 </div>
         </div>
@@ -57,7 +62,7 @@ const FrameWorkResource = ({page}) => {
                     <h1>NIST</h1>
                     <p>provides a cybersecurity framework with best practices to help organizations protect against evolving cyber threats.</p>
                     </div>
-                    <button onClick={() => navigate('/frameworkPage')}>Learn More</button>
+                    <button onClick={handleClick}>Learn More</button>
                     </div>
                 </div>
         </div>
@@ -68,7 +73,7 @@ const FrameWorkResource = ({page}) => {
                     <h1>PCI DSS</h1>
                     <p>sets standards to ensure the secure processing, storage, and transmission of payment card information, protecting against fraud and breaches.</p>
                     </div>
-                    <button onClick={() => navigate('/frameworkPage')}>Learn More</button>
+                    <button onClick={handleClick}>Learn More</button>
                     </div>
                 </div>
         </div>

@@ -3,6 +3,10 @@ import { useNavigate } from 'react-router-dom'
 
 const ProductReasource = ({page}) => {
     const navigate = useNavigate()
+    const handleClick = () => {
+        window.open(`${window.location.origin}/#/frameworkPage`, "_blank", "noopener,noreferrer");
+      };
+      
   return (
     <div className= {page === 1 ?  "rightbar" : "nonrightbar" }>
     <div className="rightbarContainer">
@@ -13,7 +17,7 @@ const ProductReasource = ({page}) => {
                     <h1>Audit Room</h1>
                     <p>Audit room supports both internal and external audits end-to-end, including annual internal audit planning.</p>
                     </div>
-                    <button onClick={() => navigate('/frameworkPage')}>Learn More</button>
+                    <button onClick={handleClick}>Learn More</button>
                     </div>
                 </div>
         </div>
