@@ -67,8 +67,7 @@
                             font-size: 1.6rem;
                             font-weight: 700;
                             transition: .3s;
-                            font-family: 'Poppins', sans-serif;
-                          color: #233d63; 
+                          color: #1a2b6d; 
                           margin-bottom: 5%;
                           transition: .3s;
                           @include mobile{
@@ -79,7 +78,7 @@
                             font-size: 15px;
                             font-weight: 600;
                             line-height: 28px;
-                            color: #8231EB;
+                            color: #1a2b6d;
                             margin-bottom: 5%;
                             transition: .3s;
                             @include mobile{
@@ -91,7 +90,7 @@
                             font-size: 15px;
                             font-weight: 600;
                             line-height: 28px;
-                            color: #8231EB;
+                            color: #1a2b6d;
                             margin-bottom: 5%;
                             transition: .3s;
                             @include mobile{
@@ -103,7 +102,7 @@
                         margin-bottom: 30px;
                         .input-action{
                         label{
-                            color: #222;
+                            color: #1a2b6d;
                             display: block;
                             cursor: pointer;
                             font-size: 14px;
@@ -114,7 +113,7 @@
                           }
 
                             span{
-                                color: #8231EB;
+                                color: #d41317;
                             }
                         }
                         input{
@@ -179,7 +178,7 @@
                         }
                         .login-btn{
                             text-align: center;
-                            background: #8231EB;
+                            background: #1a2b6d;
                             color: #fff;
                             border: 0;
                             padding: 17px 40px;
@@ -196,16 +195,24 @@
                                 padding: 13px 30px;
                                 border-radius: 0 10px;
                             }
+                            &:hover{
+                                background: #f2f2f2;
+                                color: #d41317;
+                                border:  1px solid #d41317;
+                            }
                         }
                           .signUp{
                             font-weight: 500;
                             @include mobile{
                                 margin: 10% 0 0;
                             }
+                            span{
+                                color: #d41317;
+                            }
                             .login-text-btn{
                                 border: 0;
                                 background: none;
-                                color: #8231EB;;
+                                color: #1a2b6d;;
                                 outline: medium none;
                                 @include mobile{
                                     margin: 5px 0 0;

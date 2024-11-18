@@ -23,7 +23,7 @@ const CoverLogin = () => {
             </div>
             <div className="coverTopbarParentLeft">
                 <div className="coverTopbarChildLeft">
-                    <p>Home - <span>Login</span> </p>
+
                 </div>
             </div>
         </div>

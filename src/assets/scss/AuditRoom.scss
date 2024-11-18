@@ -36,9 +36,16 @@
 *{
     list-style: none;
     text-decoration: none;
-    font-family: "Montserrat", sans-serif!important;
     font-style: normal;
-}
+
+    font-family:Arial, Helvetica, sans-serif!important;
+    h1{
+        font-family: "poppins", serif!important;
+    }
+    // p{
+    //     font-family: "Montserrat", serif!important;
+    // }
+   }
 @keyframes movingIcon {
     from  {transform: translateY(100px);}
     to  {transform: translateY(0px);}
@@ -71,7 +78,7 @@
                     height: 100%;
                     margin-top: 10%;
                     gap: 10px;
-                    padding-right: 40px;
+                    padding-right: 0px;
                     h1{
                         color: #1a2b6d;
                         font-size: 3vw;
@@ -89,6 +96,7 @@
                         font-size: 1vw;
                         font-weight: 500;
                         letter-spacing: .3px;
+                        max-width: 550px;
                         line-height: 1.9;
                            @include Destop{
                          font-size: 15px;
@@ -105,7 +113,7 @@
                         }
                     }
                     button{
-                        width: 50%;
+                        width: 40%;
                         background-color: #1a2b6d;
                         color: #fff;
                         font-size: 0.9vw;
@@ -506,7 +514,6 @@
                             font-size: 2.3vw;
                          font-weight: 600;
                         transition: .3s;
-                    font-family: 'Poppins', sans-serif;
                   color: #1a2b6d;
                   @include Destop{
                     font-size: 2rem;
@@ -523,6 +530,7 @@
                             transition: .3s;
                             font-weight: 500;
                             text-align: left;
+                            font-family: "Lato", sans-serif!important;
                             @include FullHd{
                                 max-width: 700px;
                             }
@@ -672,12 +680,12 @@
     text-align: center;
             h1{
                 color: #1a2b6d;
-                font-size: 3vw;
+                font-size: 2.5vw;
                 font-weight: 600;
                 line-height: 1.4;
                  margin: 0;
                    @include Destop{
-                     font-size: 2.5rem;
+                     font-size: 2rem;
                  }
                 @include mobile{
                     font-size: 30px;
@@ -723,11 +731,11 @@
         gap: 10px;
         text-align: center;
         h1{
-            font-size: 1.4vw;
+            font-size: 1.2vw;
             font-weight: 600;
              color: #1a2b6d; 
              @include Destop{
-                font-size: 1.5rem;
+                font-size: 1.2rem;
              }
              @include tablet{
                 font-size: 1.5rem;
@@ -739,6 +747,7 @@
             color: #7b8491;
             transition: .3s;
             font-weight: 500;
+            font-family: "Lato", serif!important;
               @include Destop{
                 font-size: 16px;
                 line-height: 25px;
@@ -802,7 +811,8 @@
             margin-left: 40%;
             margin-top: -1%;
             padding: 20px 50px;
-            background-image: -webkit-linear-gradient( 0deg, rgb(0,0,184) 0%, rgb(115,0,233) 100%);
+            background: #1a2b6d;
+            //background-image: -webkit-linear-gradient( 0deg, rgb(0,0,184) 0%, rgb(115,0,233) 100%);
             border-radius: 5px;
             color: #fff;
             text-transform: uppercase;
@@ -810,11 +820,17 @@
             font-weight: 500;
             font-size: 1vw;
             letter-spacing: 1px;
+            transition: .3s;
             @include Destop{
                 font-size: 14px;
             }
              @include mobile{
                   margin: 0;
+            }
+            &:hover{
+                background: #f2f2f2;
+                color: #d41317;
+                border: 1px solid #d41317;
             }
         }
     }

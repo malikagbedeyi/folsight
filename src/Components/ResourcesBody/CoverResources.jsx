@@ -25,7 +25,7 @@ const CoverResources = () => {
                 </div>
                 <div className="coverTopbarParentLeft">
                     <div className="coverTopbarChildLeft">
-                        <p>Home -  <span >Resources</span> </p>
+
                        
                     </div>
                 </div>
