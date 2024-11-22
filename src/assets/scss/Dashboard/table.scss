@@ -1,0 +1,103 @@
+
+@mixin mobile {
+    @media screen and (max-width:580px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width:980px) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media screen and (max-width:1190px) {
+        @content;
+    }
+}
+@mixin Destop {
+    @media screen and (max-width:1240px) {
+        @content;
+    }
+}
+
+.data-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: Arial, sans-serif;
+
+  .table-header,
+  .table-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 3fr 2fr 2fr 1fr 2fr;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .table-header {
+    font-weight: 500;
+    background-color: #f8f8f8;
+    color: #000957;
+    font-size: 13px;
+    text-align: center;
+    font-style:italic;
+    font-family: sans-serif;
+    margin: 10px 0;
+    padding: 20px 0;
+  }
+
+  .table-body {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .table-row {
+      display: grid;
+      grid-template-columns: 1fr 2fr 2fr 3fr 2fr 2fr 1fr 2fr;
+      gap: 1rem;
+      padding: 0.75rem 1rem;
+      background-color: #fff;
+        background-color: #f4f4f4;
+        color: #263238;
+        font-size: 14px;
+        text-align: center;
+        align-items: center;
+        margin: 7px 0;
+        font-weight: 400;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+      .status {
+        display: flex;
+        gap: 5px;
+        p{
+          color: #263238;
+        }
+        span{
+          color: #ffa500;
+        }
+      }
+      .action-link {
+        color: #007bff;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .action-icons {
+        display: flex;
+        gap: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        a {
+          cursor: pointer;
+          color: #373F41;
+          .box-icon {
+            width: 22px;
+            height: 22px;
+          }
+        }
+      }
+    }
+  }
+}

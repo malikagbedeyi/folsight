@@ -1,0 +1,413 @@
+@mixin mobile {
+    @media screen and (max-width:580px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width:980px) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media screen and (max-width:1190px) {
+        @content;
+    }
+}
+@mixin Destop {
+    @media screen and (max-width:1440px) {
+        @content;
+    }
+}
+@mixin FullHd {
+    @media screen and (max-width:2784px) {
+        @content;
+    }
+}
+@keyframes movingLeft {
+    from{transform: translate(-10px);}
+    to{transform: translate(0px);}
+}
+*{
+    font-family: "Roboto" sans-serif;
+}
+
+
+
+@keyframes movingRight {
+    from{transform: translate(10px);}
+    to{transform: translate(0px);}
+}
+
+@keyframes movingLeft {
+    from{transform: translate(-10px);}
+    to{transform: translate(0px);}
+}
+
+.sidebar{
+    transition: width 0.3s ease;
+    .expandSide{
+        width: 300px;
+    }
+    .closeSide{
+        width: 300px;
+    }
+    .sidebarContainer{
+        display: flex;
+        flex: 1;
+        width: inherit;
+        height: 100vh;
+        overflow-y: auto;
+        background: #FBE4FF;  
+        padding: 20px 10px 20px 0;
+        position: relative;  
+        -ms-overflow-style: none; 
+        scrollbar-width: none;   
+        animation: movingLeft 0.4s;
+        &::-webkit-scrollbar {
+            display: none;
+          }
+        .toggle{
+            background: #fff;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            line-height: 50px;
+            position: absolute;
+            top: 5px;
+            right: -5%;
+            z-index: 999;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            transition: .3s;
+            .icons{
+               display: flex;
+               align-items: center;
+                justify-content: center;
+                margin: auto;
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                transition: .3s;
+                .svg{
+                    color: #7F39F2;
+                    font-size: 30px;
+                }
+        }
+        .open{
+            opacity: 1;
+            visibility: visible;
+        }
+        .close{
+            opacity: 0;
+            visibility: hidden;
+        }
+    
+    }  
+        .sidebarParent{
+            width: 100%;
+            .sidebarLogo{
+                display: flex;
+                align-items: center;
+                gap: 18px;
+                padding: 20px 24px;
+                .folsightLogoImg{
+                    img{
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 6px 0px 0px 0px;                    
+                        border-radius: 3px;
+                    }
+                }
+                .folsightLogoTittle{
+                    p{
+                        font-size: 24px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        letter-spacing: 0.75px;
+                        text-align: center;
+                        margin: auto 0;
+                        color: 192434;
+                        
+                    }
+                }
+            }
+            .expandSide{
+                width: 300px;
+            }
+            .sidebarList{
+                width: 100%;
+                .listItem{
+                    .ul{
+                        padding: 0 0 0 10px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                        width: 100%;
+                        position: relative;
+                        .active{
+                            transition: .3s;
+                            background: #7F39F2;
+                            a{
+                                color: #fff!important;
+                                font-size: 16px;
+                                padding-left: 5px;
+                            }
+                            svg{
+                                fill: #fff;
+                            }
+                        }
+                        .li{
+                            cursor: pointer;
+                            border-radius: 10px;
+                            padding: 12px 7px;
+                            display: flex;
+                            gap: 0;
+                            &:hover{
+                                transition: .3s;
+                                background: #7F39F2;
+                                a{
+                                    color: #fff;
+                                    font-size: 16px;
+                                    padding-left: 5px;
+                                }
+                                svg{
+                                    fill: #fff;
+                                }
+                            
+                
+                            }
+                            .listIcon{
+                                svg{
+                                    transition: .3s;
+                                    position: absolute;
+                                    right: 0;
+                                 }
+                            }
+                            a{
+                                text-decoration: none;
+                                font-size: 14px;
+                                transition: .3s;
+                                color: #000;
+                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                letter-spacing: 1px;
+                            }
+                             .open{
+                                display: block;
+                             }
+                             .close{
+                                display: none;
+                             }
+                             .react-icon{
+                               width: 50%;
+                               margin:0 -25px;
+                             }
+                        }
+                        .itemDropdown{
+                            display: block;
+                            padding-left: 30px;
+                            margin: 0;
+                            ul{
+                                padding: 0;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 15px;
+                                li{
+                                    background-color: inherit;
+                                    transition: .3s;
+                                    a{
+                                        text-decoration: none;
+                                        color: #000;
+                                        &:hover{
+                                            color: #7F39F2;
+                                        }
+                                    }
+                                }
+                            }
+                         }
+                         .closeDropdown{
+                            display: none;
+                         }
+                    }
+                }
+            }
+        }
+    }
+    .closeSidebar{
+        width: 60px;
+        height: 100%;
+        display: flex;
+        flex: 1;
+        background: #FBE4FF;  
+        padding: 20px 10px 20px 0;
+        animation: movingRight 0.4s;
+        .toggle{
+            background: #fff;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            line-height: 50px;
+            position: absolute;
+            left: 10px;
+            z-index: 999;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            transition: .3s;
+            .icons{
+               display: flex;
+               align-items: center;
+                justify-content: center;
+                margin: auto;
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                transition: .3s;
+                .svg{
+                    color: #7F39F2;
+                    font-size: 30px;
+                }
+        }
+        .open{
+            opacity: 1;
+            visibility: visible;
+        }
+        .close{
+            opacity: 0;
+            visibility: hidden;
+        }
+    
+    }  
+        .sidebarParent{
+            width: 100%;
+            .sidebarLogo{
+                margin-top: 40px;
+                display: flex;
+                align-items: center;
+                gap: 18px;
+                padding: 20px 10px;
+                &:hover{
+                    .folsightLogoTittle{
+                    display: block;
+                }
+            }
+                .folsightLogoImg{
+                    img{
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 6px 0px 0px 0px;                    
+                        border-radius: 3px;
+                    }
+                }
+                .folsightLogoTittle{
+                    animation: movingLeft 0.4s;
+                    display: none;
+                    p{
+                        font-size: 24px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        letter-spacing: 0.75px;
+                        text-align: center;
+                        margin: auto 0;
+                        color: 192434;
+                        
+                    }
+                }
+            }
+            .sidebarList{
+                .listItem{
+                    .ul{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                        .li{
+                            cursor: pointer;
+                            border-radius: 10px;
+                            padding: 12px;
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            gap: 20px;
+                            &:hover{
+                                transition: .3s;
+                                a{
+                                    animation: movingLeft 0.4s;
+                                    color: #444;
+                                    background: #FBE4FF;
+                                    padding:5px 20px;
+                                    border-radius: 0px 20px 20px 0px;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    display: block;
+                                    position: absolute;
+                                    left: 4%;
+                                }
+                                svg{
+                                    fill: #000;
+                                }
+                            }
+                            .listIcon{
+                                display: none;
+                            }
+                            a{
+                                text-decoration: none;
+                                font-size: 14px;
+                                transition: .3s;
+                                color: #000;
+                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                letter-spacing: 1px;
+                                display: none;
+                            }
+                             .open{
+                                display: block;
+                             }
+                             .close{
+                                display: none;
+                             }
+                             .react-icon{
+                               width: 100%;
+                               margin:0 ;
+                             }
+                        }
+                        .itemDropdown{
+                            display: flex;
+                            padding-left: 20px;
+                            margin: 0;
+                            margin-left: 30px;
+                            background: #FBE4FF;
+                            width: 200px;
+                            overflow: hidden;
+                            padding: 20px;
+                            border-radius: 20px;
+                            ul{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+                                li{
+                                    transition: .3s;
+                                    a{
+                                        text-decoration: none;
+                                        display: flex;
+                                        color: #000;
+                                        &:hover{
+                                            color: #7F39F2;
+                                        }
+                                    }
+                                }
+                            }
+                         }
+                         .closeDropdown{
+                            display: none;
+                         }
+                    }
+                }
+            }
+        }
+    }
+}

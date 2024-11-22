@@ -1,0 +1,55 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import DataTable from "./DataTable";
+export const data = [
+  {
+    sn: 1,
+    date: "2024-11-15",
+    company: "TechCorp",
+    email: "support@techcorp.com",
+    requestId: "RQ12345",
+    pricingType: "Fixed Pricing",
+    status: "Pending",
+    action: "View Details",
+  },
+  {
+    sn: 2,
+    date: "2024-11-16",
+    company: "InnovateLtd",
+    email: "contact@innovateltd.com",
+    requestId: "RQ12346",
+    pricingType: "Dynamic Pricing",
+    status: "Pending",
+    action: "Edit Request",
+  },
+  {
+    sn: 3,
+    date: "2024-11-17",
+    company: "BuildSmart",
+    email: "info@buildsmart.com",
+    requestId: "RQ12347",
+    pricingType: "Subscription",
+    status: "Pending",
+    action: "Retry Approval",
+  },
+  {
+    sn: 4,
+    date: "2024-11-18",
+    company: "Cloudify",
+    email: "help@cloudify.com",
+    requestId: "RQ12348",
+    pricingType: "Pay-As-You-Go",
+    status: "Pending",
+    action: "View Details",
+  },
+  {
+    sn: 5,
+    date: "2024-11-19",
+    company: "GreenTech",
+    email: "support@greentech.com",
+    requestId: "RQ12349",
+    pricingType: "Fixed Pricing",
+    status: "Pending",
+    action: "Edit Request",
+  },
+];

@@ -1,0 +1,39 @@
+@mixin mobile {
+    @media screen and (max-width:580px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width:980px) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media screen and (max-width:1190px) {
+        @content;
+    }
+}
+@mixin Destop {
+    @media screen and (max-width:1440px) {
+        @content;
+    }
+}
+@mixin FullHd {
+    @media screen and (max-width:2784px) {
+        @content;
+    }
+}
+.dashboard{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    .dashboardContainer{
+        display: flex;
+        .dashWrapperLeft{
+        }
+        .dashWrapperRight{
+            height: 100%;
+            transition: .3s;
+        }
+    }
+}

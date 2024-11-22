@@ -19,13 +19,12 @@ const CoverPlans = () => {
                 <div className="coverTopbarContainer row">
             <div className="coverTopbarParent col-lg-5">
                 <div className="coverTopbarChild">
-                    <h1>Contact Us</h1>
+                    <h1>Plans</h1>
                     <p>Choose from our tailored security plans designed to meet the unique needs of businesses of all sizes. Each plan offers a different level of protection, so you can find the right fit for your organization.</p>
                 </div>
             </div>
             <div className="coverTopbarParentLeft col-lg-7">
                     <div className="coverTopbarChildLeft">
-
                     </div>
                 </div>
             </div>
