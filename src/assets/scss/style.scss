@@ -8,6 +8,12 @@
         @content;
     }
 }
+@mixin Responsive($breakpoint) {
+    @media screen and (max-width: $breakpoint) {
+      @content;
+    }
+  }
+
 @mixin laptop {
     @media screen and (max-width:1190px) {
         @content;
@@ -303,6 +309,9 @@
                   }
               }
               .rightWrapperVideo{
+                @include Responsive(1700px){
+                    margin-top:10%;
+                }
                 @include FullHd{
                     margin: auto 0;
                 }
