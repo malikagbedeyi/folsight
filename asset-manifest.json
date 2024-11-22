@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/folsight/static/css/main.e66d8f07.css",
-    "main.js": "/folsight/static/js/main.c14dde06.js",
+    "main.css": "/folsight/static/css/main.15187c5b.css",
+    "main.js": "/folsight/static/js/main.440ebcd4.js",
     "static/media/auditi01.png": "/folsight/static/media/auditi01.0f3166f409a815264d86.png",
     "static/media/grc-02.png": "/folsight/static/media/grc-02.6cfbe35f345d8631bb09.png",
     "static/media/10.png": "/folsight/static/media/10.6327cc49ad6764b9810a.png",
@@ -37,6 +37,7 @@
     "static/media/fea-4.png": "/folsight/static/media/fea-4.cf04cdd8de224e6f9a46.png",
     "static/media/fea-41.png": "/folsight/static/media/fea-41.7d41dcaead3198a4bde8.png",
     "static/media/price-02.png": "/folsight/static/media/price-02.1618e733f8c5dfd2a745.png",
+    "static/media/DashLogo.png": "/folsight/static/media/DashLogo.3112cf2fb97e424ea2a9.png",
     "static/media/Zahtech.png": "/folsight/static/media/Zahtech.af60716dbab4c26c8343.png",
     "static/media/cansulting.png": "/folsight/static/media/cansulting.81db9e5174e04f21b32e.png",
     "static/media/lentsource.png": "/folsight/static/media/lentsource.0e071ea1b7858464b596.png",
@@ -59,11 +60,11 @@
     "static/media/icon_01.png": "/folsight/static/media/icon_01.fb73af149f76b6d1cc83.png",
     "static/media/price-tab1.png": "/folsight/static/media/price-tab1.9d927f27f827970612c1.png",
     "index.html": "/folsight/index.html",
-    "main.e66d8f07.css.map": "/folsight/static/css/main.e66d8f07.css.map",
-    "main.c14dde06.js.map": "/folsight/static/js/main.c14dde06.js.map"
+    "main.15187c5b.css.map": "/folsight/static/css/main.15187c5b.css.map",
+    "main.440ebcd4.js.map": "/folsight/static/js/main.440ebcd4.js.map"
   },
   "entrypoints": [
-    "static/css/main.e66d8f07.css",
-    "static/js/main.c14dde06.js"
+    "static/css/main.15187c5b.css",
+    "static/js/main.440ebcd4.js"
   ]
 }
