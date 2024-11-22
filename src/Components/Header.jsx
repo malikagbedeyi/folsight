@@ -44,7 +44,6 @@ const Header = () => {
                     <video
                     playsInline
                     className="mui-1se970o-video"
-                     controls
                     data-automation="VideoPlayer"
                     height="100%"
                     muted
