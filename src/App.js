@@ -84,7 +84,7 @@ function App() {
   return (
     <div className="App">
        <HashRouter>
-        <NewsCaster />
+        {/* <NewsCaster /> */}
         <ScrollToTop />  
         <AppContent />
       </HashRouter>
