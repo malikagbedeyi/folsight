@@ -27,8 +27,8 @@ const Header = () => {
                 <div className="leftWrapper col-xl-6 col-lg-6 col-md-10">
                 <div className="container">
                 <div className='leftWrapperText'>
-                <h1  data-aos="fade-in-up" >GRC solutions for Your Organization</h1>
-                <p data-aos="fade-in-down">Powering Continuous Compliance through Insight-Driven <strong>GRC</strong> Automation </p>
+                <h1  data-aos="fade-in-up" >Powering Continuous Compliance through Insight-Driven GRC Automation</h1>
+                <p data-aos="fade-in-down">Scalable <strong>GRC</strong> solutions for organizations of all sizes that grow with you every step of the way, simplifying your security compliance and removing obstacles to help you achieve your goals. </p>
                 </div>
                          <button onClick={() => navigate('/request-demo')} className='btn submit'>REQUEST A DEMO </button>
                 </div>

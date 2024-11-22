@@ -161,13 +161,13 @@
                     gap: 20px;
                     h1{
                         color: #1a2b6d;
-                        font-size: 3vw;
+                        font-size: 1.5vw;
                         font-weight: 600;
                         line-height: 1.4;
                         transition: .3s;
                          margin: 0;
                            @include Destop{
-                             font-size: 2.5rem;
+                             font-size: 1.7rem;
                          }
                         @include mobile{
                             font-size: 1.7rem;
