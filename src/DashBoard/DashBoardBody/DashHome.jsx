@@ -11,9 +11,9 @@ import { useTable } from "react-table";
 import { data,  } from "./Data";
 import DataTable from './DataTable';
 // import '../../assets/Images/'
-const DashHome = () => {
+const DashHome = ({page}) => {
   return (
-    <div className="dasHome">
+<div className={page === 1 ? "dasHome" : "d-none"}>
       <div className="dasHomeContainer row">
         <div className="dasHomeParent col-lg-12">
           <div className="dasHomeChild">
@@ -70,7 +70,6 @@ const DashHome = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -122,52 +121,6 @@ const DashHome = () => {
       </div>
       <div className="requestTittle">
         <div className="requestTittleContainer">
-        <div className="requestTittleWrapper">
-          <div className="requestTittleLeft">
-            <h1>Request</h1>
-          </div>
-          <div className="requestTittleRight">
-            <div className="requestTittleParent">
-              <p>sort</p>
-              <div className="requestTittleChild" style={{width:"150px"}}>
-                <p>All</p>
-                <KeyboardArrowDownIcon />
-              </div>
-              <div className="requestTittleChild">
-                <p>start Date</p>
-                <CalendarMonthIcon />
-              </div>
-              <div className="requestTittleChild">
-                <p>End Date</p>
-                <CalendarMonthIcon />
-              </div>
-              <button className='btn'>Apply</button>
-            </div>
-          </div>
-        </div>
-        <div className="dataTittle">
-          <div className="dataTittleContainer">
-            <div className="dataTittleParentleft">
-              <div className="dataTittleChild">
-                <ul>
-                  <li>S/No.</li>
-                  <li>Date</li>
-                  <li>Company</li>
-                </ul>
-              </div>
-            </div>
-            <div className="dataTittleParentRight">
-              <div className="dataTittleChild">
-              <ul>
-                  <li>Request ID</li>
-                  <li>Pricing Type</li>
-                  <li>Status</li>
-                  <li>Action</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="requestTittleWrapper">
           <div className="requestTittleLeft">
             <h1>Request</h1>

@@ -30,58 +30,46 @@
 *{
     font-family: "Roboto" sans-serif;
 }
-
-
-
 @keyframes movingRight {
     from{transform: translate(10px);}
     to{transform: translate(0px);}
 }
-
 @keyframes movingLeft {
     from{transform: translate(-10px);}
     to{transform: translate(0px);}
 }
 
 .sidebar{
-    transition: width 0.3s ease;
-    .expandSide{
-        width: 300px;
-    }
-    .closeSide{
-        width: 300px;
-    }
+    width: 100%;
+    margin: 0;
     .sidebarContainer{
-        display: flex;
-        flex: 1;
-        width: inherit;
+        width: 250px;
         height: 100vh;
         overflow-y: auto;
-        background: #FBE4FF;  
+        background: #1a2b6d;
         padding: 20px 10px 20px 0;
-        position: relative;  
-        -ms-overflow-style: none; 
-        scrollbar-width: none;   
+        -ms-overflow-style: none;
+        scrollbar-width: none;
         animation: movingLeft 0.4s;
         &::-webkit-scrollbar {
             display: none;
           }
         .toggle{
-            background: #fff;
+            background: #f5f5f5;
             height: 40px;
             width: 40px;
             border-radius: 50%;
             line-height: 50px;
-            position: absolute;
-            top: 5px;
-            right: -5%;
+             position: absolute;
+             top: 5px;
+             right: -5%;
             z-index: 999;
             text-align: center;
             align-items: center;
             justify-content: center;
             overflow: hidden;
             transition: .3s;
-            .icons{
+            svg{
                display: flex;
                align-items: center;
                 justify-content: center;
@@ -92,8 +80,8 @@
                 top: 0;
                 bottom: 0;
                 transition: .3s;
-                .svg{
-                    color: #7F39F2;
+                svg{
+                    color: #1a2b6d;
                     font-size: 30px;
                 }
         }
@@ -130,18 +118,16 @@
                         letter-spacing: 0.75px;
                         text-align: center;
                         margin: auto 0;
-                        color: 192434;
+                        color: #f5f5f5;
                         
                     }
                 }
             }
-            .expandSide{
-                width: 300px;
-            }
             .sidebarList{
                 width: 100%;
                 .listItem{
-                    .ul{
+                    width: 100%;
+                    .ulContainer{
                         padding: 0 0 0 10px;
                         display: flex;
                         flex-direction: column;
@@ -150,7 +136,7 @@
                         position: relative;
                         .active{
                             transition: .3s;
-                            background: #7F39F2;
+                            background-color: #344484;
                             a{
                                 color: #fff!important;
                                 font-size: 16px;
@@ -160,6 +146,9 @@
                                 fill: #fff;
                             }
                         }
+                        .nonactive{
+                            background-color: none;
+                        }
                         .li{
                             cursor: pointer;
                             border-radius: 10px;
@@ -168,7 +157,7 @@
                             gap: 0;
                             &:hover{
                                 transition: .3s;
-                                background: #7F39F2;
+                                background-color: #344484;
                                 a{
                                     color: #fff;
                                     font-size: 16px;
@@ -185,13 +174,14 @@
                                     transition: .3s;
                                     position: absolute;
                                     right: 0;
+                                    fill: #fff;
                                  }
                             }
                             a{
                                 text-decoration: none;
                                 font-size: 14px;
                                 transition: .3s;
-                                color: #000;
+                                color: #fff;
                                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                                 letter-spacing: 1px;
                             }
@@ -204,13 +194,15 @@
                              .react-icon{
                                width: 50%;
                                margin:0 -25px;
+                               color: #ffff;
                              }
                         }
                         .itemDropdown{
                             display: block;
                             padding-left: 30px;
-                            margin: 0;
+                            margin: 5% 0 0 0;
                             ul{
+                                cursor: pointer;
                                 padding: 0;
                                 display: flex;
                                 flex-direction: column;
@@ -220,12 +212,37 @@
                                     transition: .3s;
                                     a{
                                         text-decoration: none;
-                                        color: #000;
+                                        color: #f5f5f5;
                                         &:hover{
                                             color: #7F39F2;
                                         }
                                     }
                                 }
+                                .activePage{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    a{ 
+                                    color: #7F39F2;
+                                    font-size: 16px;
+                                }
+                                .activeCircle{
+                                    width: 10px;
+                                    height: 10px;
+                                    line-height: 10px;
+                                    border-radius: 50%;
+                                    align-items: center;
+                                    margin: auto 0;
+                                    background: #7F39F2;
+                                }
+                                    }
+                                .nonactivePage{
+                                    a{ 
+                                    color: #f5f5f5;
+                                }
+                                .activePage{
+                                    display: none;
+                                }
+                                    }
                             }
                          }
                          .closeDropdown{
@@ -241,11 +258,11 @@
         height: 100%;
         display: flex;
         flex: 1;
-        background: #FBE4FF;  
+        background: #1a2b6d;  
         padding: 20px 10px 20px 0;
         animation: movingRight 0.4s;
         .toggle{
-            background: #fff;
+            background: #f5f5f5;
             height: 40px;
             width: 40px;
             border-radius: 50%;
@@ -270,7 +287,7 @@
                 bottom: 0;
                 transition: .3s;
                 .svg{
-                    color: #7F39F2;
+                    color: #1a2b6d;
                     font-size: 30px;
                 }
         }
@@ -295,6 +312,7 @@
                 &:hover{
                     .folsightLogoTittle{
                     display: block;
+                    color: #1a2b6d;
                 }
             }
                 .folsightLogoImg{
@@ -322,7 +340,7 @@
             }
             .sidebarList{
                 .listItem{
-                    .ul{
+                    .ulContainer{
                         display: flex;
                         flex-direction: column;
                         gap: 8px;
@@ -338,18 +356,18 @@
                                 transition: .3s;
                                 a{
                                     animation: movingLeft 0.4s;
-                                    color: #444;
-                                    background: #FBE4FF;
+                                    color: #f5f5f5;
+                                    background: #1a2b6d;
                                     padding:5px 20px;
                                     border-radius: 0px 20px 20px 0px;
                                     font-size: 14px;
                                     font-weight: 400;
                                     display: block;
                                     position: absolute;
-                                    left: 4%;
+                                    left: 10%;
                                 }
                                 svg{
-                                    fill: #000;
+                                    fill: #fff;
                                 }
                             }
                             .listIcon{
@@ -359,7 +377,7 @@
                                 text-decoration: none;
                                 font-size: 14px;
                                 transition: .3s;
-                                color: #000;
+                                color: #fff;
                                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                                 letter-spacing: 1px;
                                 display: none;
@@ -373,6 +391,7 @@
                              .react-icon{
                                width: 100%;
                                margin:0 ;
+                               color: #f5f5f5;
                              }
                         }
                         .itemDropdown{

@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation,useNavigate } from 'react-router-dom';
 import Home from './page/Home';
 import RequestDemo from './page/RequestDemo';
 import FrameWork01 from './page/FrameWork/FrameWork01';
@@ -27,6 +27,8 @@ import FrameWorkPage_01 from './Components/FrameWorkPage/FrameWorkPage_01';
 import FrameWorkPage_02 from './Components/FrameWorkPage/FrameWorkPage_02';
 import FrameWorkPage_03 from './Components/FrameWorkPage/FrameWorkPage_03';
 import Dashboard from './DashBoard/Dashboard';
+import GeneralSetting from './DashBoard/DashBoardPages/DashSetting/GeneralSetting';
+import ControlSetting from './DashBoard/DashBoardPages/DashSetting/ControlSetting';
 function AppContent() {
   const [loading, setLoading] = useState(false);
   const location = useLocation();
@@ -68,7 +70,9 @@ function AppContent() {
         <Route path='/frameworkPage_02' element={<FrameWorkPage_02 />} />
         <Route path='/frameworkPage_03' element={<FrameWorkPage_03 />} />
         <Route path='/seeall' element={<SeeAllPage />} />
-        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/dashboard/*' element={<Dashboard />} />
+        {/* <Route path='/generalSetting' element={<GeneralSetting />} />
+        <Route path='/controlSetting' element={<ControlSetting />} /> */}
       </Routes>
       )}
     </>
