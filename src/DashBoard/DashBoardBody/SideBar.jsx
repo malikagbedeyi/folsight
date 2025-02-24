@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../../assets/scss/Dashboard/sidebar.scss'
-import Img1 from '../../assets/Images/DashLogo.png'
+import Img1 from '../../assets/Images/DashLogo2.png'
 import LayersOutlinedIcon from '@mui/icons-material/LayersOutlined';
 import SupervisorAccountOutlinedIcon from '@mui/icons-material/SupervisorAccountOutlined';
 import PaidOutlinedIcon from '@mui/icons-material/PaidOutlined';
@@ -243,15 +243,15 @@ const Sidebar = ({ page, handlePage }) => {
             {listOpen6 &&(
              <div className={listOpen6? "itemDropdown" :"closeDropdown"}>
           <ul >
-                    <li><a href =''>  Compl.ai Dashboard</a></li>
+                    <li><a href =''> Dashboard</a></li>
                     <li><a href =''> Controls</a></li>
                     <li className={page === 16 ? "activePage" : "nonactivePage"}  onClick={() => handlePage(16)}> <a> Requirements</a>
                       <div className="activeCircle"></div>
                       </li>
-                    <li className={page === 17? "activePage" : "nonactivePage"}  onClick={() => handlePage(17)}><a> Framework</a>
-                    <div className="activeCircle"></div></li>
+                    <li className={page === 17? "activePage" : "nonactivePage"}  onClick={() => handlePage(17)}>  <div className="activeCircle"></div><a> Framework</a></li>
                     <li><a href =''> Navigator</a></li>
                     <li><a href =''> Gap Assessment</a></li>
+                    <li><a href =''>Activ8</a></li>
                 </ul>
                 </div>
             )}
