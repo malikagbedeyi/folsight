@@ -8,7 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link, useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
-
+import animationVideo from '../assets/Video/animationvid2.mp4';
 const Header = () => {
         const navigate =  useNavigate();
         useEffect(() => {

@@ -13,6 +13,7 @@ import ScatterPlotOutlinedIcon from '@mui/icons-material/ScatterPlotOutlined';
 import VerifiedOutlinedIcon from '@mui/icons-material/VerifiedOutlined';
 import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
 import KeyboardArrowLeftOutlinedIcon from '@mui/icons-material/KeyboardArrowLeftOutlined';
 const Sidebar = ({ page, handlePage }) => {
@@ -189,53 +190,6 @@ const Sidebar = ({ page, handlePage }) => {
                   </div>
                 )}
                 </div>
-                 <div className="ul">
-          <div className={listOpen2 ? "active li" : " li"}  onClick={handleTransaction}>
-            <ReceiptLongOutlinedIcon className='react-icon'/>
-            <a >Transactions</a>
-                 <div className="listIcon" onClick={() => setListOpen2(!listOpen2)}>
-             <svg className={listOpen2? "close" : "open"} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
-             <svg className={listOpen2? "open" : "close"} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
-          </div>
-                     </div>
-                 {listOpen2 && (
-                  <div className={toggle? "itemDropdown" : "closeDropdown"}>
-                    <ul>
-                      <li>
-                        <a href="">Transactions</a>
-                      </li>
-                      <li>
-                        <a href="">Pay Load</a>
-                      </li>
-                      <li>
-                        <a href="">Add Users</a>
-                      </li>
-                      <li>
-                        <a href="">Settlement</a>
-                      </li>
-                    </ul>
-                  </div>
-                )}
-                </div>
-                 <div className="ul">
-          <div className={listOpen3 ? "active li" : " li"} onClick={handlePricing}>
-            <PaidOutlinedIcon className='react-icon'/>
-            <a >Pricing</a>
-            <div className="listIcon" onClick={() => setListOpen3(!listOpen3)}>
-             <svg className={listOpen3? "close" : "open"} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
-             <svg className={listOpen3? "open" : "close"} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
-          </div>
-                 </div>
-          {listOpen3 && (
-           <div className={toggle? "itemDropdown" : "closeDropdown"}>
-          <ul >
-                    <li><a href=''> Pricing</a></li>
-                    <li><a href=''> Procure License</a></li>
-                    <li><a href=''> Create Pricing</a></li>
-                </ul>
-                </div>
-          )}
-          </div>
           <div className="ul">
           <div className={listOpen4 ? "active li" : " li"} onClick={handleAuditRoom}>
             <FactCheckOutlinedIcon  className="react-icon"/>
@@ -291,9 +245,11 @@ const Sidebar = ({ page, handlePage }) => {
           <ul >
                     <li><a href =''>  Compl.ai Dashboard</a></li>
                     <li><a href =''> Controls</a></li>
-                    <li className={page === 7 ? "activePage" : "nonactivePage"}  onClick={() => handlePage(7)}>
-                      <a> Requirements</a></li>
-                    <li><a href =''> Framework</a></li>
+                    <li className={page === 16 ? "activePage" : "nonactivePage"}  onClick={() => handlePage(16)}> <a> Requirements</a>
+                      <div className="activeCircle"></div>
+                      </li>
+                    <li className={page === 17? "activePage" : "nonactivePage"}  onClick={() => handlePage(17)}><a> Framework</a>
+                    <div className="activeCircle"></div></li>
                     <li><a href =''> Navigator</a></li>
                     <li><a href =''> Gap Assessment</a></li>
                 </ul>
@@ -348,6 +304,10 @@ const Sidebar = ({ page, handlePage }) => {
           <div className='li' onClick={() => handlePage(4)}>
             <SettingsOutlinedIcon  className="react-icon"/>
             <a href={page === 4}>Settings</a>
+          </div>
+          <div className='logout' onClick={() => handlePage(9)} >
+            <LogoutOutlinedIcon  className="react-icon"/>
+            <a  href={page === 9}>Logout</a>
           </div>
         </div>
             </div>

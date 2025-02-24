@@ -29,6 +29,13 @@ import FrameWorkPage_03 from './Components/FrameWorkPage/FrameWorkPage_03';
 import Dashboard from './DashBoard/Dashboard';
 import GeneralSetting from './DashBoard/DashBoardPages/DashSetting/GeneralSetting';
 import ControlSetting from './DashBoard/DashBoardPages/DashSetting/ControlSetting';
+import ElevatedLogin from './page/Root&ElevatedUser/ElevatedLogin';
+import ElevatedPassword from './page/Root&ElevatedUser/ElevatedPassword';
+import ForgotPassword from './page/Root&ElevatedUser/ForgotPassword';
+import ConfirmPassword from './page/Root&ElevatedUser/ConfirmPassword';
+import ElevatedPage from './page/Root&ElevatedUser/ElevatedPage';
+import ElevatedRegister from './page/Root&ElevatedUser/ElevatedRegister';
+import ElevatedBookCall from './page/Root&ElevatedUser/ElevatedBookCall';
 function AppContent() {
   const [loading, setLoading] = useState(false);
   const location = useLocation();
@@ -37,7 +44,6 @@ function AppContent() {
     const timeout = setTimeout(() => {
       setLoading(false); // Hide loading spinner after content is ready
     }, 1500);
-
     return () => clearTimeout(timeout);
   }, [location.pathname]);
 
@@ -71,6 +77,13 @@ function AppContent() {
         <Route path='/frameworkPage_03' element={<FrameWorkPage_03 />} />
         <Route path='/seeall' element={<SeeAllPage />} />
         <Route path='/dashboard/*' element={<Dashboard />} />
+        <Route path='/elevatedLogin' element={<ElevatedLogin />} />
+        <Route path='/elevatedPassword' element={<ElevatedPassword />} />
+        <Route path='/forgotPassword' element={<ForgotPassword />} />
+        <Route path='/confirmPassword' element={<ConfirmPassword />} />
+        <Route path='/elevatedPage' element={<ElevatedPage />} />
+        <Route path='/elevatedRegister' element={<ElevatedRegister />} />
+        <Route path='/elevatedBookCall' element={<ElevatedBookCall />} />
         {/* <Route path='/generalSetting' element={<GeneralSetting />} />
         <Route path='/controlSetting' element={<ControlSetting />} /> */}
       </Routes>

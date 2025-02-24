@@ -29,12 +29,11 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-    background: #344484;
     padding: 0 0 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     .dasHomeContainer{
         padding: 3% 20px;
-        background: #f5f5f5;
+        background: #FDF6FF;
         width: 100%;
         margin: 0;
         .dasHomeParent{
@@ -49,12 +48,12 @@
                         gap: 1px;
                         h1{
                             font-size: 1.5rem;
-                            color: #1a2b6d;
+                            color: #7F39F2;
                             font-weight: 500;
                         }
                         p{
                             font-size: 14px;
-                            color: #36363E;
+                            color: #192434;
                             opacity: 0.8;
                         }
                     }
@@ -116,8 +115,9 @@
                 }
                 .buttomWrapper{
                     margin: 1% 0;
-                    border: 1px solid #344484;
-                    padding: 7px 5px;
+                    background: #fff;
+                   // border: 1px solid #344484;
+                    padding: 7px 10px;
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
@@ -142,17 +142,20 @@
                             }
                         }
                         .button{
-                        background: #1a2b6d;
-                        color: #f5f5f5;
-                        padding: 7px 7px;
+                            background: #FDF6FF;
+                        color: #7F39F2;
+                       // padding: 7px 7px;
                         font-weight: 400;
                         margin: auto;
                         font-size: 14px;
                         text-align: center;
-                        &:hover{
-                            background: #1a2b6d;
-                            color: #f5f5f5;
-                            padding: 7px 7px;
+                        padding: 10px 15px;
+                        border-radius: 5px;
+                        &:hover,:focus{
+                            background: #ffffff;
+                            color: #7F39F2;
+                            border: 1px solid #7F39F2;
+                            padding: 10px 17px;
                             font-weight: 400;
                             margin: auto;
                             font-size: 14px;
@@ -163,10 +166,13 @@
                             display: flex;
                             gap: 10px;
                             letter-spacing: 1px;
+                            background: #f5f5f5;
+                            padding:5px 10px;
+                            border-radius: 5px;
                             p{
                                 margin: auto;
                                 text-align: center;
-                                font-size: 14px;
+                                font-size: 13px;
                                 font-weight: 400;
                                 color: #828282;
                                 
@@ -176,7 +182,20 @@
                                 padding: 3px 5px;
                                 font-size: 14px;
                                 border-radius: 5px;
-                                background: #E9EBFA;
+                                background: inherit;
+                                border: 1px solid #828282;
+                            }
+                            &:hover,:focus{
+                                background: #ffffff;
+                                border: 1px solid #7F39F2;
+                                p{
+                                    color: #7F39F2;
+                                }
+                                .bottomText{
+                                    background: #7F39F2;
+                                    color: #FDF6FF;
+                                    border: none;
+                                }
                             }
                         }
                     }
@@ -188,6 +207,7 @@
                                 img{
                                     width: 40px;
                                     border-radius: 50%;
+                                    display: block;
                                 }
                             }
                             .Textrendering{
@@ -196,7 +216,7 @@
                                 border-radius: 50%;
                                 line-height: 40px;
                                 text-align: center;
-                                background: #1a2b6d;
+                                background: #7F39F2;
                                 color: #fff;
                                 font-weight: 400;
                                 font-size: 14px;
@@ -213,7 +233,7 @@
         margin: 1% 0;
         width: 100%;
         .requestContainer{
-            background: #f5f5f5;
+            background: #FDF6FF;
             padding: 10px 20px;
             width: 100%;
             .requestParent{
@@ -225,7 +245,7 @@
                  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
                 gap: 20px;
                 .requestChild{
-                    border: 1px solid  #1a2b6d;
+                    border: 1px solid  #7F39F2;
                      width: 260px;
                     padding: 20px 0 20px 20px;
                     border-radius: 10px;
@@ -239,10 +259,10 @@
                         h1{
                             font-size: 1.5rem;
                             font-weight: 300;
-                            color: #1a2b6d;
+                            color: #7F39F2;
                         }
                         p{
-                            color: #36363E;
+                            color: #192434;
                         }
                         span{
                             color: #d41317;
@@ -258,8 +278,8 @@
     .requestTittle{
         padding: 0 20px;
         width: 100%;
-        .requestTittleContainer{
-        background: #fff;
+        .requestTittleContainer{ 
+            background: #FDF6FF;
         padding: 30px 20px 50px;
         .requestTittleWrapper{
             display: flex;
@@ -347,7 +367,6 @@
                 margin: 10px 0 20px;
                 display: flex;
                 justify-content: space-between;
-                background: #f5f5f5;
                 padding: 20px 10px;
                 .dataTittleParentleft{
                     margin: auto 0;

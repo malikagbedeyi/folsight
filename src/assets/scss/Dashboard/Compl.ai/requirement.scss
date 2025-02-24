@@ -1,0 +1,320 @@
+@mixin mobile {
+    @media screen and (max-width:580px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width:980px) {
+        @content;
+    }
+}
+@mixin Responsive($breakpoint) {
+    @media screen and (max-width: $breakpoint) {
+      @content;
+    }
+  }
+
+@mixin laptop {
+    @media screen and (max-width:1190px) {
+        @content;
+    }
+}
+@mixin Destop {
+    @media screen and (max-width:1440px) {
+        @content;
+    }
+}
+@mixin FullHd {
+    @media screen and (max-width:2784px) {
+        @content;
+    }
+}
+@keyframes moving {
+    0% {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes movingDown {
+    0% {
+      transform: translateY(70%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes movingBottom {
+    0% {
+        transform: translateY(-60%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+  }
+  @keyframes movingforwards {
+    0% {
+        opacity: 0.2;
+      }
+      100% {
+        opacity: 1;
+      }
+  }
+  @keyframes movingdown {
+    0% {
+      transform: translateY(70%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes movingright {
+    0% {
+      transform: translateX(-60%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes movingleft {
+    0% {
+      transform: translateX(70%);
+      opacity: 0.2;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .requirement{
+     width:100%;
+     margin: 0;
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    padding:0 20px;
+    // 1a2b6d
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    .navMenuContainer{
+        padding: 3% 0;
+        background: #FDF6FF;
+        width: 100%;
+        margin: 0;
+        .navMenuParent{
+            .navMenuChild{
+                .topWrapper{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    .leftTopWrapper{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1px;
+                        h1{
+                            font-size: 1.5rem;
+                            color: #7F39F2;
+                            font-weight: 500;
+                        }
+                        p{
+                            font-size: 14px;
+                            color: #192434;
+                            opacity: 0.8;
+                        }
+                    }
+                    .rightTopWrapper{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
+                        .menuicon{
+                            display: flex;
+                             gap: 10px;
+                            .topicons{
+                                font-size: 27px;
+                            }
+                            .notification{
+                                position: relative;
+                                display: flex;
+                                .topicons{
+                                    font-size: 27px;
+                                }
+                                .notificationtext{
+                                    position: absolute;
+                                    right: 0;
+                                    height: 15px;
+                                    width: 15px;
+                                    line-height: 15px;
+                                    text-align: center;
+                                    border-radius: 50%;
+                                    color: #fff;
+                                    background: #d41317;
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                        .menuProfile{
+                            display: flex;
+                            gap: 20px;
+                            .profileImg{
+                                img{ 
+                                    width: 40px;
+                                    border-radius: 50%;
+                                }
+                            }
+                            .profileText{
+                                display: flex;
+                                flex-direction: column;
+                                p{
+                                    margin-bottom: -2px;
+                                    font-size: 16px;
+                                }
+                                span{
+                                    font-size: 12px;
+                                    color: #192434;
+                                    opacity: 0.5;
+                                }
+                            }
+                        }
+                    }
+                }
+                .buttomWrapper{
+                  display: flex;
+                  justify-content: space-between;
+                  flex-wrap: wrap;
+                  border: 1px solid #7F39F2;
+                  padding: 10px;
+                  .leftButtom{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                  button{
+                    padding:5px 10px;
+                    border: none;
+                    border-radius: 4px;
+                    font-size: 14px;
+                    &:hover{
+                      background: #7F39F2;
+                    color: #fff;
+                    transition: .3s;
+                    }
+                  }
+                  .complactive{
+                    background: #7F39F2;
+                    color: #fff;
+                  }
+                  }
+                  .rightButtom{
+                    button{
+                      background: #7F39F2;
+                      color: #fff;
+                      padding:5px 10px;
+                      border: none;
+                      border-radius: 4px;
+                      font-size: 14px;
+                    }
+                  }
+                }
+            }
+        }
+    }
+    .requirementcontainer{
+      width: 100%;
+      margin-top: 30px;
+      background: #fff;
+      .requirementparent{
+        .requirementchild{
+          .topchild{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 2% 0;
+            .topchildText{
+              display: flex;
+              p{
+                margin: auto 0;
+                font-size: 16px;
+                font-weight: 400;
+              }
+            }
+            .topchildItems{
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              gap: 10px;
+              p{
+                display: flex;
+                margin: auto 0;
+                font-size: 14px;
+              }
+              .topchildItemsbox1{
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 5px ;
+                border: 1px solid;
+                width: 150px;
+                border-radius: 4px;
+              }
+              .topchildItemsbox{
+                padding: 10px 20px;
+                text-align: center;
+                border: 1px solid;
+                border-radius: 5px;
+              }
+            }
+          }
+          .tableChild{
+            position: relative;
+            overflow-x: auto; 
+            max-width: 100%;
+          .complTable{
+            width: 100%;
+            min-width: 150%; 
+            display: grid; 
+            gap: 2rem;
+              .tableHead{
+                display: grid;
+                grid-template-columns: 2fr 2fr 2fr 1fr 2fr 1fr 2fr 1fr 1fr 1fr; 
+                gap: 2rem; 
+                background: #E5E5EA;  
+                padding: 10px 20px;          
+                .tableHeadbox{
+                  background: #FDF6FF;
+                  padding: 10px 20px;
+                  text-align: center;
+                  color: #373F41;
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 20px;
+                  // margin: auto;
+                }
+              }
+              .tablebody{
+                display: grid;
+                grid-template-columns:  2fr 2fr 2fr 1fr 2fr 1fr 2fr 1fr 1fr 1fr; 
+                gap: 2rem;
+                .tablebodybox{
+                  //text-align: center;
+                  margin: auto;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}

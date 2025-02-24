@@ -44,9 +44,11 @@
     margin: 0;
     .sidebarContainer{
         width: 250px;
+        flex-shrink: 0;
+        transition: width 0.3s;
         height: 100vh;
         overflow-y: auto;
-        background: #1a2b6d;
+        background: #FBE4FF;
         padding: 20px 10px 20px 0;
         -ms-overflow-style: none;
         scrollbar-width: none;
@@ -55,7 +57,7 @@
             display: none;
           }
         .toggle{
-            background: #f5f5f5;
+            background: #7F39F2;
             height: 40px;
             width: 40px;
             border-radius: 50%;
@@ -80,10 +82,7 @@
                 top: 0;
                 bottom: 0;
                 transition: .3s;
-                svg{
-                    color: #1a2b6d;
-                    font-size: 30px;
-                }
+                fill: #fff;
         }
         .open{
             opacity: 1;
@@ -118,13 +117,16 @@
                         letter-spacing: 0.75px;
                         text-align: center;
                         margin: auto 0;
-                        color: #f5f5f5;
+                        color: #192434;
                         
                     }
                 }
             }
             .sidebarList{
                 width: 100%;
+                // height: 100%;
+                // position: sticky;
+                // top: 1rem;
                 .listItem{
                     width: 100%;
                     .ulContainer{
@@ -136,7 +138,7 @@
                         position: relative;
                         .active{
                             transition: .3s;
-                            background-color: #344484;
+                            background-color: #7F39F2;
                             a{
                                 color: #fff!important;
                                 font-size: 16px;
@@ -145,9 +147,29 @@
                             svg{
                                 fill: #fff;
                             }
+                            .listIcon{
+                                svg{
+                                    fill: #fff!important;
+                                }
+                            }
                         }
                         .nonactive{
                             background-color: none;
+                        }
+                        .logout{
+                            cursor: pointer;
+                            border-radius: 10px;
+                            padding: 12px 7px;
+                            display: flex;
+                            gap: 0;
+                            a{
+                                color: #DF3333;
+                                font-size: 16px;
+                                padding-left: 5px;
+                            }
+                            .react-icon{
+                                    fill: #DF3333;
+                            }
                         }
                         .li{
                             cursor: pointer;
@@ -157,7 +179,7 @@
                             gap: 0;
                             &:hover{
                                 transition: .3s;
-                                background-color: #344484;
+                                background-color: #7F39F2;
                                 a{
                                     color: #fff;
                                     font-size: 16px;
@@ -166,22 +188,25 @@
                                 svg{
                                     fill: #fff;
                                 }
-                            
-                
+                                .listIcon{
+                                    svg{
+                                        fill: #fff;
+                                    }
+                                }
                             }
                             .listIcon{
                                 svg{
                                     transition: .3s;
                                     position: absolute;
                                     right: 0;
-                                    fill: #fff;
+                                    fill: #000;
                                  }
                             }
                             a{
                                 text-decoration: none;
                                 font-size: 14px;
                                 transition: .3s;
-                                color: #fff;
+                                color: #192434;
                                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                                 letter-spacing: 1px;
                             }
@@ -194,7 +219,7 @@
                              .react-icon{
                                width: 50%;
                                margin:0 -25px;
-                               color: #ffff;
+                               color: #192434;
                              }
                         }
                         .itemDropdown{
@@ -212,7 +237,7 @@
                                     transition: .3s;
                                     a{
                                         text-decoration: none;
-                                        color: #f5f5f5;
+                                        color: #192434;
                                         &:hover{
                                             color: #7F39F2;
                                         }
@@ -237,7 +262,7 @@
                                     }
                                 .nonactivePage{
                                     a{ 
-                                    color: #f5f5f5;
+                                    color: #192434;
                                 }
                                 .activePage{
                                     display: none;
@@ -255,14 +280,16 @@
     }
     .closeSidebar{
         width: 60px;
+        flex-shrink: 0;
+        transition: width 0.3s;
         height: 100%;
         display: flex;
         flex: 1;
-        background: #1a2b6d;  
+        background: #FBE4FF;  
         padding: 20px 10px 20px 0;
         animation: movingRight 0.4s;
         .toggle{
-            background: #f5f5f5;
+            background: #7F39F2;
             height: 40px;
             width: 40px;
             border-radius: 50%;
@@ -287,7 +314,7 @@
                 bottom: 0;
                 transition: .3s;
                 .svg{
-                    color: #1a2b6d;
+                    color: #fff;
                     font-size: 30px;
                 }
         }
@@ -312,7 +339,7 @@
                 &:hover{
                     .folsightLogoTittle{
                     display: block;
-                    color: #1a2b6d;
+                    color: #192434;
                 }
             }
                 .folsightLogoImg{
@@ -344,7 +371,7 @@
                         display: flex;
                         flex-direction: column;
                         gap: 8px;
-                        .li{
+                        .li,.logout{
                             cursor: pointer;
                             border-radius: 10px;
                             padding: 12px;
@@ -354,10 +381,10 @@
                             gap: 20px;
                             &:hover{
                                 transition: .3s;
-                                a{
+                                a{ 
                                     animation: movingLeft 0.4s;
-                                    color: #f5f5f5;
-                                    background: #1a2b6d;
+                                    color: #192434;
+                                    background: #FBE4FF;
                                     padding:5px 20px;
                                     border-radius: 0px 20px 20px 0px;
                                     font-size: 14px;
@@ -367,7 +394,7 @@
                                     left: 10%;
                                 }
                                 svg{
-                                    fill: #fff;
+                                    fill: #192434;
                                 }
                             }
                             .listIcon{
@@ -377,7 +404,7 @@
                                 text-decoration: none;
                                 font-size: 14px;
                                 transition: .3s;
-                                color: #fff;
+                                color: #192434;
                                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                                 letter-spacing: 1px;
                                 display: none;
@@ -391,35 +418,46 @@
                              .react-icon{
                                width: 100%;
                                margin:0 ;
-                               color: #f5f5f5;
+                               color: #192434;
                              }
                         }
-                        .itemDropdown{
-                            display: flex;
-                            padding-left: 20px;
-                            margin: 0;
-                            margin-left: 30px;
-                            background: #FBE4FF;
-                            width: 200px;
-                            overflow: hidden;
-                            padding: 20px;
-                            border-radius: 20px;
-                            ul{
-                                display: flex;
-                                flex-direction: column;
-                                gap: 10px;
-                                li{
-                                    transition: .3s;
-                                    a{
-                                        text-decoration: none;
-                                        display: flex;
-                                        color: #000;
-                                        &:hover{
-                                            color: #7F39F2;
-                                        }
-                                    }
-                                }
+                        .logout{
+                            a{
+                                color: #DF3333;
                             }
+                            .react-icon{
+                                color: #DF3333;
+                            }
+
+                        }
+                        .itemDropdown{
+                            display: none;
+                            // display: flex;
+                            // padding-left: 20px;
+                            // margin: 0;
+                            // margin-left: 30px;
+                            // width: 200px;
+                            // overflow: hidden;
+                            // padding: 20px;
+                            // border-radius: 20px;
+                           // background: #FBE4FF;
+                           
+                            // ul{
+                            //     display: flex;
+                            //     flex-direction: column;
+                            //     gap: 10px;
+                            //     li{
+                            //         transition: .3s;
+                            //         a{
+                            //             text-decoration: none;
+                            //             display: flex;
+                            //             color: #000;
+                            //             &:hover{
+                            //                 color: #7F39F2;
+                            //             }
+                            //         }
+                            //     }
+                            // }
                          }
                          .closeDropdown{
                             display: none;
