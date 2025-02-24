@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/folsight/static/css/main.9625773d.css",
-    "main.js": "/folsight/static/js/main.48062099.js",
+    "main.css": "/folsight/static/css/main.3e14b4eb.css",
+    "main.js": "/folsight/static/js/main.a88f333e.js",
     "static/media/animationvid2.mp4": "/folsight/static/media/animationvid2.72122f13e9875083e30d.mp4",
     "static/media/auditi01.png": "/folsight/static/media/auditi01.0f3166f409a815264d86.png",
     "static/media/grc-02.png": "/folsight/static/media/grc-02.6cfbe35f345d8631bb09.png",
@@ -38,6 +38,7 @@
     "static/media/fea-3.png": "/folsight/static/media/fea-3.285ea1fdf772d9b34138.png",
     "static/media/05.jpg": "/folsight/static/media/05.9f946bc85c36b770cb81.jpg",
     "static/media/fea-4.png": "/folsight/static/media/fea-4.cf04cdd8de224e6f9a46.png",
+    "static/media/DashLogo2.png": "/folsight/static/media/DashLogo2.5b3371b61fc7a2a53b05.png",
     "static/media/fea-41.png": "/folsight/static/media/fea-41.7d41dcaead3198a4bde8.png",
     "static/media/dashbarImg3.png": "/folsight/static/media/dashbarImg3.09617603c2d906a4b19c.png",
     "static/media/price-02.png": "/folsight/static/media/price-02.1618e733f8c5dfd2a745.png",
@@ -66,11 +67,11 @@
     "static/media/icon_01.png": "/folsight/static/media/icon_01.fb73af149f76b6d1cc83.png",
     "static/media/price-tab1.png": "/folsight/static/media/price-tab1.9d927f27f827970612c1.png",
     "index.html": "/folsight/index.html",
-    "main.9625773d.css.map": "/folsight/static/css/main.9625773d.css.map",
-    "main.48062099.js.map": "/folsight/static/js/main.48062099.js.map"
+    "main.3e14b4eb.css.map": "/folsight/static/css/main.3e14b4eb.css.map",
+    "main.a88f333e.js.map": "/folsight/static/js/main.a88f333e.js.map"
   },
   "entrypoints": [
-    "static/css/main.9625773d.css",
-    "static/js/main.48062099.js"
+    "static/css/main.3e14b4eb.css",
+    "static/js/main.a88f333e.js"
   ]
 }
