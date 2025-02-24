@@ -124,9 +124,6 @@
             }
             .sidebarList{
                 width: 100%;
-                // height: 100%;
-                // position: sticky;
-                // top: 1rem;
                 .listItem{
                     width: 100%;
                     .ulContainer{
@@ -147,9 +144,9 @@
                                 font-size: 16px;
                                 padding-left: 5px;
                             }
-                            svg{
-                                fill: #0152FF;
-                            }
+                            // svg{
+                            //     fill: #0152FF;
+                            // }
                             .listIcon{
                                 svg{
                                     fill: #0152FF!important;
@@ -188,7 +185,7 @@
                                     font-size: 16px;
                                     padding-left: 5px;
                                 }
-                                svg{
+                                .react-icon{
                                     fill: #0152FF;
                                 }
                                 .listIcon{
@@ -222,7 +219,7 @@
                              .react-icon{
                                width: 50%;
                                margin:0 -25px;
-                               color: #fff;
+                               fill: #fff;
                              }
                         }
                         .itemDropdown{
@@ -244,8 +241,10 @@
                                     a{
                                         text-decoration: none;
                                         color: #fff;
+                                        opacity: 0.8;
                                         &:hover{
-                                            color: #fff!important;
+                                            color: #fff;
+                                            opacity: 1;
                                         }
                                     }
                                 }
@@ -255,6 +254,7 @@
                                     a{ 
                                     color: #fff;
                                     font-size: 16px;
+                                    opacity: 1;
                                 }
                                 .activeCircle{
                                     width: 10px;
@@ -269,6 +269,7 @@
                                 .nonactivePage{
                                     a{ 
                                     color: #fff;
+                                    opacity: 0.8;
                                 }
                                 .activePage{
                                     display: none;
@@ -320,7 +321,7 @@
                 bottom: 0;
                 transition: .3s;
                 .svg{
-                    color: #0152FF;
+                    color: #fff;
                     font-size: 30px;
                 }
         }
@@ -384,6 +385,7 @@
                             align-items: center;
                             text-align: center;
                             gap: 20px;
+
                             &:hover{
                                 transition: .3s;
                                 a{ 
@@ -413,6 +415,7 @@
                                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                                 letter-spacing: 1px;
                                 display: none;
+                                overflow: hidden;
                             }
                              .open{
                                 display: block;
@@ -423,7 +426,7 @@
                              .react-icon{
                                width: 100%;
                                margin:0 ;
-                               color: #fff;
+                               fill: #fff;
                              }
                         }
                         .logout{

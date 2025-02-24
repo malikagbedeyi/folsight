@@ -13,7 +13,7 @@ import DataTable from './DataTable';
 // import '../../assets/Images/'
 const DashHome = ({page}) => {
   return (
-<div className={page === 1 ? "dasHome" : "d-none"}>
+<div className={page === 17 ? "dasHome" : "d-none"}>
       <div className="dasHomeContainer row">
         <div className="dasHomeParent col-lg-12">
           <div className="dasHomeChild">

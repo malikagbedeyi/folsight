@@ -17,7 +17,7 @@ import img3 from '../../../assets/Images/Dashboard/dashbarImg3.png'
 
 const Administration = ({page}) => {
   return (
-    <div className={page ===2 ? "dasHome" : 'd-none'}>
+    <div className={page ===18 ? "dasHome" : 'd-none'}>
     <div className="dasHomeContainer row">
       <div className="dasHomeParent col-lg-12">
         <div className="dasHomeChild">

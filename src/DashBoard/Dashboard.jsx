@@ -23,9 +23,9 @@ const Dashboard = () => {
   const renderPage = () => {
     switch (page) {
       case 1:
-        return <DashHome page={page} />;
-      case 2:
-        return <Administration />;
+        return <FrrameWork page={page} handlePage={handlePage}  setSelectedItem={setSelectedItem} />;
+        case 2:
+          return <AboutFrameWork page={page} handlePage={handlePage}   selectedItem={selectedItem}/>;
       case 3:
         return <AdminUser />;
         case 4:
@@ -37,9 +37,9 @@ const Dashboard = () => {
         case 16:
           return <Requirement page={page} handlePage={handlePage} />;
           case 17:
-            return <FrrameWork page={page} handlePage={handlePage}  setSelectedItem={setSelectedItem} />;
-            case 18:
-              return <AboutFrameWork page={page} handlePage={handlePage}   selectedItem={selectedItem}/>;
+        return <DashHome page={page} />;
+      case 18:
+        return <Administration />;
       default:
         return <DashHome page={page} />;
     }

@@ -39,6 +39,16 @@
       opacity: 1;
     }
   }
+  @keyframes dropdown {
+    0% {
+      transform: translateY(-30%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
   .aboutframework{
     flex: 1;
      width:100%;

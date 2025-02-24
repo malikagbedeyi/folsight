@@ -79,11 +79,11 @@ const viewitem = [
 const handleClickFramework = (row) => {
   //navigate('/detail', { state: row });
   setSelectedItem(row);
-  handlePage(18);
+  handlePage(2);
 };
 
   return (
-    <div className={page === 17 ? "framework" : "framework"}>
+    <div className={page === 1 ? "framework" : "framework"}>
 <div className="navMenuContainer row">
       <div className="navMenuParent col-lg-12">
         <div className="navMenuChild">

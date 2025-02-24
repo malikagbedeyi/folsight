@@ -17,7 +17,7 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
     };
 
   return (
-    <div className={page === 18 ? "aboutframework" : ""}>
+    <div className={page === 2 ? "aboutframework" : ""}>
       <div className="navMenuContainer row">
             <div className="navMenuParent col-lg-12">
               <div className="navMenuChild">
