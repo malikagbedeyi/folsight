@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/folsight/static/css/main.45bf9f38.css",
-    "main.js": "/folsight/static/js/main.f9daafc8.js",
+    "main.css": "/folsight/static/css/main.9625773d.css",
+    "main.js": "/folsight/static/js/main.48062099.js",
+    "static/media/animationvid2.mp4": "/folsight/static/media/animationvid2.72122f13e9875083e30d.mp4",
     "static/media/auditi01.png": "/folsight/static/media/auditi01.0f3166f409a815264d86.png",
     "static/media/grc-02.png": "/folsight/static/media/grc-02.6cfbe35f345d8631bb09.png",
     "static/media/10.png": "/folsight/static/media/10.6327cc49ad6764b9810a.png",
@@ -28,16 +29,21 @@
     "static/media/01.jpg": "/folsight/static/media/01.8f529a9fe65368ae2ccb.jpg",
     "static/media/03.jpg": "/folsight/static/media/03.b891c617323ccb8b7e96.jpg",
     "static/media/8.png": "/folsight/static/media/8.c15fd4eb2970212e4a89.png",
+    "static/media/bookCall-Image.jpeg": "/folsight/static/media/bookCall-Image.c9bf71b569313589650f.jpeg",
     "static/media/12.png": "/folsight/static/media/12.32bce3978729964fb516.png",
     "static/media/02.jpg": "/folsight/static/media/02.00efdfaad41f1e1c04a5.jpg",
     "static/media/p-mockup.png": "/folsight/static/media/p-mockup.761337f7ac0d838f5b22.png",
     "static/media/04.jpg": "/folsight/static/media/04.9cbf51425882d1ead206.jpg",
+    "static/media/dashbarImg2.png": "/folsight/static/media/dashbarImg2.08a1b1f11302ca1fea82.png",
     "static/media/fea-3.png": "/folsight/static/media/fea-3.285ea1fdf772d9b34138.png",
     "static/media/05.jpg": "/folsight/static/media/05.9f946bc85c36b770cb81.jpg",
     "static/media/fea-4.png": "/folsight/static/media/fea-4.cf04cdd8de224e6f9a46.png",
     "static/media/fea-41.png": "/folsight/static/media/fea-41.7d41dcaead3198a4bde8.png",
+    "static/media/dashbarImg3.png": "/folsight/static/media/dashbarImg3.09617603c2d906a4b19c.png",
     "static/media/price-02.png": "/folsight/static/media/price-02.1618e733f8c5dfd2a745.png",
     "static/media/DashLogo.png": "/folsight/static/media/DashLogo.3112cf2fb97e424ea2a9.png",
+    "static/media/dashbarImg.png": "/folsight/static/media/dashbarImg.c42e38afbe1185c5a066.png",
+    "static/media/profile-img.png": "/folsight/static/media/profile-img.c42e38afbe1185c5a066.png",
     "static/media/Zahtech.png": "/folsight/static/media/Zahtech.af60716dbab4c26c8343.png",
     "static/media/cansulting.png": "/folsight/static/media/cansulting.81db9e5174e04f21b32e.png",
     "static/media/lentsource.png": "/folsight/static/media/lentsource.0e071ea1b7858464b596.png",
@@ -60,11 +66,11 @@
     "static/media/icon_01.png": "/folsight/static/media/icon_01.fb73af149f76b6d1cc83.png",
     "static/media/price-tab1.png": "/folsight/static/media/price-tab1.9d927f27f827970612c1.png",
     "index.html": "/folsight/index.html",
-    "main.45bf9f38.css.map": "/folsight/static/css/main.45bf9f38.css.map",
-    "main.f9daafc8.js.map": "/folsight/static/js/main.f9daafc8.js.map"
+    "main.9625773d.css.map": "/folsight/static/css/main.9625773d.css.map",
+    "main.48062099.js.map": "/folsight/static/js/main.48062099.js.map"
   },
   "entrypoints": [
-    "static/css/main.45bf9f38.css",
-    "static/js/main.f9daafc8.js"
+    "static/css/main.9625773d.css",
+    "static/js/main.48062099.js"
   ]
 }
