@@ -7,10 +7,12 @@ import '../../../../assets/scss/Dashboard/Compl.ai/DashFramework/framework.scss'
 import img1 from '../../../../assets/Images/Dashboard/profile-img.png'
 import img2 from '../../../../assets/Images/Dashboard/logo-upload.png'
 import {tableData,gridData} from './frameworkTable'
+import CreateFrameWork from './CreateFrameWork';
 
 const FrrameWork = ({ page, handlePage,setSelectedItem}) => {
 
 const [view,setView] = useState(1)
+const [createFrameWK,SetcreateFrameWK] = useState(false);
 const [checkedItems, setCheckedItems] = useState({});
 const [dropdown,setdropdown] = useState(false);
 const [dropdown2,setdropdown2] = useState(false);
@@ -49,7 +51,6 @@ const prevPage = () => {
     setCurrentPag2(currentPag2 - 1);
   }
 };
-
 const handleClick = (index) => {
     setCheckedItems((prev) => ({
         ...prev,
@@ -75,7 +76,9 @@ const viewitem = [
     "Framework ID",
     "Title"
 ];
-
+const handleCreateFrameWK = ()=>{
+  SetcreateFrameWK(!createFrameWK);
+}
 const handleClickFramework = (row) => {
   //navigate('/detail', { state: row });
   setSelectedItem(row);
@@ -90,9 +93,11 @@ const handleClickFramework = (row) => {
           <div className="topWrapper">
             <div className="leftTopWrapper">
               <h1>Compl.ai</h1> 
-              <p>Dashboard 
+              <div className="leftwrapper-contet">
+              <p>Dashboard </p>
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" ><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg></span> 
-               <a href=''> Framework</a></p>
+               <a> Framework</a>
+              </div>
             </div>
             <div className="rightTopWrapper">
               <div className="menuicon">
@@ -122,7 +127,7 @@ const handleClickFramework = (row) => {
                 </li>
                </ul>
             </div>
-            <div className="rightButtom">
+            <div onClick={handleCreateFrameWK} className="rightButtom">
               <a>Create Framework</a>
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13.9987 2.33594C7.5587 2.33594 2.33203 7.5626 2.33203 14.0026C2.33203 20.4426 7.5587 25.6693 13.9987 25.6693C20.4387 25.6693 25.6654 20.4426 25.6654 14.0026C25.6654 7.5626 20.4387 2.33594 13.9987 2.33594ZM18.082 14.8776H14.8737V18.0859C14.8737 18.5643 14.477 18.9609 13.9987 18.9609C13.5204 18.9609 13.1237 18.5643 13.1237 18.0859V14.8776H9.91536C9.43703 14.8776 9.04036 14.4809 9.04036 14.0026C9.04036 13.5243 9.43703 13.1276 9.91536 13.1276H13.1237V9.91927C13.1237 9.44094 13.5204 9.04427 13.9987 9.04427C14.477 9.04427 14.8737 9.44094 14.8737 9.91927V13.1276H18.082C18.5604 13.1276 18.957 13.5243 18.957 14.0026C18.957 14.4809 18.5604 14.8776 18.082 14.8776Z" fill="#0152FF"/> </svg>
             </div>
@@ -285,7 +290,7 @@ const handleClickFramework = (row) => {
                         <p> <span>{row.mapRisk}</span></p>
                         <p> <span>{row.mapFramework}</span></p>
                         <p> <span className='double-tabeText'>{row.time}</span> <span>{row.date}</span></p>
-                        <p> <span>{row.status}</span></p>
+                        <p style={{color:""}}> <span>{row.status}</span></p>
                         <p> <span>{row.action}</span></p>
                         </div>
                        </div> ))}
@@ -399,6 +404,7 @@ const handleClickFramework = (row) => {
    </div>
       </div>
       </div>
+        <CreateFrameWork createFrameWK={createFrameWK}  SetcreateFrameWK={SetcreateFrameWK} />
     </div>
   )
 }

@@ -198,7 +198,6 @@ const Sidebar = ({ page, handlePage }) => {
             {listOpen6 &&(
              <div className={listOpen6? "itemDropdown" :"closeDropdown"}>
           <ul >
-                    <li><a href =''> Dashboard</a></li>
                     <li><a href =''> Controls</a></li>
                     <li className={page === 16 ? "activePage" : "nonactivePage"}  onClick={() => handlePage(16)}> <a> Requirements</a>
                       <div className="activeCircle"></div>
