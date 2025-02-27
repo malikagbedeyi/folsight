@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/folsight/static/css/main.0bdb278e.css",
-    "main.js": "/folsight/static/js/main.14042fff.js",
+    "main.js": "/folsight/static/js/main.9b8ecd25.js",
     "static/js/239.61920ed5.chunk.js": "/folsight/static/js/239.61920ed5.chunk.js",
     "static/js/213.61a78efe.chunk.js": "/folsight/static/js/213.61a78efe.chunk.js",
     "static/js/455.8280c2c2.chunk.js": "/folsight/static/js/455.8280c2c2.chunk.js",
@@ -71,13 +71,13 @@
     "static/media/price-tab1.png": "/folsight/static/media/price-tab1.9d927f27f827970612c1.png",
     "index.html": "/folsight/index.html",
     "main.0bdb278e.css.map": "/folsight/static/css/main.0bdb278e.css.map",
-    "main.14042fff.js.map": "/folsight/static/js/main.14042fff.js.map",
+    "main.9b8ecd25.js.map": "/folsight/static/js/main.9b8ecd25.js.map",
     "239.61920ed5.chunk.js.map": "/folsight/static/js/239.61920ed5.chunk.js.map",
     "213.61a78efe.chunk.js.map": "/folsight/static/js/213.61a78efe.chunk.js.map",
     "455.8280c2c2.chunk.js.map": "/folsight/static/js/455.8280c2c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0bdb278e.css",
-    "static/js/main.14042fff.js"
+    "static/js/main.9b8ecd25.js"
   ]
 }
