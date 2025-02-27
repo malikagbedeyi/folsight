@@ -1,7 +1,10 @@
 {
   "files": {
-    "main.css": "/folsight/static/css/main.b9d65773.css",
-    "main.js": "/folsight/static/js/main.d67b2d00.js",
+    "main.css": "/folsight/static/css/main.0bdb278e.css",
+    "main.js": "/folsight/static/js/main.14042fff.js",
+    "static/js/239.61920ed5.chunk.js": "/folsight/static/js/239.61920ed5.chunk.js",
+    "static/js/213.61a78efe.chunk.js": "/folsight/static/js/213.61a78efe.chunk.js",
+    "static/js/455.8280c2c2.chunk.js": "/folsight/static/js/455.8280c2c2.chunk.js",
     "static/media/animationvid2.mp4": "/folsight/static/media/animationvid2.72122f13e9875083e30d.mp4",
     "static/media/auditi01.png": "/folsight/static/media/auditi01.0f3166f409a815264d86.png",
     "static/media/grc-02.png": "/folsight/static/media/grc-02.6cfbe35f345d8631bb09.png",
@@ -67,11 +70,14 @@
     "static/media/icon_01.png": "/folsight/static/media/icon_01.fb73af149f76b6d1cc83.png",
     "static/media/price-tab1.png": "/folsight/static/media/price-tab1.9d927f27f827970612c1.png",
     "index.html": "/folsight/index.html",
-    "main.b9d65773.css.map": "/folsight/static/css/main.b9d65773.css.map",
-    "main.d67b2d00.js.map": "/folsight/static/js/main.d67b2d00.js.map"
+    "main.0bdb278e.css.map": "/folsight/static/css/main.0bdb278e.css.map",
+    "main.14042fff.js.map": "/folsight/static/js/main.14042fff.js.map",
+    "239.61920ed5.chunk.js.map": "/folsight/static/js/239.61920ed5.chunk.js.map",
+    "213.61a78efe.chunk.js.map": "/folsight/static/js/213.61a78efe.chunk.js.map",
+    "455.8280c2c2.chunk.js.map": "/folsight/static/js/455.8280c2c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9d65773.css",
-    "static/js/main.d67b2d00.js"
+    "static/css/main.0bdb278e.css",
+    "static/js/main.14042fff.js"
   ]
 }
