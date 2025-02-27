@@ -6,10 +6,12 @@ import '../../../../assets/scss/Dashboard/Compl.ai/DashFramework/createframework
 const CreateFrameWork = ({ createFrameWK,SetcreateFrameWK }) => {
 
   const [text, setText] = useState("");
+  const [selectedOption, setSelectedOption] = useState('Control - ISO 27001');
   const [dropdown, setDropdown] = useState(false);
+  const [selectedOption2, setSelectedOption2] = useState('Control - ISO 27001');
   const [dropdown2, setDropdown2] = useState(false);
+  const [selectedOption3, setSelectedOption3] = useState('Map Risk');
   const [dropdown3, setDropdown3] = useState(false);
-  const [dropdown4, setDropdown4] = useState(false);
   const [proceed,setProceed] = useState(false)
   
   const handleDropdown = () => {
@@ -21,6 +23,18 @@ const CreateFrameWork = ({ createFrameWK,SetcreateFrameWK }) => {
   const handleDropdown3 = () => {
     setDropdown3(!dropdown3)
   }
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);  // Update the selected option
+    setDropdown(false);         // Close the dropdown
+  };
+  const handleOptionClick2 = (option) => {
+    setSelectedOption2(option);  // Update the selected option
+    setDropdown2(false);         // Close the dropdown
+  };
+  const handleOptionClick3 = (option) => {
+    setSelectedOption3(option);  
+    setDropdown3(false);         
+  };
   const handleProceed = () => {
     setProceed(!proceed)
   }
@@ -111,7 +125,7 @@ const CreateFrameWork = ({ createFrameWK,SetcreateFrameWK }) => {
                    </div>
                    <div onClick={handleDropdown} className="selectoption-box">
                     <div className="left-box">
-                      <p>Control - ISO 27001</p>
+                      <p>{selectedOption}</p>
                     </div>
                     <div className="right-box">
                     <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.74719 1.50375C1.93719 1.50375 2.12719 1.57375 2.27719 1.72375L5.27719 4.72375L8.27719 1.72375C8.56719 1.43375 9.04719 1.43375 9.33719 1.72375C9.62719 2.01375 9.62719 2.49375 9.33719 2.78375L5.80719 6.31375C5.51719 6.60375 5.03719 6.60375 4.74719 6.31375L1.21719 2.78375C0.927188 2.49375 0.927188 2.01375 1.21719 1.72375C1.36719 1.57375 1.55719 1.50375 1.74719 1.50375Z" fill="#333333"/></svg>
@@ -199,7 +213,7 @@ const CreateFrameWork = ({ createFrameWK,SetcreateFrameWK }) => {
                    </div>
                    <div onClick={handleDropdown2} className="selectoption-box">
                     <div className="left-box">
-                      <p>Control - ISO 27001</p>
+                      <p>{selectedOption2}</p>
                     </div>
                     <div className="right-box">
                     <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.74719 1.50375C1.93719 1.50375 2.12719 1.57375 2.27719 1.72375L5.27719 4.72375L8.27719 1.72375C8.56719 1.43375 9.04719 1.43375 9.33719 1.72375C9.62719 2.01375 9.62719 2.49375 9.33719 2.78375L5.80719 6.31375C5.51719 6.60375 5.03719 6.60375 4.74719 6.31375L1.21719 2.78375C0.927188 2.49375 0.927188 2.01375 1.21719 1.72375C1.36719 1.57375 1.55719 1.50375 1.74719 1.50375Z" fill="#333333"/></svg>
@@ -246,7 +260,7 @@ const CreateFrameWork = ({ createFrameWK,SetcreateFrameWK }) => {
                     </div>
                     <div className="selectoption-content">
                     <div className="top-selectoption-content">
-                    <p>Map Risk</p>
+                    <p>{selectedOption3}</p>
                      <span className='selectoption-icon'><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 5C0.5 2.51464 2.51464 0.5 5 0.5C7.48536 0.5 9.5 2.51464 9.5 5C9.5 7.48536 7.48536 9.5 5 9.5C2.51464 9.5 0.5 7.48536 0.5 5ZM5 1.875C4.51686 1.875 4.125 2.26686 4.125 2.75V5.03552C4.125 5.38382 4.32865 5.68469 4.62334 5.82549C4.26013 5.97604 4.00745 6.33505 4.00745 6.75C4.00745 7.30546 4.4612 7.75 5.01001 7.75C5.56215 7.75 6.01001 7.30214 6.01001 6.75C6.01001 6.33007 5.75112 5.97015 5.38367 5.8221C5.67457 5.67989 5.875 5.38105 5.875 5.03552V2.75C5.875 2.26686 5.48314 1.875 5 1.875Z" stroke="#AAA8A8"/></svg></span>
                    </div>
                    <div onClick={handleDropdown3} className="selectoption-box">

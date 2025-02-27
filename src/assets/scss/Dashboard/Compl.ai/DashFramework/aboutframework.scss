@@ -39,7 +39,7 @@
       opacity: 1;
     }
   }
-  @keyframes dropdown {
+  @keyframes moveIn {
     0% {
       transform: translateY(-30%);
       opacity: 0;
@@ -89,6 +89,7 @@
                             text-align: center;
                             color: #737373;
                             letter-spacing: 1px;
+                            margin: 0;
                             span{
                                 font-family: "Poppins" sans-serif;
                                 font-weight: 600;
@@ -106,6 +107,7 @@
                                 font-weight: 500;
                                 letter-spacing: 2px;
                                 text-decoration: none;
+                                cursor: pointer;
                             }                        
                         }
                     }
@@ -196,7 +198,7 @@
                         font-size: 14px;
                         line-height: 18px;
                         letter-spacing: 0px;                        
-                        margin: 0px;
+                        margin: 0;
                     }
                     h2{
                         color: #36363E;
@@ -262,7 +264,8 @@
                             font-family: "Poppins" sans-serif;
                             font-weight: 300;
                             font-size: 12px;
-                            line-height: 18px;                           
+                            line-height: 18px; 
+                            margin: 0;                          
                         }
                     }
                     .top-contentbottom{
@@ -322,6 +325,7 @@
                     padding-left: 30px;
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
                     margin: 10px 0;
                     svg{
                         fill: #fff;
@@ -339,7 +343,7 @@
                 }
                 .dropdownSection-body{
                     margin: 10px 0;
-                    animation: moveIn .4s;
+                    animation: moveIn .4s ease-in-out;
                     .dropdownSection-box{
                         display: grid;
                         grid-template-columns: 1fr 1fr;

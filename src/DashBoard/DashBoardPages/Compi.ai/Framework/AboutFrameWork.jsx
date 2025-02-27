@@ -5,7 +5,10 @@ import img1 from '../../../../assets/Images/Dashboard/profile-img.png'
 import img2 from '../../../../assets/Images/Dashboard/logo-upload.png'
 
 const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
+
  const [isOpen, setIsOpen] = useState(false);
+ const [isOpen2, setIsOpen2] = useState(true);
+ const [isOpen3, setIsOpen3] = useState(true);
 
     if (!selectedItem) {
         return <div>No item selected. Please go back and select an item.</div>;
@@ -14,6 +17,12 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
 
     const toggleDropdown = () => {
       setIsOpen(!isOpen);
+    };
+    const toggleDropdown2 = () => {
+      setIsOpen2(!isOpen2);
+    };
+    const toggleDropdown3 = () => {
+      setIsOpen3(!isOpen3);
     };
 
   return (
@@ -147,8 +156,12 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
                         <div className="dropdownSection-header">
                             <p>FRAMEWORK DETAILS</p>
                             <div className="header-icon" onClick={toggleDropdown}>
-                               <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24">  <path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path></svg>
-                                </div>
+                            {isOpen ? 
+                            ( <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                            ) : (
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"> <path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path></svg>
+                            )}
+                            </div>
                         </div>
                         <div className= {isOpen ? " d-none" :"dropdownSection-body"}>
                           <div className="dropdownSection-box">
@@ -170,7 +183,7 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
                              <div className="dropdownSection-box-content">
                               <div className="dropdownIconText">
                                 <h6>Compliance Contacts</h6>
-                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.25 15V18C20.25 20.418 18.918 21.75 16.5 21.75H6.5C4.082 21.75 2.75 20.418 2.75 18V8C2.75 5.582 4.082 4.25 6.5 4.25H9.5C9.914 4.25 10.25 4.586 10.25 5C10.25 5.414 9.914 5.75 9.5 5.75H6.5C4.923 5.75 4.25 6.423 4.25 8V18C4.25 19.577 4.923 20.25 6.5 20.25H16.5C18.077 20.25 18.75 19.577 18.75 18V15C18.75 14.586 19.086 14.25 19.5 14.25C19.914 14.25 20.25 14.586 20.25 15ZM22.25 6.056C22.249 6.643 22.02 7.194 21.604 7.608L12.641 16.531C12.5 16.671 12.31 16.75 12.112 16.75H8.5C8.086 16.75 7.75 16.414 7.75 16V12.389C7.75 12.191 7.82799 12 7.96899 11.86L16.892 2.896C17.305 2.48 17.857 2.251 18.444 2.25C18.445 2.25 18.446 2.25 18.447 2.25C19.033 2.25 19.584 2.47801 19.999 2.89301L21.608 4.50201C22.022 4.91701 22.251 5.469 22.25 6.056ZM18.117 8.96301L15.537 6.383L9.25 12.699V15.251H11.802L18.117 8.96301ZM20.75 6.05399C20.75 5.86799 20.678 5.69301 20.547 5.56201L18.938 3.953C18.807 3.822 18.632 3.75 18.447 3.75H18.446C18.26 3.75 18.086 3.82301 17.955 3.95401L16.596 5.319L19.181 7.90399L20.546 6.54501C20.677 6.41501 20.749 6.23999 20.75 6.05399Z" fill="#25314C"/></svg>
+                                <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="0.5" width="27" height="19" rx="1.5" fill="white"/><rect x="1" y="0.5" width="27" height="19" rx="1.5" stroke="#E2E8F0"/><rect width="12" height="12" transform="translate(8.5 4)" fill="white"/><path d="M14.5 6.875V13.125" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.625 10H11.375" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                               </div>
                               <div className="dropdownIcon">
                                <p><span>Adeola Nasri</span><div className="svg"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 1.5L4 4M4 4L1.5 6.5M4 4L6.5 6.5M4 4L1.5 1.5" stroke="#929292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div></p>
@@ -181,7 +194,7 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
                              <div className="dropdownSection-box-content">
                               <div className="dropdownIconText">
                                 <h6>Owner</h6>
-                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.25 15V18C20.25 20.418 18.918 21.75 16.5 21.75H6.5C4.082 21.75 2.75 20.418 2.75 18V8C2.75 5.582 4.082 4.25 6.5 4.25H9.5C9.914 4.25 10.25 4.586 10.25 5C10.25 5.414 9.914 5.75 9.5 5.75H6.5C4.923 5.75 4.25 6.423 4.25 8V18C4.25 19.577 4.923 20.25 6.5 20.25H16.5C18.077 20.25 18.75 19.577 18.75 18V15C18.75 14.586 19.086 14.25 19.5 14.25C19.914 14.25 20.25 14.586 20.25 15ZM22.25 6.056C22.249 6.643 22.02 7.194 21.604 7.608L12.641 16.531C12.5 16.671 12.31 16.75 12.112 16.75H8.5C8.086 16.75 7.75 16.414 7.75 16V12.389C7.75 12.191 7.82799 12 7.96899 11.86L16.892 2.896C17.305 2.48 17.857 2.251 18.444 2.25C18.445 2.25 18.446 2.25 18.447 2.25C19.033 2.25 19.584 2.47801 19.999 2.89301L21.608 4.50201C22.022 4.91701 22.251 5.469 22.25 6.056ZM18.117 8.96301L15.537 6.383L9.25 12.699V15.251H11.802L18.117 8.96301ZM20.75 6.05399C20.75 5.86799 20.678 5.69301 20.547 5.56201L18.938 3.953C18.807 3.822 18.632 3.75 18.447 3.75H18.446C18.26 3.75 18.086 3.82301 17.955 3.95401L16.596 5.319L19.181 7.90399L20.546 6.54501C20.677 6.41501 20.749 6.23999 20.75 6.05399Z" fill="#25314C"/></svg>
+                                <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="0.5" width="27" height="19" rx="1.5" fill="white"/><rect x="1" y="0.5" width="27" height="19" rx="1.5" stroke="#E2E8F0"/><rect width="12" height="12" transform="translate(8.5 4)" fill="white"/><path d="M14.5 6.875V13.125" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.625 10H11.375" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                               </div>
                               <div className="dropdownIcon">
                                <p><span>Adeola Nasri</span><div className="svg"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 1.5L4 4M4 4L1.5 6.5M4 4L6.5 6.5M4 4L1.5 1.5" stroke="#929292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div></p>
@@ -199,7 +212,7 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
                              <div className="dropdownSection-box-content">
                               <div className="dropdownIconText">
                                 <h6>Additional Owner</h6>
-                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.25 15V18C20.25 20.418 18.918 21.75 16.5 21.75H6.5C4.082 21.75 2.75 20.418 2.75 18V8C2.75 5.582 4.082 4.25 6.5 4.25H9.5C9.914 4.25 10.25 4.586 10.25 5C10.25 5.414 9.914 5.75 9.5 5.75H6.5C4.923 5.75 4.25 6.423 4.25 8V18C4.25 19.577 4.923 20.25 6.5 20.25H16.5C18.077 20.25 18.75 19.577 18.75 18V15C18.75 14.586 19.086 14.25 19.5 14.25C19.914 14.25 20.25 14.586 20.25 15ZM22.25 6.056C22.249 6.643 22.02 7.194 21.604 7.608L12.641 16.531C12.5 16.671 12.31 16.75 12.112 16.75H8.5C8.086 16.75 7.75 16.414 7.75 16V12.389C7.75 12.191 7.82799 12 7.96899 11.86L16.892 2.896C17.305 2.48 17.857 2.251 18.444 2.25C18.445 2.25 18.446 2.25 18.447 2.25C19.033 2.25 19.584 2.47801 19.999 2.89301L21.608 4.50201C22.022 4.91701 22.251 5.469 22.25 6.056ZM18.117 8.96301L15.537 6.383L9.25 12.699V15.251H11.802L18.117 8.96301ZM20.75 6.05399C20.75 5.86799 20.678 5.69301 20.547 5.56201L18.938 3.953C18.807 3.822 18.632 3.75 18.447 3.75H18.446C18.26 3.75 18.086 3.82301 17.955 3.95401L16.596 5.319L19.181 7.90399L20.546 6.54501C20.677 6.41501 20.749 6.23999 20.75 6.05399Z" fill="#25314C"/></svg>
+                                <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="0.5" width="27" height="19" rx="1.5" fill="white"/><rect x="1" y="0.5" width="27" height="19" rx="1.5" stroke="#E2E8F0"/><rect width="12" height="12" transform="translate(8.5 4)" fill="white"/><path d="M14.5 6.875V13.125" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.625 10H11.375" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                               </div>
                               <div className="dropdownIcon">
                                <p><span>Adeola Nasri</span> <div className="svg"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 1.5L4 4M4 4L1.5 6.5M4 4L6.5 6.5M4 4L1.5 1.5" stroke="#929292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div></p>
@@ -213,16 +226,20 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
                      <div className="dropdownSection">
                         <div className="dropdownSection-header">
                             <p>FRAMEWORK SCOPE</p>
-                            <div className="header-icon" onClick={toggleDropdown}>
-                               <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24">  <path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path></svg>
-                                </div>
+                            <div className="header-icon" onClick={toggleDropdown2}>
+                            {isOpen2 ? 
+                            ( <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                            ) : (
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"> <path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path></svg>
+                            )}
+                            </div>
                         </div>
-                        <div className="dropdownSection-body">
+                        <div  className= {isOpen2 ? " d-none" :"dropdownSection-body"}>
                           <div className="dropdownSection-box">
                              <div className="dropdownSection-box-content">
                               <div className="dropdownIconText">
                                 <h6>Scope</h6>
-                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.25 15V18C20.25 20.418 18.918 21.75 16.5 21.75H6.5C4.082 21.75 2.75 20.418 2.75 18V8C2.75 5.582 4.082 4.25 6.5 4.25H9.5C9.914 4.25 10.25 4.586 10.25 5C10.25 5.414 9.914 5.75 9.5 5.75H6.5C4.923 5.75 4.25 6.423 4.25 8V18C4.25 19.577 4.923 20.25 6.5 20.25H16.5C18.077 20.25 18.75 19.577 18.75 18V15C18.75 14.586 19.086 14.25 19.5 14.25C19.914 14.25 20.25 14.586 20.25 15ZM22.25 6.056C22.249 6.643 22.02 7.194 21.604 7.608L12.641 16.531C12.5 16.671 12.31 16.75 12.112 16.75H8.5C8.086 16.75 7.75 16.414 7.75 16V12.389C7.75 12.191 7.82799 12 7.96899 11.86L16.892 2.896C17.305 2.48 17.857 2.251 18.444 2.25C18.445 2.25 18.446 2.25 18.447 2.25C19.033 2.25 19.584 2.47801 19.999 2.89301L21.608 4.50201C22.022 4.91701 22.251 5.469 22.25 6.056ZM18.117 8.96301L15.537 6.383L9.25 12.699V15.251H11.802L18.117 8.96301ZM20.75 6.05399C20.75 5.86799 20.678 5.69301 20.547 5.56201L18.938 3.953C18.807 3.822 18.632 3.75 18.447 3.75H18.446C18.26 3.75 18.086 3.82301 17.955 3.95401L16.596 5.319L19.181 7.90399L20.546 6.54501C20.677 6.41501 20.749 6.23999 20.75 6.05399Z" fill="#25314C"/></svg>
+                                <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="0.5" width="27" height="19" rx="1.5" fill="white"/><rect x="1" y="0.5" width="27" height="19" rx="1.5" stroke="#E2E8F0"/><rect width="12" height="12" transform="translate(8.5 4)" fill="white"/><path d="M14.5 6.875V13.125" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.625 10H11.375" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                               </div>
                               <div className="dropdownIcon">
                                <p><span>Control - ISO 27001</span><div className="svg"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 1.5L4 4M4 4L1.5 6.5M4 4L6.5 6.5M4 4L1.5 1.5" stroke="#929292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div></p>
@@ -231,7 +248,7 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
                              <div className="dropdownSection-box-content">
                               <div className="dropdownIconText">
                                 <h6>Depertments</h6>
-                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.25 15V18C20.25 20.418 18.918 21.75 16.5 21.75H6.5C4.082 21.75 2.75 20.418 2.75 18V8C2.75 5.582 4.082 4.25 6.5 4.25H9.5C9.914 4.25 10.25 4.586 10.25 5C10.25 5.414 9.914 5.75 9.5 5.75H6.5C4.923 5.75 4.25 6.423 4.25 8V18C4.25 19.577 4.923 20.25 6.5 20.25H16.5C18.077 20.25 18.75 19.577 18.75 18V15C18.75 14.586 19.086 14.25 19.5 14.25C19.914 14.25 20.25 14.586 20.25 15ZM22.25 6.056C22.249 6.643 22.02 7.194 21.604 7.608L12.641 16.531C12.5 16.671 12.31 16.75 12.112 16.75H8.5C8.086 16.75 7.75 16.414 7.75 16V12.389C7.75 12.191 7.82799 12 7.96899 11.86L16.892 2.896C17.305 2.48 17.857 2.251 18.444 2.25C18.445 2.25 18.446 2.25 18.447 2.25C19.033 2.25 19.584 2.47801 19.999 2.89301L21.608 4.50201C22.022 4.91701 22.251 5.469 22.25 6.056ZM18.117 8.96301L15.537 6.383L9.25 12.699V15.251H11.802L18.117 8.96301ZM20.75 6.05399C20.75 5.86799 20.678 5.69301 20.547 5.56201L18.938 3.953C18.807 3.822 18.632 3.75 18.447 3.75H18.446C18.26 3.75 18.086 3.82301 17.955 3.95401L16.596 5.319L19.181 7.90399L20.546 6.54501C20.677 6.41501 20.749 6.23999 20.75 6.05399Z" fill="#25314C"/></svg>
+                                <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="0.5" width="27" height="19" rx="1.5" fill="white"/><rect x="1" y="0.5" width="27" height="19" rx="1.5" stroke="#E2E8F0"/><rect width="12" height="12" transform="translate(8.5 4)" fill="white"/><path d="M14.5 6.875V13.125" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.625 10H11.375" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                               </div>
                              <div className="dropdownIcon">
                                <p><span>Control - ISO 27001</span><div className="svg"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 1.5L4 4M4 4L1.5 6.5M4 4L6.5 6.5M4 4L1.5 1.5" stroke="#929292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div></p>
@@ -240,7 +257,7 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
                              <div className="dropdownSection-box-content"> 
                               <div className="dropdownIconText">
                                 <h6>Assests</h6>
-                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.25 15V18C20.25 20.418 18.918 21.75 16.5 21.75H6.5C4.082 21.75 2.75 20.418 2.75 18V8C2.75 5.582 4.082 4.25 6.5 4.25H9.5C9.914 4.25 10.25 4.586 10.25 5C10.25 5.414 9.914 5.75 9.5 5.75H6.5C4.923 5.75 4.25 6.423 4.25 8V18C4.25 19.577 4.923 20.25 6.5 20.25H16.5C18.077 20.25 18.75 19.577 18.75 18V15C18.75 14.586 19.086 14.25 19.5 14.25C19.914 14.25 20.25 14.586 20.25 15ZM22.25 6.056C22.249 6.643 22.02 7.194 21.604 7.608L12.641 16.531C12.5 16.671 12.31 16.75 12.112 16.75H8.5C8.086 16.75 7.75 16.414 7.75 16V12.389C7.75 12.191 7.82799 12 7.96899 11.86L16.892 2.896C17.305 2.48 17.857 2.251 18.444 2.25C18.445 2.25 18.446 2.25 18.447 2.25C19.033 2.25 19.584 2.47801 19.999 2.89301L21.608 4.50201C22.022 4.91701 22.251 5.469 22.25 6.056ZM18.117 8.96301L15.537 6.383L9.25 12.699V15.251H11.802L18.117 8.96301ZM20.75 6.05399C20.75 5.86799 20.678 5.69301 20.547 5.56201L18.938 3.953C18.807 3.822 18.632 3.75 18.447 3.75H18.446C18.26 3.75 18.086 3.82301 17.955 3.95401L16.596 5.319L19.181 7.90399L20.546 6.54501C20.677 6.41501 20.749 6.23999 20.75 6.05399Z" fill="#25314C"/></svg>
+                                <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="0.5" width="27" height="19" rx="1.5" fill="white"/><rect x="1" y="0.5" width="27" height="19" rx="1.5" stroke="#E2E8F0"/><rect width="12" height="12" transform="translate(8.5 4)" fill="white"/><path d="M14.5 6.875V13.125" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.625 10H11.375" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                               </div>
                              <div className="dropdownIcon">
                                <p><span>Control - ISO 27001</span><div className="svg"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 1.5L4 4M4 4L1.5 6.5M4 4L6.5 6.5M4 4L1.5 1.5" stroke="#929292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div></p>
@@ -249,7 +266,7 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
                              <div className="dropdownSection-box-content">
                               <div className="dropdownIconText">
                                 <h6>Enity</h6>
-                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.25 15V18C20.25 20.418 18.918 21.75 16.5 21.75H6.5C4.082 21.75 2.75 20.418 2.75 18V8C2.75 5.582 4.082 4.25 6.5 4.25H9.5C9.914 4.25 10.25 4.586 10.25 5C10.25 5.414 9.914 5.75 9.5 5.75H6.5C4.923 5.75 4.25 6.423 4.25 8V18C4.25 19.577 4.923 20.25 6.5 20.25H16.5C18.077 20.25 18.75 19.577 18.75 18V15C18.75 14.586 19.086 14.25 19.5 14.25C19.914 14.25 20.25 14.586 20.25 15ZM22.25 6.056C22.249 6.643 22.02 7.194 21.604 7.608L12.641 16.531C12.5 16.671 12.31 16.75 12.112 16.75H8.5C8.086 16.75 7.75 16.414 7.75 16V12.389C7.75 12.191 7.82799 12 7.96899 11.86L16.892 2.896C17.305 2.48 17.857 2.251 18.444 2.25C18.445 2.25 18.446 2.25 18.447 2.25C19.033 2.25 19.584 2.47801 19.999 2.89301L21.608 4.50201C22.022 4.91701 22.251 5.469 22.25 6.056ZM18.117 8.96301L15.537 6.383L9.25 12.699V15.251H11.802L18.117 8.96301ZM20.75 6.05399C20.75 5.86799 20.678 5.69301 20.547 5.56201L18.938 3.953C18.807 3.822 18.632 3.75 18.447 3.75H18.446C18.26 3.75 18.086 3.82301 17.955 3.95401L16.596 5.319L19.181 7.90399L20.546 6.54501C20.677 6.41501 20.749 6.23999 20.75 6.05399Z" fill="#25314C"/></svg>
+                                <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="0.5" width="27" height="19" rx="1.5" fill="white"/><rect x="1" y="0.5" width="27" height="19" rx="1.5" stroke="#E2E8F0"/><rect width="12" height="12" transform="translate(8.5 4)" fill="white"/><path d="M14.5 6.875V13.125" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.625 10H11.375" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                               </div>
                             <div className="dropdownIcon">
                                <p><span>Control - ISO 27001</span><div className="svg"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 1.5L4 4M4 4L1.5 6.5M4 4L6.5 6.5M4 4L1.5 1.5" stroke="#929292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div></p>
@@ -258,7 +275,7 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
                              <div className="dropdownSection-box-content">
                               <div className="dropdownIconText">
                                 <h6>Process</h6>
-                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.25 15V18C20.25 20.418 18.918 21.75 16.5 21.75H6.5C4.082 21.75 2.75 20.418 2.75 18V8C2.75 5.582 4.082 4.25 6.5 4.25H9.5C9.914 4.25 10.25 4.586 10.25 5C10.25 5.414 9.914 5.75 9.5 5.75H6.5C4.923 5.75 4.25 6.423 4.25 8V18C4.25 19.577 4.923 20.25 6.5 20.25H16.5C18.077 20.25 18.75 19.577 18.75 18V15C18.75 14.586 19.086 14.25 19.5 14.25C19.914 14.25 20.25 14.586 20.25 15ZM22.25 6.056C22.249 6.643 22.02 7.194 21.604 7.608L12.641 16.531C12.5 16.671 12.31 16.75 12.112 16.75H8.5C8.086 16.75 7.75 16.414 7.75 16V12.389C7.75 12.191 7.82799 12 7.96899 11.86L16.892 2.896C17.305 2.48 17.857 2.251 18.444 2.25C18.445 2.25 18.446 2.25 18.447 2.25C19.033 2.25 19.584 2.47801 19.999 2.89301L21.608 4.50201C22.022 4.91701 22.251 5.469 22.25 6.056ZM18.117 8.96301L15.537 6.383L9.25 12.699V15.251H11.802L18.117 8.96301ZM20.75 6.05399C20.75 5.86799 20.678 5.69301 20.547 5.56201L18.938 3.953C18.807 3.822 18.632 3.75 18.447 3.75H18.446C18.26 3.75 18.086 3.82301 17.955 3.95401L16.596 5.319L19.181 7.90399L20.546 6.54501C20.677 6.41501 20.749 6.23999 20.75 6.05399Z" fill="#25314C"/></svg>
+                                <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="0.5" width="27" height="19" rx="1.5" fill="white"/><rect x="1" y="0.5" width="27" height="19" rx="1.5" stroke="#E2E8F0"/><rect width="12" height="12" transform="translate(8.5 4)" fill="white"/><path d="M14.5 6.875V13.125" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.625 10H11.375" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                               </div>
                             <div className="dropdownIcon">
                                <p><span>Control - ISO 27001</span><div className="svg"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 1.5L4 4M4 4L1.5 6.5M4 4L6.5 6.5M4 4L1.5 1.5" stroke="#929292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div></p>
@@ -267,7 +284,7 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
                              <div className="dropdownSection-box-content">
                               <div className="dropdownIconText">
                                 <h6>Products</h6>
-                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.25 15V18C20.25 20.418 18.918 21.75 16.5 21.75H6.5C4.082 21.75 2.75 20.418 2.75 18V8C2.75 5.582 4.082 4.25 6.5 4.25H9.5C9.914 4.25 10.25 4.586 10.25 5C10.25 5.414 9.914 5.75 9.5 5.75H6.5C4.923 5.75 4.25 6.423 4.25 8V18C4.25 19.577 4.923 20.25 6.5 20.25H16.5C18.077 20.25 18.75 19.577 18.75 18V15C18.75 14.586 19.086 14.25 19.5 14.25C19.914 14.25 20.25 14.586 20.25 15ZM22.25 6.056C22.249 6.643 22.02 7.194 21.604 7.608L12.641 16.531C12.5 16.671 12.31 16.75 12.112 16.75H8.5C8.086 16.75 7.75 16.414 7.75 16V12.389C7.75 12.191 7.82799 12 7.96899 11.86L16.892 2.896C17.305 2.48 17.857 2.251 18.444 2.25C18.445 2.25 18.446 2.25 18.447 2.25C19.033 2.25 19.584 2.47801 19.999 2.89301L21.608 4.50201C22.022 4.91701 22.251 5.469 22.25 6.056ZM18.117 8.96301L15.537 6.383L9.25 12.699V15.251H11.802L18.117 8.96301ZM20.75 6.05399C20.75 5.86799 20.678 5.69301 20.547 5.56201L18.938 3.953C18.807 3.822 18.632 3.75 18.447 3.75H18.446C18.26 3.75 18.086 3.82301 17.955 3.95401L16.596 5.319L19.181 7.90399L20.546 6.54501C20.677 6.41501 20.749 6.23999 20.75 6.05399Z" fill="#25314C"/></svg>
+                                <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="0.5" width="27" height="19" rx="1.5" fill="white"/><rect x="1" y="0.5" width="27" height="19" rx="1.5" stroke="#E2E8F0"/><rect width="12" height="12" transform="translate(8.5 4)" fill="white"/><path d="M14.5 6.875V13.125" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.625 10H11.375" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                               </div>
                             <div className="dropdownIcon">
                                <p><span>Control - ISO 27001</span><div className="svg"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 1.5L4 4M4 4L1.5 6.5M4 4L6.5 6.5M4 4L1.5 1.5" stroke="#929292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div></p>
@@ -279,11 +296,15 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
                     <div className="dropdownSection">
                         <div className="dropdownSection-header">
                             <p>REPORT</p>
-                            <div className="header-icon" onClick={toggleDropdown}>
-                               <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24">  <path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path></svg>
-                                </div>
+                            <div className="header-icon" onClick={toggleDropdown3}>
+                            {isOpen3 ? 
+                            ( <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                            ) : (
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"> <path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path></svg>
+                            )}
+                            </div>
                         </div>
-                        <div className="dropdownSection-body">
+                        <div  className= {isOpen3 ? " d-none" :"dropdownSection-body"}>
                           <div className="dropdownSection-box">
                                 <div className="dropdownSection">
                                     <div className="dropdownSection-box-content">
@@ -301,7 +322,7 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
                           <div className="dropdownSection-box-content">
                               <div className="dropdownIconText">
                                 <h6>Scope</h6>
-                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.25 15V18C20.25 20.418 18.918 21.75 16.5 21.75H6.5C4.082 21.75 2.75 20.418 2.75 18V8C2.75 5.582 4.082 4.25 6.5 4.25H9.5C9.914 4.25 10.25 4.586 10.25 5C10.25 5.414 9.914 5.75 9.5 5.75H6.5C4.923 5.75 4.25 6.423 4.25 8V18C4.25 19.577 4.923 20.25 6.5 20.25H16.5C18.077 20.25 18.75 19.577 18.75 18V15C18.75 14.586 19.086 14.25 19.5 14.25C19.914 14.25 20.25 14.586 20.25 15ZM22.25 6.056C22.249 6.643 22.02 7.194 21.604 7.608L12.641 16.531C12.5 16.671 12.31 16.75 12.112 16.75H8.5C8.086 16.75 7.75 16.414 7.75 16V12.389C7.75 12.191 7.82799 12 7.96899 11.86L16.892 2.896C17.305 2.48 17.857 2.251 18.444 2.25C18.445 2.25 18.446 2.25 18.447 2.25C19.033 2.25 19.584 2.47801 19.999 2.89301L21.608 4.50201C22.022 4.91701 22.251 5.469 22.25 6.056ZM18.117 8.96301L15.537 6.383L9.25 12.699V15.251H11.802L18.117 8.96301ZM20.75 6.05399C20.75 5.86799 20.678 5.69301 20.547 5.56201L18.938 3.953C18.807 3.822 18.632 3.75 18.447 3.75H18.446C18.26 3.75 18.086 3.82301 17.955 3.95401L16.596 5.319L19.181 7.90399L20.546 6.54501C20.677 6.41501 20.749 6.23999 20.75 6.05399Z" fill="#25314C"/></svg>
+                                <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="0.5" width="27" height="19" rx="1.5" fill="white"/><rect x="1" y="0.5" width="27" height="19" rx="1.5" stroke="#E2E8F0"/><rect width="12" height="12" transform="translate(8.5 4)" fill="white"/><path d="M14.5 6.875V13.125" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.625 10H11.375" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                               </div>
                               <div className="dropdownIcon">
                                <p><span>Control - ISO 27001</span><div className="svg"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 1.5L4 4M4 4L1.5 6.5M4 4L6.5 6.5M4 4L1.5 1.5" stroke="#929292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div></p>

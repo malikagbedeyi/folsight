@@ -8,6 +8,8 @@ import img1 from '../../../../assets/Images/Dashboard/profile-img.png'
 import img2 from '../../../../assets/Images/Dashboard/logo-upload.png'
 import {tableData,gridData} from './frameworkTable'
 import CreateFrameWork from './CreateFrameWork';
+import ExportFramework from './ExportFramework';
+import ImportFrameWork from './ImportFrameWork';
 
 const FrrameWork = ({ page, handlePage,setSelectedItem}) => {
 
@@ -20,6 +22,10 @@ const [currentPage, setCurrentPage] = useState(1);
 const [currentPag2, setCurrentPag2] = useState(2);
 const [itemPerPage] = useState(10);
 const [itemPerPage2] = useState(10);
+
+const [proceed,setProceed] = useState(false)
+const [Import,setImport] = useState(null)
+
 const navigate = useNavigate();
 
 
@@ -83,6 +89,12 @@ const handleClickFramework = (row) => {
   //navigate('/detail', { state: row });
   setSelectedItem(row);
   handlePage(2);
+};
+const handleProceed = () => {
+  setProceed(!proceed)
+}
+const handleImport = (id) => {
+  setImport(id);
 };
 
   return (
@@ -170,13 +182,13 @@ const handleClickFramework = (row) => {
                               </ul>
                             </div>
                         </div>
-                        <div className="import-input">
+                        <div onClick={() => handleImport(1)} className="import-input">
                             <p>Import</p>
                             <div className="input-icon">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 13.0001V17.0001C19 17.5305 18.7893 18.0392 18.4142 18.4143C18.0391 18.7894 17.5304 19.0001 17 19.0001H3C2.46957 19.0001 1.96086 18.7894 1.58579 18.4143C1.21071 18.0392 1 17.5305 1 17.0001V13.0001M5 8L10 13M10 13L15 8M10 13V1" stroke="#1B212C" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         </div>
                         </div>
-                        <div className="import-input">
+                        <div onClick={handleProceed} className="import-input">
                             <p>export</p>
                             <div className="input-icon">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 13V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V13M15 6L10 1M10 1L5 6M10 1V13" stroke="#1B212C" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -405,6 +417,8 @@ const handleClickFramework = (row) => {
       </div>
       </div>
         <CreateFrameWork createFrameWK={createFrameWK}  SetcreateFrameWK={SetcreateFrameWK} />
+        <ExportFramework proceed={proceed} setProceed={setProceed} data={tableData}/>
+        <ImportFrameWork  Import={Import}  setImport={setImport} handlePage={handlePage} />
     </div>
   )
 }
