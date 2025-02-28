@@ -258,7 +258,11 @@
               cursor: pointer;
               .left-box{
                 display: flex;
+                align-items: center;
                 gap: 10px;
+                p{
+                  margin: 0;
+                }
                 .leftbox-content{
               background: #FAF8FD;
               display: flex;

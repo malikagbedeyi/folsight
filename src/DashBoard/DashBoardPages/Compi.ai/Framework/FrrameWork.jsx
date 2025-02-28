@@ -78,15 +78,14 @@ const items = [
     "Date"
 ];
 const viewitem = [
-    "All",
-    "Framework ID",
-    "Title"
+    "Create View",
+    "Share Permanent Link",
+    "Manage View"
 ];
 const handleCreateFrameWK = ()=>{
   SetcreateFrameWK(!createFrameWK);
 }
 const handleClickFramework = (row) => {
-  //navigate('/detail', { state: row });
   setSelectedItem(row);
   handlePage(2);
 };
@@ -206,9 +205,9 @@ const handleImport = (id) => {
                               {viewitem.map((item, index) => (
                 <li key={index}>
                     <span>{item}</span>
-                    <div onClick={() => handleClick(index)} className="check">
+                    {/* <div onClick={() => handleClick(index)} className="check">
                         {checkedItems[index] ?   ( <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.65" y="1.15" width="14.7" height="14.7" rx="1.35" stroke="#263238" strokeWidth="1.3"/><rect x="2" y="2.5" width="12" height="12" rx="2" fill="#334353"/><path d="M4 9L6.11881 11.5426C6.31773 11.7813 6.68391 11.7827 6.88462 11.5455L12 5.5" stroke="white"/> </svg> ) : ( <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect x="0.65" y="1.15" width="14.7" height="14.7" rx="1.35" stroke="#263238" strokeWidth="1.3"/> </svg>  )}
-                    </div>
+                    </div> */}
                 </li>
             ))}
                               </ul>
@@ -416,7 +415,7 @@ const handleImport = (id) => {
    </div>
       </div>
       </div>
-        <CreateFrameWork createFrameWK={createFrameWK}  SetcreateFrameWK={SetcreateFrameWK} />
+        <CreateFrameWork createFrameWK={createFrameWK}  SetcreateFrameWK={SetcreateFrameWK} handlePage={handlePage} />
         <ExportFramework proceed={proceed} setProceed={setProceed} data={tableData}/>
         <ImportFrameWork  Import={Import}  setImport={setImport} handlePage={handlePage} />
     </div>

@@ -587,4 +587,65 @@ border: 1px solid #E21D12;
      }
       }
       }
+.successMessage{
+   position: fixed;
+    top: 0;
+   left: 0;
+   padding:0 10px;
+   width: 100%;
+   z-index: 1001;
+   background: rgba(54, 53, 86, 0.42);
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   padding: 30px 0px 10px;
+
+.successMessage-container{
+    background: #fff;
+    width:580px;
+    padding: 70px 50px; 
+    overflow-y: auto;
+    scrollbar-width: none;
+    border-radius: 8px;
+    animation: fadeIn .4s ease-in-out;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Poppins" sans-serif;
+    .successMessage-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      h2{
+         font-family: "Poppins" sans-serif;
+         font-weight: 600;
+         font-size: 30px;
+        color: #263238;
+        margin: 0;
+      }
+      p{
+         font-family: "Poppins" sans-serif;
+         font-weight: 500;
+         font-size: 20px;
+         color: #263238;
+         margin: 0;
+      }
+      button{
+        width: 100%;
+        margin-top: 10%;
+        border: none;
+        border-radius: 6px;
+        background: #0152FF;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 10px 20px;
+      }
+    }
+}
+}
       }

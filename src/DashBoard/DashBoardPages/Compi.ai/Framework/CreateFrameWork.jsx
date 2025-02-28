@@ -3,14 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
 import '../../../../assets/scss/Dashboard/Compl.ai/DashFramework/createframework.scss'
 
-const CreateFrameWork = ({ createFrameWK,SetcreateFrameWK }) => {
+const CreateFrameWork = ({ createFrameWK,SetcreateFrameWK,handlePage }) => {
 
   const [text, setText] = useState("");
-  const [selectedOption, setSelectedOption] = useState('Control - ISO 27001');
+  const [selectedOption, setSelectedOption] = useState(' ISO 27001');
   const [dropdown, setDropdown] = useState(false);
-  const [selectedOption2, setSelectedOption2] = useState('Control - ISO 27001');
+  const [selectedOption2, setSelectedOption2] = useState('Control-ISO 27001');
   const [dropdown2, setDropdown2] = useState(false);
-  const [selectedOption3, setSelectedOption3] = useState('Map Risk');
+  const [selectedOption3, setSelectedOption3] = useState('Control-ISO 27001');
   const [dropdown3, setDropdown3] = useState(false);
   const [proceed,setProceed] = useState(false)
   
@@ -125,7 +125,7 @@ const CreateFrameWork = ({ createFrameWK,SetcreateFrameWK }) => {
                    </div>
                    <div onClick={handleDropdown} className="selectoption-box">
                     <div className="left-box">
-                      <p>{selectedOption}</p>
+                      <p>Control - {selectedOption}</p>
                     </div>
                     <div className="right-box">
                     <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.74719 1.50375C1.93719 1.50375 2.12719 1.57375 2.27719 1.72375L5.27719 4.72375L8.27719 1.72375C8.56719 1.43375 9.04719 1.43375 9.33719 1.72375C9.62719 2.01375 9.62719 2.49375 9.33719 2.78375L5.80719 6.31375C5.51719 6.60375 5.03719 6.60375 4.74719 6.31375L1.21719 2.78375C0.927188 2.49375 0.927188 2.01375 1.21719 1.72375C1.36719 1.57375 1.55719 1.50375 1.74719 1.50375Z" fill="#333333"/></svg>
@@ -142,61 +142,61 @@ const CreateFrameWork = ({ createFrameWK,SetcreateFrameWK }) => {
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.9994 8.57478V15.4319M8.57087 12.0033H15.428M5.99944 4.28906H17.9994C18.9462 4.28906 19.7137 5.05657 19.7137 6.00335V18.0033C19.7137 18.9501 18.9462 19.7176 17.9994 19.7176H5.99944C5.05267 19.7176 4.28516 18.9501 4.28516 18.0033V6.00335C4.28516 5.05657 5.05267 4.28906 5.99944 4.28906Z" stroke="#0152FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                    </div>
                    <div onClick={() => setDropdown(false)} className="bottom-dropdown">
-                   <div className="bottom-dropdown-content">
+                   <div className="bottom-dropdown-content" onClick={() => handleOptionClick('ISO 27001')}>
                     <span>ISO 27001</span>
                     <div className="bottom-dropdownIcon">
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.80655 1.14844L3.56845 6.38653L1.1875 4.00558" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
                    </div>
-                      <div className="bottom-dropdown-content">
+                      <div className="bottom-dropdown-content" onClick={() => handleOptionClick('NIST')}>
                     <span>NIST</span>
                     <div className="bottom-dropdownIcon">
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.80655 1.14844L3.56845 6.38653L1.1875 4.00558" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
                    </div>
-                   <div className="bottom-dropdown-content">
+                   <div className="bottom-dropdown-content" onClick={() => handleOptionClick('PCI DSS')}>
                     <span>PCI DSS</span>
                     <div className="bottom-dropdownIcon">
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.80655 1.14844L3.56845 6.38653L1.1875 4.00558" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
                    </div>
-                   <div className="bottom-dropdown-content">
+                   <div className="bottom-dropdown-content"  onClick={() => handleOptionClick('HIPAA / HITRUST')}>
                     <span>HIPAA / HITRUST</span>
                     <div className="bottom-dropdownIcon">
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.80655 1.14844L3.56845 6.38653L1.1875 4.00558" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
                    </div>
-                   <div className="bottom-dropdown-content">
+                   <div className="bottom-dropdown-content" onClick={() => handleOptionClick('EU DORIA')}>
                     <span>EU DORIA</span>
                     <div className="bottom-dropdownIcon">
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.80655 1.14844L3.56845 6.38653L1.1875 4.00558" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
                    </div>
-                   <div className="bottom-dropdown-content">
+                   <div className="bottom-dropdown-content" onClick={() => handleOptionClick('SOX')}>
                     <span>SOX</span>
                     <div className="bottom-dropdownIcon">
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.80655 1.14844L3.56845 6.38653L1.1875 4.00558" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
                    </div>
-                   <div className="bottom-dropdown-content">
+                   <div className="bottom-dropdown-content" onClick={() => handleOptionClick('COBIT')}>
                     <span>COBIT</span>
                     <div className="bottom-dropdownIcon">
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.80655 1.14844L3.56845 6.38653L1.1875 4.00558" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
                    </div>
-                   <div className="bottom-dropdown-content">
+                   <div className="bottom-dropdown-content" onClick={() => handleOptionClick('CSA CCM')}>
                     <span>CSA CCM</span>
                     <div className="bottom-dropdownIcon">
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.80655 1.14844L3.56845 6.38653L1.1875 4.00558" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
                    </div>
-                   <div className="bottom-dropdown-content">
+                   <div className="bottom-dropdown-content" onClick={() => handleOptionClick('SOC')}>
                     <p>SOC</p>
                     <div className="bottom-dropdownIcon">
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.80655 1.14844L3.56845 6.38653L1.1875 4.00558" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
                    </div>
-                                     <div className="bottom-dropdown-content">
+                    <div className="bottom-dropdown-content" onClick={() => handleOptionClick('GDPR')}>
                     <span>GDPR</span>
                     <div className="bottom-dropdownIcon">
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.80655 1.14844L3.56845 6.38653L1.1875 4.00558" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -230,26 +230,26 @@ const CreateFrameWork = ({ createFrameWK,SetcreateFrameWK }) => {
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.9994 8.57478V15.4319M8.57087 12.0033H15.428M5.99944 4.28906H17.9994C18.9462 4.28906 19.7137 5.05657 19.7137 6.00335V18.0033C19.7137 18.9501 18.9462 19.7176 17.9994 19.7176H5.99944C5.05267 19.7176 4.28516 18.9501 4.28516 18.0033V6.00335C4.28516 5.05657 5.05267 4.28906 5.99944 4.28906Z" stroke="#0152FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                    </div>
                    <div onClick={() => setDropdown2(false)} className="bottom-dropdown">
-                   <div className="bottom-dropdown-content">
+                   <div className="bottom-dropdown-content" onClick={() => handleOptionClick2('CONTROL 2798 - Encryption at Rest')}>
                     <p>CONTROL 2798 - Encryption at Rest</p>
                     <div className="bottom-dropdownIcon">
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.80655 1.14844L3.56845 6.38653L1.1875 4.00558" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
                    </div>
-                      <div className="bottom-dropdown-content">
+                      <div className="bottom-dropdown-content" onClick={() => handleOptionClick2('CONTROL 2324')}>
                     <p>CONTROL 2324</p>
                     <div className="bottom-dropdownIcon">
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.80655 1.14844L3.56845 6.38653L1.1875 4.00558" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
                    </div>
-                   <div className="bottom-dropdown-content">
+                   <div className="bottom-dropdown-content" onClick={() => handleOptionClick2('CONTROL 1094 - Mongo Database Backup')}>
                     <p>CONTROL 1094 - <span> - Mongo Database Backup</span></p>
                     <div className="bottom-dropdownIcon">
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.80655 1.14844L3.56845 6.38653L1.1875 4.00558" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
                    </div>
-                   <div className="bottom-dropdown-content">
-                    <p>CONTROL 3234 <span> - User Identification and Authentic...</span></p>
+                   <div className="bottom-dropdown-content" onClick={() => handleOptionClick2('CONTROL 3234  - User Identification and Authentication')}>
+                    <p>CONTROL 3234 <span> - User Identification and Authentication</span></p>
                     <div className="bottom-dropdownIcon">
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.80655 1.14844L3.56845 6.38653L1.1875 4.00558" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
@@ -260,12 +260,12 @@ const CreateFrameWork = ({ createFrameWK,SetcreateFrameWK }) => {
                     </div>
                     <div className="selectoption-content">
                     <div className="top-selectoption-content">
-                    <p>{selectedOption3}</p>
+                    <p>Map Risk</p>
                      <span className='selectoption-icon'><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 5C0.5 2.51464 2.51464 0.5 5 0.5C7.48536 0.5 9.5 2.51464 9.5 5C9.5 7.48536 7.48536 9.5 5 9.5C2.51464 9.5 0.5 7.48536 0.5 5ZM5 1.875C4.51686 1.875 4.125 2.26686 4.125 2.75V5.03552C4.125 5.38382 4.32865 5.68469 4.62334 5.82549C4.26013 5.97604 4.00745 6.33505 4.00745 6.75C4.00745 7.30546 4.4612 7.75 5.01001 7.75C5.56215 7.75 6.01001 7.30214 6.01001 6.75C6.01001 6.33007 5.75112 5.97015 5.38367 5.8221C5.67457 5.67989 5.875 5.38105 5.875 5.03552V2.75C5.875 2.26686 5.48314 1.875 5 1.875Z" stroke="#AAA8A8"/></svg></span>
                    </div>
                    <div onClick={handleDropdown3} className="selectoption-box">
                     <div className="left-box">
-                      <p>Control - ISO 27001</p>
+                      <p>{selectedOption3}</p>
                     </div>
                     <div className="right-box">
                     <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.74719 1.50375C1.93719 1.50375 2.12719 1.57375 2.27719 1.72375L5.27719 4.72375L8.27719 1.72375C8.56719 1.43375 9.04719 1.43375 9.33719 1.72375C9.62719 2.01375 9.62719 2.49375 9.33719 2.78375L5.80719 6.31375C5.51719 6.60375 5.03719 6.60375 4.74719 6.31375L1.21719 2.78375C0.927188 2.49375 0.927188 2.01375 1.21719 1.72375C1.36719 1.57375 1.55719 1.50375 1.74719 1.50375Z" fill="#333333"/></svg>
@@ -282,31 +282,31 @@ const CreateFrameWork = ({ createFrameWK,SetcreateFrameWK }) => {
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.9994 8.57478V15.4319M8.57087 12.0033H15.428M5.99944 4.28906H17.9994C18.9462 4.28906 19.7137 5.05657 19.7137 6.00335V18.0033C19.7137 18.9501 18.9462 19.7176 17.9994 19.7176H5.99944C5.05267 19.7176 4.28516 18.9501 4.28516 18.0033V6.00335C4.28516 5.05657 5.05267 4.28906 5.99944 4.28906Z" stroke="#0152FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                    </div>
                    <div onClick={() => setDropdown3(false)} className="bottom-dropdown">
-                   <div className="bottom-dropdown-content">
+                   <div className="bottom-dropdown-content " onClick={() => handleOptionClick3('CONTROL 2798 - Encryption at Rest')}>
                     <p>CONTROL 2798 - Encryption at Rest</p>
                     <div className="bottom-dropdownIcon">
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.80655 1.14844L3.56845 6.38653L1.1875 4.00558" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
                    </div>
-                      <div className="bottom-dropdown-content">
-                    <p>CONTROL 2324 -  RISK-193 - Accidental disclosure of informa... </p>
+                      <div className="bottom-dropdown-content" onClick={() => handleOptionClick3('CONTROL 2324 -  RISK-193 - Accidental disclosure of information')}>
+                    <p>CONTROL 2324 -  RISK-193 - Accidental disclosure of information </p>
                     <div className="bottom-dropdownIcon">
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.80655 1.14844L3.56845 6.38653L1.1875 4.00558" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
                    </div>
-                   <div className="bottom-dropdown-content">
+                   <div className="bottom-dropdown-content" onClick={() => handleOptionClick3('RISK-194 - Unprotected Sensitive Data')}>
                     <p> RISK-194 - Unprotected Sensitive Data</p>
                     <div className="bottom-dropdownIcon">
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.80655 1.14844L3.56845 6.38653L1.1875 4.00558" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
                    </div>
-                   <div className="bottom-dropdown-content">
+                   <div className="bottom-dropdown-content" onClick={() => handleOptionClick3('RISK-193 - Lack of Security Awareness')}>
                     <p>RISK-193 - Lack of Security Awareness</p>
                     <div className="bottom-dropdownIcon">
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.80655 1.14844L3.56845 6.38653L1.1875 4.00558" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
                    </div>
-                   <div className="bottom-dropdown-content">
+                   <div className="bottom-dropdown-content" onClick={() => handleOptionClick3('RISK-193 - Lack of Security Access')}>
                     <p>RISK-193 - Lack of Security Access</p>
                     <div className="bottom-dropdownIcon">
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.80655 1.14844L3.56845 6.38653L1.1875 4.00558" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -381,7 +381,7 @@ const CreateFrameWork = ({ createFrameWK,SetcreateFrameWK }) => {
                       </div>
                       </div>
                     </div>
-                    <div onClick={()=>setProceed(false)} className="proceed-bottom">
+                    <div onClick={()=>handlePage(2)} className="proceed-bottom">
                       <button>Done</button>
                       <button className="button"> Edit</button>
                     </div>

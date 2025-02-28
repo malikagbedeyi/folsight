@@ -143,7 +143,7 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
                     </div>
                     <div className="bottom-iconBox">
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.2855 8V11.5859L14.9926 13.293C15.3836 13.684 15.3836 14.316 14.9926 14.707C14.7976 14.902 14.5415 15 14.2855 15C14.0295 15 13.7735 14.902 13.5785 14.707L11.5785 12.707C11.3905 12.519 11.2855 12.265 11.2855 12V8C11.2855 7.448 11.7325 7 12.2855 7C12.8385 7 13.2855 7.448 13.2855 8ZM12.3114 2C9.64141 2 7.13453 3.07793 5.28553 4.92993V3C5.28553 2.448 4.83853 2 4.28553 2C3.73253 2 3.28553 2.448 3.28553 3V7C3.28553 7.552 3.73253 8 4.28553 8H8.28553C8.83853 8 9.28553 7.552 9.28553 7C9.28553 6.448 8.83853 6 8.28553 6H7.04652C8.48452 4.727 10.3454 4 12.3114 4C16.7074 4 20.2855 7.589 20.2855 12C20.2855 16.411 16.7084 20 12.3114 20C9.25641 20 6.5255 18.2991 5.1825 15.5601C4.9405 15.0641 4.34161 14.8581 3.84461 15.1021C3.34861 15.3451 3.14458 15.9439 3.38758 16.4399C5.06858 19.8699 8.48841 22 12.3114 22C17.8104 22 22.2855 17.514 22.2855 12C22.2855 6.486 17.8104 2 12.3114 2Z" fill="#1B212C" fill-opacity="0.6"/></svg>
-                        <span>Histiry Log</span>
+                        <span>History Log</span>
                     </div>
                     <div className="bottom-iconBox">
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.6445 2.25H4.64453C3.23553 2.25 2.39453 3.091 2.39453 4.5V8C2.39453 8.414 2.73053 8.75 3.14453 8.75H3.39453V18C3.39453 20.418 4.72653 21.75 7.14453 21.75H17.1445C19.5625 21.75 20.8945 20.418 20.8945 18V8.75H21.1445C21.5585 8.75 21.8945 8.414 21.8945 8V4.5C21.8945 3.091 21.0535 2.25 19.6445 2.25ZM3.89453 4.5C3.89453 3.911 4.05553 3.75 4.64453 3.75H19.6445C20.2335 3.75 20.3945 3.911 20.3945 4.5V7.25H3.89453V4.5ZM19.3945 18C19.3945 19.577 18.7215 20.25 17.1445 20.25H7.14453C5.56753 20.25 4.89453 19.577 4.89453 18V8.75H19.3945V18ZM9.39453 12C9.39453 11.586 9.73053 11.25 10.1445 11.25H14.1445C14.5585 11.25 14.8945 11.586 14.8945 12C14.8945 12.414 14.5585 12.75 14.1445 12.75H10.1445C9.73053 12.75 9.39453 12.414 9.39453 12Z" fill="#1B212C" fill-opacity="0.6"/></svg>
@@ -167,7 +167,7 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
                           <div className="dropdownSection-box">
                             <div className="dropdownSection-box-content">
                               <div className="dropdownIconText">
-                                <h6>FrameWork Description</h6>
+                                <h6>Framework Description</h6>
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.25 15V18C20.25 20.418 18.918 21.75 16.5 21.75H6.5C4.082 21.75 2.75 20.418 2.75 18V8C2.75 5.582 4.082 4.25 6.5 4.25H9.5C9.914 4.25 10.25 4.586 10.25 5C10.25 5.414 9.914 5.75 9.5 5.75H6.5C4.923 5.75 4.25 6.423 4.25 8V18C4.25 19.577 4.923 20.25 6.5 20.25H16.5C18.077 20.25 18.75 19.577 18.75 18V15C18.75 14.586 19.086 14.25 19.5 14.25C19.914 14.25 20.25 14.586 20.25 15ZM22.25 6.056C22.249 6.643 22.02 7.194 21.604 7.608L12.641 16.531C12.5 16.671 12.31 16.75 12.112 16.75H8.5C8.086 16.75 7.75 16.414 7.75 16V12.389C7.75 12.191 7.82799 12 7.96899 11.86L16.892 2.896C17.305 2.48 17.857 2.251 18.444 2.25C18.445 2.25 18.446 2.25 18.447 2.25C19.033 2.25 19.584 2.47801 19.999 2.89301L21.608 4.50201C22.022 4.91701 22.251 5.469 22.25 6.056ZM18.117 8.96301L15.537 6.383L9.25 12.699V15.251H11.802L18.117 8.96301ZM20.75 6.05399C20.75 5.86799 20.678 5.69301 20.547 5.56201L18.938 3.953C18.807 3.822 18.632 3.75 18.447 3.75H18.446C18.26 3.75 18.086 3.82301 17.955 3.95401L16.596 5.319L19.181 7.90399L20.546 6.54501C20.677 6.41501 20.749 6.23999 20.75 6.05399Z" fill="#25314C"/></svg>
                               </div>
                               <p>Lorem ipsum dolor sit ame, consecte tur a amet  amet Lorem ipsum dolor sit ame, consecte tur a amet Lorem ipsum dolor sit ame,  </p>
@@ -247,7 +247,7 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
                             </div>
                              <div className="dropdownSection-box-content">
                               <div className="dropdownIconText">
-                                <h6>Depertments</h6>
+                                <h6>Departments</h6>
                                 <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="0.5" width="27" height="19" rx="1.5" fill="white"/><rect x="1" y="0.5" width="27" height="19" rx="1.5" stroke="#E2E8F0"/><rect width="12" height="12" transform="translate(8.5 4)" fill="white"/><path d="M14.5 6.875V13.125" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.625 10H11.375" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                               </div>
                              <div className="dropdownIcon">
@@ -265,7 +265,7 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
                             </div>
                              <div className="dropdownSection-box-content">
                               <div className="dropdownIconText">
-                                <h6>Enity</h6>
+                                <h6>Entity</h6>
                                 <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="0.5" width="27" height="19" rx="1.5" fill="white"/><rect x="1" y="0.5" width="27" height="19" rx="1.5" stroke="#E2E8F0"/><rect width="12" height="12" transform="translate(8.5 4)" fill="white"/><path d="M14.5 6.875V13.125" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.625 10H11.375" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                               </div>
                             <div className="dropdownIcon">
@@ -309,7 +309,7 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
                                 <div className="dropdownSection">
                                     <div className="dropdownSection-box-content">
                               <div className="dropdownIconText">
-                                <h6>FrameWork Description</h6>
+                                <h6>Framework Description</h6>
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.25 15V18C20.25 20.418 18.918 21.75 16.5 21.75H6.5C4.082 21.75 2.75 20.418 2.75 18V8C2.75 5.582 4.082 4.25 6.5 4.25H9.5C9.914 4.25 10.25 4.586 10.25 5C10.25 5.414 9.914 5.75 9.5 5.75H6.5C4.923 5.75 4.25 6.423 4.25 8V18C4.25 19.577 4.923 20.25 6.5 20.25H16.5C18.077 20.25 18.75 19.577 18.75 18V15C18.75 14.586 19.086 14.25 19.5 14.25C19.914 14.25 20.25 14.586 20.25 15ZM22.25 6.056C22.249 6.643 22.02 7.194 21.604 7.608L12.641 16.531C12.5 16.671 12.31 16.75 12.112 16.75H8.5C8.086 16.75 7.75 16.414 7.75 16V12.389C7.75 12.191 7.82799 12 7.96899 11.86L16.892 2.896C17.305 2.48 17.857 2.251 18.444 2.25C18.445 2.25 18.446 2.25 18.447 2.25C19.033 2.25 19.584 2.47801 19.999 2.89301L21.608 4.50201C22.022 4.91701 22.251 5.469 22.25 6.056ZM18.117 8.96301L15.537 6.383L9.25 12.699V15.251H11.802L18.117 8.96301ZM20.75 6.05399C20.75 5.86799 20.678 5.69301 20.547 5.56201L18.938 3.953C18.807 3.822 18.632 3.75 18.447 3.75H18.446C18.26 3.75 18.086 3.82301 17.955 3.95401L16.596 5.319L19.181 7.90399L20.546 6.54501C20.677 6.41501 20.749 6.23999 20.75 6.05399Z" fill="#25314C"/></svg>
                               </div>
                               <p>Lorem ipsum dolor sit ame, consecte tur a amet  amet Lorem ipsum dolor sit ame, consecte tur a amet Lorem ipsum dolor sit ame,  </p>
@@ -328,8 +328,8 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
                                <p><span>Control - ISO 27001</span><div className="svg"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 1.5L4 4M4 4L1.5 6.5M4 4L6.5 6.5M4 4L1.5 1.5" stroke="#929292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div></p>
                              </div>
                               <div className="dropdownLink">
-                                <a href="#">Previous assessment report</a>
-                                 <a href="#">tounch</a>
+                                <a href="#">Previous Assessment Report</a>
+                                 <a href="#">Launch</a>
                              </div>
                             </div>
                             </div>
