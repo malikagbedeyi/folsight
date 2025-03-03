@@ -31,13 +31,16 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
             <div className="navMenuParent col-lg-12">
               <div className="navMenuChild">
                 <div className="topWrapper">
-                  <div className="leftTopWrapper">
-                    <h1>Compl.ai</h1> 
-                    <p>Dashboard 
-                      <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" ><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg></span> 
-                     <a onClick={() => handlePage(1)}> Framework</a>
-                     <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" ><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg></span>  <span>{title}</span></p>
-                  </div>
+                <div className="leftTopWrapper">
+              <h1>Compl.ai</h1> 
+              <div className="leftwrapper-contet">
+              <p>Dashboard </p>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" ><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg></span> 
+                <a onClick={() => handlePage(1)}> Framework</a>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" ><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg></span> 
+                <span className='title-top'>{title}</span>
+              </div>
+            </div>
                   <div className="rightTopWrapper">
                     <div className="menuicon">
                     <div className="notification">

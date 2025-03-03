@@ -218,9 +218,9 @@ const handleImport = (id) => {
             </div>
             <div className="framework-table-content">
                 <div className="framework-table ">
+                <div className="left-table ">
                     <div className="table-header">
-
-                      <div className="left-tableheader">
+                    <div className="left-tableheader">
                     <ul >
   <li >
     <div>
@@ -243,6 +243,23 @@ const handleImport = (id) => {
   </li>
   </ul>
   </div>
+                      </div>
+                      <div className="table-body">
+                      {currentItem.map((row, index) => (
+                         <div onClick={() => handleClickFramework(row)} key={index} className="table-row">
+                        <div className="tableRow-left">
+                          <div className="ul">
+                        <p className='table-icon'><span>{row.icon}</span></p>
+                         <p  > <span>{row.id}</span></p>
+                        <p > <span>{row.title}</span></p>
+                        </div>
+                        </div>
+                        </div> ))}
+                        </div>
+                      
+ </div> 
+ <div className="right-table">
+  <div className="table-header">
   <div className="right-tableheader">
   <ul>
   <li>
@@ -283,18 +300,12 @@ const handleImport = (id) => {
   </li>
 </ul>
 </div>
- </div>
   </div>
-                     <div className="framework-body ">
-                    <div className="table-body">
-                       {currentItem.map((row, index) => (
+  <div className="table-body">
+                      {currentItem.map((row, index) => (
                          <div onClick={() => handleClickFramework(row)} key={index} className="table-row">
-                        <div className="tableRow-left">
-                        <p><span>{row.icon}</span></p>
-                         <p  > <span>{row.id}</span></p>
-                        <p > <span>{row.title}</span></p>
-                        </div>
                         <div className="tableRow-right">
+                        <div className="ul">
                         <p> <span>{row.description}</span></p>
                         <p> <span className='double-tabeText'>{row.owner}</span><span>{row.ownerName}</span> </p>
                         <p> <span>{row.mapControl}</span></p>
@@ -302,11 +313,12 @@ const handleImport = (id) => {
                         <p> <span>{row.mapFramework}</span></p>
                         <p> <span className='double-tabeText'>{row.time}</span> <span>{row.date}</span></p>
                         <p style={{color:""}}> <span>{row.status}</span></p>
-                        <p> <span>{row.action}</span></p>
+                        <p className='table-icons'> <span>{row.action}</span></p>
                         </div>
-                       </div> ))}
-  </div>
-  
+                        </div>
+                        </div> ))}
+          </div>
+ </div>
   </div>
   <div className="pagination">
           <button className='double-paginateIcon' onClick={prevPage} disabled={currentPage === 1}>
