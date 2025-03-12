@@ -479,13 +479,14 @@
         overflow-x: auto;
         scrollbar-width: none;
         .table-header{
+          //  color: #0152FF;
          min-width: 200%;
             .right-tableheader{
                 width: 100%;
                     ul{
                     overflow-x: auto;
                   display: grid;
-                  grid-template-columns:5fr 2fr 3fr 3fr 3fr 2fr 1fr 1fr ;
+                  grid-template-columns:5fr 2fr 2.5fr 2fr 2.5fr 2fr 1fr 1fr ;
                 }
             }
         }
@@ -495,7 +496,7 @@
         .ul{
             display: grid; 
             gap: 10px;
-            grid-template-columns:5fr 2fr 3fr 3fr 3fr 2fr 1fr 1fr ;
+            grid-template-columns:5fr 2fr 2.5fr 2fr 2.5fr 2fr 1fr 1fr ;
             p{
                 display: flex;
                 flex-direction: column;
@@ -605,12 +606,12 @@
         color: #f4f4f4;
         .double-tabeText{
             font-weight: 500;
-            color: #373F41;
+            color: #263238;
             font-family: "Inter", sans-serif;
         }
-        span {
+        span {  
             font-family: "Poppins", sans-serif;
-            font-weight: 400;
+            font-weight: 500;
             font-size: 15px;
             line-height: 20px;
             letter-spacing: 0px;

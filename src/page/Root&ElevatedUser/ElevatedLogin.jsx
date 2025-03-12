@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../assets/scss/Root&ElevatedUser/elevatedLogin.scss'
-import Img1 from '../../assets/Images/DashLogo.png'
+import Img1 from '../../assets/Images/DashLogo2.png'
 import { FiEye, FiEyeOff } from "react-icons/fi";
 
 const ElevatedLogin = () => {
@@ -48,7 +48,7 @@ const ElevatedLogin = () => {
               
               <a href="#/elevatedPassword" className="">forget Password?</a>
               <button><a href="#/elevatedPage">Login</a></button>
-              <p>Don't have an account? <a href="">Contact Us</a></p>
+              <p>Don't have an account? <a href="#/elevatedBookCall">Contact Us</a></p>
             </form>
           </div>
           <div className="loginLogo col-lg-4 col-md-4 col-sm-4">

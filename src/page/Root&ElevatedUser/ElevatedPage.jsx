@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../assets/scss/Root&ElevatedUser/elevated.scss'
-import Img1 from '../../assets/Images/DashLogo.png'
+import Img1 from '../../assets/Images/DashLogo2.png'
 
 const ElevatedPage = () => {
   return (

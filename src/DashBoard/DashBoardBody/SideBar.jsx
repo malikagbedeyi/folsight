@@ -203,9 +203,9 @@ const Sidebar = ({ page, handlePage }) => {
                       <div className="activeCircle"></div>
                       </li>
                     <li className={page === 1? "activePage" : "nonactivePage"}  onClick={() => handlePage(1)}>  <div className="activeCircle"></div><a> Framework</a></li>
-                    <li><a href =''> Navigator</a></li>
-                    <li><a href =''> Gap Assessment</a></li>
-                    <li><a href =''>Activ8</a></li>
+                    <li><a> Navigator</a></li>
+                    <li><a> Gap Assessment</a></li>
+                    <li className={page === 7 ? "activePage" : "nonactivePage"}  onClick={() => handlePage(7)}><a>Activ8</a></li>
                 </ul>
                 </div>
             )}

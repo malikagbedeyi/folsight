@@ -112,7 +112,7 @@
                         outline-style: none;
                         &:focus {
                           outline: none;
-                          border-bottom: 1px solid #7f39f2;
+                          border-bottom: 1px solid #0152FF;
                           border-radius: 0 6px;
 
                         }
@@ -177,7 +177,7 @@
                               outline: none; 
                               box-shadow: none; 
                               border: none;
-                            border-bottom: 1px solid #7f39f2;
+                            border-bottom: 1px solid #0152FF;
                             border-radius: 0;
                           }
                         }
@@ -201,7 +201,7 @@
                            // width: 100%;
                             display: flex;
                             justify-content: space-between;
-                         //   border: 1px solid #7F39F2;
+                         //   border: 1px solid #0152FF;
                             align-items: center;
                             gap: 70px;
                            // border-radius: 5px;
@@ -312,7 +312,7 @@
                             
                             .react-datepicker__day--selected {
                               background-color: #f5f5f5!important;
-                              color: #7F39F2!important;
+                              color: #0152FF!important;
                             }
                           
                             .react-datepicker__header {
@@ -354,7 +354,7 @@
                           width: 100%; // Adjust width as needed
                         
                           &:hover {
-                            border-color: #7f39f2;
+                            border-color: #0152FF;
                           }
                         
                           .time-icon {
@@ -458,9 +458,9 @@
                         //     width: 0;
                         //     height: 0;
                         //     transform: rotate(0deg);
-                        //     border-top: 10px solid #7F39F2;
+                        //     border-top: 10px solid #0152FF;
                         //     border-bottom: none;
-                        //     border-right: 15px solid #7F39F2;
+                        //     border-right: 15px solid #0152FF;
                         //     content: "";
                         //     display: block;
                         //     position: absolute;
@@ -473,9 +473,9 @@
                         //     width: 0;
                         //     height: 0;
                         //    // transform: rotate(45deg);
-                        //     border-top: 10px solid #7F39F2;
+                        //     border-top: 10px solid #0152FF;
                         //     border-bottom: none;
-                        //     border-left: 15px solid #7F39F2;
+                        //     border-left: 15px solid #0152FF;
                         //     content: "";
                         //     display: block;
                         //     position: absolute;
@@ -491,7 +491,7 @@
                         
                         //   .react-datepicker__header {
                         //     background-color: #FAF8FD;
-                        //     color: #7F39F2;
+                        //     color: #0152FF;
                         //     border:none;
                         //   }
                         
@@ -529,7 +529,7 @@
                     width: 100%;
                     margin: 30px auto 0;
                     padding: 10px 0px;
-                    background-color: #7f39f2;
+                    background-color: #0152FF;
                     border: none;
                     border-radius: 5px;
                     cursor: pointer;
@@ -555,7 +555,7 @@
               background-size:cover;
               height: 100%;
               border-radius: 0px 20px 20px 0px;
-              background-color:#7f39f2;
+              background-color:#0152FF;
               &::before {
                 content: '';
                 position: absolute;
@@ -579,7 +579,7 @@
              // border-radius: 0px 0px 20px 0px;
               img{
                 background: #FAF8FD;
-                color: #7F39F2;
+                color: #0152FF;
                 border-radius: 6px;
                 width: 48px;
                 height:48px;

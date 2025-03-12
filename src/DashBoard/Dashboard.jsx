@@ -11,6 +11,10 @@ import ControlSetting from './DashBoardPages/DashSetting/ControlSetting';
 import Requirement from './DashBoardPages/Compi.ai/Requirement';
 import FrrameWork from './DashBoardPages/Compi.ai//Framework/FrrameWork';
 import AboutFrameWork from './DashBoardPages/Compi.ai/Framework/AboutFrameWork';
+import Activ8 from './DashBoardPages/Compi.ai/Activ8/Activ8';
+import Activ8Body from './DashBoardPages/Compi.ai/Activ8/Activ8Body';
+import AvailableActiv8 from './DashBoardPages/Compi.ai/Activ8/AvailableActiv8';
+import AboutActiv8 from './DashBoardPages/Compi.ai/Activ8/AboutActiv8';
 
 const Dashboard = () => {
   const [page, setPage] = useState(1);
@@ -34,7 +38,15 @@ const Dashboard = () => {
         return <GeneralSetting />;
       case 6:
         return <ControlSetting />;
-        case 16:
+        case 7:
+          return <Activ8 page={page} handlePage={handlePage}  setSelectedItem={setSelectedItem} />;
+          case 8:
+            return <Activ8Body page={page} handlePage={handlePage}  setSelectedItem={setSelectedItem}   selectedItem={selectedItem}/>;
+            case 10:
+              return <AboutActiv8  page={page} handlePage={handlePage}  setSelectedItem={setSelectedItem}   selectedItem={selectedItem}/>;
+              case 9:
+                return <AvailableActiv8  page={page} handlePage={handlePage}  setSelectedItem={setSelectedItem}   selectedItem={selectedItem}/>;
+        case 16:  
           return <Requirement page={page} handlePage={handlePage} />;
           case 17:
         return <DashHome page={page} />;

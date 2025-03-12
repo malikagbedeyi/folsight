@@ -66,7 +66,7 @@
             padding: 30px 0;
             .registerSidebar{
                 height: 100%;
-                background: #7F39F2;
+                background: #0152FF;
                 padding: 20px;
                 align-items: center;
                 border-radius: 20px 0 0 20px;
@@ -79,7 +79,7 @@
                // border-radius: 0px 0px 20px 0px;
                 img{
                   background: #FAF8FD;
-                  color: #7F39F2;
+                  color: #0152FF;
                   border-radius: 6px;
                   width: 36px;
                   height:36px;
@@ -228,16 +228,16 @@
                   margin:10px auto;
                   padding: 10px 50px ;
                   border: none;
-                  background: #7F39F2;
+                  background: #0152FF;
                   color: #fff;
                   transition: .3s;
                   border-radius: 5px;
                   display: flex;
                   justify-content: center;
                   &:hover{
-                    border: 1px solid #7F39F2;
+                    border: 1px solid #0152FF;
                     background: #FAF8FD;
-                    color: #7F39F2;
+                    color: #0152FF;
                     transition: .3s;
                   }
                  }
@@ -294,7 +294,7 @@
           text-decoration:none;
           margin-top: 20px;
           padding: 10px 100px;
-          background: #7F39F2;
+          background: #0152FF;
           color: #fff;
           border: none;
           border-radius: 5px;
@@ -308,7 +308,7 @@
           text-decoration:none;
           margin-top: 20px;
           padding: 10px 20px;
-          background: #7F39F2;
+          background: #0152FF;
           color: #fff;
           border: none;
           border-radius: 5px;
@@ -317,8 +317,8 @@
          .leftboton{
           text-decoration: none;
           background: #fff;
-          border: 1px solid #7F39F2;
-          color: #7F39F2;
+          border: 1px solid #0152FF;
+          color: #0152FF;
           transition: .3s;
          }
         }

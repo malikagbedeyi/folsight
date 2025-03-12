@@ -311,8 +311,8 @@ const handleImport = (id) => {
                         <p> <span>{row.mapControl}</span></p>
                         <p> <span>{row.mapRisk}</span></p>
                         <p> <span>{row.mapFramework}</span></p>
-                        <p> <span className='double-tabeText'>{row.time}</span> <span>{row.date}</span></p>
-                        <p style={{color:""}}> <span>{row.status}</span></p>
+                        <p> <span  className='double-tabeText'>{row.time}</span> <span style={{color:"#D0D0D4"}} >{row.date}</span></p>
+                        <p > <span style={{color:"#0DB226"}}>{row.status}</span></p>
                         <p className='table-icons'> <span>{row.action}</span></p>
                         </div>
                         </div>

@@ -1,7 +1,7 @@
 import React, { useState ,useEffect  } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../assets/scss/Root&ElevatedUser/bookCal.scss'
-import Img1 from '../../assets/Images/DashLogo.png'
+import Img1 from '../../assets/Images/DashLogo2.png'
 import { Link } from 'react-router-dom';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
