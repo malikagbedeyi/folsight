@@ -15,6 +15,7 @@ import Activ8 from './DashBoardPages/Compi.ai/Activ8/Activ8';
 import Activ8Body from './DashBoardPages/Compi.ai/Activ8/Activ8Body';
 import AvailableActiv8 from './DashBoardPages/Compi.ai/Activ8/AvailableActiv8';
 import AboutActiv8 from './DashBoardPages/Compi.ai/Activ8/AboutActiv8';
+import Navigator from './DashBoardPages/Navigator Ai/Navigator';
 
 const Dashboard = () => {
   const [page, setPage] = useState(1);
@@ -52,6 +53,8 @@ const Dashboard = () => {
         return <DashHome page={page} />;
       case 18:
         return <Administration />;
+        case 19:
+        return <Navigator   page={page} handlePage={handlePage}/>;
       default:
         return <DashHome page={page} />;
     }

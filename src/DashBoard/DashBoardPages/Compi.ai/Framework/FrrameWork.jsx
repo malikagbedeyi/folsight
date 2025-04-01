@@ -98,7 +98,7 @@ const handleImport = (id) => {
 
   return (
     <div className={page === 1 ? "framework" : "framework"}>
-<div className="navMenuContainer row">
+<div className="navMenuContainer row"> 
       <div className="navMenuParent col-lg-12">
         <div className="navMenuChild">
           <div className="topWrapper">
@@ -251,7 +251,7 @@ const handleImport = (id) => {
                           <div className="ul">
                         <p className='table-icon'><span>{row.icon}</span></p>
                          <p  > <span>{row.id}</span></p>
-                        <p > <span>{row.title}</span></p>
+                        <p > <span>{row.title}</span></p> 
                         </div>
                         </div>
                         </div> ))}

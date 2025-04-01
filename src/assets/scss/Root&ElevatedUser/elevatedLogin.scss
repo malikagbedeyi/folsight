@@ -48,10 +48,10 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    background: #FDF6FF;
+    background: linear-gradient(0deg, #D4E5F7, #D4E5F7);    
     position: relative;
     .loginContainer{
-      width: 50%;
+      width: 800px;
       height: 100vh;
       display: flex;
       justify-content: center;
@@ -62,7 +62,7 @@
       .loginParent{
         width: 100%;
         align-items: center;
-        padding: 100px 0;
+        padding:70px 0;
         .loginChild{
           display: flex;
           overflow-x: hidden;
@@ -72,28 +72,69 @@
           text-align: center;
           color: #192434;
           background: #fff;
-          padding: 30px 30px;
+          padding: 0 30px;
           height: 100%;
-          border-radius: 20px 0px 0px 0px;
+          border-radius: 20px 0px 0px 20px;
           &::-webkit-scrollbar {
             display: none; 
           }
           h2{
+            font-family: "Poppins" sans-serif;
             font-weight: 500;
-            font-size: 30px;
+            font-size: 24px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            vertical-align: bottom;
+            color:#263238; 
+            margin: 0 0 30px ;           
           }
           h1{
-            font-weight: 600;
-            font-size: 30px;
-          }
-          h6{
-            color:#192434;
-            font-size:18px;
-            font-weight: 400;
-            margin:10px 0 20px 0;
+            font-family: "Poppins" sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            text-align: center;
+            vertical-align: bottom;
+            color: #263238;
+            margin:  0 0 20px;
+            
           }
           p{
+            font-family: "Poppins" sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            text-align: center;            
             color: #DF3333;
+          }
+          .single-sign{
+           // width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            gap: 10px;
+            background: #0152FF;
+            margin: 10px auto;
+            border-radius: 6px;
+            p{
+              font-family: "Inter";
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 100%;
+              letter-spacing: 0px;
+              text-align: right;
+              color: #fff;
+              margin: 0;
+              
+            }
+            img{
+              width: 24px;
+              height: 24px;
+              border-radius: 4px;
+            }
           }
           .loginForm{
             display: flex;
@@ -105,12 +146,10 @@
               outline-style: none;
               border:none;
               border-radius: 10px;
-              background: #FAF8FD;
+              background: #E9F0FF;
               padding-left: 10px; 
               font-size: 14px;
-             // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1)
             }
-            
             .password-input-wrapper {
               display: flex;
               flex-direction: column;
@@ -142,9 +181,6 @@
               color: #192434;
             }
           }
-            
-
-            
             .otpContainer{
               // display: grid;
               // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
@@ -180,7 +216,7 @@
             button{
               border: none;
               padding: 10px;
-              background: #0152FF;
+              background: #E9F0FF;
               color: #fff;
               transition: .3s;
               border-radius: 5px;
@@ -190,8 +226,8 @@
              a{
               text-decoration: none;
               padding: 10px;
-              background: #0152FF;
-              color: #fff;
+              background: #E9F0FF;
+              color: #0152FF;
               transition: .3s;
               border-radius: 5px;
               font-size: 18px;
@@ -223,13 +259,13 @@
          justify-content: center;
           align-items: center;
           text-align: center;
-          border-radius: 0px 0px 20px 0px;
+          border-radius: 0px 20px 20px 0px;
           img{
             background: #FAF8FD;
             color: #0152FF;
             border-radius: 5px;
-            width: 23%;
-            height:44px;
+            width: 48px;
+            height:48px;
             align-items: center;
             text-align: center;
            // margin: auto;
@@ -237,7 +273,7 @@
           h1{
             color: #fff;
             font-size: 25px;
-            font-weight: 600;
+            font-weight: 500;
             //margin: auto 0;
           }
         }

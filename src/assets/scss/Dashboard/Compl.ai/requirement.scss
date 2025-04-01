@@ -276,19 +276,19 @@
           }
           .tableChild{
             position: relative;
-            overflow-x: auto; 
             max-width: 100%;
+            overflow-x: auto;
           .complTable{
-            width: 100%;
-            min-width: 150%; 
-            display: grid; 
-            gap: 2rem;
+            width: 100%; 
+            overflow-x: auto;
               .tableHead{
+                min-width: 150%;
                 display: grid;
                 grid-template-columns: 2fr 2fr 2fr 1fr 2fr 1fr 2fr 1fr 1fr 1fr; 
                 gap: 2rem; 
                 background: #E5E5EA;  
-                padding: 10px 20px;          
+                padding: 10px 20px;   
+                overflow-x: auto;       
                 .tableHeadbox{
                   background: #FDF6FF;
                   padding: 10px 20px;
@@ -301,11 +301,12 @@
                 }
               }
               .tablebody{
+                min-width: 150%;
                 display: grid;
                 grid-template-columns:  2fr 2fr 2fr 1fr 2fr 1fr 2fr 1fr 1fr 1fr; 
                 gap: 2rem;
                 .tablebodybox{
-                  //text-align: center;
+                  overflow-x: auto;
                   margin: auto;
                   font-size: 14px;
                   font-weight: 400;

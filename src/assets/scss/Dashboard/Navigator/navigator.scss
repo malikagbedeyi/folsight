@@ -1,0 +1,684 @@
+@mixin mobile {
+    @media screen and (max-width:580px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width:980px) {
+        @content;
+    }
+}
+@mixin Responsive($breakpoint) {
+    @media screen and (max-width: $breakpoint) {
+      @content;
+    }
+  }
+
+@mixin laptop {
+    @media screen and (max-width:1190px) {
+        @content;
+    }
+}
+@mixin Destop {
+    @media screen and (max-width:1440px) {
+        @content;
+    }
+}
+@mixin FullHd {
+    @media screen and (max-width:2784px) {
+        @content;
+    }
+}
+@keyframes dropdown {
+    0% {
+      transform: translateY(-30%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  *{
+    margin:0;
+}
+  .navigator{
+    flex: 1;
+     width:100%;
+     height: 100%;
+     margin: 0;
+    position: relative;
+    overflow-x: hidden;
+ white-space: nowrape;
+    .navMenuContainer{
+        background: #F2F7FD;
+        width: 100%;
+        margin: 0;
+        .navMenuParent{
+            padding: 20px 20px;
+            .navMenuChild{
+                .topWrapper{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    .leftTopWrapper{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2px;
+                        h1{
+                            font-family: "Roboto" sans-serif;
+                            font-weight: 700;
+                            font-size: 1.9rem;
+                            line-height: 41.6px;
+                            letter-spacing: 0%;
+                            color: #0152FF;
+                            @include Destop{
+                                font-size: 32px;
+                            }
+                        }
+                        .leftwrapper-contet{
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+                        p{
+                            font-family: "Poppins" sans-serif;
+                            font-weight: 400;
+                            font-size: 1vw;
+                            line-height: 24px;
+                            letter-spacing: 0.2px;                     
+                            color: #737373;
+                            margin: auto 0;
+                            @include Destop{
+                                font-size: 14px;
+                            }
+                        }
+                            span{
+                                margin: auto 0;
+                                svg{
+                                    fill: #737373;
+                                }
+                            }    
+                            a{
+                                font-family: "Poppins" sans-serif;
+                                cursor: pointer;
+                                font-weight: 400;
+                                font-size: 1vw;
+                                line-height: 24px;
+                                letter-spacing: 0.2px;
+                                text-align: center;                                
+                                margin: auto 0;
+                                color: #252B42;
+                                text-decoration: none;   
+                                @include Destop{
+                                    font-size: 14px;
+                                }                
+                        }
+                    }
+                    }
+                    .rightTopWrapper{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
+                        .menuicon{
+                            display: flex;
+                             gap: 10px;
+                            .notification{
+                                position: relative;
+                                display: flex;
+                                svg{
+                                    width: 2vw;
+                                    height: 1.9vw;
+                                    border-width: 1.5px;
+                                    @include Destop{
+                                        width: 27px;
+                                        height: 27px;
+                                    }
+                            }
+                                .notificationtext{
+                                    position: absolute;
+                                    right: 0;
+                                    height: 1vw;
+                                    width: 1vw;
+                                    line-height: 15px;
+                                    text-align: center;
+                                    border-radius: 50%;
+                                    color: #fff;
+                                    background: #d41317;
+                                    font-size: 0.7vw;
+                                    @include Destop{
+                                        width: 15px;
+                                        height:15px;
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                        .menuProfile{
+                            display: flex;
+                            gap: 20px;
+                            align-items: center;
+                            .profileImg{
+                                align-items: center;
+                                img{ 
+                                    width: 2.5vw;
+                                    border-radius: 50%;
+                                    @include Destop{
+                                        width:40px;
+                                    }
+                                }
+                            }
+                            .image-upload{
+                                display: flex;
+                                img{
+                                    width: 6.3vw;
+                                    height: 5.1vw;
+                                    border-width: 1px;
+                                    border-radius: 4px;
+                                    border: 1px solid #D4E5F7;
+                                    @include Destop{
+                                        width:100px;
+                                        height: 82px;
+                                    }
+                                                                        
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .navigator-contaner{
+        .navigator-content{
+            padding: 0 20px;
+            .navigator-flex{
+                width: 100%;
+                display: flex;
+                .navigator-flex-Parent{
+                    flex: 4;
+                    transition: flex 0.3s ease-in-out;
+                .left-navigator{
+                    margin-top: 20px;
+                    .left-navigato-container{
+                    position: relative;
+                    width: 100%;
+                    min-height: 100vh;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    .left-navigator-content{ 
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        position: relative;
+                        .left-navigator-title{
+                            display: flex;
+                            gap: 10px;
+                            svg{
+
+                            }
+                            h3{
+                                font-family: "Poppins" sans-serif;
+                                font-weight: 600;
+                                line-height: 150%;
+                                font-size: 1.4vw;
+                                letter-spacing: 0%;   
+                                color: #1B212C;
+                                margin: 0;
+                                @include Destop{
+                                     font-size: 20px;
+                                }
+                            }
+                        }
+                        .navigator-question{
+                            display: flex;
+                            gap: 10px;
+                            .left-question{
+                                img{
+                                    width:3vw;
+                                    height:3vw;
+                                     border-radius: 50%;
+                                    @include Destop{
+                                        width:48px;
+                                        height:48px;
+                                    }
+                                }
+                            }
+                            .right-question{
+                                width: 100%;
+                                .right-question-content{
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 10px;
+                                    .top-content{
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 10px;
+                                        p{
+                                            margin: 0;
+                                            font-family: "Inter";
+                                            font-weight: 600;
+                                            font-size: 1vw;
+                                            line-height: 22px;
+                                            letter-spacing: -0.7%; 
+                                            color: #1E293B;   
+                                            @include Destop{
+                                                font-size: 16px;
+                                            }                                           
+                                        }
+                                        span{
+                                            font-family: "Inter";
+                                            font-weight: 400;
+                                            font-size: 0.9vw;
+                                            line-height: 20px;
+                                            letter-spacing: -0.6%;
+                                            color: #94A3B8;  
+                                            @include Destop{
+                                                font-size: 14px;
+                                            }                                             
+                                        }
+                                    }
+                                    .bottom-content{
+                                        .input-box{
+                                         background: #F8F8F8;
+                                         border-radius: 12px;
+                                          width: 100%;
+                                          input{
+                                         width: 100%;
+                                         height: 80px;
+                                         opacity: 0.8;
+                                         gap: 10px;
+                                         padding: 16px;
+                                        border-radius: 12px;
+                                         border: none;
+                                        outline-style:none;  
+                                         transition: .3s;
+                                        &:hover{
+                                        transition: .3s;
+                                        background: inherit;                                      
+                                     }
+                                     }
+                                    }
+                                    .question-suggestion{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    padding: 5px 10px;
+                                    .suggestion-text{
+                                    display: flex;
+                                    gap: 10px;
+                                    p{
+                                    font-family: "Poppins";
+                                    font-weight: 500;
+                                    font-size: 0.9vw;
+                                    line-height: 160%;
+                                    letter-spacing: 0%;
+                                    color: #475569;
+                                    margin: 0;
+                                    @include Destop{
+                                    font-size: 12px;
+                                    }
+                                    }
+                                     span{
+                                    font-family: "Poppins" sans-serif;
+                                    font-weight: 400;
+                                    font-size: 0.9vw;
+                                    line-height: 160%;
+                                    letter-spacing: 0%;
+                                    color: #475569;
+                                    margin: 0;
+                                    @include Destop{
+                                    font-size: 12px;
+                                    }
+                                    strong{
+                                    background: #E5EAED;
+                                    padding:5px;
+                                    font-weight: 400;
+                                    border-radius: 5px 0 5px 0;
+                                    }
+                                    }
+                                    }
+                                    .suggestion-icon{
+                                    display: flex;
+                                    gap: 20px;
+                                    }
+                                 }
+                                }
+                                }
+                            }
+                        }
+                      .navigator-guide{
+                          margin: 3% 0 ;
+                            display: flex;
+                            gap: 10px;
+                            animation: dropdown 0.5s ease-out;
+                            .left-guide{
+
+                            }
+                            .right-guide{
+                                width: 100%;
+                                .right-guide-content{
+                                height: 50vh;
+                                overflow-y: auto;
+                                scrollbar-width: none;
+                                 display: flex;
+                                 flex-direction: column;
+                                gap: 10px;
+                                background: #F8F8F8;
+                                padding: 10px 0;
+                                .top-content{
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 10px;
+                                        p{
+                                            margin: 0;
+                                            font-family: "Inter";
+                                            font-weight: 600;
+                                            font-size: 1vw;
+                                            line-height: 22px;
+                                            letter-spacing: -0.7%; 
+                                            color: #1E293B; 
+                                            @include Destop{
+                                                font-size: 16px;
+                                            }                                          
+                                        }
+                                        span{
+                                            font-family: "Inter";
+                                            font-weight: 400;
+                                            font-size: 0.9vw;
+                                            line-height: 20px;
+                                            letter-spacing: -0.6%;
+                                            color: #94A3B8;      
+                                            @include Destop{
+                                                font-size: 14px;
+                                            }                                           
+                                        }
+                                    }
+                                    .bottom-content{
+                                    background: #F8FAFC;
+                                    padding: 12px; 
+                                    border-radius: 24px 24px 0 0;
+                                    p{
+                                    font-family: "Poppins" sans-serif;
+                                    font-weight: 400;
+                                    font-size: 0.8vw;
+                                    line-height: 22px;
+                                    letter-spacing: 0%;
+                                    color: #475569;
+                                    margin: 0;
+                                    @include Destop{
+                                        font-size: 12px;
+                                    }     
+                                    }
+                                    .bottom-content-text{
+                                        display: flex;
+                                        flex-direction: column;
+                                        margin: 10px 0;
+                                     h1{
+                                       font-family: "Poppins" sans-serif;
+                                       font-weight: 600;
+                                       font-size: 0.8vw;
+                                       line-height: 22px;
+                                       letter-spacing: 0%;
+                                       color: #475569;
+                                       margin: 0;
+                                        @include Destop{
+                                            font-size: 12px;
+                                            }     
+                                     }
+                                      p{
+                                       font-family: "Poppins" sans-serif;
+                                       font-weight: 300;
+                                       font-size: 0.8vw;
+                                       line-height: 22px;
+                                       letter-spacing: 0%;
+                                       color: #475569;
+                                       position: relative;
+                                       margin: 0;
+                                       margin-left: 20px;  
+                                        &::before{
+                                       content: '';
+                                       position: absolute;
+                                       top: 40%;
+                                       left: 0;
+                                       width: 3px;
+                                       height: 3px;
+                                       line-height: 3px;
+                                       align-items: center;
+                                       border-radius:50% ;
+                                       background: #475569;
+                                       margin-left: -10px;
+                                       }
+                                       @include Destop{
+                                        font-size: 12px;
+                                    }   
+                                    }
+                                    }
+                                  }
+                                }
+                            }
+                    }
+                }
+                .navigator-AI{
+                position: relative;
+                padding: 0 30px;
+                  .navigator-AI-content{
+                   //position: fixed;
+                         bottom:0;
+                        //  width:;
+                       // transform: translateY(-15vh); 
+                         z-index: 1000; 
+                          display: flex;
+                          gap: 10px;
+                          background: #fff;
+                          padding-bottom: 20px;
+                            .left-question{
+                                img{
+                                    width:3vw;
+                                    height:3vw;
+                                     border-radius: 50%;
+                                    @include Destop{
+                                        width:48px;
+                                        height:48px;
+                                    }
+                                }
+                            }
+                            .right-question{
+                                width: 100%;
+                                .right-question-content{
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 10px;
+                                    .top-content{
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 10px;
+                                        p{
+                                            margin: 0;
+                                            font-family: "Inter";
+                                            font-weight: 700;
+                                            font-size: 16px;
+                                            line-height: 22px;
+                                            letter-spacing: -0.7%; 
+                                            color: #1E293B;                                           
+                                        }
+                                        span{
+                                            font-family: "Inter";
+                                            font-weight: 500;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            letter-spacing: -0.6%;
+                                            color: #94A3B8;                                            
+                                        }
+                                    }
+                                    .bottom-content{
+                                        .input-box{
+                                         background: #F8F8F8;
+                                         border-radius: 12px;
+                                          width: 100%;
+                                          input{
+                                         width: 100%;
+                                         height: 80px;
+                                         opacity: 0.8;
+                                         gap: 10px;
+                                         padding: 16px;
+                                        border-radius: 12px;
+                                         border: none;
+                                         background: inherit;
+                                        outline-style:none;  
+                                         transition: .3s;
+                                        &:hover{
+                                        transition: .3s;
+                                        background: inherit;                                      
+                                     }
+                                     }
+                                    }
+                                    .question-suggestion{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    padding: 5px 10px;
+                                    .suggestion-text{
+                                    display: flex;
+                                    gap: 10px;
+                                    p{
+                                    font-family: "Poppins";
+                                    font-weight: 500;
+                                    font-size: 0.9vw;
+                                    line-height: 160%;
+                                    letter-spacing: 0%;
+                                    color: #475569;
+                                    margin: 0;
+                                    @include Destop{
+                                    font-size: 12px;
+                                    }
+                                    }
+                                     span{
+                                    font-family: "Poppins" sans-serif;
+                                    font-weight: 400;
+                                    font-size: 0.9vw;
+                                    line-height: 160%;
+                                    letter-spacing: 0%;
+                                    color: #475569;
+                                    margin: 0;
+                                    @include Destop{
+                                    font-size: 12px;
+                                    }
+                                    strong{
+                                    background: #E5EAED;
+                                    padding:5px;
+                                    font-weight: 400;
+                                    border-radius: 5px 0 5px 0;
+                                    }
+                                    }
+                                    }
+                                    .suggestion-icon{
+                                    display: flex;
+                                    gap: 20px;
+                                    }
+                                 }
+                                }
+                                }
+                            }
+                            }
+                        }
+                    }
+                }
+            }
+            .navigator-flex-right-Parent{
+                flex: 2;
+                  transition: flex 0.3s ease-in-out, opacity 0.3s ease-in-out;
+                  overflow: hidden;
+                .right-navigator{
+                 padding: 0 50px;
+                    .toggle-content{
+                    padding: 10px;
+                        background:#F2F7FD;
+                    }
+                    .toggle-dropdown{
+                        margin-top: 5%;
+                        background: #DDEAF9;
+                        padding-left: 10px;
+                    .toggle-dropdown-content{
+                        background: #F8F8F8;
+                        .dropdown-content-container{
+                            .dropdown-content-title{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 10px;
+                                .left-title{
+                                    h3{
+                                        font-family: "Poppins";
+                                        font-weight: 400;
+                                        font-size: 0.9vw;
+                                        line-height: 24px;
+                                        letter-spacing: -0.8%;
+                                        color: #1E293B;
+                                        margin: 0;  
+                                         @include Destop{
+                                          font-size: 14px;
+                                        }                                      
+                                    }
+                                }
+                                .right-title{
+                                    display: flex;
+                                    gap: 10px;
+                                    align-items: center;
+                                    h3{
+                                        font-family: "Poppins";
+                                        font-weight: 400;
+                                        font-size: 0.9vw;
+                                        line-height: 24px;
+                                        letter-spacing: -0.8%;
+                                        color: #1E293B; 
+                                        margin: 0;    
+                                         @include Destop{
+                                          font-size: 14px;
+                                        }                                   
+                                    }
+                                }
+                            }
+                            .dropdown-item{
+                            ul{
+                                width: 100%;
+                            padding:0;
+                             li{
+                                width: 100%;
+                                overflow-x: auto;
+                                scrollbar-width: none;
+                             font-family: "Poppins" sans-serif;
+                             font-weight: 300;
+                             font-size: 0.8vw;
+                             line-height: 22px;
+                             letter-spacing: -0.7%;
+                             color: #1E293B;
+                             padding: 6px 12px;
+                             &:hover,&:focus{
+                             overflow: hidden;
+                                background: #DDEAF9;
+                             }
+                             @include Destop{
+                               font-size: 12px;
+                              }
+                             }
+                            }
+                           }
+                          }
+                    }
+                    }
+                     .close{
+                     display: none;
+                     }
+
+                }
+                }
+                 .collapsed {
+                  flex:0.6; 
+                  }
+                  .expanded {
+                  flex: 2;
+                  }
+    }
+            }
+        }
+    }

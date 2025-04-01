@@ -25,11 +25,14 @@
 }
 .dashboard{
     width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     .dashboardContainer{
         width: 100%;
         display: flex;
+        height: 100%;
+        min-height: 100vh;
         .dashWrapperLeft{
            height: 100%;
             position: sticky;

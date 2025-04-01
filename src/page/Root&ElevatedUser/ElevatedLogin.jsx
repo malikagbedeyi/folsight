@@ -19,17 +19,20 @@ const ElevatedLogin = () => {
       <div className="loginContainer">
         <div className="loginParent row">
           <div className="loginChild col-lg-8 col-md-8 col-sm-8">
-          <h2>Welcome Back</h2>
+          <h2>Welcome Back!</h2>
             <h1>Login</h1>
             <p>only for Authorized Admin users</p>
+            <div className="single-sign">
+              <p>Single sign on</p>
+              <img src={Img1}/>
+            </div>
             <form className="loginForm">
-              <input 
+              <input
               type="email" 
               placeholder='Email'
               onChange={(e)=>setEmail(e.target.value)}
               />
                 <div className="password-input-wrapper">
-
                <input 
                     type={isPasswordVisible ? "password" :" text"}
                     id='password'
