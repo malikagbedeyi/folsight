@@ -58,7 +58,7 @@ const CreateFrameWork = ({ createFrameWK,SetcreateFrameWK,handlePage }) => {
                       <button><span>Add Item</span>
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.00223 5.71652V10.2879M5.71652 8.00223H10.2879M4.00223 2.85938H12.0022C12.6334 2.85938 13.1451 3.37105 13.1451 4.00223V12.0022C13.1451 12.6334 12.6334 13.1451 12.0022 13.1451H4.00223C3.37105 13.1451 2.85938 12.6334 2.85938 12.0022V4.00223C2.85938 3.37105 3.37105 2.85938 4.00223 2.85938Z" stroke="#373F41" stroke-linecap="round" stroke-linejoin="round"/></svg>
                       </button>
-                      <a href="">Save</a>
+                      <a>Save</a>
                   </div>
                 </div>
                 <div className="form-content">

@@ -59,7 +59,7 @@ margin: 0 auto;
 padding: 30px 0px 10px;
   .import-container{
       background: #fff;
-      width:600px;
+      width:38vw;
       padding: 30px 30px; 
       overflow-y: auto;
       scrollbar-width: none;
@@ -68,10 +68,21 @@ padding: 30px 0px 10px;
       display: flex;
       flex-direction: column;
       font-family: "Poppins" sans-serif;
+      @include Destop{
+        width:600px;
+      }
       .delete-box{
           display: flex;
           justify-content: flex-end;
           cursor: pointer;
+          svg{
+            width: 1.4vw;
+            height: 1.4vw;
+             @include Destop{
+              width: 20px;
+            height: 20px;
+              }
+            }
          }
          .import-proceeed-wrapper{
             .import-proceeed-content{
@@ -85,44 +96,53 @@ padding: 30px 0px 10px;
                 margin-bottom: 2%;
             h4{
                 font-family: "Poppins" sans-serif;
-                font-weight: 700;
-                font-size: 24px;
+                font-weight: 600;
+                font-size: 1.5vw;
                 line-height: 36px;
                 letter-spacing: 0px;  
                 color: #263238;   
-                margin: 0;       
+                margin: 0;  
+                @include Destop{
+                  font-size: 24px;
+                }     
             }
             button{
               align-items: center;
             border: none;
             border-radius: 6px;
-            padding: 8px 14px;
+            padding: 10px 14px;
             gap: 4px;
             background: #f4f4f4;
             font-family: "Roboto" sans-serif;
             font-weight: 400;
-            font-size: 14px;
+            font-size: 1vw;
             line-height: 20px;
             letter-spacing: 0.25px;
             text-align: center;
             color: #263238;
+            @include Destop{
+              font-size: 14px;
+            }  
             }
             }
             span{
                 font-family: "Poppins" sans-serif;
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 1.1vw;
                 line-height: 18px;
                 letter-spacing: 0px;
-                color: #263238;            
+                color: #263238;  
+                @include Destop{
+                  font-size: 16px;
+                }            
             }
             .import-proceed{
-                margin: 2% 0 0;
+                margin: 4% 0 0;
                 display: flex;
                 gap: 10px;
                 align-items: center;
               .import-content{
-                padding: 8px 14px;
+                padding: 10px 14px;
                 border-radius: 6px;
                 box-shadow: 0px 2px 4px 0px #32324714;
                 border: 1px solid #0152FF;
@@ -136,12 +156,26 @@ padding: 30px 0px 10px;
                   color: #000;
                   font-family: "Roboto" sans-serif;
                   font-weight: 500;
-                  font-size: 14px;
+                  font-size: 1vw;
                   line-height: 20px;
                   letter-spacing: 0.1px;
                   text-align: center;   
-                  color: #0152FF;               
+                  color: #0152FF;  
+                  @include Destop{
+                    font-size: 14px;
+                  }               
                 }
+              }
+              svg{
+              width: 1.4vw;
+              height: 1.4vw;
+               @include Destop{
+                width: 20px;
+              height: 20px;
+                }
+              }
+              @include Destop{
+              margin: 2% 0 0;
               }
             }
             .import-button{
@@ -150,15 +184,28 @@ padding: 30px 0px 10px;
                 gap: 20px;
                 align-items: center;
               button{
-                padding: 10px 20px;
+                padding: 15px 25px;
                 background: #0152FF;
                 border: none;
                 border-radius: 6px;
                 display: flex;
                 gap: 10px;
+                align-items: center;
                 span{
                     color: #fff;
+                    margin: 0;
                 }
+                @include Destop{
+                 padding: 10px 20px;
+                }
+                svg{
+              width: 1.4vw;
+              height: 1.4vw;
+               @include Destop{
+                width: 20px;
+              height: 20px;
+                }
+              }
               }
               .button{
                 background: #fff;
@@ -189,7 +236,7 @@ padding: 30px 0px 10px;
 
 .preview-container{
     background: #fff;
-    width:1060px;
+    width:67vw;
     padding: 30px 30px; 
     overflow-y: auto;
     scrollbar-width: none;
@@ -198,11 +245,23 @@ padding: 30px 0px 10px;
     display: flex;
     flex-direction: column;
     font-family: "Poppins" sans-serif;
-    .delete-box{
-        display: flex;
-        justify-content: flex-end;
-        cursor: pointer;
-       }
+    @include Destop{
+      width: 1060px;
+    }  
+     .delete-box{
+      width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          cursor: pointer;
+          svg{
+            width: 1.4vw;
+            height: 1.4vw;
+             @include Destop{
+              width: 20px;
+            height: 20px;
+              }
+            }
+         }
        .preview-content{
         .preview-top-tittle{
             display: flex;
@@ -212,11 +271,14 @@ padding: 30px 0px 10px;
         h4{
             font-family: "Poppins" sans-serif;
             font-weight: 700;
-            font-size: 24px;
+            font-size:1.5vw ;
             line-height: 36px;
             letter-spacing: 0px;  
             color: #263238;   
-            margin: 0;       
+            margin: 0;     
+            @include Destop{
+              font-size: 24px;
+            }    
         }
         button{
           align-items: center;
@@ -227,21 +289,27 @@ padding: 30px 0px 10px;
         background: #f4f4f4;
         font-family: "Roboto" sans-serif;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 1vw;
         line-height: 20px;
         letter-spacing: 0.25px;
         text-align: center;
         color: #263238;
+        @include Destop{
+          font-size: 14px;
+        }  
         }
         }
         .preview-content-top{
         display: flex;
         justify-content: flex-end;
-        height: 72px;
+        height: 4.5vw;
         border-width: 1px;
         padding: 16px 12px;
         background: #EFF0F1;
         border: 1px solid #D0D0D4;
+        @include Destop{
+          height: 72px;
+        }  
         .preview-top-button{
         display: flex;
         gap: 10px;
@@ -256,13 +324,24 @@ padding: 30px 0px 10px;
         padding: 8px;
         font-family: "Poppins" sans-serif;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 1vw;
         line-height: 18px;
         letter-spacing: 0px;
+        @include Destop{
+          font-size: 14px;
+        }  
         span{
         color: #fff;
         }
        }
+         svg{
+              width: 1.4vw;
+              height: 1.4vw;
+               @include Destop{
+                width: 20px;
+              height: 20px;
+                }
+              }
        .button{
        background: inherit;
        span{
@@ -273,58 +352,88 @@ padding: 30px 0px 10px;
   }
   .error-text{
     position: absolute;
-  width: 337px;
-height: 113px;
-top: 160px;
-left: 568px;
+  width: 21.1vw;
+height: 7.1vw;
+top: 10vw;
+left: 40vw;
 padding: 24px 20px;
 border-radius: 24px 24px 24px 0;
 background: #FFF8F7;
 border: 1px solid #E21D12;
+@include Destop{
+  width: 337px;
+  height: 113px;
+  top: 160px;
+  left: 568px;
+}  
     p{
       font-family: "Inter";
       font-weight: 400;
-      font-size: 16px;
+      font-size: 1.1vw;
       line-height: 19.36px;
       letter-spacing: 0px;
       color: #1B212C;
+      @include Destop{
+        font-size: 14px;
+      }  
     }
   }
   .preview-table{
   margin: 5% 0;
   .previewTable-header{
+  width: 100%;
     ul{
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(9.4vw, 1fr));
     align-items: center;
+    @include Destop{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
     .active{
     display: flex;
      justify-content: space-between;
      align-items: center;
      span{
      font-weight: 500;
-     font-size: 16px;
+     font-size: 1.1vw;
      color: #FF5630CC;
+     @include Destop{
+      font-size: 16px;
+    }  
      }
       .error-icon{
       display: block;
       }
     }
      .nonactive,li{
-     height: 40px;
+     height: 2.5vw;
      border-width: 1px;
      gap: 10px;
      padding: 10px;
      border: 1px solid #D0D0D4;
      background: #E2E8F0;
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     @include Destop{
+      height: 40px;
+
+    }  
      span{
      font-family: "Inter";
-     font-weight: 600;
-     font-size: 16px;
+     font-weight: 550;
+     font-size: 1.1vw;
      line-height: 19.36px;
      letter-spacing: 0%;
      color: #1B212C;
+     display: flex;
+     justify-content: center;
+      margin: 0;
+      align-items: center;
+     @include Destop{
+      font-size: 16px;
+    }  
      }
      .error-icon{
      display: none;
@@ -339,22 +448,27 @@ border: 1px solid #E21D12;
     ul{
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(9.4vw, 1fr));
     align-items: center;
+    @include Destop{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
      li{
-     height: 148px;
+     height: 9.3vw;
      padding: 14px;
      gap: 20px;
      border: 1px solid #B9B7B7;
      background: #FFFFFF;
      font-family: "Poppins" sans-serif;
      font-weight: 400;
-     font-size: 16px;
+     font-size: 1.1vw;
      line-height: 20px;
      letter-spacing: 0px;
      color: #D0D0D4;
-
-
+     @include Destop{
+      height: 148px;
+      font-size: 16px;
+    }  
      }
      .highlight-red {
      background: #FF56300A;
@@ -384,7 +498,7 @@ border: 1px solid #E21D12;
 
 .upload-container{
     background: #fff;
-    width:600px;
+    width:33.5vw;
     padding: 30px 30px; 
     overflow-y: auto;
     scrollbar-width: none;
@@ -394,12 +508,23 @@ border: 1px solid #E21D12;
     align-items: center;
     flex-direction: column;
     font-family: "Poppins" sans-serif;
-    .delete-box{
-      width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        cursor: pointer;
-       }
+    @include Destop{
+    width: 600px;
+    }  
+     .delete-box{
+     width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          cursor: pointer;
+          svg{
+            width: 1.4vw;
+            height: 1.4vw;
+             @include Destop{
+              width: 20px;
+            height: 20px;
+              }
+            }
+         }
        .upload-content{
         margin: auto;
         display: flex;
@@ -413,11 +538,14 @@ border: 1px solid #E21D12;
         h4{
             font-family: "Poppins" sans-serif;
             font-weight: 700;
-            font-size: 24px;
+            font-size: 1.5vw;
             line-height: 36px;
             letter-spacing: 0px;  
             color: #263238;   
-            margin: 0;       
+            margin: 0;     
+            @include Destop{
+                  font-size: 24px;
+                }    
         }
         .button{
           align-items: center;
@@ -428,12 +556,15 @@ border: 1px solid #E21D12;
         background: #f4f4f4;
         font-family: "Roboto" sans-serif;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 1vw;
         line-height: 20px;
         letter-spacing: 0.25px;
         text-align: center;
         color: #263238;
         margin: 0;
+        @include Destop{
+         font-size: 14px;
+        }  
         }
         }
         .upload-middle{
@@ -446,20 +577,26 @@ border: 1px solid #E21D12;
         justify-content: center;
         align-items: center;
         gap: 20px;
-        width: 480px;
-        height: 113px;
+        width: 30vw;
+        height: 8vw;  
         border-radius: 6px;
         padding: 13px 12px;
         border: 1px solid #D0D0D4;
         background: #EFF6FF;
-
+        @include Destop{
+        width: 480px;
+        height: 113px;
+        }  
         p{
         font-family: "Inter";
         font-weight: 400;
-        font-size: 16px;
+        font-size: 1.1vw;
         line-height: 19.36px;
         letter-spacing: 0px;
         color: #BABABA;
+         @include Destop{
+         font-size: 16px;
+        }  
         }
          }
          .upload-text{
@@ -467,13 +604,17 @@ border: 1px solid #E21D12;
          gap: 10px;
          align-items: center;
          .upload-text-icon{
-         width: 21px;
-         height: 21px;
+         width: 1.3vw;
+         height: 1.3vw;
          border-radius: 6px;
          align-items: center;
          justify-content: center;
          display: flex;
          border: 1px solid #0152FF;
+          @include Destop{
+          width: 21px;
+          height: 21px;
+        }  
          svg{
          fill:#0152FF ;
          }
@@ -481,11 +622,14 @@ border: 1px solid #E21D12;
          p{
          font-family: "Poppins" sans-serif;
          font-weight: 500;
-         font-size: 14px;
+         font-size: 1vw;
          line-height: 18px;
          letter-spacing: 0px;
          color: #373F41;
          margin: 0;
+          @include Destop{
+         font-size: 14px;
+        }  
          }
           }
          }
@@ -499,8 +643,20 @@ border: 1px solid #E21D12;
         align-items: center;
         display: flex;
         gap: 10px;
+        svg{
+         width:1.3vw;
+         height:1.3vw;
+         @include Destop{
+         width:20px ;
+         height:20px ;
+         }
+        }
         span{
             color: #fff;
+            font-size: 1.1vw;
+             @include Destop{
+             font-size: 16px;
+         }
         }
       }
      
@@ -523,7 +679,7 @@ border: 1px solid #E21D12;
 
 .cancel-upload-contanier{
     background: #fff;
-    width:580px;
+    width:36.5vw;
     padding: 70px 50px; 
     overflow-y: auto;
     scrollbar-width: none;
@@ -533,7 +689,9 @@ border: 1px solid #E21D12;
     align-items: center;
     flex-direction: column;
     font-family: "Poppins" sans-serif;
-
+    @include Destop{
+      width:580px;
+    }
     .cancel-upload-content{
     display: flex;
     flex-direction: column;
@@ -545,20 +703,25 @@ border: 1px solid #E21D12;
     p{
     font-family: "Inter";
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2.1vw;
     line-height: 38.73px;
     letter-spacing: 0%;
     color: #263238;
     margin: 0;
+     @include Destop{
+     font-size: 32px;
+    }
     }
     span{
     font-family:"Inter";
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.3vw;
     line-height: 32px;
     letter-spacing: 0%;
     color: #263238;
-    
+      @include Destop{
+     font-size: 20px;
+    }
     }
      }
      .cancel-button{
@@ -567,16 +730,20 @@ border: 1px solid #E21D12;
      align-items: center;
      button{
      border-radius: 6px;
-     padding: 8px 14px;
+     padding: 10px 20px;
   background: #0152FF;
   color: #fff;
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1vw;
   line-height: 20px;
   letter-spacing: 0.25px;
   text-align: center;
   border: none;
+    @include Destop{
+     padding: 8px 14px;
+     font-size: 14px;
+    }
      }
      .button{
      background: #fff;
@@ -604,7 +771,7 @@ border: 1px solid #E21D12;
 
 .successMessage-container{
     background: #fff;
-    width:580px;
+    width:36.5vw;
     padding: 70px 50px; 
     overflow-y: auto;
     scrollbar-width: none;
@@ -614,6 +781,9 @@ border: 1px solid #E21D12;
     align-items: center;
     flex-direction: column;
     font-family: "Poppins" sans-serif;
+      @include Destop{
+      width: 580px;
+    }
     .successMessage-content{
       display: flex;
       flex-direction: column;
@@ -623,16 +793,22 @@ border: 1px solid #E21D12;
       h2{
          font-family: "Poppins" sans-serif;
          font-weight: 600;
-         font-size: 30px;
+         font-size: 2.9vw;
         color: #263238;
         margin: 0;
+          @include Destop{
+     font-size: 30px;
+    }
       }
       p{
          font-family: "Poppins" sans-serif;
          font-weight: 500;
-         font-size: 20px;
+         font-size: 1.3vw;
          color: #263238;
          margin: 0;
+           @include Destop{
+     font-size: 20px;
+    }
       }
       button{
         width: 100%;
@@ -641,9 +817,13 @@ border: 1px solid #E21D12;
         border-radius: 6px;
         background: #0152FF;
         color: #fff;
-        font-size: 16px;
+        font-size: 1.1vw;
         font-weight: 500;
-        padding: 10px 20px;
+        padding: 15px 20px;
+          @include Destop{
+           padding: 10px 20px;
+          font-size:16px;
+    }
       }
     }
 }

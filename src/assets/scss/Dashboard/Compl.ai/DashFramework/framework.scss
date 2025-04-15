@@ -192,9 +192,12 @@
                   align-items: center;
                   flex-wrap: wrap;
                   background: rgba(242, 247, 253, 1);
-                  padding: 10px ;
+                  padding: 15px  10px;
                   border-radius: 6px;
                   margin: 10px 0 0;
+                  @include Destop{
+                    padding: 10px;
+                  }
                   .leftButtom{
                     ul{
                         display: flex;
@@ -221,10 +224,13 @@
                             }
                         }
                         li{
-                            padding:5px 10px;
+                            padding:10px 10px;
                             display: flex;
                             justify-content: center;
                             gap: 5px;
+                            @include Destop{
+                                padding:5px 10px;
+                            }
                             svg{
                                 fill: #737373;
                             }
@@ -235,7 +241,7 @@
                             align-items: center;
                             font-family: "Poppins" sans-serif;
                             font-weight: 400;
-                            font-size: 1vw;
+                            font-size: 1.1vw;
                             line-height: 18px;
                             letter-spacing: 0px;                            
                             color: #828282;
@@ -265,18 +271,21 @@
                   .rightButtom{
                     background: inherit;
                     border: 1px solid #0152FF;
-                    padding:5px 10px;
+                    padding:10px 10px;
                     border-radius: 4px;
                     display: flex;
                     justify-content: center;
                     gap: 5px;
                     align-items: center;
                     cursor: pointer;
+                    @include Destop{
+                        padding: 5px 10px;
+                    }
                     a{
                         align-items: center;
                         text-decoration: none;
                       color: #0152FF;
-                      font-size: 1vw;
+                      font-size: 1.1vw;
                       font-family: "Poppins" sans-serif;
                       font-weight: 550;
                       letter-spacing: 1px;
@@ -284,6 +293,14 @@
                       @include Destop{
                         font-size: 14px;
                     }
+                    }
+                    svg{
+                        width: 1.6vw;
+                        height:1.6vw ;
+                        @include Destop{
+                            width:28px ;
+                            height:28px ;
+                        }
                     }
                   }
                 }
@@ -334,16 +351,18 @@
                      //  position: relative;
                      //   align-items: center;
                         .search-input{
-                            width: 300px;
+                            width: 19vw;
                             height: 3vw;
                             border: 1px solid #B9B7B7;
                             border-radius: 6px;
                             padding: 12px;
                             display: flex;
+                            align-items: center;
                             justify-content: center;
                             gap: 8px;
                             @include Destop{
                                 height: 48px;
+                                width: 300px;
                             }
                             input{
                                 border: none;
@@ -363,7 +382,14 @@
                                 }
                             }
                             .input-icon{
-
+                                svg{
+                                    width: 1.3vw;
+                                    height: 1.3vw;
+                                    @include Destop{
+                                        width:17px ;
+                                        height:17px;
+                                    }
+                                }
                             }
                         }
                         .select-input{
@@ -372,7 +398,7 @@
                                 cursor: pointer;
                                 align-items: center;
                                 padding: 0 12px;
-                                width: 188px;
+                                width: 12vw;
                                 height: 3vw;
                                 display: flex;
                                 justify-content: space-between;
@@ -381,6 +407,7 @@
                                 border-radius: 6px;
                                 @include Destop{
                                 height: 48px;
+                                width: 188px;
                             }
                                 p{
                                     margin: auto 0;
@@ -388,19 +415,27 @@
                                     font-family: "Roboto" sans-serif;
                                     font-weight: 500;
                                     font-size: 1.1vw;
-                                    
                                     line-height: 19.36px;
                                     letter-spacing: 0%;      
                                     @include Destop{
                                     font-size: 16px;
                                      }                              
                                 }
+                                svg{
+                                    width: 1.2vw;
+                                    height: 1.2vw;
+                                    @include Destop{
+                                        width:17px ;
+                                        height:17px;
+                                    }
+                                }
+                                
                             }
                             .select-dropdown{
                                 position: absolute;
                                 z-index: 1000!important;
                                 margin-top: 10px;
-                                 width: 188px;
+                                 width: 12vw;
                                  height: 32vh;
                                  overflow-y: auto;
                                  background: #fff;
@@ -408,12 +443,18 @@
                                  border-radius: 8px;
                                  scrollbar-width: none;
                                  animation: dropdown .35s ease-in-out;
+                                 @include Destop{
+                                    width: 188px;
+                                }
                                 ul{
                                     padding: 20px 0 5px;
                                     display: flex;
                                     flex-direction: column;
-                                    gap: 10px;
+                                    gap: 15px;
                                     overflow: hidden;
+                                        @include Destop{
+                                            gap: 10px;
+                                    }
                                     li{
                                         display: flex;
                                         justify-content: space-between;
@@ -429,7 +470,7 @@
                                         span{
                                             font-family: "Poppins" sans-serif;
                                             font-weight: 400;
-                                            font-size: 0.9vw;
+                                            font-size: 1vw;
                                             line-height: 18px;
                                             letter-spacing: 0px;
                                             font-weight: 400;
@@ -441,7 +482,14 @@
                                      }                                                                                 
                                         }
                                         .check{
-
+                                            svg{
+                                                width: 1.2vw;
+                                                height: 1.2vw;
+                                                @include Destop{
+                                                    width:17px ;
+                                                     height:17px;
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -449,7 +497,7 @@
                         }
                         .import-input{
                             cursor: pointer;
-                            width: 124px;
+                            width: 8vw;
                             height: 3vw;
                             align-items: center;
                             padding: 0 12px;
@@ -459,18 +507,30 @@
                             border-radius: 6px;
                             border: 1px solid #B9B7B7;
                               @include Destop{
+                                width: 124px;
                                height: 48px;
                                  }
                             p{
                                 margin: auto 0;
                                 font-family: "Roboto" sans-serif;
                                 font-weight: 400;
-                                font-size: 16px;
+                                font-size: 1.1vw;
                                 line-height: 24px;
                                 letter-spacing: 0%;   
-                                color: #1B212C;                             
+                                color: #1B212C; 
+                                @include Destop{
+                                    font-size: 16px;
+                                     }                            
                             }
                             .input-icon{
+                                svg{
+                                    width: 1.3vw;
+                                    height: 1.3vw;
+                                    @include Destop{
+                                        width:17px ;
+                                        height:17px;
+                                    }
+                                }
                             }
                         }
                         .view-input{
@@ -478,7 +538,6 @@
                                 border: 1px solid #0152FF;
                                 p{
                                     color: #0152FF;
-                                
                                 }
                             }
                             .select-dropdown{
@@ -821,16 +880,18 @@ p{
                     justify-content: center;
                     gap: 10px;
                     .search-input{
-                        width: 750px;
-                        height: 3vh;
+                        width: 47vw;
+                        height: 3vw;
                         border: 1px solid #B9B7B7;
                         border-radius: 6px;
                         padding: 12px;
                         display: flex;
                         justify-content: center;
+                        align-items: center;
                         gap: 8px;
                           @include Destop{
-                          height: 48px;
+                            width: 750px;
+                            height: 48px;
                           }      
                         input{
                             border: none;
@@ -850,7 +911,14 @@ p{
                             }
                         }
                         .input-icon{
-
+                            svg{
+                                width: 1.3vw;
+                                height: 1.3vw;
+                                @include Destop{
+                                    width:17px ;
+                                    height:17px;
+                                }
+                            }
                         }
                     }
                     .select-input{
@@ -859,7 +927,7 @@ p{
                             cursor: pointer;
                             align-items: center;
                             padding: 0 12px;
-                            width: 188px;
+                            width: 12vw;
                             height: 3vw;
                             display: flex;
                             justify-content: space-between;
@@ -867,6 +935,7 @@ p{
                             border: 1px solid #B9B7B7;
                             border-radius: 6px;
                               @include Destop{
+                                width: 188px;
                               height: 48px;
                           }      
                             p{
@@ -881,12 +950,20 @@ p{
                           font-size: 16px;
                           }                                     
                             }
+                            svg{
+                                width: 1.2vw;
+                                height: 1.2vw;
+                                @include Destop{
+                                    width:17px ;
+                                     height:17px;
+                                }
+                            }
                         }
                         .select-dropdown{
                             position: absolute;
                             z-index: 1000!important;
                             margin-top: 10px;
-                             width: 188px;
+                             width: 12vw;
                              height: 32vh;
                              overflow-y: auto;
                              background: #fff;
@@ -894,12 +971,18 @@ p{
                              border-radius: 8px;
                              scrollbar-width: none;
                              animation: dropdown .35s ease-in-out;
+                             @include Destop{
+                                width: 188px;
+                            }
                             ul{
                                 padding: 20px 0 5px;
                                 display: flex;
                                 flex-direction: column;
-                                gap: 10px;
+                                gap: 15px;
                                 overflow: hidden;
+                                @include Destop{
+                                    gap: 10px;
+                                }
                                 li{
                                     display: flex;
                                     justify-content: space-between;
@@ -915,7 +998,7 @@ p{
                                     span{
                                         font-family: "Poppins" sans-serif;
                                         font-weight: 400;
-                                        font-size: 0.8vw;
+                                        font-size: 1vw;
                                         line-height: 18px;
                                         letter-spacing: 0px;
                                         font-weight: 400;
@@ -927,7 +1010,14 @@ p{
                                            }                                                                                         
                                     }
                                     .check{
-
+                                        svg{
+                                            width: 1.2vw;
+                                            height: 1.2vw;
+                                            @include Destop{
+                                                width:17px ;
+                                                 height:17px;
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -949,12 +1039,16 @@ p{
                 align-items: center;
                     .table-item{
                         height: 100%;
-                        padding: 20px 10px;
+                        padding: 30px 10px;
                         background: #fff;
                         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
                         display: flex;
                         justify-content: space-between;
                         border-radius: 0 10px 0 10px;
+                        @include Destop{
+                            height: 100%;
+                            padding: 20px 10px;
+                        }
                         .tableItem-left,
                          .tableItem-right{
                             display: flex;
