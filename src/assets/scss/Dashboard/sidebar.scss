@@ -43,7 +43,7 @@
     width: 100%;
     margin: 0;
     .sidebarContainer{
-        width: 250px;
+        width: 15.7vw;
         flex-shrink: 0;
         transition: width 0.3s;
         height: 100vh;
@@ -53,13 +53,16 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
         animation: movingLeft 0.4s;
+        @include Destop{
+            width: 250px;
+        }
         &::-webkit-scrollbar {
             display: none;
           }
         .toggle{
             background: #fff;
-            height: 40px;
-            width: 40px;
+            height:2.5vw;
+            width:2.5vw;
             border-radius: 50%;
             line-height: 50px;
              position: absolute;
@@ -71,6 +74,10 @@
             justify-content: center;
             overflow: hidden;
             transition: .3s;
+            @include Destop {
+            height: 40px;
+            width: 40px;
+            }
             svg{
                display: flex;
                align-items: center;
@@ -83,6 +90,12 @@
                 bottom: 0;
                 transition: .3s;
                 fill: #0152FF;
+                  width: 1.4vw;
+                height: 1.4vw;
+                @include Destop{
+                  width: 25px;
+                  height:25px;
+                }
         }
         .open{
             opacity: 1;
@@ -103,22 +116,28 @@
                 padding: 20px 24px;
                 .folsightLogoImg{
                     img{
-                        width: 36px;
-                        height: 36px;
                         border-radius: 6px 0px 0px 0px;                    
                         border-radius: 3px;
+                          width: 2.25vw;
+                          height: 2.25vw;
+                          @include Destop{
+                             width: 36px;
+                             height:36px;
+                        }
                     }
                 }
                 .folsightLogoTittle{
                     p{
-                        font-size: 24px;
+                        font-size: 1.5vw;
                         font-weight: 600;
                         line-height: 24px;
                         letter-spacing: 0.75px;
                         text-align: center;
                         margin: auto 0;
                         color: #fff;
-                        
+                        @include Destop{
+                             font-size: 24px;
+                        }
                     }
                 }
             }
@@ -141,15 +160,32 @@
                             background-color: #fff;
                             a{
                                 color: #0152FF!important;
-                                font-size: 16px;
-                                padding-left: 5px;
+                                font-size: 1.1vw;
+                               // padding-left: 5px;
+                                 @include Destop{
+                                    font-size: 16px;
+                                }
                             }
                             .react-icon{
+                               svg{
                                 fill: #0152FF!important;
+                                width: 1.7vw;
+                                height: 1.7vw;
+                                @include Destop{
+                                    width: 24px;
+                                    height: 24px;
+                               }
+                               }
                             }
                             .listIcon{
                                 svg{
                                     fill: #0152FF!important;
+                                    width: 1.5vw;
+                                    height: 1.5vw;
+                                    @include Destop{
+                                        width: 24px;
+                                        height: 24px;
+                                   }
                                 }
                             }
                         }
@@ -164,33 +200,56 @@
                             gap: 0;
                             a{
                                 color: #DF3333;
-                                font-size: 16px;
+                                font-size: 1.1vw;
                                 padding-left: 5px;
+                                @include Destop{
+                                    font-size: 16px;
+                               }
                             }
                             .react-icon{
                                     fill: #DF3333;
                             }
                         }
                         .li{
+                            width: 100%;
                             cursor: pointer;
                             border-radius: 10px;
                             padding: 12px 7px;
                             display: flex;
-                            gap: 0;
+                            gap: 20px;
+                            @include Destop{
+                                gap: 15px;
+                            }
                             &:hover{
                                 transition: .3s;
                                 background-color: #fff;
                                 a{
                                     color: #0152FF;
-                                    font-size: 16px;
-                                    padding-left: 5px;
+                                    font-size: 1.1vw;
+                                    @include Destop{
+                                        font-size: 16px;
+                                   }
                                 }
                                 .react-icon{
+                                   svg{
                                     fill: #0152FF;
+                                    width: 1.6vw;
+                                   height: 1.6vw;
+                                   @include Destop{
+                                       width: 24px;
+                                       height: 24px;
+                                  }
+                                   }
                                 }
                                 .listIcon{
                                     svg{
                                         fill: #0152FF;
+                                         width: 1.5vw;
+                                          height: 1.5vw;
+                                    @include Destop{
+                                        width: 24px;
+                                        height: 24px;
+                                   }
                                     }
                                 }
                             }
@@ -200,15 +259,24 @@
                                     position: absolute;
                                     right: 0;
                                     fill: #fff;
+                                    width: 1.5vw;
+                                    height: 1.5vw;
+                                    @include Destop{
+                                        width: 24px;
+                                        height: 24px;
+                                   }
                                  }
                             }
                             a{
                                 text-decoration: none;
-                                font-size: 14px;
+                                font-size: 1vw;
                                 transition: .3s;
                                 color: #fff;
                                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                                 letter-spacing: 1px;
+                                @include Destop{
+                                    font-size: 14px;
+                               }
                             }
                              .open{
                                 display: block;
@@ -217,9 +285,15 @@
                                 display: none;
                              }
                              .react-icon{
-                               width: 50%;
-                               margin:0 -25px;
+                              svg{
                                fill: #fff;
+                                width: 1.6vw;
+                                height: 1.6vw;
+                                @include Destop{
+                                    width: 24px;
+                                    height: 24px;
+                               }
+                               }
                              }
                         }
                         .itemDropdown{
@@ -242,6 +316,10 @@
                                         text-decoration: none;
                                         color: #fff;
                                         opacity: 0.8;
+                                        font-size: 1vw;
+                                        @include Destop{
+                                            font-size: 14px;
+                                        }
                                         &:hover{
                                             color: #fff;
                                             opacity: 1;
@@ -253,17 +331,24 @@
                                     gap: 20px;
                                     a{ 
                                     color: #fff;
-                                    font-size: 16px;
+                                    font-size: 1.1vw;
                                     opacity: 1;
+                                    @include Destop{
+                                        font-size: 16px;
+                                    }
                                 }
                                 .activeCircle{
-                                    width: 10px;
-                                    height: 10px;
+                                    width: 0.7vw;
+                                    height: 0.7vw;
                                     line-height: 10px;
                                     border-radius: 50%;
                                     align-items: center;
                                     margin: auto 0;
                                     background: #fff;
+                                    @include Destop{
+                                        width: 10px;
+                                        height: 10px;
+                                    }
                                 }
                                     }
                                 .nonactivePage{
@@ -286,7 +371,7 @@
         }
     }
     .closeSidebar{
-        width: 60px;
+        width: 3.8vw;
         flex-shrink: 0;
         transition: width 0.3s;
         height: 100%;
@@ -294,12 +379,15 @@
         display: flex;
         flex: 1;
         background: #0152FF;
-        padding: 20px 10px 20px 0;
+        padding: 20px 10px 20px 10px;
         animation: movingRight 0.4s;
+        @include Destop{
+            width: 60px;
+        }
         .toggle{
             background: #fff;
-            height: 40px;
-            width: 40px;
+            height: 2.5vw;
+            width: 2.5vw;
             border-radius: 50%;
             line-height: 50px;
             position: absolute;
@@ -310,6 +398,10 @@
             justify-content: center;
             overflow: hidden;
             transition: .3s;
+            @include Destop{
+                width: 40px;
+                height: 40px;
+            }
             .icons{
                display: flex;
                align-items: center;
@@ -323,7 +415,10 @@
                 transition: .3s;
                 .svg{
                     color: #0152FF;
-                    font-size: 30px;
+                    font-size: 1.9vw;
+                    @include Destop{
+                        font-size: 30px;
+                    }
                 }
         }
         .open{
@@ -342,7 +437,10 @@
                 display: flex;
                 align-items: center;
                 gap: 18px;
-                padding: 20px 10px;
+                padding: 20px 10px 20px 5px;
+                @include Destop{
+                    padding: 20px 10px 20px 0;
+                }
                 &:hover{
                     .folsightLogoTittle{
                     display: block;
@@ -351,23 +449,30 @@
             }
                 .folsightLogoImg{
                     img{
-                        width: 36px;
-                        height: 36px;
+                        width: 2.3vw;
+                        height: 2.3vw;
                         border-radius: 6px 0px 0px 0px;                    
                         border-radius: 3px;
+                        @include Destop{
+                            width: 36px;
+                            height: 36px;
+                        }
                     }
                 }
                 .folsightLogoTittle{
                     animation: movingLeft 0.4s;
                     display: none;
                     p{
-                        font-size: 24px;
+                        font-size: 1.5vw;
                         font-weight: 600;
                         line-height: 24px;
                         letter-spacing: 0.75px;
                         text-align: center;
                         margin: auto 0;
-                        color: 192434;
+                        color: #192434;
+                        @include Destop{
+                            font-size: 24px;
+                        }
                         
                     }
                 }
@@ -392,17 +497,26 @@
                                 a{ 
                                     animation: movingLeft 0.4s;
                                     color: #0152FF;
-                                    background: #fff;
+                                
                                     padding:5px 20px;
                                     border-radius: 0px 20px 20px 0px;
-                                    font-size: 14px;
+                                    font-size: 1vw;
                                     font-weight: 400;
                                     display: block;
                                     position: absolute;
                                     left: 10%;
+                                    @include Destop{
+                                        font-size: 14px;
+                                    }
                                 }
                                 svg{
                                     fill: #fff!important;
+                                    width: 1.5vw;
+                                    height: 1.5vw;
+                                    @include Destop{
+                                        width: 30px;
+                                        height:30px ;
+                                    }
                                 }
                             }
                             .listIcon{
@@ -410,13 +524,16 @@
                             }
                             a{
                                 text-decoration: none;
-                                font-size: 14px;
+                                font-size: 1vw;
                                 transition: .3s;
                                 color: #0152FF;
                                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                                 letter-spacing: 1px;
                                 display: none;
                                 overflow: hidden;
+                                @include Destop{
+                                    font-size: 14px;
+                                }
                             }
                              .open{
                                 display: block;
@@ -425,9 +542,16 @@
                                 display: none;
                              }
                              .react-icon{
-                               width: 100%;
                                margin:0 ;
-                               fill: #fff;
+                              svg{
+                              fill: #fff;
+                               width: 1.6vw;
+                               height: 1.6vw;
+                               @include Destop{
+                                   width: 24px;
+                                   height:24px ;
+                           }
+                              }
                              }
                         }
                         .logout{
@@ -438,35 +562,9 @@
                                 color: #fff;
                             }
                         }
-                        .itemDropdown{
+                       .itemDropdown{
                             display: none;
-                            // display: flex;
-                            // padding-left: 20px;
-                            // margin: 0;
-                            // margin-left: 30px;
-                            // width: 200px;
-                            // overflow: hidden;
-                            // padding: 20px;
-                            // border-radius: 20px;
-                           // background: #FBE4FF;
-                           
-                            // ul{
-                            //     display: flex;
-                            //     flex-direction: column;
-                            //     gap: 10px;
-                            //     li{
-                            //         transition: .3s;
-                            //         a{
-                            //             text-decoration: none;
-                            //             display: flex;
-                            //             color: #000;
-                            //             &:hover{
-                            //                 color: #7F39F2;
-                            //             }
-                            //         }
-                            //     }
-                            // }
-                         }
+                            }
                          .closeDropdown{
                             display: none;
                          }

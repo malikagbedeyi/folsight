@@ -381,7 +381,7 @@ const CreateFrameWork = ({ createFrameWK,SetcreateFrameWK,handlePage }) => {
                       </div>
                       </div>
                     </div>
-                    <div onClick={()=>handlePage(2)} className="proceed-bottom">
+                    <div onClick={()=>handlePage(9)} className="proceed-bottom">
                       <button>Done</button>
                       <button className="button"> Edit</button>
                     </div>

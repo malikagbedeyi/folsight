@@ -83,7 +83,7 @@ const Activ8Pop = ({actv8Pop,setActv8Pop,handlePage}) => {
                 </div>
                 <div className="proceed-button">
                     <button onClick={() => setActv8Pop(false)}>Cancel</button>
-                    <button onClick={() => handlePage(9)} className='button'>Activate</button>
+                    <button onClick={() => handlePage(14)} className='button'>Activate</button>
                 </div>
             </div>
             </div>

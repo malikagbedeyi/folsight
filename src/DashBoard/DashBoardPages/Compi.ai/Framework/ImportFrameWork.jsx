@@ -137,7 +137,7 @@ const ImportFrameWork = ({Import,setImport,handlePage}) => {
     <div className="successMessage-content">
         <h2>Import Successful</h2>
         <p>You have successfully imported the file.</p>
-        <button onClick={() => handlePage(2)} >View</button>
+        <button onClick={() => handlePage(9)} >View</button>
     </div>
 </div>
 </div>

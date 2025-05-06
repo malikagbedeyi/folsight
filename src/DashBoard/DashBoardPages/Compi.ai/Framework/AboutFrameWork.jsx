@@ -26,7 +26,7 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
     };
 
   return (
-    <div className={page === 2 ? "aboutframework" : ""}>
+    <div className={page === 9 ? "aboutframework" : ""}>
       <div className="navMenuContainer row">
             <div className="navMenuParent col-lg-12">
               <div className="navMenuChild">
@@ -36,7 +36,7 @@ const AboutFrameWork = ({ page, handlePage,selectedItem }) => {
               <div className="leftwrapper-contet">
               <p>Dashboard </p>
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" ><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg></span> 
-                <a onClick={() => handlePage(1)}> Framework</a>
+                <a onClick={() => handlePage(8)}> Framework</a>
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" ><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg></span> 
                 <span className='title-top'>{title}</span>
               </div>

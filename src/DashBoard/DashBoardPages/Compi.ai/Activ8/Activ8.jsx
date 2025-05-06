@@ -33,11 +33,11 @@ const items = [
 
 const handleClickActiv8 = (item) => {
   setSelectedItem(item);
-  handlePage(8);
+  handlePage(12);
 };
 
   return (
-    <div className={page === 7 ? "activ8" : "activ8"}>
+    <div className={page === 11 ? "activ8" : "activ8"}>
     <div className="navMenuContainer row">
           <div className="navMenuParent col-lg-12">
             <div className="navMenuChild">

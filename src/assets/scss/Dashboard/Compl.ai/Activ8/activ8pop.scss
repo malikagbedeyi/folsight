@@ -59,30 +59,44 @@ margin: auto;
  padding: 30px 0px;
 .activ8Pop-container{
     background: #fff;
-    width:644px;
+    width:40.3vw;
     height: 589px;
     display: flex;
     padding: 30px 30px 100px; 
     overflow-y: auto;
     scrollbar-width: none;
     animation: fadeIn .4s ease-in-out;
+    @include Destop{
+      width:644px;
+    }
     .activ8Pop-content{
         width: 100%;
         .delete-box{
             display: flex;
             justify-content: flex-end;
             cursor: pointer;
+            svg{
+              width: 1.4vw;
+              height: 1.4vw;
+               @include Destop{
+                width: 20px;
+              height: 20px;
+                }
+              }
            }
            .top-title{
            h4{
            font-family: Poppins;
-font-weight: 500;
-font-size: 24px;
-line-height: 100%;
-letter-spacing: 0px;
-text-align: center;
-vertical-align: middle;
-text-transform: capitalize;
+           font-weight: 500;
+           font-size: 1.5vw;
+           line-height: 100%;
+           letter-spacing: 0px;
+           text-align: center;
+           vertical-align: middle;
+           text-transform: capitalize;
+           @include Destop{
+            font-size: 24px;
+           } 
            }
            .bottom-flex{
            display: flex;
@@ -102,6 +116,10 @@ text-transform: capitalize;
            }
            p{
            margin: 0;
+           font-size: 1.1vw;
+           @include Destop{
+            font-size: 16px;
+            }
            }
            button{
            border: none;
@@ -110,7 +128,19 @@ text-transform: capitalize;
            justify-content: center;
            padding: 5px 10px;
            border-radius: 6px;
+           font-size: 1vw;
            gap: 10px;
+           @include Destop{
+            font-size: 14px;
+            }
+           svg{
+            width: 1.4vw;
+            height: 1.4vw;
+             @include Destop{
+              width: 20px;
+            height: 20px;
+              }
+            }
            }
            }
         }
@@ -119,11 +149,14 @@ text-transform: capitalize;
             p{
                 font-family: "Poppins" sans-serif;
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 1.1vw;
                 line-height: 20px;
                 letter-spacing: 0px;
                 vertical-align: middle;
                 color: #3C3E3F;
+                @include Destop{
+                  font-size: 16px;
+                }
             }
            }
            .selectOptionField{
@@ -143,10 +176,13 @@ text-transform: capitalize;
             p{
               font-family: "Poppins" sans-serif;
               font-weight: 400;
-              font-size: 16px;
+              font-size: 1.1vw;
               line-height: 20px;
               letter-spacing: 0px;
               margin: 0;
+              @include Destop{
+                font-size: 16px;
+              }
             }
             span{
               margin-top: -3px;
@@ -158,20 +194,35 @@ text-transform: capitalize;
           .selectoption-box{
           display: flex;
           justify-content: space-between;
-          height: 56px;
+          height: 3.5vw;
           border-width: 1px;
           border-radius: 6px;
           padding: 12px ;
           background: #ffffff;
           border: 1px solid #AEAEB2;
           cursor: pointer;
+          @include Destop{
+            height: 56px;
+          }
           .left-box{
             display: flex;
             align-items: center;
             gap: 10px;
             p{
               margin: 0;
+              font-size: 1.1vw;
+              @include Destop{
+                font-size: 16px;
+              }
             }
+            svg{
+              width: 1.4vw;
+              height: 1.4vw;
+               @include Destop{
+                width: 20px;
+              height: 20px;
+                }
+              }
             .leftbox-content{
           background: #F2F7FD;
           display: flex;
@@ -185,6 +236,14 @@ text-transform: capitalize;
             gap: 10px;
             align-items: center;
             cursor: pointer;
+            svg{
+              width: 1.3vw;
+              height: 1.3vw;
+               @include Destop{
+                width: 20px;
+              height: 20px;
+                }
+              }
           }
            }
            .selectdropdown{
@@ -203,25 +262,31 @@ text-transform: capitalize;
              padding: 30px 0px 10px;
              .selectdropdown-content{
               background: #fff;
-              width:500px;
+              width:31.2vw;
               padding: 30px 30px 30px; 
               overflow-y: auto;
               scrollbar-width: none;
               border-radius: 8px;
               animation: fadeIn .4s ease-in-out;
+                 @include Destop{
+                  width: 500px;
+                  }
               .top-dropdown{
                 width: 100%;
                 display: flex;
                 align-items: center;
                 gap: 10px;
                 background: #F7F9FB;
-                height: 52px;
+                height: 3.5vw;
                 border-radius: 4px;
                 padding-top: 16px;
                 padding-right: 12px;
                 padding-bottom: 16px;
                 padding-left: 12px;
                 gap: 8px;
+                @include Destop{
+                  height: 56px;
+                }
                 input{
                   width: 100%;
                   border: none;
@@ -237,10 +302,13 @@ text-transform: capitalize;
                 p{
                   font-family: "Inter" sans-serif;
                   font-weight: 400;
-                  font-size: 14px;
+                  font-size: 1vw;
                   line-height: 18px;
                   letter-spacing: 0px; 
-                  color: #373F41;                     
+                  color: #373F41;   
+                  @include Destop{
+                    font-size: 14px;
+                  }                  
                 }
               }
               .bottom-dropdown{
@@ -261,29 +329,38 @@ text-transform: capitalize;
                 p{
                   font-family: "Poppins" sans-serif;
                   font-weight: 600;
-                  font-size: 14px;
+                  font-size: 1vw;
                   line-height: 18px;
                   letter-spacing: 0px;
                   margin: 0;  
                   color: #373F41;
+                  @include Destop{
+                    font-size: 14px;
+                  }   
                   span{
                     font-family: "Poppins" sans-serif;
                     font-weight: 400;
-                    font-size: 14px;
+                    font-size: 1vw;
                     line-height: 18px;
                     letter-spacing: 0px;
-                    
+                    @include Destop{
+                      font-size: 14px;
+                    }   
                   }                  
                 }
                .bottom-dropdownIcon{
-                width: 20px;
-                height: 20px;
+                width: 1.4vw;
+                height: 1.4vw;
                 border-radius: 6px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 background: #fff;
                 box-shadow: 0px 4px 8px 0px #3232470F;
+                @include Destop{
+                  width: 20px;
+                  height: 20px;
+                }   
                }
               }
             }
@@ -298,8 +375,8 @@ text-transform: capitalize;
               align-items: center;
               justify-content: center;
               border: none;
-              width: 200px;
-              height: 56px;
+              width: 12.5vw;
+              height: 3.5vw;
               border-radius: 8px;
               padding: 8px;
               gap: 8px;
@@ -309,6 +386,10 @@ text-transform: capitalize;
               font-size: 20px;
               line-height: 30px;
               color: #fff;
+              @include Destop{
+                width: 200px;
+                height: 56px;
+              }   
               
             }
             }
@@ -316,11 +397,11 @@ text-transform: capitalize;
     }
     .proceed-container{
     background: #fff;
-    width:534px;
-    height: 320px;
+    width:33.4vw;
+   // height: 17vw;
     display: flex;
     border-radius: 16px;
-    padding: 40px 40px ; 
+    padding: 40px 40px; 
     overflow-y: auto;
     scrollbar-width: none;
     animation: fadeIn .4s ease-in-out;
@@ -328,25 +409,35 @@ text-transform: capitalize;
     display: flex;
     flex-direction: column;
     gap: 50px;
+    @include Destop{
+      width: 534px;
+      height: 320px;
+    }
     .proceed-text{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 20px;   
     h2{
     font-family: "Inter";
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2vw;
     letter-spacing: 0%;
     color: #263238;
     margin: 0;
+       @include Destop{
+        font-size: 32px;
+      }
     }
     p{
     font-family: "Inter";
     font-weight: 500;
-    font-size: 19px;
+    font-size: 1.2vw;
     letter-spacing: 0%;
     color: #263238;
     margin: 0;
+    @include Destop{
+      font-size: 19px;
+    }
      }
       }
       .proceed-button{
@@ -356,16 +447,19 @@ text-transform: capitalize;
       align-items: center;
       button{
       border-radius: 6px;
-      padding: 8px 14px;
+      padding: 10px 20px;
       border: 1px solid #E21D12;
       font-family: "Roboto" sans-serif;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 1vw;
       line-height: 20px;
       letter-spacing: 0.25px;
       text-align: center;
       vertical-align: middle;
       color: #E21D12;
+        @include Destop{
+         font-size: 14px;
+        }   
       }
       .button{
       border: none;

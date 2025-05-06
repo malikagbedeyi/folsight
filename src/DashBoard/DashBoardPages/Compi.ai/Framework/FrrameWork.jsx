@@ -87,7 +87,7 @@ const handleCreateFrameWK = ()=>{
 }
 const handleClickFramework = (row) => {
   setSelectedItem(row);
-  handlePage(2);
+  handlePage(9);
 };
 const handleProceed = () => {
   setProceed(!proceed)

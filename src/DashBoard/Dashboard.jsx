@@ -16,6 +16,7 @@ import Activ8Body from './DashBoardPages/Compi.ai/Activ8/Activ8Body';
 import AvailableActiv8 from './DashBoardPages/Compi.ai/Activ8/AvailableActiv8';
 import AboutActiv8 from './DashBoardPages/Compi.ai/Activ8/AboutActiv8';
 import Navigator from './DashBoardPages/Navigator Ai/Navigator';
+import GapAssement from './DashBoardPages/Compi.ai/Nexus/GapAssement';
 
 const Dashboard = () => {
   const [page, setPage] = useState(1);
@@ -29,23 +30,17 @@ const Dashboard = () => {
     switch (page) {
       case 1:
         return <FrrameWork page={page} handlePage={handlePage}  setSelectedItem={setSelectedItem} />;
-        case 2:
+        case 9:
           return <AboutFrameWork page={page} handlePage={handlePage}   selectedItem={selectedItem}/>;
-      case 3:
-        return <AdminUser />;
-        case 4:
-          return <Setting page={page} handlePage={handlePage} />;
-      case 5:
-        return <GeneralSetting />;
-      case 6:
-        return <ControlSetting />;
-        case 7:
+          case 10:
+            return <GapAssement page={page} handlePage={handlePage}   selectedItem={selectedItem}/>;
+        case 11:
           return <Activ8 page={page} handlePage={handlePage}  setSelectedItem={setSelectedItem} />;
-          case 8:
+          case 12:
             return <Activ8Body page={page} handlePage={handlePage}  setSelectedItem={setSelectedItem}   selectedItem={selectedItem}/>;
-            case 10:
+            case 13:
               return <AboutActiv8  page={page} handlePage={handlePage}  setSelectedItem={setSelectedItem}   selectedItem={selectedItem}/>;
-              case 9:
+              case 14:
                 return <AvailableActiv8  page={page} handlePage={handlePage}  setSelectedItem={setSelectedItem}   selectedItem={selectedItem}/>;
         case 16:  
           return <Requirement page={page} handlePage={handlePage} />;
